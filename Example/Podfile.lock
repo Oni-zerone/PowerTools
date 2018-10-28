@@ -1,0 +1,16 @@
+PODS:
+  - SOTViewModelRepresenter (0.1.0)
+
+DEPENDENCIES:
+  - SOTViewModelRepresenter (from `../`)
+
+EXTERNAL SOURCES:
+  SOTViewModelRepresenter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SOTViewModelRepresenter: 3d2261705614783b7314a302089e510bb938786b
+
+PODFILE CHECKSUM: dd8b03508727ac534ec684f0b1eceb4762c7798a
+
+COCOAPODS: 1.5.3

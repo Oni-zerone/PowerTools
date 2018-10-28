@@ -1,0 +1,22 @@
+{
+  "name": "SOTViewModelRepresenter",
+  "version": "0.1.0",
+  "summary": "A short description of SOTViewModelRepresenter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/acct<blob>=<NULL>/SOTViewModelRepresenter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "acct<blob>=<NULL>": "oni.zerone@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/acct<blob>=<NULL>/SOTViewModelRepresenter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SOTViewModelRepresenter/Classes/**/*"
+}
