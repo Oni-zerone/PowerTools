@@ -9,7 +9,7 @@ import UIKit
 
 public protocol SectionViewModel {
     
-    var headerItem: ItemViewModel? { get }
+    var header: ItemViewModel? { get }
     
     var items: [ItemViewModel] { get }
     
@@ -24,7 +24,7 @@ public extension SectionViewModel {
         
         switch elementOfKind {
         case UICollectionElementKindSectionHeader:
-            return self.headerItem
+            return self.header
             
         case UICollectionElementKindSectionFooter:
             return self.footer

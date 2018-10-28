@@ -11,6 +11,7 @@
 		94278B7AD109B652D7DE1BC3595CD8DC /* SOTViewModelRepresenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA72B134490183C5F1164D1D68D98807 /* SOTViewModelRepresenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97679DED21864C8D00813F0C /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97679DEC21864C8D00813F0C /* ItemViewModel.swift */; };
 		97679DEF21864CDA00813F0C /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97679DEE21864CDA00813F0C /* SectionViewModel.swift */; };
+		97679DF321864F0100813F0C /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97679DF221864F0100813F0C /* BinderDataSource.swift */; };
 		A625ACE58951273E6A50959A88D7724B /* Pods-SOTViewModelRepresenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F478A2E7D6D5AB35DDA0677FB09C7B5E /* Pods-SOTViewModelRepresenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B393FDE77280A81A9BF35F6BB6429A88 /* SOTViewModelRepresenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CDB987BC48D130E47E2BE0BCEEB797 /* SOTViewModelRepresenter-dummy.m */; };
 		C23006DD891E873691B11E330F4545A7 /* Pods-SOTViewModelRepresenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E757C7265F956D05BE33D5C58FCB286D /* Pods-SOTViewModelRepresenter_Tests-dummy.m */; };
@@ -55,6 +56,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97679DEC21864C8D00813F0C /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		97679DEE21864CDA00813F0C /* SectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		97679DF221864F0100813F0C /* BinderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderDataSource.swift; sourceTree = "<group>"; };
 		9DAE1CAEC260DAB6FFCED03565010D40 /* Pods-SOTViewModelRepresenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTViewModelRepresenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A39E4F6B7EF684DF81049050F5C9927D /* SOTViewModelRepresenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTViewModelRepresenter.xcconfig; sourceTree = "<group>"; };
 		A3B34135606DEF2BD2CFA38F3C79C700 /* SOTViewModelRepresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOTViewModelRepresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +169,26 @@
 				97679DEE21864CDA00813F0C /* SectionViewModel.swift */,
 			);
 			name = DataStructure;
-			path = SOTViewModelRepresenter/Classes/DataStructure;
+			path = Classes/DataStructure;
+			sourceTree = "<group>";
+		};
+		97679DF021864DE300813F0C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				97679DF121864EA100813F0C /* BinderDataSource */,
+				97679DEB21864A2600813F0C /* DataStructure */,
+			);
+			name = Core;
+			path = SOTViewModelRepresenter/Core;
+			sourceTree = "<group>";
+		};
+		97679DF121864EA100813F0C /* BinderDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				97679DF221864F0100813F0C /* BinderDataSource.swift */,
+			);
+			name = BinderDataSource;
+			path = Classes/BinderDataSource;
 			sourceTree = "<group>";
 		};
 		9E8F8163EDB63DD17566D23729C9C359 /* Pod */ = {
@@ -201,7 +222,7 @@
 		B05F5BA8336E7704EAB8F8FEE0C3F9D6 /* SOTViewModelRepresenter */ = {
 			isa = PBXGroup;
 			children = (
-				97679DEB21864A2600813F0C /* DataStructure */,
+				97679DF021864DE300813F0C /* Core */,
 				9E8F8163EDB63DD17566D23729C9C359 /* Pod */,
 				B7345012AFE20B5CF0D30C04340629AC /* Support Files */,
 			);
@@ -360,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97679DF321864F0100813F0C /* BinderDataSource.swift in Sources */,
 				B393FDE77280A81A9BF35F6BB6429A88 /* SOTViewModelRepresenter-dummy.m in Sources */,
 				97679DEF21864CDA00813F0C /* SectionViewModel.swift in Sources */,
 				97679DED21864C8D00813F0C /* ItemViewModel.swift in Sources */,
