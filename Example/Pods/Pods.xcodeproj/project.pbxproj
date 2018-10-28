@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		67E0D3D5335D39F5F7C38C4EA6F57BEF /* Pods-SOTViewModelRepresenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A062F63B13B88D4C7B49844563E323D /* Pods-SOTViewModelRepresenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94278B7AD109B652D7DE1BC3595CD8DC /* SOTViewModelRepresenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA72B134490183C5F1164D1D68D98807 /* SOTViewModelRepresenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97679DED21864C8D00813F0C /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97679DEC21864C8D00813F0C /* ItemViewModel.swift */; };
 		A625ACE58951273E6A50959A88D7724B /* Pods-SOTViewModelRepresenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F478A2E7D6D5AB35DDA0677FB09C7B5E /* Pods-SOTViewModelRepresenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B393FDE77280A81A9BF35F6BB6429A88 /* SOTViewModelRepresenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CDB987BC48D130E47E2BE0BCEEB797 /* SOTViewModelRepresenter-dummy.m */; };
 		C23006DD891E873691B11E330F4545A7 /* Pods-SOTViewModelRepresenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E757C7265F956D05BE33D5C58FCB286D /* Pods-SOTViewModelRepresenter_Tests-dummy.m */; };
@@ -51,6 +52,7 @@
 		7F595316B6E6915CB007985EBDE9B752 /* Pods-SOTViewModelRepresenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SOTViewModelRepresenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		84D01F7CFC232B853D43787E8337B9E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97679DEC21864C8D00813F0C /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		9DAE1CAEC260DAB6FFCED03565010D40 /* Pods-SOTViewModelRepresenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTViewModelRepresenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A39E4F6B7EF684DF81049050F5C9927D /* SOTViewModelRepresenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTViewModelRepresenter.xcconfig; sourceTree = "<group>"; };
 		A3B34135606DEF2BD2CFA38F3C79C700 /* SOTViewModelRepresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOTViewModelRepresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,9 +161,10 @@
 		97679DEB21864A2600813F0C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				97679DEC21864C8D00813F0C /* ItemViewModel.swift */,
 			);
 			name = DataStructure;
-			path = SOTViewModelRepresenter/Classes/DataStructures;
+			path = SOTViewModelRepresenter/Classes/DataStructure;
 			sourceTree = "<group>";
 		};
 		9E8F8163EDB63DD17566D23729C9C359 /* Pod */ = {
@@ -324,6 +327,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					90B232148990E741CFEE05C4EF0812D9 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -350,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B393FDE77280A81A9BF35F6BB6429A88 /* SOTViewModelRepresenter-dummy.m in Sources */,
+				97679DED21864C8D00813F0C /* ItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A39E4F6B7EF684DF81049050F5C9927D /* SOTViewModelRepresenter.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -682,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A39E4F6B7EF684DF81049050F5C9927D /* SOTViewModelRepresenter.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
