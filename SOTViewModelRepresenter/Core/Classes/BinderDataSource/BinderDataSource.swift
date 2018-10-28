@@ -7,13 +7,13 @@
 
 import UIKit
 
-class BinderDataSource<View: UIView>: NSObject {
+open class BinderDataSource<View: UIView>: NSObject {
     
-    var model: [SectionViewModel]
+    public var model: [SectionViewModel]
     
-    weak var view: View?
+    public weak var view: View?
     
-    init(view: View, model: [SectionViewModel] = []) {
+    public init(view: View, model: [SectionViewModel] = []) {
         self.view = view
         self.model = model
     }
