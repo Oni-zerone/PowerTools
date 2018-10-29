@@ -38,3 +38,4 @@ public struct SizeModule {
         return self.size(scale)
     }
 }
+
