@@ -9,7 +9,7 @@ import UIKit
 
 public protocol SizedSection {
     
-    var numberOfColumns: Int? { get }
+    var lineItems: Int? { get }
     
     var columnReferenceWidth: CGFloat { get }
     
@@ -24,11 +24,11 @@ public protocol SizedSection {
 
 public extension SizedSection {
     
-    var numberOfColumns: Int? {
+    var lineItems: Int? {
         return nil
     }
     
-    var columnReferenceWidth: CGFloat {
+    var referenceItemWidth: CGFloat {
         return .greatestFiniteMagnitude
     }
     
@@ -54,22 +54,33 @@ public extension SizedSection {
     
     func module(for containerView: UIView) -> SizeModule {
         
-            let numberOfColumns = CGFloat(self.numberOfColumns ?? containerView.numberOfColumns(columnReferenceWidth))
-            let sectionInsets = self.sectionInsets.left + self.sectionInsets.right
-            let cellWidth = (containerView.bounds.width - (self.sectionInteritemSpacing * (numberOfColumns - 1)) - sectionInsets) / numberOfColumns
-            let maxWidth = containerView.bounds.width - sectionInsets
-            return SizeModule(cellWidth, interitemSpacing: self.sectionInteritemSpacing, interlineSpacing: self.sectionInterlineSpacing, multiplier: self.itemRatioMultiplier, constant: self.itemRatioConstant, maxWidth: maxWidth)
+        let lineItems = CGFloat(self.lineItems ?? containerView.numberOfItems(self.referenceItemWidth))
+        let sectionInsets =  self.sectionInsets.left + self.sectionInsets.right
+        let perpendicular = (containerView.bounds.width - (self.sectionInteritemSpacing * (lineItems - 1)) - sectionInsets) / lineItems
+        let parallel = perpendicular * self.itemRatioMultiplier + self.itemRatioConstant
+        let maxWidth = containerView.bounds.width - sectionInsets
+        return SizeModule(referenceDimension: perpendicular, derivedDimension: parallel, direction: containerView.direction, interitemSpacing: self.sectionInteritemSpacing, interlineSpacing: self.sectionInterlineSpacing, maxWidth: maxWidth)
     }
 }
 
 internal extension UIView {
+    
+    func numberOfItems(_ referenceItemWidth: CGFloat) -> Int {
         
-        func numberOfColumns(_ columnReferenceWidth: CGFloat) -> Int {
-            
-            if columnReferenceWidth == .greatestFiniteMagnitude {
-                return 1
-            }
-            let calculatedNumberOfColumns = Int(floor(self.bounds.width / columnReferenceWidth))
-            return max(calculatedNumberOfColumns, 1)
+        if referenceItemWidth == .greatestFiniteMagnitude {
+            return 1
         }
+        
+        let containerWidth = self.direction == .vertical ? self.bounds.width : self.bounds.height
+        let calculatedNumberOfItems = Int(floor(containerWidth / referenceItemWidth))
+        return max(calculatedNumberOfItems, 1)
+    }
+    
+    internal var direction: ContentDirection {
+        
+        guard let container = self as? DirectionableContainer else {
+            return .vertical
+        }
+        return container.contentDirection
+    }
 }
