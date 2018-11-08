@@ -22,6 +22,8 @@
 		97679E052187812300813F0C /* TableDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97679E042187812300813F0C /* TableDirectionableContainer.swift */; };
 		97679E072187B6C200813F0C /* CollectionSizedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97679E062187B6C200813F0C /* CollectionSizedDataSource.swift */; };
 		97A34E4521949FB500E7F401 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E4321949FB200E7F401 /* Array.swift */; };
+		97A34E482194A8D900E7F401 /* SizedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E472194A8D900E7F401 /* SizedCollectionViewController.swift */; };
+		97A34E4B2194AC6600E7F401 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E4A2194AC6600E7F401 /* InteractionDelegate.swift */; };
 		A625ACE58951273E6A50959A88D7724B /* Pods-SOTViewModelRepresenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F478A2E7D6D5AB35DDA0677FB09C7B5E /* Pods-SOTViewModelRepresenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B393FDE77280A81A9BF35F6BB6429A88 /* SOTViewModelRepresenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CDB987BC48D130E47E2BE0BCEEB797 /* SOTViewModelRepresenter-dummy.m */; };
 		C23006DD891E873691B11E330F4545A7 /* Pods-SOTViewModelRepresenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E757C7265F956D05BE33D5C58FCB286D /* Pods-SOTViewModelRepresenter_Tests-dummy.m */; };
@@ -77,6 +79,8 @@
 		97679E042187812300813F0C /* TableDirectionableContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDirectionableContainer.swift; sourceTree = "<group>"; };
 		97679E062187B6C200813F0C /* CollectionSizedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSizedDataSource.swift; sourceTree = "<group>"; };
 		97A34E4321949FB200E7F401 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		97A34E472194A8D900E7F401 /* SizedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizedCollectionViewController.swift; sourceTree = "<group>"; };
+		97A34E4A2194AC6600E7F401 /* InteractionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionDelegate.swift; sourceTree = "<group>"; };
 		9DAE1CAEC260DAB6FFCED03565010D40 /* Pods-SOTViewModelRepresenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SOTViewModelRepresenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A39E4F6B7EF684DF81049050F5C9927D /* SOTViewModelRepresenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTViewModelRepresenter.xcconfig; sourceTree = "<group>"; };
 		A3B34135606DEF2BD2CFA38F3C79C700 /* SOTViewModelRepresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOTViewModelRepresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,10 +199,12 @@
 		97679DF021864DE300813F0C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				97A34E4221949F5E00E7F401 /* Utils */,
+				97A34E462194A8A500E7F401 /* SizedCollectionViewController */,
 				97679DF82186559600813F0C /* SizedDataSource */,
 				97679DF121864EA100813F0C /* BinderDataSource */,
+				97A34E492194AC3800E7F401 /* Delegates */,
 				97679DEB21864A2600813F0C /* DataStructure */,
+				97A34E4221949F5E00E7F401 /* Utils */,
 			);
 			name = Core;
 			path = SOTViewModelRepresenter/Core;
@@ -245,6 +251,24 @@
 			);
 			name = Utils;
 			path = Classes/Utils;
+			sourceTree = "<group>";
+		};
+		97A34E462194A8A500E7F401 /* SizedCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E472194A8D900E7F401 /* SizedCollectionViewController.swift */,
+			);
+			name = SizedCollectionViewController;
+			path = Classes/SizedCollectionViewController;
+			sourceTree = "<group>";
+		};
+		97A34E492194AC3800E7F401 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E4A2194AC6600E7F401 /* InteractionDelegate.swift */,
+			);
+			name = Delegates;
+			path = Classes/Delegates;
 			sourceTree = "<group>";
 		};
 		9E8F8163EDB63DD17566D23729C9C359 /* Pod */ = {
@@ -451,9 +475,11 @@
 				97679E072187B6C200813F0C /* CollectionSizedDataSource.swift in Sources */,
 				97A34E4521949FB500E7F401 /* Array.swift in Sources */,
 				97679DED21864C8D00813F0C /* ItemViewModel.swift in Sources */,
+				97A34E482194A8D900E7F401 /* SizedCollectionViewController.swift in Sources */,
 				97679E012187450600813F0C /* DirectionableContainer.swift in Sources */,
 				97679DFA2186566400813F0C /* SizedItem.swift in Sources */,
 				97679DF7218651B200813F0C /* TableBinderDataSource.swift in Sources */,
+				97A34E4B2194AC6600E7F401 /* InteractionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
