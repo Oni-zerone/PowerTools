@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol SizedSection {
+public protocol SizedSection: SectionViewModel {
     
     var lineItems: Int? { get }
     

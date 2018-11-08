@@ -16,24 +16,27 @@ open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICol
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        guard self.model.indices.contains(section) else {
+        guard let section = self.model.item(at: section) else {
             return 0
         }
-        return self.model[section].items.count
+        
+        return section.items.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let model = self.model[indexPath.section].items[indexPath.row]
+        guard let model = self.model.viewModel(at: indexPath) else {
+            return UICollectionViewCell()
+        }
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: model.reuseIdentifier, for: indexPath)
         model.setup(cell, in: collectionView, at: indexPath)
         return cell
     }
     
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
-        let section = self.model[indexPath.section]
-        guard let model = section.model(for: kind) else {
+
+        guard let model = self.model.viewModel(ofKind: kind, section: indexPath.section) else {
             return UICollectionReusableView()
         }
         

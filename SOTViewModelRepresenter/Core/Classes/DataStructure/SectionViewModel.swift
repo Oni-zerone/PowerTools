@@ -34,3 +34,14 @@ public extension SectionViewModel {
         }
     }
 }
+
+public extension Array where Element == SectionViewModel {
+    
+    public func viewModel(at indexPath: IndexPath) -> ItemViewModel? {
+        return self.item(at: indexPath.section)?.items.item(at: indexPath.item)
+    }
+    
+    public func viewModel(ofKind kind: String, section: Int) -> ItemViewModel? {
+        return self.item(at: section)?.model(for: kind)
+    }
+}
