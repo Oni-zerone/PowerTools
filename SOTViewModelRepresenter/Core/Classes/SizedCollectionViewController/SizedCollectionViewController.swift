@@ -9,18 +9,10 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-open class SizedCollectionViewController: UICollectionViewController {
+public class SizedCollectionViewController: UICollectionViewController {
     
     open var dataSource: CollectionSizedDataSource?
-    
-    public init() {
-        super.init(collectionViewLayout: UICollectionViewLayout())
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
+        
     override open func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,26 +38,5 @@ open class SizedCollectionViewController: UICollectionViewController {
             return
         }
         self.dataSource = CollectionSizedDataSource(view: collectionView, model: [])
-    }
-}
-
-extension SizedCollectionViewController {
-    
-    public var interactionDelegate: InteractionDelegate? {
-        set {
-            self.dataSource?.interactionDelegate = newValue
-        }
-        get {
-            return self.dataSource?.interactionDelegate
-        }
-    }
-    
-    public var scrollViewDelegate: UIScrollViewDelegate? {
-        set {
-            self.dataSource?.scrollViewDelegate = newValue
-        }
-        get {
-            return self.dataSource?.scrollViewDelegate
-        }
     }
 }

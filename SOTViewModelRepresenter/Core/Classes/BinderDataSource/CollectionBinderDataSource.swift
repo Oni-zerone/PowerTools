@@ -9,6 +9,18 @@ import Foundation
 
 open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICollectionViewDataSource {
     
+    override public init(view: UICollectionView, model: [SectionViewModel]) {
+        
+        super.init(view: view, model: model)
+        view.dataSource = self
+    }
+    
+    override open func updateModel(_ model: [SectionViewModel]) {
+        
+        super.updateModel(model)
+        self.view?.reloadData()
+    }
+    
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
     
         return self.model.count

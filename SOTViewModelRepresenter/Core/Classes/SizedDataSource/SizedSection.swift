@@ -11,7 +11,7 @@ public protocol SizedSection: SectionViewModel {
     
     var lineItems: Int? { get }
     
-    var columnReferenceWidth: CGFloat { get }
+    var referenceItemWidth: CGFloat { get }
     
     var sectionInsets: UIEdgeInsets { get }
     

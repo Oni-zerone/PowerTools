@@ -8,7 +8,13 @@
 import Foundation
 
 public class CollectionSizedDataSource: CollectionBinderDataSource, UICollectionViewDelegateFlowLayout {
- 
+    
+    override public func updateModel(_ model: [SectionViewModel]) {
+        
+        self.moduleCache = [:]
+        super.updateModel(model)
+    }
+    
     weak var interactionDelegate: InteractionDelegate?
     
     weak var scrollViewDelegate: UIScrollViewDelegate?
@@ -18,11 +24,11 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
         view.delegate = self
     }
     
-    var moduleCache: [Int: SizeModule] = [:]
+    internal var moduleCache: [Int: SizeModule] = [:]
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        guard let section = self.model[section] as? SizedSection else {
+        guard let section = self.model.item(at: section) as? SizedSection else {
             return .zero
         }
         return section.sectionInsets
@@ -35,6 +41,12 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
             return .zero
         }
         return sizedItem.size(in: collectionView, module: module)
+    }
+    
+    public func invalidateLayout() {
+        
+        self.moduleCache = [:]
+        self.view?.collectionViewLayout.invalidateLayout()
     }
     
     //MARK: - UICollectionViewDelegateFlowLayout

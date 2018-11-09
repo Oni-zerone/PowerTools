@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* CollectionController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		84C95147021E16FF8C243A0E /* Pods_SOTViewModelRepresenter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70E703CF1BCD820626E859 /* Pods_SOTViewModelRepresenter_Example.framework */; };
+		97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E502195812700E7F401 /* ColorViewModel.swift */; };
+		97A34E53219582BA00E7F401 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* GridSection.swift */; };
+		97A34E5A2195881700E7F401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E592195881700E7F401 /* ViewController.swift */; };
+		97A34E5D219591C500E7F401 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */; };
+		97A34E5E219591C500E7F401 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */; };
 		E47B699CC9E454D8CED56F8D /* Pods_SOTViewModelRepresenter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC7ADC15B26D72741791CEE /* Pods_SOTViewModelRepresenter_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,20 +34,25 @@
 
 /* Begin PBXFileReference section */
 		39A2BFAEED913957FEC1551A /* Pods-SOTViewModelRepresenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOTViewModelRepresenter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOTViewModelRepresenter_Example/Pods-SOTViewModelRepresenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4777F5CFBCAE8635092366A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4BCC58175E04CDCC440D064D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4777F5CFBCAE8635092366A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4BCC58175E04CDCC440D064D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SOTViewModelRepresenter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOTViewModelRepresenter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SOTViewModelRepresenter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOTViewModelRepresenter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		97A34E502195812700E7F401 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
+		97A34E52219582BA00E7F401 /* GridSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
+		97A34E592195881700E7F401 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		9B70E703CF1BCD820626E859 /* Pods_SOTViewModelRepresenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOTViewModelRepresenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E55C7BF7C4181D32C08094B /* SOTViewModelRepresenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SOTViewModelRepresenter.podspec; path = ../SOTViewModelRepresenter.podspec; sourceTree = "<group>"; };
+		9E55C7BF7C4181D32C08094B /* SOTViewModelRepresenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SOTViewModelRepresenter.podspec; path = ../SOTViewModelRepresenter.podspec; sourceTree = "<group>"; };
 		B7D8345228C61BED87460A35 /* Pods-SOTViewModelRepresenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOTViewModelRepresenter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOTViewModelRepresenter_Example/Pods-SOTViewModelRepresenter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D7F188D6159AA1B32488F243 /* Pods-SOTViewModelRepresenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOTViewModelRepresenter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOTViewModelRepresenter_Tests/Pods-SOTViewModelRepresenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4C4D2DFC649C05F609A9E7A /* Pods-SOTViewModelRepresenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOTViewModelRepresenter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOTViewModelRepresenter_Tests/Pods-SOTViewModelRepresenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,10 +115,13 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				97A34E4D219580CE00E7F401 /* Model */,
+				97A34E552195839200E7F401 /* ViewControllers */,
+				97A34E542195838300E7F401 /* View */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				97A34E582195880C00E7F401 /* Utils */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for SOTViewModelRepresenter";
@@ -157,6 +170,56 @@
 				EDC7ADC15B26D72741791CEE /* Pods_SOTViewModelRepresenter_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97A34E4D219580CE00E7F401 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E4F219580DD00E7F401 /* Items */,
+				97A34E4E219580D300E7F401 /* Sections */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97A34E4E219580D300E7F401 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E52219582BA00E7F401 /* GridSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		97A34E4F219580DD00E7F401 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E502195812700E7F401 /* ColorViewModel.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		97A34E542195838300E7F401 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */,
+				97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		97A34E552195839200E7F401 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* CollectionController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		97A34E582195880C00E7F401 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				97A34E592195881700E7F401 /* ViewController.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +275,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 6RS7DS4QV5;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -247,6 +311,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				97A34E5E219591C500E7F401 /* ColorCollectionViewCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,8 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				97A34E5D219591C500E7F401 /* ColorCollectionViewCell.swift in Sources */,
+				97A34E5A2195881700E7F401 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* CollectionController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */,
+				97A34E53219582BA00E7F401 /* GridSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +538,9 @@
 			baseConfigurationReference = 39A2BFAEED913957FEC1551A /* Pods-SOTViewModelRepresenter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RS7DS4QV5;
 				INFOPLIST_FILE = SOTViewModelRepresenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -484,7 +555,9 @@
 			baseConfigurationReference = B7D8345228C61BED87460A35 /* Pods-SOTViewModelRepresenter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RS7DS4QV5;
 				INFOPLIST_FILE = SOTViewModelRepresenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
