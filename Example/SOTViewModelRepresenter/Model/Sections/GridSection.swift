@@ -43,6 +43,6 @@ extension GridSection: SizedSection {
     }
     
     var sectionInsets: UIEdgeInsets {
-        return UIEdgeInsets(top: 16.0, left: 8.0, bottom: 16.0, right: 8.0)
+        return UIEdgeInsets(top: 8.0, left: 4.0, bottom: 8.0, right: 4.0)
     }
 }

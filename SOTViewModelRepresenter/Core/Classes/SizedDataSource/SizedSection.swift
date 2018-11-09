@@ -55,11 +55,16 @@ public extension SizedSection {
     func module(for containerView: UIView) -> SizeModule {
         
         let lineItems = CGFloat(self.lineItems ?? containerView.numberOfItems(self.referenceItemWidth))
-        let sectionInsets =  self.sectionInsets.left + self.sectionInsets.right
-        let perpendicular = (containerView.bounds.width - (self.sectionInteritemSpacing * (lineItems - 1)) - sectionInsets) / lineItems
+        let parallelInsets =  self.sectionInsets.left + self.sectionInsets.right
+        let maxWidth = containerView.bounds.width - parallelInsets
+        let perpendicular = floor((maxWidth - self.sectionInteritemSpacing * (lineItems - 1)) / lineItems)
         let parallel = perpendicular * self.itemRatioMultiplier + self.itemRatioConstant
-        let maxWidth = containerView.bounds.width - sectionInsets
-        return SizeModule(referenceDimension: perpendicular, derivedDimension: parallel, direction: containerView.direction, interitemSpacing: self.sectionInteritemSpacing, interlineSpacing: self.sectionInterlineSpacing, maxWidth: maxWidth)
+        return SizeModule(referenceDimension: perpendicular,
+                          derivedDimension: parallel,
+                          direction: containerView.direction,
+                          interitemSpacing: self.sectionInteritemSpacing,
+                          interlineSpacing: self.sectionInterlineSpacing,
+                          maxWidth: maxWidth)
     }
 }
 

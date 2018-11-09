@@ -34,6 +34,22 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
         return section.sectionInsets
     }
     
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        guard let section = self.model.item(at: section) as? SizedSection else {
+            return 0
+        }
+        return section.sectionInteritemSpacing
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+
+        guard let section = self.model.item(at: section) as? SizedSection else {
+            return 0
+        }
+        return section.sectionInterlineSpacing
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         guard let module = self.module(for: indexPath.section, in: collectionView),
