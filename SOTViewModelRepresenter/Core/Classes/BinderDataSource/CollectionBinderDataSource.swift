@@ -15,10 +15,10 @@ open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICol
         view.dataSource = self
     }
     
-    override open func updateModel(_ model: [SectionViewModel]) {
-        
-        super.updateModel(model)
-        self.view?.reloadData()
+    override open var model: [SectionViewModel] {
+        didSet {
+            self.view?.reloadData()
+        }
     }
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {

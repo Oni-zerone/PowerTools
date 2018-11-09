@@ -9,10 +9,10 @@ import Foundation
 
 public class CollectionSizedDataSource: CollectionBinderDataSource, UICollectionViewDelegateFlowLayout {
     
-    override public func updateModel(_ model: [SectionViewModel]) {
-        
-        self.moduleCache = [:]
-        super.updateModel(model)
+    override public var model: [SectionViewModel] {
+        willSet {
+            self.moduleCache = [:]
+        }
     }
     
     weak var interactionDelegate: InteractionDelegate?

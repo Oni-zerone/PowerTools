@@ -34,9 +34,8 @@ public class SizedCollectionViewController: UICollectionViewController {
     
     internal func setupDataSource() {
         
-        guard let collectionView = collectionView else {
-            return
+        if let collectionView = collectionView {
+            self.dataSource = CollectionSizedDataSource(view: collectionView, model: [])
         }
-        self.dataSource = CollectionSizedDataSource(view: collectionView, model: [])
     }
 }
