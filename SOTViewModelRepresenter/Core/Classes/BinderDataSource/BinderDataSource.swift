@@ -9,7 +9,7 @@ import UIKit
 
 open class BinderDataSource<View: UIView>: NSObject {
     
-    public var model: [SectionViewModel]
+    open var model: [SectionViewModel]
     
     public weak var view: View?
     
