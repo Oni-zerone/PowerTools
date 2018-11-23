@@ -54,17 +54,23 @@ public extension SizedSection {
     
     func module(for containerView: UIView) -> SizeModule {
         
-        let lineItems = CGFloat(self.lineItems ?? containerView.numberOfItems(self.referenceItemWidth))
-        let parallelInsets =  self.sectionInsets.left + self.sectionInsets.right
-        let maxWidth = containerView.bounds.width - parallelInsets
-        let perpendicular = floor((maxWidth - self.sectionInteritemSpacing * (lineItems - 1)) / lineItems)
-        let parallel = perpendicular * self.itemRatioMultiplier + self.itemRatioConstant
-        return SizeModule(referenceDimension: perpendicular,
-                          derivedDimension: parallel,
-                          direction: containerView.direction,
+        let sizing = self.referenceSizing(containerView.direction, container: containerView)
+        return SizeModule(referenceSize: sizing.size,
                           interitemSpacing: self.sectionInteritemSpacing,
                           interlineSpacing: self.sectionInterlineSpacing,
-                          maxWidth: maxWidth)
+                          maxWidth: sizing.maxReference)
+    }
+    
+    internal func referenceSizing(_ direction: ContentDirection, container: UIView) -> (size: CGSize, maxReference: CGFloat) {
+        
+        let lineItems = CGFloat(self.lineItems ?? container.numberOfItems(self.referenceItemWidth))
+        let parallelInsets = self.sectionInsets.parallelInsets(for: direction)
+        let maxReference = container.bounds.size.referenceLenght(for: direction) - parallelInsets
+        let interItemsSpace = max(0, self.sectionInteritemSpacing * (lineItems - 1))
+        let reference = floor((maxReference - interItemsSpace) / lineItems)
+        let derived = reference * self.itemRatioMultiplier + self.itemRatioConstant
+        let referenceSize = CGSize.prepare(direction, referenceDimension: reference, derivedDimension: derived)
+        return (size: referenceSize, maxReference: maxReference)
     }
 }
 
@@ -87,5 +93,44 @@ internal extension UIView {
             return .vertical
         }
         return container.contentDirection
+    }
+}
+
+internal extension UIEdgeInsets {
+    
+    func parallelInsets(for direction: ContentDirection) -> CGFloat {
+        
+        switch direction {
+        case .vertical:
+            return self.left + self.right
+        case .horizontal:
+            return self.top + self.right
+        }
+    }
+}
+
+internal extension CGSize {
+    
+    static func prepare(_ direction: ContentDirection, referenceDimension: CGFloat, derivedDimension: CGFloat) -> CGSize {
+        
+        switch direction {
+            
+        case .vertical:
+            return CGSize(width: referenceDimension, height: derivedDimension)
+        case .horizontal:
+            return CGSize(width: derivedDimension, height: referenceDimension)
+        }
+    }
+    
+    func referenceLenght(for direction: ContentDirection) -> CGFloat {
+        
+        switch direction {
+            
+        case .vertical:
+            return self.width
+            
+        case .horizontal:
+            return self.height
+        }
     }
 }

@@ -28,7 +28,9 @@ class CollectionController: UIViewController {
     
     private func setupCollection() {
         
-        let collectionController = SizedCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let collectionController = SizedCollectionViewController(collectionViewLayout: layout)
         collectionController.attach(to: self)
         self.collectionViewController = collectionController
     }

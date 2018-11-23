@@ -17,9 +17,9 @@ public struct SizeModule {
     
     public var interlineSpacing: CGFloat
     
-    internal init(referenceDimension: CGFloat, derivedDimension: CGFloat, direction: ContentDirection, interitemSpacing: CGFloat, interlineSpacing: CGFloat, maxWidth: CGFloat) {
+    internal init(referenceSize: CGSize, interitemSpacing: CGFloat, interlineSpacing: CGFloat, maxWidth: CGFloat) {
         
-        self.moduleSize = direction == .vertical ? CGSize(width: referenceDimension, height: derivedDimension) : CGSize(width: derivedDimension, height: referenceDimension)
+        self.moduleSize = referenceSize
         self.maxWidth = maxWidth
         self.interitemSpacing = interitemSpacing
         self.interlineSpacing = interlineSpacing
@@ -32,4 +32,3 @@ public struct SizeModule {
         return CGSize(width: itemWidth, height: itemHeight)
     }
 }
-

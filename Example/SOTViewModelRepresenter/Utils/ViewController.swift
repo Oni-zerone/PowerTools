@@ -9,7 +9,6 @@ import UIKit
 
 public extension UIViewController {
     
-    @available(iOS 9.0, *)
     public func attach(to parentVC: UIViewController, in view: UIView? = nil) {
         
         guard let containerView = view ?? parentVC.view else {

@@ -35,14 +35,18 @@ extension GridSection: SizedSection {
     }
     
     var sectionInteritemSpacing: CGFloat {
-        return 8.0
-    }
-    
-    var sectionInterlineSpacing: CGFloat {
         return 16.0
     }
     
+    var sectionInterlineSpacing: CGFloat {
+        return 0
+    }
+    
+    var itemRatioMultiplier: CGFloat {
+        return 1.5
+    }
+    
     var sectionInsets: UIEdgeInsets {
-        return UIEdgeInsets(top: 8.0, left: 4.0, bottom: 8.0, right: 4.0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }

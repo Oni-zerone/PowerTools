@@ -65,7 +65,7 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
         self.view?.collectionViewLayout.invalidateLayout()
     }
     
-    //MARK: - UICollectionViewDelegateFlowLayout
+    //MARK: - InteractionDelegate
     
     public func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         
