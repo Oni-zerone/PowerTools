@@ -11,7 +11,7 @@ private let reuseIdentifier = "Cell"
 
 public class SizedCollectionViewController: UICollectionViewController {
     
-    open var dataSource: CollectionSizedDataSource?
+    open var dataSource: GridCollectionDataSource?
         
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ public class SizedCollectionViewController: UICollectionViewController {
     internal func setupDataSource() {
         
         if let collectionView = collectionView {
-            self.dataSource = CollectionSizedDataSource(view: collectionView, model: [])
+            self.dataSource = GridCollectionDataSource(view: collectionView, model: [])
         }
     }
 }

@@ -14,7 +14,7 @@ protocol ColorView {
     func setup(color: UIColor)
 }
 
-struct ColorViewModel: ItemViewModel, SizedItem {
+struct ColorViewModel: ItemViewModel, GridItem {
 
     var descriptor: ItemViewDescriptor
 

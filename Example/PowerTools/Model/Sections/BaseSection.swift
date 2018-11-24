@@ -1,5 +1,5 @@
 //
-//  GridSection.swift
+//  BaseSection.swift
 //  SOTViewModelRepresenter_Example
 //
 //  Created by Andrea Altea on 09/11/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import PowerTools
 
-struct GridSection: SectionViewModel {
+struct BaseSection: SectionViewModel {
 
     var header: ItemViewModel?
 
@@ -28,7 +28,7 @@ struct GridSection: SectionViewModel {
     }
 }
 
-extension GridSection: SizedSection {
+extension BaseSection: GridSection {
 
     var lineItems: Int? {
         return 3

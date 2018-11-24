@@ -15,7 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		92996D832F3E34BA04E3E515 /* Pods_PowerTools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC0DF49510CE77B0C060F52 /* Pods_PowerTools_Example.framework */; };
 		97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E502195812700E7F401 /* ColorViewModel.swift */; };
-		97A34E53219582BA00E7F401 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* GridSection.swift */; };
+		97A34E53219582BA00E7F401 /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* BaseSection.swift */; };
 		97A34E5D219591C500E7F401 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */; };
 		97A34E5E219591C500E7F401 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */; };
 		E606FA296D15AFFFEE942092 /* Pods_PowerTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4CC60DCC64A2C37AA64E30 /* Pods_PowerTools_Tests.framework */; };
@@ -48,7 +48,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		97A34E502195812700E7F401 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
-		97A34E52219582BA00E7F401 /* GridSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
+		97A34E52219582BA00E7F401 /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
 		97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A3AA548B0E8558F776AD334 /* Pods-PowerTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerTools_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		97A34E4E219580D300E7F401 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				97A34E52219582BA00E7F401 /* GridSection.swift */,
+				97A34E52219582BA00E7F401 /* BaseSection.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -412,7 +412,7 @@
 				607FACD81AFB9204008FA782 /* CollectionController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */,
-				97A34E53219582BA00E7F401 /* GridSection.swift in Sources */,
+				97A34E53219582BA00E7F401 /* BaseSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
