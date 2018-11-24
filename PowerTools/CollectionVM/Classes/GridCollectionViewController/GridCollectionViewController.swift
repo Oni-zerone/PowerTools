@@ -1,5 +1,5 @@
 //
-//  SizedCollectionViewController.swift
+//  GridCollectionViewController.swift
 //  SOTViewModelRepresenter
 //
 //  Created by Andrea Altea on 08/11/2018.
@@ -9,7 +9,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-public class SizedCollectionViewController: UICollectionViewController {
+public class GridCollectionViewController: UICollectionViewController {
     
     open var dataSource: GridCollectionDataSource?
         

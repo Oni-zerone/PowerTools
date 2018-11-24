@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CC41B8A0A05DC7B2CC8AAEEC685BEA6B"
-               BuildableName = "PowerTools.framework"
-               BlueprintName = "PowerTools"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+               BuildableName = "PowerTools_Example.app"
+               BlueprintName = "PowerTools_Example"
+               ReferencedContainer = "container:PowerTools.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "PowerTools_Tests.xctest"
+               BlueprintName = "PowerTools_Tests"
+               ReferencedContainer = "container:PowerTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +42,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "PowerTools_Tests.xctest"
+               BlueprintName = "PowerTools_Tests"
+               ReferencedContainer = "container:PowerTools.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -73,10 +97,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CC41B8A0A05DC7B2CC8AAEEC685BEA6B"
-            BuildableName = "PowerTools.framework"
-            BlueprintName = "PowerTools"
-            ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "PowerTools_Example.app"
+            BlueprintName = "PowerTools_Example"
+            ReferencedContainer = "container:PowerTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
