@@ -1,5 +1,5 @@
 //
-//  SizeModule.swift
+//  GridModule.swift
 //  SOTViewModelRepresenter
 //
 //  Created by Andrea Altea on 28/10/18.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct SizeModule {
+public struct GridModule {
     
     public var moduleSize: CGSize
     

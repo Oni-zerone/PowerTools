@@ -2,7 +2,8 @@
   "name": "PowerTools",
   "version": "0.0.1",
   "summary": "Tools for fast and modular app development.",
-  "description": "TODO: Add long description of the pod here.",
+  "swift_version": "4.2",
+  "description": "Fast development tools with a better way to use UICollectionViews",
   "homepage": "https://github.com/Oni-zerone/PowerTools",
   "license": {
     "type": "MIT",

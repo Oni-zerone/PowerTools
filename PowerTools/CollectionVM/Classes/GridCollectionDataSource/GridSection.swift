@@ -1,5 +1,5 @@
 //
-//  SizedSection.swift
+//  GridSection.swift
 //  SOTViewModelRepresenter
 //
 //  Created by Andrea Altea on 28/10/18.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol SizedSection: SectionViewModel {
+public protocol GridSection: SectionViewModel {
     
     var lineItems: Int? { get }
     
@@ -22,7 +22,7 @@ public protocol SizedSection: SectionViewModel {
     var itemRatioConstant: CGFloat { get }
 }
 
-public extension SizedSection {
+public extension GridSection {
     
     var lineItems: Int? {
         return nil
@@ -52,10 +52,10 @@ public extension SizedSection {
         return 0
     }
     
-    func module(for containerView: UIView) -> SizeModule {
+    func module(for containerView: UIView) -> GridModule {
         
         let sizing = self.referenceSizing(containerView.direction, container: containerView)
-        return SizeModule(referenceSize: sizing.size,
+        return GridModule(referenceSize: sizing.size,
                           interitemSpacing: self.sectionInteritemSpacing,
                           interlineSpacing: self.sectionInterlineSpacing,
                           maxWidth: sizing.maxReference)

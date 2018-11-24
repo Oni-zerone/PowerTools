@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class CollectionSizedDataSource: CollectionBinderDataSource, UICollectionViewDelegateFlowLayout {
+public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionViewDelegateFlowLayout {
     
     override public var model: [SectionViewModel] {
         willSet {
@@ -24,11 +24,11 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
         view.delegate = self
     }
     
-    internal var moduleCache: [Int: SizeModule] = [:]
+    internal var moduleCache: [Int: GridModule] = [:]
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        guard let section = self.model.item(at: section) as? SizedSection else {
+        guard let section = self.model.item(at: section) as? GridSection else {
             return .zero
         }
         return section.sectionInsets
@@ -36,7 +36,7 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
-        guard let section = self.model.item(at: section) as? SizedSection else {
+        guard let section = self.model.item(at: section) as? GridSection else {
             return 0
         }
         return section.sectionInteritemSpacing
@@ -44,7 +44,7 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 
-        guard let section = self.model.item(at: section) as? SizedSection else {
+        guard let section = self.model.item(at: section) as? GridSection else {
             return 0
         }
         return section.sectionInterlineSpacing
@@ -53,7 +53,7 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         guard let module = self.module(for: indexPath.section, in: collectionView),
-            let sizedItem = self.model.viewModel(at: indexPath) as? SizedItem else {
+            let sizedItem = self.model.viewModel(at: indexPath) as? GridItem else {
             return .zero
         }
         return sizedItem.size(in: collectionView, module: module)
@@ -179,16 +179,16 @@ public class CollectionSizedDataSource: CollectionBinderDataSource, UICollection
     }
 }
 
-internal extension CollectionSizedDataSource {
+internal extension GridCollectionDataSource {
     
-    func module(for section: Int, in collection: UICollectionView) -> SizeModule? {
+    func module(for section: Int, in collection: UICollectionView) -> GridModule? {
         
         if let module = self.moduleCache[section] {
             return module
         }
         
         guard self.model.indices.contains(section),
-            let sectionViewModel = self.model[section] as? SizedSection else {
+            let sectionViewModel = self.model[section] as? GridSection else {
             return nil
         }
         let module = sectionViewModel.module(for: collection)

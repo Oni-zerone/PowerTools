@@ -42,7 +42,7 @@ class CollectionController: UIViewController {
 
     private func loadContent() {
 
-        var section = self.collectionViewController.model.first as? GridSection ?? GridSection()
+        var section = self.collectionViewController.model.first as? BaseSection ?? BaseSection()
         section.append(ColorViewModel(descriptor: ColorCollectionViewCell.Descriptor(), color: .red))
         let newContent = [section]
         self.collectionViewController.model = newContent

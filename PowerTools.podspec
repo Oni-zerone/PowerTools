@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.name             = 'PowerTools'
   s.version          = '0.0.1'
   s.summary          = 'Tools for fast and modular app development.'
-
+  s.swift_version    = '4.2'
+  
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -18,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Fast development tools with a better way to use UICollectionViews
                        DESC
 
   s.homepage         = 'https://github.com/Oni-zerone/PowerTools'
@@ -28,7 +29,7 @@ TODO: Add long description of the pod here.
   s.social_media_url = 'https://twitter.com/Oni_zerone'
 
   s.ios.deployment_target = '9.0'
-
+  
   s.default_subspec = 'Core', 'CollectionVM'
   s.subspec 'Core' do |sp|
       sp.source_files = 'PowerTools/Core/Classes/**/*'
@@ -36,6 +37,7 @@ TODO: Add long description of the pod here.
   
   s.subspec 'CollectionVM' do |sp|
       sp.source_files = 'PowerTools/CollectionVM/Classes/**/*'
+      sp.dependency 'PowerTools/Core'
   end
   
   # s.resource_bundles = {

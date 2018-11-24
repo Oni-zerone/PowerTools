@@ -1,5 +1,5 @@
 import XCTest
-import SOTViewModelRepresenter
+import PowerTools
 
 class Tests: XCTestCase {
 

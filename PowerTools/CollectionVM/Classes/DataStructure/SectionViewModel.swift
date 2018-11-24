@@ -23,10 +23,10 @@ public extension SectionViewModel {
     public func model(for elementOfKind: String) -> ItemViewModel? {
         
         switch elementOfKind {
-        case UICollectionElementKindSectionHeader:
+        case UICollectionView.elementKindSectionHeader:
             return self.header
             
-        case UICollectionElementKindSectionFooter:
+        case UICollectionView.elementKindSectionFooter:
             return self.footer
             
         default:
