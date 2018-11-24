@@ -31,7 +31,12 @@
     },
     {
       "name": "CollectionVM",
-      "source_files": "PowerTools/CollectionVM/Classes/**/*"
+      "source_files": "PowerTools/CollectionVM/Classes/**/*",
+      "dependencies": {
+        "PowerTools/Core": [
+
+        ]
+      }
     }
   ]
 }
