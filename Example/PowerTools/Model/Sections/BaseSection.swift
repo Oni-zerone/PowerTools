@@ -35,11 +35,11 @@ extension BaseSection: GridSection {
     }
 
     var sectionInteritemSpacing: CGFloat {
-        return 16.0
+        return 8.0
     }
 
     var sectionInterlineSpacing: CGFloat {
-        return 0
+        return 16.0
     }
 
     var itemRatioMultiplier: CGFloat {
@@ -47,6 +47,6 @@ extension BaseSection: GridSection {
     }
 
     var sectionInsets: UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 }
