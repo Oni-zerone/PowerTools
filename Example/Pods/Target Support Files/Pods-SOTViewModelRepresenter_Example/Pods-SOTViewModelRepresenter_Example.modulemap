@@ -1,6 +1,0 @@
-framework module Pods_SOTViewModelRepresenter_Example {
-  umbrella header "Pods-SOTViewModelRepresenter_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

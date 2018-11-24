@@ -1,6 +1,0 @@
-framework module SOTViewModelRepresenter {
-  umbrella header "SOTViewModelRepresenter-umbrella.h"
-
-  export *
-  module * { export * }
-}
