@@ -1,0 +1,6 @@
+framework module Pods_PowerTools_Tests {
+  umbrella header "Pods-PowerTools_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module PowerTools {
+  umbrella header "PowerTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

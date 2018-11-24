@@ -1,16 +1,20 @@
 PODS:
-  - SOTViewModelRepresenter (0.1.0)
+  - PowerTools (0.0.1):
+    - PowerTools/CollectionVM (= 0.0.1)
+    - PowerTools/Core (= 0.0.1)
+  - PowerTools/CollectionVM (0.0.1)
+  - PowerTools/Core (0.0.1)
 
 DEPENDENCIES:
-  - SOTViewModelRepresenter (from `../`)
+  - PowerTools (from `../`)
 
 EXTERNAL SOURCES:
-  SOTViewModelRepresenter:
+  PowerTools:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SOTViewModelRepresenter: 3d2261705614783b7314a302089e510bb938786b
+  PowerTools: c42033c340d784196b9b6072b70f19879e6d0455
 
-PODFILE CHECKSUM: dd8b03508727ac534ec684f0b1eceb4762c7798a
+PODFILE CHECKSUM: 6dcc01929e4df3112e545b84184b5274aabd7ad6
 
 COCOAPODS: 1.5.3
