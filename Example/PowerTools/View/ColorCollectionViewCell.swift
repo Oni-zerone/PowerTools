@@ -9,22 +9,20 @@
 import UIKit
 import PowerTools
 
-class ColorCollectionViewCell: UICollectionViewCell {
-   
-}
+class ColorCollectionViewCell: UICollectionViewCell {   }
 
 extension ColorCollectionViewCell {
-    
+
     static let nibIdentifier = String(describing: ColorCollectionViewCell.self)
-    
+
     struct Descriptor: ItemViewDescriptor {
-        
+
         let reuseIdentifier: String = ColorCollectionViewCell.nibIdentifier
     }
 }
 
 extension ColorCollectionViewCell: ColorView {
-    
+
     func setup(color: UIColor) {
         self.backgroundColor = color
     }
