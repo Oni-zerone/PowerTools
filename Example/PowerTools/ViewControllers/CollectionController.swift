@@ -11,7 +11,7 @@ import PowerTools
 
 class CollectionController: UIViewController {
 
-    weak var collectionViewController: SizedCollectionViewController!
+    weak var collectionViewController: GridCollectionViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class CollectionController: UIViewController {
 
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        let collectionController = SizedCollectionViewController(collectionViewLayout: layout)
+        let collectionController = GridCollectionViewController(collectionViewLayout: layout)
         collectionController.attach(to: self)
         self.collectionViewController = collectionController
     }
