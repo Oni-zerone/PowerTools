@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E1F45FBCAEC5998D0D9249F79817511 /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F745C86DED9BE0FF9A60DB4A5403102 /* GridModule.swift */; };
-		0E4BDD9759DF35737ADC50DFBA521CF0 /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A460782F9E72B246EC37DA5ACAB9D37 /* BinderDataSource.swift */; };
-		2084E70C12C6EDCF2FF1F56120B80BA4 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A3125746E56B6E8086D3DF3EF5E18 /* GridItem.swift */; };
-		2541DDF0A9AE0FD511E163D7820EE77A /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701BB061A7DC8BD0B000FB5D54903B4 /* CollectionDirectionableContainer.swift */; };
+		1890AE8B05924E68CC4FC5B387DB5E4D /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B427FDBB0DC7422D0C2A38C2FF2EA59E /* BinderDataSource.swift */; };
+		1DF1A9C414CF69A9DEC369017FDC7E7A /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D797F2629C40D0A3B4FA936B871CAD3 /* GridItem.swift */; };
+		1F6E921B399153D86C0678CDDC11DDC1 /* SizedCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F09CEF0B84DC2695F928A429CC8B85 /* SizedCollectionViewController+DataSource.swift */; };
 		291834E92E37DB3AE6AA78AA5510FE7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		2A49FEFF748637000A508B2F53F2CC0E /* SizedCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4226BF089E17194281B5D2C009B516 /* SizedCollectionViewController+CellRegistration.swift */; };
-		37EE7DD4EEB43C0290E0F1D548D9C541 /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C128266AD342B18C7003FA431A08E /* CollectionBinderDataSource.swift */; };
-		406B4143835B4AF28AC4580BDB97B6FF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A5694CC4D07A61A6F1D5FC8214AD5D /* Array.swift */; };
-		47CF09F134E64FAA03F241659384ADDA /* PowerTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8C3BEC34C106613C2F970363A3905D /* PowerTools-dummy.m */; };
+		2F6AB6317463B089D2077AFF4C00C346 /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD081705E8788ABDB476117B609B6C2 /* CollectionBinderDataSource.swift */; };
+		4572B9A4F4369212764636F7AD7AB979 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67C9B843B84E389805B964ABE47E8D /* ItemViewModel.swift */; };
+		4F9D5325854324BB3532FAB652FADCCA /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08DA23E9BB72A4DD495A7F14D7E877 /* GridSection.swift */; };
 		515F90DC1D91DF519A3179D0BEF8103C /* Pods-PowerTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 680C89CB98DDFF1DF0E3852B1E418653 /* Pods-PowerTools_Example-dummy.m */; };
-		6AA902BB5B86B72540490A42A555695C /* TableDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A50387821FEB313BCCCD6013039960C /* TableDirectionableContainer.swift */; };
-		6E092CEDBF384C45C338923E425FFB84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31AB3EF8EE674981BAFB222C1686C28 /* ViewController.swift */; };
-		7F3831C869B8B81E4E142BDCABF3133F /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394ACBCB796002D34B17888E65789B93 /* GridCollectionDataSource.swift */; };
-		8CBC9175E4C04068238EB0BD0D447CAF /* TableBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF87FE8669389AA8F7CD3F22F79FC /* TableBinderDataSource.swift */; };
+		5204C52DD74810C54F541A78A7C4AD5E /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE6B91898B3B4D6D750683DD41E202 /* SectionViewModel.swift */; };
+		585E526099C8410E4750CDD138A863AC /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B95AC2F69967F871AEAD33FF02CABC /* DirectionableContainer.swift */; };
+		5DD3A6A3E18CFFF6DB8B6B1328B3A5B3 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768CE9F0A3E00C2EDA30E0ED7C424AA7 /* InteractionDelegate.swift */; };
+		69B16E1C889CA3D27014BB7A73B8A1E0 /* TableBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14EDC08E08A73D718B7A51D86107C07 /* TableBinderDataSource.swift */; };
+		728B28E18A1E1C4AA8CCA7378B96707C /* PowerTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8C3BEC34C106613C2F970363A3905D /* PowerTools-dummy.m */; };
+		7C5513630B1BCB0E72D10F946DDAE6AD /* TableDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE04AD3B61C102540FED6F4B043C433 /* TableDirectionableContainer.swift */; };
+		7D87BD7A74FCC703CAC34B212935D1FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31AB3EF8EE674981BAFB222C1686C28 /* ViewController.swift */; };
+		92BC76AEC419BF2AD07CCA4DA0A5D4D0 /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0545B1A927684E9D2C65DCDB35C785F5 /* CollectionDirectionableContainer.swift */; };
 		98AF3A5CC7F5DFB3B8BD387A280A8BCF /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B144574D84179E344CA7DAEF6260474B /* Pods-PowerTools_Tests-dummy.m */; };
+		99399114D93779A5F59DB7E492B2F3F4 /* SizedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F13C150E2529B609B1381B99106FD7 /* SizedCollectionViewController.swift */; };
 		9D6B58A2AF2C710DDE7D25E45D25C77F /* Pods-PowerTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2541E60D3703881519A0CF8BCDE21949 /* Pods-PowerTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1B5078140DDD0B533011162DD8B79ED /* PowerTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43CE0A3680541E9DABBF0DDEA30F5E66 /* PowerTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A280F45BD781789CFC239F13F8094C84 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A71826217012657815902B014678A /* GridSection.swift */; };
-		ABB7AB8678F7B57527D57C1411113DA2 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DA0BEADB0984D3A659CB99AACBD588 /* SectionViewModel.swift */; };
+		A6DAAA00D7CC0CF8DC202572B51FC3E5 /* SizedCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29595C3EFF4B893E3B2EBDDE36EA447A /* SizedCollectionViewController+CellRegistration.swift */; };
 		AC65E007A08D9EB3BE897F355BA073A6 /* Pods-PowerTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 988BF305502EBFE79B6ABF8DFB717B34 /* Pods-PowerTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C61FE5A9759F0B5D43EF73D667207E92 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4BA5D7F89E32989D7643FB5753BBC /* InteractionDelegate.swift */; };
-		D415DD7457DE18697E52622E3EA2C518 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74650FAB96959A6DD23AD09EFAA0B4AA /* ItemViewModel.swift */; };
-		EC9723B8B8DE16D556F2B911658F0E00 /* SizedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DAFC5F3D6A62B4E88D305C040E5AFB /* SizedCollectionViewController.swift */; };
-		F094AD881962B5D7B24F12A862DB82C7 /* SizedCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FE0269EC74C5ABA6D91DA248546A25 /* SizedCollectionViewController+DataSource.swift */; };
+		CFEF2B04A35CAD512282B1276A8F108E /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D22FB64529A747297AD0294D7D76461 /* GridCollectionDataSource.swift */; };
+		D1437D853B91D42DA7C08FB2781E2111 /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC3386C9AFB204FD4EF49C34DA18DF /* GridModule.swift */; };
+		DECC18DCF440FD267ACE4AF9CE24FF49 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A5694CC4D07A61A6F1D5FC8214AD5D /* Array.swift */; };
 		F70FE9A178FD93C910B09EA9CF0E4ECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		FB035A61E93C808A73949F1DB81721CC /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787B2F4BD4B2D4566060D957686710E /* DirectionableContainer.swift */; };
 		FD98511A77B99466C7DDB237556CDBE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,57 +55,57 @@
 
 /* Begin PBXFileReference section */
 		01463CDE34D837A12E533D3C53D42EDC /* Pods-PowerTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0545B1A927684E9D2C65DCDB35C785F5 /* CollectionDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionDirectionableContainer.swift; sourceTree = "<group>"; };
 		0955303179FC616CAF0111F38C51BE00 /* Pods-PowerTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PowerTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1F745C86DED9BE0FF9A60DB4A5403102 /* GridModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridModule.swift; sourceTree = "<group>"; };
+		14F09CEF0B84DC2695F928A429CC8B85 /* SizedCollectionViewController+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SizedCollectionViewController+DataSource.swift"; sourceTree = "<group>"; };
+		1BDE6B91898B3B4D6D750683DD41E202 /* SectionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		1F86EB44ECBFBC155B2F54B1FD98CD95 /* Pods-PowerTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2541E60D3703881519A0CF8BCDE21949 /* Pods-PowerTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PowerTools_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2787B2F4BD4B2D4566060D957686710E /* DirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DirectionableContainer.swift; sourceTree = "<group>"; };
-		3150166B8FDB0A51FD74FE696753D9B8 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E5694E8A6786E2A1F3B78439CEDDC3 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PowerTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29595C3EFF4B893E3B2EBDDE36EA447A /* SizedCollectionViewController+CellRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SizedCollectionViewController+CellRegistration.swift"; sourceTree = "<group>"; };
+		3150166B8FDB0A51FD74FE696753D9B8 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Example.framework; path = "Pods-PowerTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E5694E8A6786E2A1F3B78439CEDDC3 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerTools.framework; path = PowerTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F25F344C99EC3A3CB40983407DDA78 /* Pods-PowerTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Example.modulemap"; sourceTree = "<group>"; };
-		394ACBCB796002D34B17888E65789B93 /* GridCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionDataSource.swift; sourceTree = "<group>"; };
-		3D2E9E251F56E9C59D48C524B1B9F6A0 /* Pods_PowerTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B95AC2F69967F871AEAD33FF02CABC /* DirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DirectionableContainer.swift; sourceTree = "<group>"; };
+		3D2E9E251F56E9C59D48C524B1B9F6A0 /* Pods_PowerTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Tests.framework; path = "Pods-PowerTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CE0A3680541E9DABBF0DDEA30F5E66 /* PowerTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerTools-umbrella.h"; sourceTree = "<group>"; };
 		450FE61DD7EB0615A39606392C65B44A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A67C9B843B84E389805B964ABE47E8D /* ItemViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		51C9838C308F837511D2655A42609389 /* Pods-PowerTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PowerTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		540B74B4B9EFA9C68F94563ED2CF4566 /* Pods-PowerTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5701BB061A7DC8BD0B000FB5D54903B4 /* CollectionDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionDirectionableContainer.swift; sourceTree = "<group>"; };
-		578A71826217012657815902B014678A /* GridSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
 		57AEDA1A7A14DE609438F39477D40687 /* PowerTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerTools-prefix.pch"; sourceTree = "<group>"; };
+		5BD081705E8788ABDB476117B609B6C2 /* CollectionBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSource.swift; sourceTree = "<group>"; };
 		5C36BEB7676C01B55CE182F4EABA98CD /* Pods-PowerTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5D797F2629C40D0A3B4FA936B871CAD3 /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		5F6E9D51DC53655BA728181ACF1A2BFD /* PowerTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PowerTools.modulemap; sourceTree = "<group>"; };
 		680C89CB98DDFF1DF0E3852B1E418653 /* Pods-PowerTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Example-dummy.m"; sourceTree = "<group>"; };
-		6A460782F9E72B246EC37DA5ACAB9D37 /* BinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BinderDataSource.swift; sourceTree = "<group>"; };
-		6A50387821FEB313BCCCD6013039960C /* TableDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableDirectionableContainer.swift; sourceTree = "<group>"; };
+		6D22FB64529A747297AD0294D7D76461 /* GridCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionDataSource.swift; sourceTree = "<group>"; };
 		71D7022381101387D700096164DF7B8C /* Pods-PowerTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		74650FAB96959A6DD23AD09EFAA0B4AA /* ItemViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
-		74FE0269EC74C5ABA6D91DA248546A25 /* SizedCollectionViewController+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SizedCollectionViewController+DataSource.swift"; sourceTree = "<group>"; };
+		768CE9F0A3E00C2EDA30E0ED7C424AA7 /* InteractionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegate.swift; sourceTree = "<group>"; };
 		76D0B86AD3B15F02052734B8783BBA12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77DA0BEADB0984D3A659CB99AACBD588 /* SectionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
-		7E4226BF089E17194281B5D2C009B516 /* SizedCollectionViewController+CellRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SizedCollectionViewController+CellRegistration.swift"; sourceTree = "<group>"; };
-		7E5C128266AD342B18C7003FA431A08E /* CollectionBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSource.swift; sourceTree = "<group>"; };
-		7EB4BA5D7F89E32989D7643FB5753BBC /* InteractionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegate.swift; sourceTree = "<group>"; };
-		8ADEF87FE8669389AA8F7CD3F22F79FC /* TableBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableBinderDataSource.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9542F9AB609FF6B3E7373FE0C4C944F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988BF305502EBFE79B6ABF8DFB717B34 /* Pods-PowerTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PowerTools_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D3A3125746E56B6E8086D3DF3EF5E18 /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
-		A3DAFC5F3D6A62B4E88D305C040E5AFB /* SizedCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SizedCollectionViewController.swift; sourceTree = "<group>"; };
 		AE8C3BEC34C106613C2F970363A3905D /* PowerTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PowerTools-dummy.m"; sourceTree = "<group>"; };
 		B144574D84179E344CA7DAEF6260474B /* Pods-PowerTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Tests-dummy.m"; sourceTree = "<group>"; };
+		B427FDBB0DC7422D0C2A38C2FF2EA59E /* BinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BinderDataSource.swift; sourceTree = "<group>"; };
 		BE0154F3DF180185CDA7019BA850A2A5 /* Pods-PowerTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C28DD5732BB98903048D76F8D047EFDE /* Pods-PowerTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4110AE08FF1D11FAAA163D1F4A19521 /* Pods-PowerTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C47C2D02A870882502DA8AD09F83E085 /* PowerTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PowerTools.xcconfig; sourceTree = "<group>"; };
 		C7A5694CC4D07A61A6F1D5FC8214AD5D /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = PowerTools/Core/Classes/Utils/Array.swift; sourceTree = "<group>"; };
-		CBD1488D1EFB5D61FAEA49ECBDC49DDF /* PowerTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PowerTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CBD1488D1EFB5D61FAEA49ECBDC49DDF /* PowerTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PowerTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CDCC3386C9AFB204FD4EF49C34DA18DF /* GridModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridModule.swift; sourceTree = "<group>"; };
+		CFE04AD3B61C102540FED6F4B043C433 /* TableDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableDirectionableContainer.swift; sourceTree = "<group>"; };
+		D14EDC08E08A73D718B7A51D86107C07 /* TableBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableBinderDataSource.swift; sourceTree = "<group>"; };
+		D1F13C150E2529B609B1381B99106FD7 /* SizedCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SizedCollectionViewController.swift; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DD7F9A36D65C617396E98C4CD2D70D8C /* Pods-PowerTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Tests.modulemap"; sourceTree = "<group>"; };
 		E31AB3EF8EE674981BAFB222C1686C28 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PowerTools/Core/Classes/Utils/ViewController.swift; sourceTree = "<group>"; };
-		E57115F206FE3895326BA7166D931630 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E57115F206FE3895326BA7166D931630 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		EA244CDE63F21790EAFEEB1547AFC54B /* Pods-PowerTools_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Example-resources.sh"; sourceTree = "<group>"; };
+		EC08DA23E9BB72A4DD495A7F14D7E877 /* GridSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
 		EDBC2FDBEB8470F714F5CDBF954D6FDC /* Pods-PowerTools_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Tests-resources.sh"; sourceTree = "<group>"; };
-		F8CBAD797373737535385B5B89A5A1C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F8CBAD797373737535385B5B89A5A1C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +154,41 @@
 			path = "Target Support Files/Pods-PowerTools_Tests";
 			sourceTree = "<group>";
 		};
+		1F026A86C526B5F5B8316F937B561A3C /* GridCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D1F13C150E2529B609B1381B99106FD7 /* SizedCollectionViewController.swift */,
+				29595C3EFF4B893E3B2EBDDE36EA447A /* SizedCollectionViewController+CellRegistration.swift */,
+				14F09CEF0B84DC2695F928A429CC8B85 /* SizedCollectionViewController+DataSource.swift */,
+			);
+			name = GridCollectionViewController;
+			path = PowerTools/CollectionVM/Classes/GridCollectionViewController;
+			sourceTree = "<group>";
+		};
+		2A0FAECA0E425F15B0E704556E7A8197 /* CollectionVM */ = {
+			isa = PBXGroup;
+			children = (
+				3607A90BAFF189BF5DD4DDA37E627985 /* BinderDataSource */,
+				42E3B639D118E79F35CB6E6129A9EF3F /* DataStructure */,
+				8B2BFF171C196AEBAB24FA85A0EF2622 /* Delegates */,
+				6E7AE1B27A485242691D9056D883901B /* GridCollectionDataSource */,
+				1F026A86C526B5F5B8316F937B561A3C /* GridCollectionViewController */,
+			);
+			name = CollectionVM;
+			sourceTree = "<group>";
+		};
+		2B7EF435F94D7B7AF18FBA05F9817516 /* SizeModule */ = {
+			isa = PBXGroup;
+			children = (
+				0545B1A927684E9D2C65DCDB35C785F5 /* CollectionDirectionableContainer.swift */,
+				38B95AC2F69967F871AEAD33FF02CABC /* DirectionableContainer.swift */,
+				CDCC3386C9AFB204FD4EF49C34DA18DF /* GridModule.swift */,
+				CFE04AD3B61C102540FED6F4B043C433 /* TableDirectionableContainer.swift */,
+			);
+			name = SizeModule;
+			path = SizeModule;
+			sourceTree = "<group>";
+		};
 		2B90638FBB86FFB2557F4B4D0CE861AD /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,13 +198,25 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		2BD98250FD327665B9255BE00162D835 /* Delegates */ = {
+		3607A90BAFF189BF5DD4DDA37E627985 /* BinderDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				7EB4BA5D7F89E32989D7643FB5753BBC /* InteractionDelegate.swift */,
+				B427FDBB0DC7422D0C2A38C2FF2EA59E /* BinderDataSource.swift */,
+				5BD081705E8788ABDB476117B609B6C2 /* CollectionBinderDataSource.swift */,
+				D14EDC08E08A73D718B7A51D86107C07 /* TableBinderDataSource.swift */,
 			);
-			name = Delegates;
-			path = PowerTools/CollectionVM/Classes/Delegates;
+			name = BinderDataSource;
+			path = PowerTools/CollectionVM/Classes/BinderDataSource;
+			sourceTree = "<group>";
+		};
+		42E3B639D118E79F35CB6E6129A9EF3F /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				4A67C9B843B84E389805B964ABE47E8D /* ItemViewModel.swift */,
+				1BDE6B91898B3B4D6D750683DD41E202 /* SectionViewModel.swift */,
+			);
+			name = DataStructure;
+			path = PowerTools/CollectionVM/Classes/DataStructure;
 			sourceTree = "<group>";
 		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
@@ -198,6 +245,18 @@
 			path = "Target Support Files/Pods-PowerTools_Example";
 			sourceTree = "<group>";
 		};
+		6E7AE1B27A485242691D9056D883901B /* GridCollectionDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6D22FB64529A747297AD0294D7D76461 /* GridCollectionDataSource.swift */,
+				5D797F2629C40D0A3B4FA936B871CAD3 /* GridItem.swift */,
+				EC08DA23E9BB72A4DD495A7F14D7E877 /* GridSection.swift */,
+				2B7EF435F94D7B7AF18FBA05F9817516 /* SizeModule */,
+			);
+			name = GridCollectionDataSource;
+			path = PowerTools/CollectionVM/Classes/GridCollectionDataSource;
+			sourceTree = "<group>";
+		};
 		6F4BF522E273BFE1204B92F2E501053F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,18 +279,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		794B6813160C673031D90FC0E686F503 /* GridCollectionDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				394ACBCB796002D34B17888E65789B93 /* GridCollectionDataSource.swift */,
-				9D3A3125746E56B6E8086D3DF3EF5E18 /* GridItem.swift */,
-				578A71826217012657815902B014678A /* GridSection.swift */,
-				F7F2A7DAA3D0C997E126F7876BDEF5F0 /* SizeModule */,
-			);
-			name = GridCollectionDataSource;
-			path = PowerTools/CollectionVM/Classes/GridCollectionDataSource;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +293,7 @@
 		843F8ABDACC2BCD50854307756C602B5 /* PowerTools */ = {
 			isa = PBXGroup;
 			children = (
-				8FFC37FB0BCEC9AA06127E71BD451581 /* CollectionVM */,
+				2A0FAECA0E425F15B0E704556E7A8197 /* CollectionVM */,
 				2B90638FBB86FFB2557F4B4D0CE861AD /* Core */,
 				D1FCE3EBA4B35D2AB904E8A21E51293B /* Pod */,
 				6F4BF522E273BFE1204B92F2E501053F /* Support Files */,
@@ -255,16 +302,13 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		8FFC37FB0BCEC9AA06127E71BD451581 /* CollectionVM */ = {
+		8B2BFF171C196AEBAB24FA85A0EF2622 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				B41389E6EB68A49A95DA4E07E70E423D /* BinderDataSource */,
-				B43B4C6CE1EA694B491A364F644E5116 /* DataStructure */,
-				2BD98250FD327665B9255BE00162D835 /* Delegates */,
-				B60EF92A5DE7FEA66D88BE666781911F /* GridCollectionViewController */,
-				794B6813160C673031D90FC0E686F503 /* GridCollectionDataSource */,
+				768CE9F0A3E00C2EDA30E0ED7C424AA7 /* InteractionDelegate.swift */,
 			);
-			name = CollectionVM;
+			name = Delegates;
+			path = PowerTools/CollectionVM/Classes/Delegates;
 			sourceTree = "<group>";
 		};
 		A6A54ACCDC522F2B362F85CBBA7DFE04 /* Products */ = {
@@ -286,38 +330,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B41389E6EB68A49A95DA4E07E70E423D /* BinderDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				6A460782F9E72B246EC37DA5ACAB9D37 /* BinderDataSource.swift */,
-				7E5C128266AD342B18C7003FA431A08E /* CollectionBinderDataSource.swift */,
-				8ADEF87FE8669389AA8F7CD3F22F79FC /* TableBinderDataSource.swift */,
-			);
-			name = BinderDataSource;
-			path = PowerTools/CollectionVM/Classes/BinderDataSource;
-			sourceTree = "<group>";
-		};
-		B43B4C6CE1EA694B491A364F644E5116 /* DataStructure */ = {
-			isa = PBXGroup;
-			children = (
-				74650FAB96959A6DD23AD09EFAA0B4AA /* ItemViewModel.swift */,
-				77DA0BEADB0984D3A659CB99AACBD588 /* SectionViewModel.swift */,
-			);
-			name = DataStructure;
-			path = PowerTools/CollectionVM/Classes/DataStructure;
-			sourceTree = "<group>";
-		};
-		B60EF92A5DE7FEA66D88BE666781911F /* GridCollectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A3DAFC5F3D6A62B4E88D305C040E5AFB /* SizedCollectionViewController.swift */,
-				7E4226BF089E17194281B5D2C009B516 /* SizedCollectionViewController+CellRegistration.swift */,
-				74FE0269EC74C5ABA6D91DA248546A25 /* SizedCollectionViewController+DataSource.swift */,
-			);
-			name = GridCollectionViewController;
-			path = PowerTools/CollectionVM/Classes/GridCollectionViewController;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,17 +346,6 @@
 				E57115F206FE3895326BA7166D931630 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		F7F2A7DAA3D0C997E126F7876BDEF5F0 /* SizeModule */ = {
-			isa = PBXGroup;
-			children = (
-				5701BB061A7DC8BD0B000FB5D54903B4 /* CollectionDirectionableContainer.swift */,
-				2787B2F4BD4B2D4566060D957686710E /* DirectionableContainer.swift */,
-				1F745C86DED9BE0FF9A60DB4A5403102 /* GridModule.swift */,
-				6A50387821FEB313BCCCD6013039960C /* TableDirectionableContainer.swift */,
-			);
-			path = SizeModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,7 +421,7 @@
 			buildConfigurationList = 89F36D306D3D3F48BC86370384863811 /* Build configuration list for PBXNativeTarget "PowerTools" */;
 			buildPhases = (
 				FAEBDCCB49F7EE570EB6A47F76119844 /* Headers */,
-				F1CCACD5CCA52A261AF6E8515245F1B0 /* Sources */,
+				9ECC05D6ED68133E756A8D15ACD707FD /* Sources */,
 				873152A8A38C180F64B27F8A83C2645B /* Frameworks */,
 				B61FA5DDB40D276AC3F279E065C36F87 /* Resources */,
 			);
@@ -441,11 +442,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					CC41B8A0A05DC7B2CC8AAEEC685BEA6B = {
-						LastSwiftMigration = 1010;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -499,37 +495,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ECC05D6ED68133E756A8D15ACD707FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECC18DCF440FD267ACE4AF9CE24FF49 /* Array.swift in Sources */,
+				1890AE8B05924E68CC4FC5B387DB5E4D /* BinderDataSource.swift in Sources */,
+				2F6AB6317463B089D2077AFF4C00C346 /* CollectionBinderDataSource.swift in Sources */,
+				92BC76AEC419BF2AD07CCA4DA0A5D4D0 /* CollectionDirectionableContainer.swift in Sources */,
+				585E526099C8410E4750CDD138A863AC /* DirectionableContainer.swift in Sources */,
+				CFEF2B04A35CAD512282B1276A8F108E /* GridCollectionDataSource.swift in Sources */,
+				1DF1A9C414CF69A9DEC369017FDC7E7A /* GridItem.swift in Sources */,
+				D1437D853B91D42DA7C08FB2781E2111 /* GridModule.swift in Sources */,
+				4F9D5325854324BB3532FAB652FADCCA /* GridSection.swift in Sources */,
+				5DD3A6A3E18CFFF6DB8B6B1328B3A5B3 /* InteractionDelegate.swift in Sources */,
+				4572B9A4F4369212764636F7AD7AB979 /* ItemViewModel.swift in Sources */,
+				728B28E18A1E1C4AA8CCA7378B96707C /* PowerTools-dummy.m in Sources */,
+				5204C52DD74810C54F541A78A7C4AD5E /* SectionViewModel.swift in Sources */,
+				A6DAAA00D7CC0CF8DC202572B51FC3E5 /* SizedCollectionViewController+CellRegistration.swift in Sources */,
+				1F6E921B399153D86C0678CDDC11DDC1 /* SizedCollectionViewController+DataSource.swift in Sources */,
+				99399114D93779A5F59DB7E492B2F3F4 /* SizedCollectionViewController.swift in Sources */,
+				69B16E1C889CA3D27014BB7A73B8A1E0 /* TableBinderDataSource.swift in Sources */,
+				7C5513630B1BCB0E72D10F946DDAE6AD /* TableDirectionableContainer.swift in Sources */,
+				7D87BD7A74FCC703CAC34B212935D1FE /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9CC8532C6516E7C6342363FB5C847BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				98AF3A5CC7F5DFB3B8BD387A280A8BCF /* Pods-PowerTools_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1CCACD5CCA52A261AF6E8515245F1B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				406B4143835B4AF28AC4580BDB97B6FF /* Array.swift in Sources */,
-				0E4BDD9759DF35737ADC50DFBA521CF0 /* BinderDataSource.swift in Sources */,
-				37EE7DD4EEB43C0290E0F1D548D9C541 /* CollectionBinderDataSource.swift in Sources */,
-				2541DDF0A9AE0FD511E163D7820EE77A /* CollectionDirectionableContainer.swift in Sources */,
-				7F3831C869B8B81E4E142BDCABF3133F /* GridCollectionDataSource.swift in Sources */,
-				FB035A61E93C808A73949F1DB81721CC /* DirectionableContainer.swift in Sources */,
-				C61FE5A9759F0B5D43EF73D667207E92 /* InteractionDelegate.swift in Sources */,
-				D415DD7457DE18697E52622E3EA2C518 /* ItemViewModel.swift in Sources */,
-				47CF09F134E64FAA03F241659384ADDA /* PowerTools-dummy.m in Sources */,
-				ABB7AB8678F7B57527D57C1411113DA2 /* SectionViewModel.swift in Sources */,
-				2A49FEFF748637000A508B2F53F2CC0E /* SizedCollectionViewController+CellRegistration.swift in Sources */,
-				F094AD881962B5D7B24F12A862DB82C7 /* SizedCollectionViewController+DataSource.swift in Sources */,
-				EC9723B8B8DE16D556F2B911658F0E00 /* SizedCollectionViewController.swift in Sources */,
-				2084E70C12C6EDCF2FF1F56120B80BA4 /* GridItem.swift in Sources */,
-				A280F45BD781789CFC239F13F8094C84 /* GridSection.swift in Sources */,
-				0E1F45FBCAEC5998D0D9249F79817511 /* GridModule.swift in Sources */,
-				8CBC9175E4C04068238EB0BD0D447CAF /* TableBinderDataSource.swift in Sources */,
-				6AA902BB5B86B72540490A42A555695C /* TableDirectionableContainer.swift in Sources */,
-				6E092CEDBF384C45C338923E425FFB84 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,38 +647,6 @@
 			};
 			name = Debug;
 		};
-		57B9DC57A099D0FAB5A7117458B3DD85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C47C2D02A870882502DA8AD09F83E085 /* PowerTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools/PowerTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools/PowerTools.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -738,13 +702,14 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		704D4EFEDDCC0AEBBCC9A633CDA85C25 /* Debug */ = {
+		706AB13796D6964B1701FAEE4CE9B5A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C47C2D02A870882502DA8AD09F83E085 /* PowerTools.xcconfig */;
 			buildSettings = {
@@ -770,10 +735,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		75FC05EEFA142F4C0781AE912DE4A5B1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -875,6 +841,37 @@
 			};
 			name = Debug;
 		};
+		AD78504D903CD1BF0F6A07667F879AD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47C2D02A870882502DA8AD09F83E085 /* PowerTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools/PowerTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools/PowerTools.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -908,8 +905,8 @@
 		89F36D306D3D3F48BC86370384863811 /* Build configuration list for PBXNativeTarget "PowerTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				704D4EFEDDCC0AEBBCC9A633CDA85C25 /* Debug */,
-				57B9DC57A099D0FAB5A7117458B3DD85 /* Release */,
+				AD78504D903CD1BF0F6A07667F879AD6 /* Debug */,
+				706AB13796D6964B1701FAEE4CE9B5A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

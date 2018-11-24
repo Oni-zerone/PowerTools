@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Fast development tools with a better way to use UICollectionViews
                        DESC
 
   s.homepage         = 'https://github.com/Oni-zerone/PowerTools'
@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.
   
   s.subspec 'CollectionVM' do |sp|
       sp.source_files = 'PowerTools/CollectionVM/Classes/**/*'
+      sp.dependency 'PowerTools/Core'
   end
   
   # s.resource_bundles = {
