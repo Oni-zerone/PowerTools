@@ -17,9 +17,36 @@ extension ColorCollectionViewCell {
 
     struct Descriptor: ItemViewDescriptor, GridDescriptor {
         
+        private let wide: Bool
+        
+        init(wide: Bool) {
+            self.wide = wide
+        }
+        
         let reuseIdentifier: String = ColorCollectionViewCell.nibIdentifier
         
         let ratio: ViewRatio = ViewRatio(multiplier: 1.6)
+        
+        func size(in containerView: UIView, module: GridModule) -> CGSize {
+            
+            let baseSize = module.size(self.ratio)
+            guard self.wide else {
+                return baseSize
+            }
+            
+            return wideSize(module, itemSize: baseSize)
+        }
+        
+        private func wideSize(_ module: GridModule, itemSize: CGSize) -> CGSize {
+            
+            switch module.direction {
+            case .vertical:
+                return CGSize(width: module.maxSize, height: itemSize.height)
+                
+            case .horizontal:
+                return CGSize(width: itemSize.width, height: module.maxSize)
+            }
+        }
     }
 }
 

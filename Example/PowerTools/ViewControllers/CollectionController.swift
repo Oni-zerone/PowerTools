@@ -19,9 +19,12 @@ class CollectionController: UIViewController {
         self.setupCollection()
         self.registerCell()
 
+        var count: Int = 1
         if #available(iOS 10.0, *) {
             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
-                self?.loadContent()
+
+                self?.loadContent(count % 10 == 0)
+                count += 1
             }
         }
     }
@@ -40,10 +43,10 @@ class CollectionController: UIViewController {
         self.collectionViewController.register(ColorCollectionViewCell.nibIdentifier)
     }
 
-    private func loadContent() {
+    private func loadContent(_ wide: Bool) {
 
         var section = self.collectionViewController.model.first as? BaseSection ?? BaseSection()
-        section.append(ColorViewModel(descriptor: ColorCollectionViewCell.Descriptor(), color: .red))
+        section.append(ColorViewModel(descriptor: ColorCollectionViewCell.Descriptor(wide: wide), color: .red))
         let newContent = [section]
         self.collectionViewController.model = newContent
     }
