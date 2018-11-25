@@ -34,15 +34,15 @@ extension BaseSection: GridSection {
         return 3
     }
 
-    var sectionInteritemSpacing: CGFloat {
-        return 8.0
-    }
-
-    var sectionInterlineSpacing: CGFloat {
+    var sectionHorizontalItemSpacing: CGFloat {
         return 16.0
     }
 
+    var sectionVerticalItemSpacing: CGFloat {
+        return 8.0
+    }
+
     var sectionInsets: UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        return UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
     }
 }

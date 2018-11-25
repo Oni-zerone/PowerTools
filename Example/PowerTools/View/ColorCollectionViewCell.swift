@@ -19,7 +19,7 @@ extension ColorCollectionViewCell {
         
         let reuseIdentifier: String = ColorCollectionViewCell.nibIdentifier
         
-        let ratio: ViewRatio = ViewRatio(multiplier: 1.2)
+        let ratio: ViewRatio = ViewRatio(multiplier: 1.6)
     }
 }
 

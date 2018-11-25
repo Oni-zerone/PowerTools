@@ -15,8 +15,8 @@ public protocol GridSection: SectionViewModel {
     
     var sectionInsets: UIEdgeInsets { get }
     
-    var sectionInteritemSpacing: CGFloat { get }
-    var sectionInterlineSpacing: CGFloat { get }
+    var sectionHorizontalItemSpacing: CGFloat { get }
+    var sectionVerticalItemSpacing: CGFloat { get }
 }
 
 public extension GridSection {
@@ -33,11 +33,11 @@ public extension GridSection {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
-    var sectionInteritemSpacing: CGFloat {
+    var sectionHorizontalItemSpacing: CGFloat {
         return 0
     }
     
-    var sectionInterlineSpacing: CGFloat {
+    var sectionVerticalItemSpacing: CGFloat {
         return 0
     }
         
@@ -47,10 +47,21 @@ public extension GridSection {
         let lineItems = CGFloat(self.lineItems ?? containerView.numberOfItems(self.referenceItemWidth))
         let parallelInsets = self.sectionInsets.parallelInsets(for: direction)
         let maxReference = containerView.bounds.size.referenceLenght(for: direction) - parallelInsets
-        let interItemsSpace = max(0, self.sectionInteritemSpacing * (lineItems - 1))
+        let interItemsSpace = max(0, self.horizontalSpacing(direction) * (lineItems - 1))
         let sizeReference = floor((maxReference - interItemsSpace) / lineItems)
         
         return GridModule(direction: direction, referenceSize: sizeReference, maxSize: maxReference)
+    }
+}
+
+internal extension GridSection {
+    
+    internal func horizontalSpacing(_ direction: ContentDirection) -> CGFloat {
+        return direction == .vertical ? self.sectionHorizontalItemSpacing : self.sectionVerticalItemSpacing
+    }
+    
+    internal func verticalSpacing(_ direction: ContentDirection) -> CGFloat {
+        return direction == .vertical ? self.sectionVerticalItemSpacing : self.sectionHorizontalItemSpacing
     }
 }
 
@@ -81,10 +92,12 @@ internal extension UIEdgeInsets {
     func parallelInsets(for direction: ContentDirection) -> CGFloat {
         
         switch direction {
+        
         case .vertical:
             return self.left + self.right
+            
         case .horizontal:
-            return self.top + self.right
+            return self.top + self.bottom
         }
     }
 }
