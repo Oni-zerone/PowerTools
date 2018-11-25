@@ -7,14 +7,23 @@
 
 import Foundation
 
+public struct ViewRatio {
+    
+    var multiplier: Float
+    
+    var constant: Float
+}
+
 public protocol ItemViewDescriptor {
     
     var reuseIdentifier: String { get }
+    
+    var viewRatio: ViewRatio { get }
 }
 
 public protocol ItemViewModel {
     
-    var descriptor: ItemViewDescriptor { get }
+    var descriptor: ItemViewDescriptor { get set }
     
     var reuseIdentifier: String { get }
     
