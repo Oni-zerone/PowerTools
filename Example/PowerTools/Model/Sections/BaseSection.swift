@@ -42,10 +42,6 @@ extension BaseSection: GridSection {
         return 16.0
     }
 
-    var itemRatioMultiplier: CGFloat {
-        return 1.5
-    }
-
     var sectionInsets: UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }

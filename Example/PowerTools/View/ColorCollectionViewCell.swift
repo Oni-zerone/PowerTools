@@ -15,9 +15,11 @@ extension ColorCollectionViewCell {
 
     static let nibIdentifier = String(describing: ColorCollectionViewCell.self)
 
-    struct Descriptor: ItemViewDescriptor {
-
+    struct Descriptor: ItemViewDescriptor, GridDescriptor {
+        
         let reuseIdentifier: String = ColorCollectionViewCell.nibIdentifier
+        
+        let ratio: ViewRatio = ViewRatio(multiplier: 1.2)
     }
 }
 

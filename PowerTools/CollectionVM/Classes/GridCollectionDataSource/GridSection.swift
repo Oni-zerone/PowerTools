@@ -17,9 +17,6 @@ public protocol GridSection: SectionViewModel {
     
     var sectionInteritemSpacing: CGFloat { get }
     var sectionInterlineSpacing: CGFloat { get }
-    
-    var itemRatioMultiplier: CGFloat { get }
-    var itemRatioConstant: CGFloat { get }
 }
 
 public extension GridSection {
@@ -43,34 +40,17 @@ public extension GridSection {
     var sectionInterlineSpacing: CGFloat {
         return 0
     }
-    
-    var itemRatioMultiplier: CGFloat {
-        return 1
-    }
-    
-    var itemRatioConstant: CGFloat {
-        return 0
-    }
-    
+        
     func module(for containerView: UIView) -> GridModule {
-        
-        let sizing = self.referenceSizing(containerView.direction, container: containerView)
-        return GridModule(referenceSize: sizing.size,
-                          interitemSpacing: self.sectionInteritemSpacing,
-                          interlineSpacing: self.sectionInterlineSpacing,
-                          maxWidth: sizing.maxReference)
-    }
-    
-    internal func referenceSizing(_ direction: ContentDirection, container: UIView) -> (size: CGSize, maxReference: CGFloat) {
-        
-        let lineItems = CGFloat(self.lineItems ?? container.numberOfItems(self.referenceItemWidth))
+
+        let direction = containerView.direction
+        let lineItems = CGFloat(self.lineItems ?? containerView.numberOfItems(self.referenceItemWidth))
         let parallelInsets = self.sectionInsets.parallelInsets(for: direction)
-        let maxReference = container.bounds.size.referenceLenght(for: direction) - parallelInsets
+        let maxReference = containerView.bounds.size.referenceLenght(for: direction) - parallelInsets
         let interItemsSpace = max(0, self.sectionInteritemSpacing * (lineItems - 1))
-        let reference = floor((maxReference - interItemsSpace) / lineItems)
-        let derived = reference * self.itemRatioMultiplier + self.itemRatioConstant
-        let referenceSize = CGSize.prepare(direction, referenceDimension: reference, derivedDimension: derived)
-        return (size: referenceSize, maxReference: maxReference)
+        let sizeReference = floor((maxReference - interItemsSpace) / lineItems)
+        
+        return GridModule(direction: direction, referenceSize: sizeReference, maxSize: maxReference)
     }
 }
 
@@ -110,17 +90,6 @@ internal extension UIEdgeInsets {
 }
 
 internal extension CGSize {
-    
-    static func prepare(_ direction: ContentDirection, referenceDimension: CGFloat, derivedDimension: CGFloat) -> CGSize {
-        
-        switch direction {
-            
-        case .vertical:
-            return CGSize(width: referenceDimension, height: derivedDimension)
-        case .horizontal:
-            return CGSize(width: derivedDimension, height: referenceDimension)
-        }
-    }
     
     func referenceLenght(for direction: ContentDirection) -> CGFloat {
         

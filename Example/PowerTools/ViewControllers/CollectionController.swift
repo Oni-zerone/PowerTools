@@ -29,7 +29,7 @@ class CollectionController: UIViewController {
     private func setupCollection() {
 
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
+        layout.scrollDirection = .horizontal
         let collectionController = GridCollectionViewController(collectionViewLayout: layout)
         collectionController.attach(to: self)
         self.collectionViewController = collectionController
