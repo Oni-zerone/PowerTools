@@ -377,7 +377,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"/usr/local/bin:$PATH\"\nexport LANG=en_US.UTF-8\n\nif which swiftlint >/dev/null; then\n\nif [ \"$CI\" == true ]; then\nswiftlint lint --strict\nelse\nswiftlint\nfi\n\nelse\necho \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
+			shellScript = "export PATH=\"/usr/local/bin:$PATH\"\nexport LANG=en_US.UTF-8\n\nif which swiftlint >/dev/null; then\n\nif [ \"$CI\" == true ]; then\nswiftlint lint --strict\nelse\nswiftlint\nfi\n\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		EE364E85F0F553975F2BFCCE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

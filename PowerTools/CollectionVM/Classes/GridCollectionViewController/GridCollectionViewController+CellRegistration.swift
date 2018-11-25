@@ -1,5 +1,5 @@
 //
-//  SizedCollectionViewController+CellRegistration.swift
+//  GridCollectionViewController+CellRegistration.swift
 //  SOTViewModelRepresenter
 //
 //  Created by Andrea Altea on 09/11/2018.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension SizedCollectionViewController {
+public extension GridCollectionViewController {
     
     public func register(_ nibName: String, cellReuseIdentifier identifier: String? = nil) {
         

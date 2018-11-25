@@ -1,6 +1,6 @@
 {
   "name": "PowerTools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "Tools for fast and modular app development.",
   "swift_version": "4.2",
   "description": "Fast development tools with a better way to use UICollectionViews",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Oni-zerone/PowerTools.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "social_media_url": "https://twitter.com/Oni_zerone",
   "platforms": {
@@ -31,7 +31,12 @@
     },
     {
       "name": "CollectionVM",
-      "source_files": "PowerTools/CollectionVM/Classes/**/*"
+      "source_files": "PowerTools/CollectionVM/Classes/**/*",
+      "dependencies": {
+        "PowerTools/Core": [
+
+        ]
+      }
     }
   ]
 }

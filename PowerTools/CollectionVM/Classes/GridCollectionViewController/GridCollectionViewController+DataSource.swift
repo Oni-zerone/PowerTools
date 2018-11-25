@@ -1,5 +1,5 @@
 //
-//  SizedCollectionViewController+DataSource.swift
+//  GridCollectionViewController+DataSource.swift
 //  SOTViewModelRepresenter
 //
 //  Created by Andrea Altea on 09/11/2018.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension SizedCollectionViewController {
+public extension GridCollectionViewController {
     
     public var model: [SectionViewModel] {
         set {
