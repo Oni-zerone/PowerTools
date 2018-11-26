@@ -44,4 +44,13 @@ public extension Array where Element == SectionViewModel {
     public func viewModel(ofKind kind: String, section: Int) -> ItemViewModel? {
         return self.item(at: section)?.model(for: kind)
     }
+    
+    public func forEachItem(action: (_ item: ItemViewModel, _ section: SectionViewModel, _ indexPath: IndexPath) -> Void) {
+        
+        self.enumerated().forEach { (sectionIndex, section) in
+            section.items.enumerated().forEach { (itemIndex, item) in
+                action(item, section, IndexPath(item: itemIndex, section: sectionIndex))
+            }
+        }
+    }
 }
