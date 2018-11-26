@@ -9,26 +9,38 @@ import Foundation
 
 public struct GridModule {
     
-    public var moduleSize: CGSize
+    public var direction: ContentDirection
     
-    public var maxWidth: CGFloat
+    public var referenceSize: CGFloat
     
-    public var interitemSpacing: CGFloat
+    public var maxSize: CGFloat
     
-    public var interlineSpacing: CGFloat
-    
-    internal init(referenceSize: CGSize, interitemSpacing: CGFloat, interlineSpacing: CGFloat, maxWidth: CGFloat) {
+    public func size(_ ratio: ViewRatio = .standard) -> CGSize {
         
-        self.moduleSize = referenceSize
-        self.maxWidth = maxWidth
-        self.interitemSpacing = interitemSpacing
-        self.interlineSpacing = interlineSpacing
+        switch self.direction {
+            
+        case .horizontal:
+            return self.sizeFromReferenceHeight(for: ratio)
+
+        case .vertical:
+            return self.sizeFromReferenceWidth(for: ratio)
+        }
+    }
+}
+
+internal extension GridModule {
+    
+    func sizeFromReferenceWidth(for ratio: ViewRatio) -> CGSize {
+        
+        let width = self.referenceSize
+        let height = (width * ratio.multiplier) + ratio.constant
+        return CGSize(width: width, height: abs(height))
     }
     
-    public func size(horizontal: CGFloat = 1.0, vertical: CGFloat = 1.0) -> CGSize {
-
-        let itemWidth = self.moduleSize.width * horizontal + self.interitemSpacing * (horizontal - 1)
-        let itemHeight = self.moduleSize.height * vertical + self.interlineSpacing * (vertical - 1)
-        return CGSize(width: itemWidth, height: itemHeight)
+    func sizeFromReferenceHeight(for ratio: ViewRatio) -> CGSize {
+        
+        let height = self.referenceSize
+        let width = (height - ratio.constant) / ratio.multiplier
+        return CGSize(width: abs(width), height: height)
     }
 }

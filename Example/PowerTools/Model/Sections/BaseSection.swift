@@ -31,22 +31,22 @@ struct BaseSection: SectionViewModel {
 extension BaseSection: GridSection {
 
     var lineItems: Int? {
-        return 3
+        return nil
     }
 
-    var sectionInteritemSpacing: CGFloat {
-        return 8.0
+    var referenceItemWidth: CGFloat {
+        return 150
     }
-
-    var sectionInterlineSpacing: CGFloat {
+    
+    var sectionHorizontalItemSpacing: CGFloat {
         return 16.0
     }
 
-    var itemRatioMultiplier: CGFloat {
-        return 1.5
+    var sectionVerticalItemSpacing: CGFloat {
+        return 20.0
     }
 
     var sectionInsets: UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        return UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 16)
     }
 }
