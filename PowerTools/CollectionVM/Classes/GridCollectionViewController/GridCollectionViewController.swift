@@ -11,6 +11,8 @@ private let reuseIdentifier = "Cell"
 
 public class GridCollectionViewController: UICollectionViewController {
     
+    public var forceReload: Bool = false
+    
     open var dataSource: GridCollectionDataSource?
         
     override open func viewDidLoad() {

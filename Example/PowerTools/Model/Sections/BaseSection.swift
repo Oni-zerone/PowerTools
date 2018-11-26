@@ -31,12 +31,12 @@ struct BaseSection: SectionViewModel {
 extension BaseSection: GridSection {
 
     var lineItems: Int? {
-        return nil
+        return 5
     }
 
-    var referenceItemWidth: CGFloat {
-        return 150
-    }
+//    var referenceItemWidth: CGFloat {
+//        return 150
+//    }
     
     var sectionHorizontalItemSpacing: CGFloat {
         return 16.0
