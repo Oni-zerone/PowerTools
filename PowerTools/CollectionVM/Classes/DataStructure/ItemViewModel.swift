@@ -16,6 +16,8 @@ public protocol ItemViewModel {
     
     var descriptor: ItemViewDescriptor { get set }
     
+    var hashValue: Int { get }
+    
     var reuseIdentifier: String { get }
     
     func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath)
