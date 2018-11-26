@@ -5,7 +5,7 @@
 //  Created by Andrea Altea on 29/10/18.
 //
 
-import Foundation
+import UIKit
 
 public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -39,7 +39,7 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         guard let section = self.model.item(at: section) as? GridSection else {
             return 0
         }
-        return section.sectionInteritemSpacing
+        return section.horizontalSpacing(collectionView.contentDirection)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -47,7 +47,7 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         guard let section = self.model.item(at: section) as? GridSection else {
             return 0
         }
-        return section.sectionInterlineSpacing
+        return section.verticalSpacing(collectionView.contentDirection)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
