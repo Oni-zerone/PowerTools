@@ -9,7 +9,7 @@ import Foundation
 
 internal struct ModelUpdate {
 
-    internal enum Update {
+    internal enum Change {
         
         case insert(newPosition: IndexPath)
         case move(oldPosition: IndexPath, newPosition: IndexPath)
@@ -17,7 +17,7 @@ internal struct ModelUpdate {
     }
 
     let model: [SectionViewModel]
-    let change: [Update]?
+    let change: [Change]?
     
     init(from oldModel: [SectionViewModel], to newModel: [SectionViewModel], forceReload reloadData: Bool = false) {
         
@@ -30,7 +30,7 @@ internal struct ModelUpdate {
         
         let oldLookupTable = oldModel.lookupTable
         var countTable: [Int : Int] = [:]
-        var changes: [Update] = []
+        var changes: [Change] = []
         newModel.forEachItem { (item, section, indexPath) in
             
             let itemIndex = countTable[item.hashValue] ?? 0
@@ -60,7 +60,7 @@ internal struct ModelUpdate {
     }
 }
 
-extension ModelUpdate.Update {
+extension ModelUpdate.Change {
     
     var description: String {
         switch self {

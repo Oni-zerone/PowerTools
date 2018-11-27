@@ -20,20 +20,24 @@ extension UICollectionView: BatchUpdateView {
         
         self.performBatchUpdates({
             modelUpdates()
-            changes.forEach({ (update) in
-                
-                switch update {
-                    
-                case .delete(let position):
-                    self.deleteItems(at: [position])
-                    
-                case .insert(newPosition: let position):
-                    self.insertItems(at: [position])
-                    
-                case .move(let oldPosition, let newPosition):
-                    self.moveItem(at: oldPosition, to: newPosition)
-                }
+            changes.forEach({ (change) in
+                self.perform(change)
             })
         }, completion: completion)
+    }
+    
+    internal func perform(_ change: ModelUpdate.Change) {
+        
+        switch change {
+            
+        case .delete(let position):
+            self.deleteItems(at: [position])
+            
+        case .insert(newPosition: let position):
+            self.insertItems(at: [position])
+            
+        case .move(let oldPosition, let newPosition):
+            self.moveItem(at: oldPosition, to: newPosition)
+        }
     }
 }
