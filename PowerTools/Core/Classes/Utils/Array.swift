@@ -15,4 +15,11 @@ public extension Array {
         }
         return self[index]
     }
+    
+    mutating func append(_ optionalElement: Element?) {
+        guard let element = optionalElement else {
+            return
+        }
+        self.append(element)
+    }
 }

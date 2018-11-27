@@ -19,11 +19,11 @@ internal struct ModelUpdate {
     let model: [SectionViewModel]
     let change: [Change]?
     
-    init(from oldModel: [SectionViewModel], to newModel: [SectionViewModel], forceReload reloadData: Bool = false) {
+    init(from oldModel: [SectionViewModel], to newModel: [SectionViewModel], forceReload: Bool = false) {
         
         self.model = newModel
         
-        if reloadData || newModel.shouldReload(from: oldModel) {
+        if forceReload || newModel.shouldReload(from: oldModel) {
             self.change = nil
             return
         }
@@ -33,29 +33,15 @@ internal struct ModelUpdate {
         var changes: [Change] = []
         newModel.forEachItem { (item, section, indexPath) in
             
-            let itemIndex = countTable[item.hashValue] ?? 0
-            countTable[item.hashValue] = itemIndex + 1
+            let occurrence = countTable[item.hashValue] ?? 0
+            countTable[item.hashValue] = occurrence + 1
             
-            guard let oldItemPositions = oldLookupTable[item.hashValue],
-                oldItemPositions.indices.contains(itemIndex) else {
-                    changes.append(.insert(newPosition: indexPath))
-                    return
-            }
-            
-            let oldIndexPath = oldItemPositions[itemIndex]
-            if oldIndexPath != indexPath {
-                changes.append(.move(oldPosition: oldIndexPath, newPosition: indexPath))
-            }
+            let change = oldLookupTable.calculateChange(of: item, occurrence: occurrence, indexPath: indexPath)
+            changes.append(change)
         }
         
-        oldLookupTable.forEach { (itemReference, positions) in
-            
-            var itemCount = countTable[itemReference] ?? 0
-            while itemCount < positions.count {
-                changes.append(.delete(oldPosition: positions[itemCount]))
-                itemCount += 1
-            }
-        }
+        let deletions = oldLookupTable.calculateDeletions(countTable: countTable)
+        changes.append(contentsOf: deletions)
         self.change = changes
     }
 }
@@ -104,5 +90,37 @@ internal extension Array where Element == SectionViewModel {
             return section.header?.hashValue != newSection.header?.hashValue || section.footer?.hashValue != newSection.footer?.hashValue
         }
         return firstChange != nil
+    }
+}
+
+fileprivate extension Dictionary where Key == Int, Value == [IndexPath] {
+    
+    func calculateChange(of item: ItemViewModel, occurrence: Int, indexPath: IndexPath) -> ModelUpdate.Change? {
+        
+        guard let oldPositions = self[item.hashValue],
+            oldPositions.indices.contains(occurrence) else {
+                return .insert(newPosition: indexPath)
+        }
+        
+        let oldIndexPath = oldPositions[occurrence]
+        if oldIndexPath != indexPath {
+            return .move(oldPosition: oldIndexPath, newPosition: indexPath)
+        }
+        
+        return nil
+    }
+    
+    func calculateDeletions(countTable: [Int : Int]) -> [ModelUpdate.Change] {
+        
+        var changes: [ModelUpdate.Change] = []
+        self.forEach { (itemReference, positions) in
+            
+            var itemCount = countTable[itemReference] ?? 0
+            while itemCount < positions.count {
+                changes.append(.delete(oldPosition: positions[itemCount]))
+                itemCount += 1
+            }
+        }
+        return changes
     }
 }
