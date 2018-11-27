@@ -35,4 +35,9 @@ public extension GridCollectionViewController {
             return self.dataSource?.scrollViewDelegate
         }
     }
+    
+    public func update(model newModel: [SectionViewModel]) {
+        
+        self.dataSource?.update(model: newModel, forceReload: self.forceReload)
+    }
 }

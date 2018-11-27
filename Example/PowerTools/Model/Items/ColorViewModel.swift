@@ -14,12 +14,18 @@ protocol ColorView {
     func setup(color: UIColor)
 }
 
-struct ColorViewModel: ItemViewModel, GridItem {
-
+class ColorViewModel: NSObject, ItemViewModel, GridItem {
+    
     var descriptor: ItemViewDescriptor
 
     let color: UIColor
 
+    init(descriptor: ItemViewDescriptor, color: UIColor) {
+        
+        self.descriptor = descriptor
+        self.color = color
+    }
+    
     func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath) {
 
         if let colorView = view as? ColorView {
