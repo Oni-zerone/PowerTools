@@ -40,11 +40,16 @@ open class BinderDataSource<View: UIView>: NSObject {
             
             let oldModel = self._model
             let updates = ModelUpdate(from: oldModel, to: newModel, forceReload: reloadData)
-            DispatchQueue.main.sync {
-                batchUpdateView.perform(updates, modelUpdates: {
-                    self._model = newModel
-                }, completion: nil)
-            }
+            self.performSyncUpdate(updates, in: batchUpdateView)
+        }
+    }
+    
+    private func performSyncUpdate(_ updates: ModelUpdate, in view: BatchUpdateView) {
+        
+        DispatchQueue.main.sync {
+            view.perform(updates, modelUpdates: {
+                self._model = updates.model
+            }, completion: nil)
         }
     }
 }
