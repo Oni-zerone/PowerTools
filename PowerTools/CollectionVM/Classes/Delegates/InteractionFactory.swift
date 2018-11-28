@@ -28,29 +28,18 @@ open class BaseViewModel<ParameterType>: NSObject, ItemViewModel, AbstractBuilde
     }
 }
 
-open class Factory<ParameterType>: AbstractFactory {
-
-    public typealias Parameters = ParameterType
+protocol InteractionFactory: AbstractFactory, InteractionDelegate {
     
-    public var parameters: ParameterType
-    
-    public weak var presenterViewController: UIViewController?
-    
-    public init(parameters: ParameterType, presenterViewController vc: UIViewController? = nil) {
-        
-        self.parameters = parameters
-        self.presenterViewController = vc
-    }
 }
 
-extension Factory: InteractionDelegate {
+extension InteractionFactory {
     
     public func containerView(_ containerView: UIView, shouldSelect item: ItemViewModel) -> Bool {
-        return item is BaseViewModel<ParameterType>
+        return item is BaseViewModel<Parameters>
     }
     
     public func containerView(_ containerView: UIView, didSelect item: ItemViewModel) {
-        guard let builder = item as? BaseViewModel<ParameterType> else {
+        guard let builder = item as? BaseViewModel<Parameters> else {
             return
         }
         self.showVC(from: builder, sender: self)
