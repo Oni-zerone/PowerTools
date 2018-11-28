@@ -26,7 +26,7 @@ public protocol AbstractFactory {
     
     func presentVC<Builder: AbstractBuilder>(from builder: Builder, animated: Bool, completion: (() -> Void)?) where Builder.Parameters == Parameters
     
-    func showVC<Builder: AbstractBuilder>(from builder: Builder) where Builder.Parameters == Parameters
+    func showVC<Builder: AbstractBuilder>(from builder: Builder, sender: Any?) where Builder.Parameters == Parameters
 }
 
 public extension AbstractFactory {
