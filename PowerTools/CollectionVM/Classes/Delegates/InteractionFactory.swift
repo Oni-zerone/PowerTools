@@ -9,27 +9,27 @@ import Foundation
 
 public typealias ControllerBuilder = ItemViewModel & AbstractBuilder
 
-protocol ItemViewModelBuilder: ItemViewModel {
+public protocol ItemViewModelBuilder: ItemViewModel {
     
     var shouldPresentModally: Bool { get }
     
     func getController<Parameters>(with parameters: Parameters) -> UIViewController?
 }
 
-extension ItemViewModelBuilder {
+public extension ItemViewModelBuilder {
     
     var shouldPresentModally: Bool {
         return false
     }
 }
 
-extension InteractionDelegate where Self: AbstractFactory {
+public extension InteractionDelegate where Self: AbstractFactory {
     
-    public func containerView(_ containerView: UIView, shouldSelect item: ItemViewModel) -> Bool {
+    func containerView(_ containerView: UIView, shouldSelect item: ItemViewModel) -> Bool {
         return item is ItemViewModelBuilder
     }
     
-    public func containerView(_ containerView: UIView, didSelect item: ItemViewModel) {
+    func containerView(_ containerView: UIView, didSelect item: ItemViewModel) {
         
         guard let itemBuilder = item as? ItemViewModelBuilder,
             let controller = itemBuilder.getController(with: self.parameters) else {
