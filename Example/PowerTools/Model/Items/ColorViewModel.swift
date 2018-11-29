@@ -52,7 +52,7 @@ class ControllerBuilder: Builder<String> {
     }
 }
 
-extension ColorViewModel: ItemViewModelBuilder {
+extension ColorViewModel: BuilderContainer {
     
     func getBuilder<Parameters>(_ parametersType: Parameters.Type) -> Builder<Parameters>? {
 

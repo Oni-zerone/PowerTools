@@ -7,15 +7,6 @@
 
 import UIKit
 
-open class Builder<Parameters> {
-    
-    public init() {  }
-    
-    open func build(_ parameters: Parameters) -> UIViewController? {
-        return nil
-    }
-}
-
 public protocol AbstractFactory {
     
     associatedtype Parameters
@@ -23,9 +14,13 @@ public protocol AbstractFactory {
     var parameters: Parameters { get }
     
     var presenterViewController: UIViewController? { get }
-    
+
     func make(from builder: Builder<Parameters>) -> UIViewController?
     
+    func getBuilder(from builderContainer: BuilderContainer) -> Builder<Parameters>?
+    
+    func showVC(from container: BuilderContainer)
+
     func presentVC(from builder: Builder<Parameters>, animated: Bool, completion: (() -> Void)?)
     
     func showVC(from builder: Builder<Parameters>, sender: Any?)
@@ -33,8 +28,22 @@ public protocol AbstractFactory {
 
 public extension AbstractFactory {
     
-    func make(from builder: Builder<Parameters>) -> UIViewController? {
-        return builder.build(self.parameters)
+    func showVC(from container: BuilderContainer) {
+        
+        guard let builder = self.getBuilder(from: container) else {
+            return
+        }
+
+        if container.shouldPresentModally {
+            self.presentVC(from: builder, animated: true, completion: nil)
+            return
+        }
+        self.showVC(from: builder, sender: self)
+    }
+    
+    func getBuilder(from container: BuilderContainer) -> Builder<Parameters>? {
+        
+        return container.getBuilder(Parameters.self)
     }
     
     func presentVC(from builder: Builder<Parameters>, animated: Bool, completion: (() -> Void)?) {
@@ -51,6 +60,10 @@ public extension AbstractFactory {
             return
         }
         self.presenterViewController?.show(viewController, sender: sender)
+    }
+    
+    func make(from builder: Builder<Parameters>) -> UIViewController? {
+        return builder.build(self.parameters)
     }
 }
 
