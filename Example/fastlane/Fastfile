@@ -28,20 +28,23 @@ platform :ios do
   lane :lint do
     swiftlint(
       mode: :lint,
-      config_file: ".swiftlint.yml",
       ignore_exit_status: false
     )
   end
 
   desc "Pod lib lint"
   lane :pod_lint do
-    pod_lib_lint
+    Dir.chdir("../..") do
+      sh("pod lib lint")
+    end
   end
 
   desc "Runs all the tests"
   lane :test do
     scan(
-      device: "iPhone XS"
+      scheme: "PowerTools-Example",
+      device: "iPhone XS",
+      code_coverage: true
     )
   end
 
@@ -55,4 +58,12 @@ platform :ios do
     )
   end
 
+  desc "Clean environment after all operations"
+  lane :clean do
+    clean_build_artifacts
+  end
+
+  after_all do |lane|
+      clean
+  end
 end
