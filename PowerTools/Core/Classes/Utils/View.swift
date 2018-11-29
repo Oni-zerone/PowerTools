@@ -31,7 +31,7 @@ public extension UIView {
         }
         
         if position != .left {
-            self.rightAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+            self.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         }
     }
     
