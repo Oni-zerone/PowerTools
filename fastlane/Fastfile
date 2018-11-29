@@ -1,0 +1,58 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Default CI lane"
+  lane :ci do
+    lint
+    pod_lint
+    test
+    coverage
+  end
+
+  desc  "SwiftLint linting"
+  lane :lint do
+    swiftlint(
+      mode: :lint,
+      config_file: ".swiftlint.yml",
+      ignore_exit_status: false
+    )
+  end
+
+  desc "Pod lib lint"
+  lane :pod_lint do
+    pod_lib_lint
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan(
+      device: "iPhone XS"
+    )
+  end
+
+  desc "Slather sends coverage to Coveralls"
+  lane :coverage do
+    slather(
+      proj: "PowerTools.xcodeproj",
+      scheme: "PowerTools-Example",
+      ignore: "Tests/*",
+      coveralls: true
+    )
+  end
+
+end
