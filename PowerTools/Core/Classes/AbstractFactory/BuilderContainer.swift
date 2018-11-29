@@ -11,7 +11,7 @@ public protocol BuilderContainer {
     
     var shouldPresentModally: Bool { get }
     
-    func getBuilder<Parameters>(_ parametersType: Parameters.Type) -> Builder<Parameters>?
+    func getBuilder<Context>(_ contextType: Context.Type) -> Builder<Context>?
 }
 
 public extension BuilderContainer {

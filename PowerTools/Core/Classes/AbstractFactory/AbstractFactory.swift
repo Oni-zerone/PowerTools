@@ -9,21 +9,21 @@ import UIKit
 
 public protocol AbstractFactory {
     
-    associatedtype Parameters
+    associatedtype Context
     
-    var parameters: Parameters { get }
+    var context: Context { get }
     
     var presenterViewController: UIViewController? { get }
 
-    func make(from builder: Builder<Parameters>) -> UIViewController?
+    func make(from builder: Builder<Context>) -> UIViewController?
     
-    func getBuilder(from builderContainer: BuilderContainer) -> Builder<Parameters>?
+    func getBuilder(from builderContainer: BuilderContainer) -> Builder<Context>?
     
     func showVC(from container: BuilderContainer)
 
-    func presentVC(from builder: Builder<Parameters>, animated: Bool, completion: (() -> Void)?)
+    func presentVC(from builder: Builder<Context>, animated: Bool, completion: (() -> Void)?)
     
-    func showVC(from builder: Builder<Parameters>, sender: Any?)
+    func showVC(from builder: Builder<Context>, sender: Any?)
 }
 
 public extension AbstractFactory {
@@ -41,11 +41,11 @@ public extension AbstractFactory {
         self.showVC(from: builder, sender: self)
     }
     
-    func getBuilder(from container: BuilderContainer) -> Builder<Parameters>? {
-        return container.getBuilder(Parameters.self)
+    func getBuilder(from container: BuilderContainer) -> Builder<Context>? {
+        return container.getBuilder(Context.self)
     }
     
-    func presentVC(from builder: Builder<Parameters>, animated: Bool, completion: (() -> Void)?) {
+    func presentVC(from builder: Builder<Context>, animated: Bool, completion: (() -> Void)?) {
         
         guard let viewController = self.make(from: builder) else {
             return
@@ -55,7 +55,7 @@ public extension AbstractFactory {
                                               completion: completion)
     }
     
-    func showVC(from builder: Builder<Parameters>, sender: Any?) {
+    func showVC(from builder: Builder<Context>, sender: Any?) {
         
         guard let viewController = self.make(from: builder) else {
             return
@@ -63,8 +63,8 @@ public extension AbstractFactory {
         self.presenterViewController?.show(viewController, sender: sender)
     }
     
-    func make(from builder: Builder<Parameters>) -> UIViewController? {
-        return builder.build(self.parameters)
+    func make(from builder: Builder<Context>) -> UIViewController? {
+        return builder.build(self.context)
     }
 }
 

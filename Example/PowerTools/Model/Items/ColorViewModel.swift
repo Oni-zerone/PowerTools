@@ -54,8 +54,8 @@ class ControllerBuilder: Builder<String> {
 
 extension ColorViewModel: BuilderContainer {
     
-    func getBuilder<Parameters>(_ parametersType: Parameters.Type) -> Builder<Parameters>? {
+    func getBuilder<Context>(_ contextType: Context.Type) -> Builder<Context>? {
 
-        return ControllerBuilder(color: self.color) as? Builder<Parameters>
+        return ControllerBuilder(color: self.color) as? Builder<Context>
     }
 }

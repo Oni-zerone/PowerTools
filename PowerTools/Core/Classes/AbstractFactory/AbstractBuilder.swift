@@ -7,11 +7,11 @@
 
 import UIKit
 
-open class Builder<Parameters> {
+open class Builder<Context> {
     
     public init() {  }
     
-    open func build(_ parameters: Parameters) -> UIViewController? {
+    open func build(_ context: Context) -> UIViewController? {
         return nil
     }
 }

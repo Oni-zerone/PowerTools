@@ -56,7 +56,7 @@ class CollectionController: UIViewController {
 
 extension CollectionController: InteractionFactory {
     
-    var parameters: String {
+    var context: String {
         return self.title ?? "Unknown"
     }
 }
