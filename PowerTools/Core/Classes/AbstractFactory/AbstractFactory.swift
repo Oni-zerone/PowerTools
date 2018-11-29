@@ -7,11 +7,13 @@
 
 import UIKit
 
-public protocol AbstractBuilder {
+open class Builder<Parameters> {
     
-    associatedtype Parameters
+    public init() {  }
     
-    func build(_ parameters: Parameters) -> UIViewController?
+    open func build(_ parameters: Parameters) -> UIViewController? {
+        return nil
+    }
 }
 
 public protocol AbstractFactory {
@@ -22,20 +24,20 @@ public protocol AbstractFactory {
     
     var presenterViewController: UIViewController? { get }
     
-    func make<Builder: AbstractBuilder>(from builder: Builder) -> UIViewController? where Builder.Parameters == Parameters
+    func make(from builder: Builder<Parameters>) -> UIViewController?
     
-    func presentVC<Builder: AbstractBuilder>(from builder: Builder, animated: Bool, completion: (() -> Void)?) where Builder.Parameters == Parameters
+    func presentVC(from builder: Builder<Parameters>, animated: Bool, completion: (() -> Void)?)
     
-    func showVC<Builder: AbstractBuilder>(from builder: Builder, sender: Any?) where Builder.Parameters == Parameters
+    func showVC(from builder: Builder<Parameters>, sender: Any?)
 }
 
 public extension AbstractFactory {
     
-    func make<Builder: AbstractBuilder>(from builder: Builder) -> UIViewController? where Builder.Parameters == Parameters {
+    func make(from builder: Builder<Parameters>) -> UIViewController? {
         return builder.build(self.parameters)
     }
     
-    func presentVC<Builder: AbstractBuilder>(from builder: Builder, animated: Bool, completion: (() -> Void)?) where Builder.Parameters == Parameters {
+    func presentVC(from builder: Builder<Parameters>, animated: Bool, completion: (() -> Void)?) {
         guard let viewController = self.make(from: builder) else {
             return
         }
@@ -44,7 +46,7 @@ public extension AbstractFactory {
                                               completion: completion)
     }
     
-    func showVC<Builder: AbstractBuilder>(from builder: Builder, sender: Any?) where Builder.Parameters == Parameters {
+    func showVC(from builder: Builder<Parameters>, sender: Any?) {
         guard let viewController = self.make(from: builder) else {
             return
         }

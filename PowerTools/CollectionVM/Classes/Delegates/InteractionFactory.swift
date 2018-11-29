@@ -7,13 +7,11 @@
 
 import Foundation
 
-public typealias ControllerBuilder = ItemViewModel & AbstractBuilder
-
 public protocol ItemViewModelBuilder: ItemViewModel {
     
     var shouldPresentModally: Bool { get }
     
-    func getController<Parameters>(with parameters: Parameters) -> UIViewController?
+    func getBuilder<Parameters>(_ parametersType: Parameters.Type) -> Builder<Parameters>?
 }
 
 public extension ItemViewModelBuilder {
@@ -32,14 +30,14 @@ public extension InteractionDelegate where Self: AbstractFactory {
     func containerView(_ containerView: UIView, didSelect item: ItemViewModel) {
         
         guard let itemBuilder = item as? ItemViewModelBuilder,
-            let controller = itemBuilder.getController(with: self.parameters) else {
+            let builder = itemBuilder.getBuilder(Parameters.self)  else {
                 return
         }
         
         if itemBuilder.shouldPresentModally {
-            self.presenterViewController?.present(controller, animated: true, completion: nil)
+            self.presentVC(from: builder, animated: true, completion: nil)
             return
         }
-        self.presenterViewController?.show(controller, sender: self)
+        self.showVC(from: builder, sender: self)
     }
 }

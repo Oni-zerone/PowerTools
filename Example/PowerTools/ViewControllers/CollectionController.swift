@@ -35,6 +35,7 @@ class CollectionController: UIViewController {
         layout.scrollDirection = .vertical
         let collectionController = GridCollectionViewController(collectionViewLayout: layout)
         collectionController.attach(to: self)
+        collectionController.interactionDelegate = self
         self.collectionViewController = collectionController
     }
 
@@ -51,4 +52,15 @@ class CollectionController: UIViewController {
         let newContent = [section]
         self.collectionViewController.update(model: newContent)
     }
+}
+
+extension CollectionController: AbstractFactory {
+    
+    var parameters: String {
+        return self.title ?? "Unknown"
+    }
+}
+
+extension CollectionController: InteractionDelegate {
+    
 }

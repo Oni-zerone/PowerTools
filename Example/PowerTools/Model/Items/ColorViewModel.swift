@@ -33,3 +33,29 @@ class ColorViewModel: NSObject, ItemViewModel, GridItem {
         }
     }
 }
+
+class ControllerBuilder: Builder<String> {
+    
+    let color: UIColor
+    
+    init(color: UIColor) {
+        self.color = color
+        super.init()
+    }
+    
+    override func build(_ parameters: String) -> UIViewController? {
+        
+        let controller = UIViewController()
+        controller.view.backgroundColor = self.color
+        controller.title = parameters
+        return controller
+    }
+}
+
+extension ColorViewModel: ItemViewModelBuilder {
+    
+    func getBuilder<Parameters>(_ parametersType: Parameters.Type) -> Builder<Parameters>? {
+
+        return ControllerBuilder(color: self.color) as? Builder<Parameters>
+    }
+}
