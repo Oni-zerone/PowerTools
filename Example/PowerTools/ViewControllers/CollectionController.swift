@@ -54,13 +54,9 @@ class CollectionController: UIViewController {
     }
 }
 
-extension CollectionController: AbstractFactory {
+extension CollectionController: InteractionFactory {
     
     var parameters: String {
         return self.title ?? "Unknown"
     }
-}
-
-extension CollectionController: InteractionDelegate {
-    
 }

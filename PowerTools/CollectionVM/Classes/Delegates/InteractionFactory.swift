@@ -7,6 +7,8 @@
 
 import Foundation
 
+public typealias InteractionFactory = InteractionDelegate & AbstractFactory
+
 public extension InteractionDelegate where Self: AbstractFactory {
     
     func containerView(_ containerView: UIView, shouldSelect item: ItemViewModel) -> Bool {
