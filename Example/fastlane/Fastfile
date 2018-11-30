@@ -51,6 +51,7 @@ platform :ios do
   desc "Slather sends coverage to Coveralls"
   lane :coverage do
     slather(
+      workspace: "PowerTools.xcworkspace",
       proj: "PowerTools.xcodeproj",
       scheme: "PowerTools-Example",
       ignore: "Tests/*",
