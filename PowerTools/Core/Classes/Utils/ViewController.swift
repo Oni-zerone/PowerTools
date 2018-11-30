@@ -9,7 +9,9 @@ import UIKit
 
 public extension UIViewController {
     
-    public func attach(to parentVC: UIViewController, in view: UIView? = nil) {
+    public func attach(to parentVC: UIViewController,
+                       in view: UIView? = nil,
+                       position: UIView.AttachPosition = .fill) {
         
         guard let containerView = view ?? parentVC.view else {
             return
@@ -21,10 +23,7 @@ public extension UIViewController {
         containerView.addSubview(self.view)
         parentVC.addChild(self)
 
-        self.view.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
-        self.view.leftAnchor.constraint(equalTo: containerView.leftAnchor).isActive = true
-        self.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
-        self.view.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
+        containerView.attach(view: self.view, in: position)
         self.didMove(toParent: parentVC)
     }
 }
