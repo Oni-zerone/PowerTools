@@ -51,12 +51,15 @@ platform :ios do
   desc "Slather sends coverage to Coveralls"
   lane :coverage do
     slather(
-      workspace: "PowerTools.xcworkspace",
-      proj: "PowerTools.xcodeproj",
-      scheme: "PowerTools-Example",
-      ignore: "Tests/*",
-      coveralls: true
-    )
+          travis: true,
+          workspace: "PowerTools.xcworkspace",
+          proj: "PowerTools.xcodeproj",
+          scheme: "PowerTools-Example",
+          binary_basename: "PowerTools",
+          source_directory: "../PowerTools",
+          simple_output: true,
+          coveralls: true
+        )
   end
 
   desc "Clean environment after all operations"
