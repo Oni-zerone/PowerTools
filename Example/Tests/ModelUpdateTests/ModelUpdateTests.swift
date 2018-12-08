@@ -43,4 +43,28 @@ class ModelUpdateTests: XCTestCase {
             XCTFail("Invalid position")
         }
     }
+    
+    func testModelDeletion() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel[0].items.remove(at: 2)
+        
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change?.count == 1)
+        guard let change = changes.change?.first else {
+            return XCTFail("Invalid change")
+        }
+        
+        switch change {
+            
+        case .delete(let oldPosition):
+            XCTAssert(IndexPath(item: 2, section: 0) == oldPosition)
+            
+        default:
+            XCTFail("Invalid position")
+        }
+    }
+
 }
