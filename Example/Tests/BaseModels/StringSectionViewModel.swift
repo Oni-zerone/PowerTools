@@ -33,3 +33,10 @@ extension String {
         return StringSectionViewModel(header: nil, items: viewModels, footer: nil)
     }
 }
+
+extension Array where Element == String {
+    
+    var model: [SectionViewModel] {
+        return self.map({ return $0.section })
+    }
+}
