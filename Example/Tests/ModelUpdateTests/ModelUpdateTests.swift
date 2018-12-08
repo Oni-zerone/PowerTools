@@ -33,6 +33,18 @@ class ModelUpdateTests: XCTestCase {
         XCTAssert(changes.change!.first!.isInsert(IndexPath(item: 3, section: 0)))
     }
     
+    func testCollisionInsertion() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel[0].items.append("a".model)
+        
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change?.count == 1)
+        XCTAssert(changes.change!.first!.isInsert(IndexPath(item: 3, section: 0)))
+    }
+    
     func testModelDeletion() {
         guard var mutatedModel = self.baseModel else {
             return XCTFail("Invalid model")
@@ -72,5 +84,56 @@ class ModelUpdateTests: XCTestCase {
         let indexPath = IndexPath(item: 1, section: 0)
         XCTAssert(changes.change!.contains(where: { $0.isInsert(indexPath) }))
         XCTAssert(changes.change!.contains(where: { $0.isDelete(indexPath) }))
+    }
+    
+    func testMultipleOperations() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel[0].items[1] = "d".model
+        mutatedModel[0].items.remove(at: 2)
+        mutatedModel[0].items.append("e".model)
+
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change?.count == 4)
+
+        XCTAssert(changes.change!.contains(where: { $0.isInsert(IndexPath(item: 1, section: 0)) }))
+        XCTAssert(changes.change!.contains(where: { $0.isInsert(IndexPath(item: 2, section: 0)) }))
+        XCTAssert(changes.change!.contains(where: { $0.isDelete(IndexPath(item: 1, section: 0)) }))
+        XCTAssert(changes.change!.contains(where: { $0.isDelete(IndexPath(item: 2, section: 0)) }))
+    }
+    
+    func testSectionInsertion() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel.append("346".section)
+        
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change == nil)
+    }
+    
+    func testHeaderInsertion() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel[0].header = "1".model
+        
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change == nil)
+    }
+
+    func testFooterInsertion() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel[0].footer = "2".model
+        
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change == nil)
     }
 }
