@@ -111,14 +111,14 @@ class DataSourceUpdateTests: XCTestCase {
         
         var mutatedModel = self.dataSource.model
         mutatedModel[0].items.append("h".model)
-        self.dataSource.update(model: mutatedModel, forceReload: true)
+        self.dataSource.model = mutatedModel
     }
     
     func testForceDeletion() {
         
         var mutatedModel = self.dataSource.model
         mutatedModel[0].items.remove(at: 2)
-        self.dataSource.update(model: mutatedModel, forceReload: true)
+        self.dataSource.model = mutatedModel
     }
 
 }
