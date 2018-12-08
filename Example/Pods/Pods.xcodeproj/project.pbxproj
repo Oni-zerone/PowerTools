@@ -21,6 +21,8 @@
 		72CB3456E9EF2810478D81F2BA7B4872 /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80632355E87768B3D1CC71C019C4CF0A /* GridCollectionDataSource.swift */; };
 		7C718009EF04CB1087928D960E836AC5 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E4B73FE8A732FD4E5CDEC008F46A5 /* GridCollectionViewController.swift */; };
 		836A10E077AD9AE394B50E88EC4FEFF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31AB3EF8EE674981BAFB222C1686C28 /* ViewController.swift */; };
+		9717B2D221BC689600C66EE0 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2D121BC689600C66EE0 /* Pipeline.swift */; };
+		9717B2D521BC69AD00C66EE0 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2D421BC69AD00C66EE0 /* Pipe.swift */; };
 		97EFA15221AC92DF0083EE84 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA15121AC92DF0083EE84 /* ModelUpdate.swift */; };
 		97EFA15521ACA4390083EE84 /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA15421ACA4390083EE84 /* BatchUpdateView.swift */; };
 		97EFA15721ACA4CB0083EE84 /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA15621ACA4CB0083EE84 /* UICollectionView+ViewBatchUpdate.swift */; };
@@ -91,6 +93,8 @@
 		80632355E87768B3D1CC71C019C4CF0A /* GridCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionDataSource.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9542F9AB609FF6B3E7373FE0C4C944F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9717B2D121BC689600C66EE0 /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		9717B2D421BC69AD00C66EE0 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		97EFA15121AC92DF0083EE84 /* ModelUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdate.swift; sourceTree = "<group>"; };
 		97EFA15421ACA4390083EE84 /* BatchUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchUpdateView.swift; sourceTree = "<group>"; };
 		97EFA15621ACA4CB0083EE84 /* UICollectionView+ViewBatchUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ViewBatchUpdate.swift"; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 		2B90638FBB86FFB2557F4B4D0CE861AD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9717B2D021BC686800C66EE0 /* Pipeline */,
 				97EFA18A21AEA7C70083EE84 /* AbstractFactory */,
 				97EFA18921AEA7A80083EE84 /* Utils */,
 			);
@@ -317,6 +322,24 @@
 			);
 			name = DataStructure;
 			path = PowerTools/CollectionVM/Classes/DataStructure;
+			sourceTree = "<group>";
+		};
+		9717B2D021BC686800C66EE0 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				9717B2D321BC69A200C66EE0 /* Pipes */,
+				9717B2D121BC689600C66EE0 /* Pipeline.swift */,
+			);
+			name = Pipeline;
+			path = PowerTools/Core/Classes/Pipeline;
+			sourceTree = "<group>";
+		};
+		9717B2D321BC69A200C66EE0 /* Pipes */ = {
+			isa = PBXGroup;
+			children = (
+				9717B2D421BC69AD00C66EE0 /* Pipe.swift */,
+			);
+			path = Pipes;
 			sourceTree = "<group>";
 		};
 		97EFA15321ACA3EB0083EE84 /* ViewBatchUpdate */ = {
@@ -555,6 +578,7 @@
 				0731013A2178EDB7055571FDBF864143 /* Array.swift in Sources */,
 				CCABA4CD6654689E486E47FA53979E73 /* BinderDataSource.swift in Sources */,
 				3304596A672D4D8EA7B2978052104896 /* CollectionBinderDataSource.swift in Sources */,
+				9717B2D521BC69AD00C66EE0 /* Pipe.swift in Sources */,
 				BFA313823136F11B2281382188AC412C /* CollectionDirectionableContainer.swift in Sources */,
 				AFA14B2B5A8CCADB5487189F7E9ABCDA /* DirectionableContainer.swift in Sources */,
 				72CB3456E9EF2810478D81F2BA7B4872 /* GridCollectionDataSource.swift in Sources */,
@@ -579,6 +603,7 @@
 				3BEB5E54084168D898174A549F9AB73D /* SectionViewModel.swift in Sources */,
 				325AA90A5972BA317115F528E12E332D /* TableBinderDataSource.swift in Sources */,
 				443308E8B681DF71AF1BAFC30B9CCBA6 /* TableDirectionableContainer.swift in Sources */,
+				9717B2D221BC689600C66EE0 /* Pipeline.swift in Sources */,
 				836A10E077AD9AE394B50E88EC4FEFF8 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
