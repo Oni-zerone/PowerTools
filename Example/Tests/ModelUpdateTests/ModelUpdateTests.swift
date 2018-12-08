@@ -14,7 +14,7 @@ class ModelUpdateTests: XCTestCase {
     var baseModel: [StringSectionViewModel]!
     
     override func setUp() {
-        self.baseModel = ["abc".sectionVM]
+        self.baseModel = ["abc".section]
     }
 
     override func tearDown() {
@@ -25,7 +25,7 @@ class ModelUpdateTests: XCTestCase {
         guard var mutatedModel = self.baseModel else {
             return XCTFail("Invalid model")
         }
-        mutatedModel[0].items.append("d".vm)
+        mutatedModel[0].items.append("d".model)
         
         let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
         XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
@@ -49,7 +49,7 @@ class ModelUpdateTests: XCTestCase {
         guard var mutatedModel = self.baseModel else {
             return XCTFail("Invalid model")
         }
-        mutatedModel[0].items[1] = "d".vm
+        mutatedModel[0].items[1] = "d".model
         
         let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
         XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)

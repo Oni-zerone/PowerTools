@@ -26,9 +26,9 @@ struct StringSectionViewModel: SectionViewModel, Equatable {
 
 extension String {
     
-    var sectionVM: StringSectionViewModel {
+    var section: StringSectionViewModel {
         let viewModels = self.map { (character) -> StringViewModel in
-            return String(character).vm
+            return String(character).model
         }
         return StringSectionViewModel(header: nil, items: viewModels, footer: nil)
     }

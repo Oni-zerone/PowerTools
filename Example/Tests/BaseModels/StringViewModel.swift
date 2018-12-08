@@ -41,7 +41,7 @@ struct StringViewModel: ItemViewModel, Hashable {
 
 extension String {
     
-    var vm: StringViewModel {
+    var model: StringViewModel {
         return StringViewModel(string: self)
     }
 }
