@@ -30,18 +30,7 @@ class ModelUpdateTests: XCTestCase {
         let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
         XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
         XCTAssert(changes.change?.count == 1)
-        guard let change = changes.change?.first else {
-            return XCTFail("Invalid change")
-        }
-        
-        switch change {
-            
-        case .insert(let newPosition):
-            XCTAssert(IndexPath(item: 3, section: 0) == newPosition)
-            
-        default:
-            XCTFail("Invalid position")
-        }
+        XCTAssert(changes.change!.first!.isInsert(IndexPath(item: 3, section: 0)))
     }
     
     func testModelDeletion() {
@@ -53,18 +42,20 @@ class ModelUpdateTests: XCTestCase {
         let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
         XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
         XCTAssert(changes.change?.count == 1)
-        guard let change = changes.change?.first else {
-            return XCTFail("Invalid change")
-        }
-        
-        switch change {
-            
-        case .delete(let oldPosition):
-            XCTAssert(IndexPath(item: 2, section: 0) == oldPosition)
-            
-        default:
-            XCTFail("Invalid position")
-        }
+        XCTAssert(changes.change!.first!.isDelete(IndexPath(item: 2, section: 0)))
     }
 
+    func testModelReplacement() {
+        guard var mutatedModel = self.baseModel else {
+            return XCTFail("Invalid model")
+        }
+        mutatedModel[0].items[1] = "d".vm
+        
+        let changes = ModelUpdate(from: self.baseModel, to: mutatedModel)
+        XCTAssert(changes.model as? [StringSectionViewModel] == mutatedModel)
+        XCTAssert(changes.change?.count == 2)
+        let indexPath = IndexPath(item: 1, section: 0)
+        XCTAssert(changes.change!.contains(where: { $0.isInsert(indexPath) }))
+        XCTAssert(changes.change!.contains(where: { $0.isDelete(indexPath) }))
+    }
 }
