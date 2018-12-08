@@ -18,12 +18,11 @@ struct StringViewModel: ItemViewModel, Hashable {
     
     var descriptor: ItemViewDescriptor
     
-    var string: String {
-        return self.descriptor.reuseIdentifier
-    }
+    var string: String
     
     init(string: String) {
-        self.descriptor = StringDescriptor(reuseIdentifier: string)
+        self.descriptor = StringDescriptor(reuseIdentifier: "StringCell")
+        self.string = string
     }
     
     func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath) {

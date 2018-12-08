@@ -9,11 +9,11 @@ import UIKit
 
 public protocol SectionViewModel {
     
-    var header: ItemViewModel? { get }
+    var header: ItemViewModel? { get set }
     
-    var items: [ItemViewModel] { get }
+    var items: [ItemViewModel] { get set }
     
-    var footer: ItemViewModel? { get }
+    var footer: ItemViewModel? { get set }
     
     func model(for elementOfKind: String) -> ItemViewModel?
 }

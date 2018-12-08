@@ -7,9 +7,12 @@
 
 import UIKit
 
-open class BinderDataSource<View: UIView>: NSObject {
+extension DispatchQueue {
     
-    private let updateQueue = DispatchQueue(label: "Model.update.queue", qos: DispatchQoS.userInitiated)
+    static let binderUpdate = DispatchQueue(label: "BinderDataSource.queue", qos: DispatchQoS.background)
+}
+
+open class BinderDataSource<View: UIView>: NSObject {
 
     private var _model: [SectionViewModel]
     
@@ -36,7 +39,7 @@ open class BinderDataSource<View: UIView>: NSObject {
             return
         }
         
-        self.updateQueue.async {
+        DispatchQueue.binderUpdate.async {
             
             let oldModel = self._model
             let updates = ModelUpdate(from: oldModel, to: newModel, forceReload: reloadData)
