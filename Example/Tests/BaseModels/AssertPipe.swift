@@ -9,6 +9,11 @@
 import XCTest
 import PowerTools
 
+enum PipelineErrors: Error, Equatable {
+    
+    case requiredFailure
+}
+
 class AssertPipe<Value>: PowerTools.Pipe<Value> {
     
     var successExpectation: XCTestExpectation?

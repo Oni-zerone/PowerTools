@@ -31,4 +31,26 @@ class PipelineTests: XCTestCase {
         self.pipeline.load("")
         wait(for: assertPipe.expectations, timeout: 1.0)
     }
+    
+    func testPipelineReset() {
+        
+        let resetExp = expectation(description: "reset")
+        let assertPipe = AssertPipe<String>(reset: resetExp)
+        self.pipeline.attach(assertPipe)
+        
+        self.pipeline.reset()
+        wait(for: assertPipe.expectations, timeout: 1.0)
+    }
+    
+    func testPipelineFailure() {
+        
+        self.pipeline.attach(PromisePipe(success: { _ in throw PipelineErrors.requiredFailure }))
+
+        let failureExp = expectation(description: "failure")
+        let assertPipe = AssertPipe<String>(failure: failureExp)
+        self.pipeline.attach(assertPipe)
+        
+        self.pipeline.load("")
+        wait(for: assertPipe.expectations, timeout: 1.0)
+    }
 }

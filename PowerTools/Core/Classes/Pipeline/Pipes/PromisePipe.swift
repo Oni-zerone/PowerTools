@@ -9,7 +9,7 @@ import Foundation
 
 public class PromisePipe<Value>: Pipe<Value> {
 
-    public typealias SuccessBlock = (Value) throws -> Result
+    public typealias SuccessBlock = (Value) throws -> Value
     public typealias FailureBlock = (Error) -> Result
 
     var successBlock: SuccessBlock?
@@ -29,7 +29,7 @@ public class PromisePipe<Value>: Pipe<Value> {
             return
         }
 
-        self.send(try block(content))
+        try super.success(block(content))
     }
     
     override public func failure(_ error: Error) {
