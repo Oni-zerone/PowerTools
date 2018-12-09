@@ -14,16 +14,48 @@ protocol ColorView {
     func setup(color: UIColor)
 }
 
-struct ColorViewModel: ItemViewModel, GridItem {
-
+class ColorViewModel: NSObject, ItemViewModel, GridItem {
+    
     var descriptor: ItemViewDescriptor
 
     let color: UIColor
 
+    init(descriptor: ItemViewDescriptor, color: UIColor) {
+        
+        self.descriptor = descriptor
+        self.color = color
+    }
+    
     func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath) {
 
         if let colorView = view as? ColorView {
             colorView.setup(color: self.color)
         }
+    }
+}
+
+class ControllerBuilder: Builder<String> {
+    
+    let color: UIColor
+    
+    init(color: UIColor) {
+        self.color = color
+        super.init()
+    }
+    
+    override func build(_ parameters: String) -> UIViewController? {
+        
+        let controller = UIViewController()
+        controller.view.backgroundColor = self.color
+        controller.title = parameters
+        return controller
+    }
+}
+
+extension ColorViewModel: BuilderContainer {
+    
+    func getBuilder<Context>(_ contextType: Context.Type) -> Builder<Context>? {
+
+        return ControllerBuilder(color: self.color) as? Builder<Context>
     }
 }

@@ -126,11 +126,11 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     }
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.scrollViewDelegate?.scrollViewDidZoom?(scrollView)
+        self.scrollViewDelegate?.scrollViewDidScroll?(scrollView)
     }
     
     public func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-        self.scrollViewDelegate?.scrollViewDidZoom?(scrollView)
+        self.scrollViewDelegate?.scrollViewDidScrollToTop?(scrollView)
     }
     
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -150,7 +150,7 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     }
     
     public func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
-        return self.scrollViewDelegate?.scrollViewShouldScrollToTop?(scrollView) ?? false
+        return self.scrollViewDelegate?.scrollViewShouldScrollToTop?(scrollView) ?? true
     }
     
     @available(iOS 11.0, *)

@@ -7,14 +7,52 @@
 
 import UIKit
 
-open class BinderDataSource<View: UIView>: NSObject {
+extension DispatchQueue {
     
-    open var model: [SectionViewModel]
+    static let binderUpdate = DispatchQueue(label: "BinderDataSource.queue", qos: DispatchQoS.background)
+}
+
+open class BinderDataSource<View: UIView>: NSObject {
+
+    private var _model: [SectionViewModel]
+    
+    open var model: [SectionViewModel] {
+        set {
+            self.update(model: newValue, forceReload: true)
+        }
+        get {
+            return self._model
+        }
+    }
     
     public weak var view: View?
     
     public init(view: View, model: [SectionViewModel] = []) {
         self.view = view
-        self.model = model
+        self._model = model
+    }
+    
+    public func update(model newModel: [SectionViewModel], forceReload reloadData: Bool = false) {
+        
+        guard let batchUpdateView = self.view as? BatchUpdateView else {
+            self._model = newModel
+            return
+        }
+        
+        DispatchQueue.binderUpdate.async {
+            
+            let oldModel = self._model
+            let updates = ModelUpdate(from: oldModel, to: newModel, forceReload: reloadData)
+            self.performSyncUpdate(updates, in: batchUpdateView)
+        }
+    }
+    
+    private func performSyncUpdate(_ updates: ModelUpdate, in view: BatchUpdateView) {
+        
+        DispatchQueue.main.sync {
+            view.perform(updates, modelUpdates: {
+                self._model = updates.model
+            }, completion: nil)
+        }
     }
 }
