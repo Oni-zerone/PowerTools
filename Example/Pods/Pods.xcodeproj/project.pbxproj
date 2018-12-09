@@ -23,6 +23,7 @@
 		836A10E077AD9AE394B50E88EC4FEFF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31AB3EF8EE674981BAFB222C1686C28 /* ViewController.swift */; };
 		9717B2D221BC689600C66EE0 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2D121BC689600C66EE0 /* Pipeline.swift */; };
 		9717B2D521BC69AD00C66EE0 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2D421BC69AD00C66EE0 /* Pipe.swift */; };
+		9717B2D821BD235100C66EE0 /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2D721BD235100C66EE0 /* PromisePipe.swift */; };
 		97EFA15221AC92DF0083EE84 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA15121AC92DF0083EE84 /* ModelUpdate.swift */; };
 		97EFA15521ACA4390083EE84 /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA15421ACA4390083EE84 /* BatchUpdateView.swift */; };
 		97EFA15721ACA4CB0083EE84 /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA15621ACA4CB0083EE84 /* UICollectionView+ViewBatchUpdate.swift */; };
@@ -95,6 +96,7 @@
 		9542F9AB609FF6B3E7373FE0C4C944F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9717B2D121BC689600C66EE0 /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		9717B2D421BC69AD00C66EE0 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		9717B2D721BD235100C66EE0 /* PromisePipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisePipe.swift; sourceTree = "<group>"; };
 		97EFA15121AC92DF0083EE84 /* ModelUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdate.swift; sourceTree = "<group>"; };
 		97EFA15421ACA4390083EE84 /* BatchUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchUpdateView.swift; sourceTree = "<group>"; };
 		97EFA15621ACA4CB0083EE84 /* UICollectionView+ViewBatchUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ViewBatchUpdate.swift"; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				9717B2D421BC69AD00C66EE0 /* Pipe.swift */,
+				9717B2D721BD235100C66EE0 /* PromisePipe.swift */,
 			);
 			path = Pipes;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				0731013A2178EDB7055571FDBF864143 /* Array.swift in Sources */,
 				CCABA4CD6654689E486E47FA53979E73 /* BinderDataSource.swift in Sources */,
 				3304596A672D4D8EA7B2978052104896 /* CollectionBinderDataSource.swift in Sources */,
+				9717B2D821BD235100C66EE0 /* PromisePipe.swift in Sources */,
 				9717B2D521BC69AD00C66EE0 /* Pipe.swift in Sources */,
 				BFA313823136F11B2281382188AC412C /* CollectionDirectionableContainer.swift in Sources */,
 				AFA14B2B5A8CCADB5487189F7E9ABCDA /* DirectionableContainer.swift in Sources */,

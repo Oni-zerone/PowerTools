@@ -16,8 +16,6 @@ open class Pipe<Value> {
         case reset
     }
     
-    open var shouldPassThroughtProcess = true
-    
     weak var nextPipe: Pipe?
     
     func process(_ result: Result) {
@@ -25,7 +23,11 @@ open class Pipe<Value> {
         switch result {
             
         case .success(let value):
-            self.success(value)
+            do {
+                try self.success(value)
+            } catch let error {
+                self.send(.failure(error))
+            }
         
         case .failure(let error):
             self.failure(error)
@@ -33,13 +35,9 @@ open class Pipe<Value> {
         case .reset:
             self.reset()
         }
-        
-        if shouldPassThroughtProcess {
-            self.send(result)
-        }
     }
     
-    open func success(_ content: Value) {
+    open func success(_ content: Value) throws {
         self.send(.success(content))
     }
     
