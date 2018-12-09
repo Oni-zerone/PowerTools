@@ -18,6 +18,8 @@ open class Pipe<Value> {
     
     weak var nextPipe: Pipe?
     
+    public init() {   }
+    
     func process(_ result: Result) {
         
         switch result {

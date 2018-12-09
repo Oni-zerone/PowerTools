@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct Pipeline<Value> {
+public struct Pipeline<Value> {
     
-    var pipes: [Pipe<Value>] = []
+    var pipes: [Pipe<Value>]
+    
+    public init() {
+        self.pipes = []
+    }
     
     public mutating func attach(_ pipe: Pipe<Value>) {
         
