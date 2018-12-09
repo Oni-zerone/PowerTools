@@ -54,7 +54,7 @@ class AbstractFactoryTests: XCTestCase {
 
     func testShowEmptyController() {
         
-        self.controller.showVC(from: EmptyBuilder(), sender: self.controller)
+        self.controller.showVC(from: Builder<String>(), sender: self.controller)
         let exp = self.expectation(description: "show")
         exp.isInverted = true
         wait(for: [exp], timeout: 1.0)
@@ -65,7 +65,7 @@ class AbstractFactoryTests: XCTestCase {
         
         let exp = expectation(description: "presentedController")
         exp.isInverted = true
-        self.controller.presentVC(from: EmptyBuilder(), animated: true) {
+        self.controller.presentVC(from: Builder<String>(), animated: true) {
             exp.fulfill()
             XCTAssert(self.controller.presentedViewController == nil)
         }
@@ -92,6 +92,14 @@ class AbstractFactoryTests: XCTestCase {
         XCTAssert(self.controller.presentedViewController?.title == self.controller.context)
     }
 
+    func testShowControllerFromEmptyContainer() {
+        
+        self.controller.showVC(from: EmptyContainer())
+        let exp = self.expectation(description: "show")
+        exp.isInverted = true
+        wait(for: [exp], timeout: 1.0)
+        XCTAssert(self.controller.childViewControllers.count == 1)
+    }
 }
 
 class NavigationFactory: UINavigationController, AbstractFactory {
@@ -125,18 +133,18 @@ class DummyBuilder: Builder<String> {
     }
 }
 
-class EmptyBuilder: Builder<String> {
-    
-    override func build(_ context: String) -> UIViewController? {
-        return nil
-    }
-}
-
 struct DummyContainer: BuilderContainer {
 
     var shouldPresentModally: Bool = false
     
     func getBuilder<Context>(_ contextType: Context.Type) -> Builder<Context>? {
         return DummyBuilder() as? Builder<Context>
+    }
+}
+
+struct EmptyContainer: BuilderContainer {
+    
+    func getBuilder<Context>(_ contextType: Context.Type) -> Builder<Context>? {
+        return nil
     }
 }
