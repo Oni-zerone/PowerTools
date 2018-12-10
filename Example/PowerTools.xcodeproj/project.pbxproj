@@ -19,6 +19,9 @@
 		9717B2C621BBD28C00C66EE0 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */; };
 		9717B2CA21BC06F300C66EE0 /* DataSourceUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C921BC06F200C66EE0 /* DataSourceUpdateTests.swift */; };
 		9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2CB21BC083400C66EE0 /* StringCell.swift */; };
+		9717B2E021BD30FE00C66EE0 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2DF21BD30FE00C66EE0 /* PipelineTests.swift */; };
+		9717B2E321BD315C00C66EE0 /* AssertPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2E121BD314900C66EE0 /* AssertPipe.swift */; };
+		9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2E421BD3AEA00C66EE0 /* PromisePipeTests.swift */; };
 		9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2E721BD472500C66EE0 /* AbstractFactoryTests.swift */; };
 		97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E502195812700E7F401 /* ColorViewModel.swift */; };
 		97A34E53219582BA00E7F401 /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* BaseSection.swift */; };
@@ -58,6 +61,9 @@
 		9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdate.swift; sourceTree = "<group>"; };
 		9717B2C921BC06F200C66EE0 /* DataSourceUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceUpdateTests.swift; sourceTree = "<group>"; };
 		9717B2CB21BC083400C66EE0 /* StringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCell.swift; sourceTree = "<group>"; };
+		9717B2DF21BD30FE00C66EE0 /* PipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineTests.swift; sourceTree = "<group>"; };
+		9717B2E121BD314900C66EE0 /* AssertPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertPipe.swift; sourceTree = "<group>"; };
+		9717B2E421BD3AEA00C66EE0 /* PromisePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisePipeTests.swift; sourceTree = "<group>"; };
 		9717B2E721BD472500C66EE0 /* AbstractFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryTests.swift; sourceTree = "<group>"; };
 		97A34E502195812700E7F401 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 		97A34E52219582BA00E7F401 /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 			children = (
 				9717B2E621BD470D00C66EE0 /* AbstractFactory */,
 				9717B2BD21BB40C700C66EE0 /* BaseModels */,
+				9717B2DE21BD30E600C66EE0 /* Pipeline */,
 				9717B2C221BB480200C66EE0 /* ModelUpdateTests */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -179,6 +186,7 @@
 				9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */,
 				9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */,
 				9717B2CB21BC083400C66EE0 /* StringCell.swift */,
+				9717B2E121BD314900C66EE0 /* AssertPipe.swift */,
 			);
 			path = BaseModels;
 			sourceTree = "<group>";
@@ -192,6 +200,15 @@
 			path = ModelUpdateTests;
 			sourceTree = "<group>";
 		};
+		9717B2DE21BD30E600C66EE0 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				9717B2DF21BD30FE00C66EE0 /* PipelineTests.swift */,
+				9717B2E421BD3AEA00C66EE0 /* PromisePipeTests.swift */,
+			);
+			path = Pipeline;
+sourceTree = "<group>";
+};
 		9717B2E621BD470D00C66EE0 /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,10 +481,13 @@
 			files = (
 				9717B2C621BBD28C00C66EE0 /* ModelUpdate.swift in Sources */,
 				9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */,
+				9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */,
 				9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */,
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,
+				9717B2E321BD315C00C66EE0 /* AssertPipe.swift in Sources */,
 				9717B2BF21BB410500C66EE0 /* StringViewModel.swift in Sources */,
 				9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */,
+				9717B2E021BD30FE00C66EE0 /* PipelineTests.swift in Sources */,
 				9717B2CA21BC06F300C66EE0 /* DataSourceUpdateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
