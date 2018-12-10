@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/PowerTools.svg?style=flat)](https://cocoapods.org/pods/PowerTools)
 [![License](https://img.shields.io/cocoapods/l/PowerTools.svg?style=flat)](https://cocoapods.org/pods/PowerTools)
 [![Platform](https://img.shields.io/cocoapods/p/PowerTools.svg?style=flat)](https://cocoapods.org/pods/PowerTools)
-[![Coverage Status](https://coveralls.io/repos/github/Oni-zerone/PowerTools/badge.svg?branch=feature%2Ffastlane)](https://coveralls.io/github/Oni-zerone/PowerTools?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/Oni-zerone/PowerTools/badge.svg?branch=develop)](https://coveralls.io/github/Oni-zerone/PowerTools?branch=develop)
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)](https://cocoapods.org/pods/PowerTools)
 ## Example
 
