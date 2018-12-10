@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct Transform<Element> {
+public struct Transform<Element> {
     
-    typealias TransformBlock = ([Element]) -> [Element]
+    public typealias Action = ([Element]) -> [Element]
     
-    var action: TransformBlock
+    public var action: Action
 }
 
-extension Array {
+public extension Array {
     
-    func mutate(_ transformation: Transform<Element>) -> [Element] {
+    public func mutate(_ transformation: Transform<Element>) -> [Element] {
         return transformation.action(self)
     }
 }

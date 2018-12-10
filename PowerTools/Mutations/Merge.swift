@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct Merge<Element> {
+public struct Merge<Element> {
     
-    typealias MergeBlock = ([Element], [Element]) -> [Element]
+    public typealias Action = ([Element], [Element]) -> [Element]
     
-    var action: MergeBlock
+    public var action: Action
 }
 
-extension Array {
+public extension Array {
     
-    func merge(contents: [Element], mode: Merge<Element>) -> [Element] {
+    public func merge(contents: [Element], mode: Merge<Element>) -> [Element] {
         return mode.action(self, contents)
     }
 }

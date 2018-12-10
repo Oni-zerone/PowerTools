@@ -26,6 +26,7 @@
 		899D7494A0E1D34BD52059A22056F8C2 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3827205ACE4A3C9C8215B903ED439734 /* Pipe.swift */; };
 		9777A13421BF2973007B932C /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777A13321BF2973007B932C /* Transform.swift */; };
 		9777A13621BF2A34007B932C /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777A13521BF2A34007B932C /* Merge.swift */; };
+		9777A13821BF2B59007B932C /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777A13721BF2B59007B932C /* SublinePipe.swift */; };
 		9821D003CDFB389C2E1701A296E43D4A /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16C1673C42C0BCB850F9201F054D76 /* BinderDataSource.swift */; };
 		98AF3A5CC7F5DFB3B8BD387A280A8BCF /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B144574D84179E344CA7DAEF6260474B /* Pods-PowerTools_Tests-dummy.m */; };
 		9D6B58A2AF2C710DDE7D25E45D25C77F /* Pods-PowerTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2541E60D3703881519A0CF8BCDE21949 /* Pods-PowerTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,6 +110,7 @@
 		9759268F95755C8C27396DD05E0AC50A /* PromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromisePipe.swift; sourceTree = "<group>"; };
 		9777A13321BF2973007B932C /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
 		9777A13521BF2A34007B932C /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
+		9777A13721BF2B59007B932C /* SublinePipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipe.swift; sourceTree = "<group>"; };
 		981756EAF87EC7F27240FD64ACD5CB85 /* AbstractBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractBuilder.swift; sourceTree = "<group>"; };
 		988BF305502EBFE79B6ABF8DFB717B34 /* Pods-PowerTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PowerTools_Example-umbrella.h"; sourceTree = "<group>"; };
 		9CA503B465D2EF8D4C49748C5723DAC3 /* BuilderContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BuilderContainer.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				3827205ACE4A3C9C8215B903ED439734 /* Pipe.swift */,
 				9759268F95755C8C27396DD05E0AC50A /* PromisePipe.swift */,
+				9777A13721BF2B59007B932C /* SublinePipe.swift */,
 			);
 			path = Pipes;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 			files = (
 				2731EA7DE011BF1B42DA472AE282DDE2 /* AbstractBuilder.swift in Sources */,
 				6519EB729E653ECC8FC11CF544ED3F75 /* AbstractFactory.swift in Sources */,
+				9777A13821BF2B59007B932C /* SublinePipe.swift in Sources */,
 				CAD55B14B53784CD5F456A73A891F346 /* Array.swift in Sources */,
 				D514D01C1B485427040D6E393ABC6AAC /* BatchUpdateView.swift in Sources */,
 				9821D003CDFB389C2E1701A296E43D4A /* BinderDataSource.swift in Sources */,
