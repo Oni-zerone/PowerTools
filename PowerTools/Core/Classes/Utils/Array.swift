@@ -28,4 +28,17 @@ public extension Array {
         array.append(element)
         return array
     }
+    
+    mutating func insert(_ elements: [Element], offset: Int, frequency: Int) {
+        (0 ..< elements.count).forEach { index in
+            let safeIndex = max(0, min((index * frequency) + offset, self.count))
+            self.insert(elements[index], at: safeIndex)
+        }
+    }
+    
+    func inserting(_ elements: [Element], offset: Int, frequency: Int) -> Array<Element> {
+        var mutableArray = self
+        mutableArray.insert(element, offset: offset, frequency: frequency)
+        return mutableArray
+    }
 }

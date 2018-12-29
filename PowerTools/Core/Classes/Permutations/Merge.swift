@@ -47,12 +47,7 @@ public extension Merge {
     public static func inject(offset: Int, frequency: Int) -> Merge<Element> {
         
         return Merge { (first, second) -> [Element] in
-            var mutableFirst = first
-            (0 ..< second.count).forEach{ index in
-                let safeIndex = max(0, min((index * frequency) + offset, mutableFirst.count))
-                mutableFirst.insert(second[index], at: safeIndex)
-            }
-            return mutableFirst
+            return first.inserting(second, offset: offset, frequency: frequency)
         }
     }
 }
