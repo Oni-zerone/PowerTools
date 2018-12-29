@@ -337,7 +337,7 @@
 				9777A13521BF2A34007B932C /* Merge.swift */,
 			);
 			name = Permutations;
-			path = PowerTools/Mutations;
+			path = PowerTools/Core/Classes/Permutations;
 			sourceTree = "<group>";
 		};
 		9CF8C45CBB15492A6DA20FDC2F9D2AF9 /* AbstractFactory */ = {
