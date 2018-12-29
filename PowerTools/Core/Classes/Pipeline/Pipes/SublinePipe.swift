@@ -7,19 +7,25 @@
 
 import Foundation
 
-open class SublinePipe<Value>: Pipe<[Value]> {
+open class SublinePipe<Element>: Pipe<[Element]> {
     
-    var subline = [Pipe<[Value]>]()
-    let mergeAction: Merge<Value>.Action
-    let mergePipe = PromisePipe<[Value]>()
+    public var shouldPassThrought = false
     
-    init(merge: Merge<Value>) {
+    var subline = [Pipe<[Element]>]()
+    let mergeAction: Merge<Element>.Action
+    let mergePipe = PromisePipe<[Element]>()
+    
+    public init(merge: Merge<Element>) {
         
         self.mergeAction = merge.action
         super.init()
     }
+
+    public func attach(_ pipes: Pipe<[Element]>...) {
+        pipes.forEach({ self.attach($0) })
+    }
     
-    public func attach(_ pipe: Pipe<[Value]>) {
+    public func attach(_ pipe: Pipe<[Element]>) {
         
         pipe.nextPipe = self.mergePipe
         if let lastPipe = self.subline.last {
@@ -27,10 +33,14 @@ open class SublinePipe<Value>: Pipe<[Value]> {
         }
         self.subline.append(pipe)
     }
-    
-    open override func success(_ content: [Value]) throws {
+
+    open override func success(_ content: [Element]) throws {
  
-        self.mergePipe.onSuccess { [weak self] (result) -> [Value] in
+        if self.shouldPassThrought {
+            try super.success(content)
+        }
+        
+        self.mergePipe.onSuccess { [weak self] (result) -> [Element] in
 
             guard let strongSelf = self else {
                 return result
@@ -41,14 +51,13 @@ open class SublinePipe<Value>: Pipe<[Value]> {
             return result
         }
         
-        self.mergePipe.onFailure { [weak self] (error) -> Pipe<[Value]>.Result in
+        self.mergePipe.onFailure { [weak self] (error) -> Pipe<[Element]>.Result in
             
             self?.send(.success(content))
             return .failure(error)
         }
         
         self.subline.first?.process(.success([]))
-        try super.success(content)
     }
     
     open override func reset() {

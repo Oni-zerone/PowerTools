@@ -22,4 +22,10 @@ public extension Array {
         }
         self.append(element)
     }
+    
+    func appending(_ element: Element) -> Array<Element> {
+        var array = self
+        array.append(element)
+        return array
+    }
 }
