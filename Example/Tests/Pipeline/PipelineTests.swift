@@ -14,12 +14,13 @@ class PipelineTests: XCTestCase {
     var pipeline: Pipeline<String>!
     
     override func setUp() {
-        
+        super.setUp()
         self.pipeline = Pipeline()
     }
 
     override func tearDown() {
         self.pipeline = nil
+        super.tearDown()
     }
 
     func testPipelineLoad() {
