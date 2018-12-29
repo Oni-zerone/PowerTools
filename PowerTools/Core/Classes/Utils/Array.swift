@@ -31,14 +31,15 @@ public extension Array {
     
     mutating func insert(_ elements: [Element], offset: Int, frequency: Int) {
         (0 ..< elements.count).forEach { index in
-            let safeIndex = max(0, min((index * frequency) + offset, self.count))
+            let minIndex = Swift.min((index * frequency) + offset, self.count)
+            let safeIndex = Swift.max(0, minIndex)
             self.insert(elements[index], at: safeIndex)
         }
     }
     
     func inserting(_ elements: [Element], offset: Int, frequency: Int) -> Array<Element> {
         var mutableArray = self
-        mutableArray.insert(element, offset: offset, frequency: frequency)
+        mutableArray.insert(elements, offset: offset, frequency: frequency)
         return mutableArray
     }
 }
