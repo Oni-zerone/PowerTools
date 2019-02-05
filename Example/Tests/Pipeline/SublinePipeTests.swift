@@ -133,4 +133,35 @@ class SublinePipeTests: XCTestCase {
         self.pipeline.load([])
         wait(for: assertPipe.expectations, timeout: 1.0)
     }
+    
+    func testSublineReset() {
+        
+        let firstString = "string"
+        let secondString = "sub_first"
+        let thirdString = "sub_second"
+        
+        self.pipeline.attach(PromisePipe<[String]>(success: { _ in
+            return [firstString]
+        }))
+        
+        let sublineResetExp = expectation(description: "sublineReset")
+        let subline = SublinePipe<String>(merge: .injectAfter)
+        subline.attach(AssertPipe<[String]>(reset: sublineResetExp))
+        self.pipeline.attach(subline)
+        
+        self.pipeline.attach(PromisePipe(success: { strings in
+            XCTAssert(strings.count == 3)
+            XCTAssert(strings.first == firstString)
+            XCTAssert(strings[1] == secondString)
+            XCTAssert(strings.last == thirdString)
+            return strings
+        }))
+        
+        let resetExp = expectation(description: "reset")
+        let resetPipe = AssertPipe<[String]>(reset: resetExp)
+        self.pipeline.attach(resetPipe)
+        
+        self.pipeline.reset()
+        wait(for: [sublineResetExp, resetExp], timeout: 1.0)
+    }
 }
