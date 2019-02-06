@@ -32,9 +32,9 @@ struct StringViewModel: ItemViewModel, Hashable {
     static func == (lhs: StringViewModel, rhs: StringViewModel) -> Bool {
         return lhs.string == rhs.string
     }
-    
-    var hashValue: Int {
-        return self.string.hashValue
+
+    func hash(into hasher: inout Hasher) {
+        return self.string.hash(into: &hasher)
     }
 }
 
