@@ -40,6 +40,12 @@ Pod::Spec.new do |s|
       sp.dependency 'PowerTools/Core'
   end
   
+  s.subspec 'AutoVM' do |sp|
+      sp.source_files = 'PowerTools/AutoVM/Classes/**/*'
+      sp.dependency 'PowerTools/CollectionVM'
+      sp.dependency 'Sourcery'
+  end
+  
   # s.resource_bundles = {
   #   'PowerTools' => ['PowerTools/Assets/*.png']
   # }

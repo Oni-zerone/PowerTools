@@ -2,20 +2,30 @@ PODS:
   - PowerTools (0.1.0):
     - PowerTools/CollectionVM (= 0.1.0)
     - PowerTools/Core (= 0.1.0)
+  - PowerTools/AutoVM (0.1.0):
+    - PowerTools/CollectionVM
+    - Sourcery
   - PowerTools/CollectionVM (0.1.0):
     - PowerTools/Core
   - PowerTools/Core (0.1.0)
+  - Sourcery (0.15.0)
 
 DEPENDENCIES:
   - PowerTools (from `../`)
+  - PowerTools/AutoVM (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Sourcery
 
 EXTERNAL SOURCES:
   PowerTools:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PowerTools: 07d09f479a97aec52152492e2b5cf0900ec9e572
+  PowerTools: aaebc14d0c46ba225dc5982613e41626f85e5e63
+  Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
 
-PODFILE CHECKSUM: 797e357e2517de7a547e46d5f571b140dded2362
+PODFILE CHECKSUM: 8e531ca68236202659ab9a22a8388cdc657f7bb8
 
 COCOAPODS: 1.5.3
