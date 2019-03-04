@@ -18,13 +18,20 @@ platform :ios do
   
   desc "Default CI lane"
   lane :ci do
-    cocoapods
+    update_dependeices
     lint
     pod_lint
     test
     coverage
   end
 
+  desc "Update dependencies"
+  lane :update_dependencies do
+    cocoapods(
+      repo_update: true
+    )
+  end
+  
   desc  "SwiftLint linting"
   lane :lint do
     swiftlint(
