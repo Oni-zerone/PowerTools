@@ -1,0 +1,3 @@
+// swiftlint:disable all
+
+//MARK: - AutoItemViewModel declares compliancy to Hashable and Equatable for ItemViewModels

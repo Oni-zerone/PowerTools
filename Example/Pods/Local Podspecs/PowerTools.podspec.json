@@ -37,6 +37,18 @@
 
         ]
       }
+    },
+    {
+      "name": "AutoVM",
+      "source_files": "PowerTools/AutoVM/Classes/**/*",
+      "dependencies": {
+        "PowerTools/CollectionVM": [
+
+        ],
+        "Sourcery": [
+
+        ]
+      }
     }
   ]
 }
