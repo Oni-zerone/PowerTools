@@ -16,16 +16,9 @@ default_platform(:ios)
 
 platform :ios do
   
-  desc "cocoapods setup"
-  lane :pod_setup do
-    cocoapods(
-      clean: true,
-      podfile: "./Podfile"
-    )
-  end
-  
   desc "Default CI lane"
   lane :ci do
+    cocoapods
     lint
     pod_lint
     test
