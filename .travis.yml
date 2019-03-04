@@ -5,4 +5,5 @@ before_install:
 - gem update cocoapods --no-ri --no-rdoc --no-document
 script:
 - cd Example/
+- fastlane action cocoapods
 - fastlane ci
