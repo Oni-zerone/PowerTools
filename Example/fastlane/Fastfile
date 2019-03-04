@@ -18,7 +18,7 @@ platform :ios do
   
   desc "Default CI lane"
   lane :ci do
-    update_dependeices
+    update_dependencies
     lint
     pod_lint
     test
