@@ -399,7 +399,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PowerTools/PowerTools.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -410,7 +410,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2A672B963A0EF0CBFF645CA4 /* [CP] Check Pods Manifest.lock */ = {
