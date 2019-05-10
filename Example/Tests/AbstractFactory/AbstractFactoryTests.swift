@@ -58,7 +58,7 @@ class AbstractFactoryTests: XCTestCase {
         let exp = self.expectation(description: "show")
         exp.isInverted = true
         wait(for: [exp], timeout: 1.0)
-        XCTAssert(self.controller.childViewControllers.count == 1)
+        XCTAssert(self.controller.children.count == 1)
     }
     
     func testPresentEmptyController() {
@@ -98,7 +98,7 @@ class AbstractFactoryTests: XCTestCase {
         let exp = self.expectation(description: "show")
         exp.isInverted = true
         wait(for: [exp], timeout: 1.0)
-        XCTAssert(self.controller.childViewControllers.count == 1)
+        XCTAssert(self.controller.children.count == 1)
     }
 }
 
