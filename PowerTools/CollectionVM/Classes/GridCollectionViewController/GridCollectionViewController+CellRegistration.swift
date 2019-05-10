@@ -9,14 +9,14 @@ import Foundation
 
 public extension GridCollectionViewController {
     
-    public func register(_ nibName: String, cellReuseIdentifier identifier: String? = nil) {
+    func register(_ nibName: String, cellReuseIdentifier identifier: String? = nil) {
         
         let reuseIdentifier = identifier ?? nibName
         let nib = UINib(nibName: nibName, bundle: Bundle.main)
         self.register(nib, cellReuseIdentifier: reuseIdentifier)
     }
     
-    public func register(_ nib: UINib, cellReuseIdentifier identifier: String) {
+    func register(_ nib: UINib, cellReuseIdentifier identifier: String) {
         self.collectionView?.register(nib, forCellWithReuseIdentifier: identifier)
     }
 }

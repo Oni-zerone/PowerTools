@@ -30,7 +30,7 @@ public protocol GridDescriptor: GridItem {
 
 public extension GridDescriptor where Self: ItemViewDescriptor {
     
-    public func size(in containerView: UIView, module: GridModule) -> CGSize {
+    func size(in containerView: UIView, module: GridModule) -> CGSize {
         return module.size(self.ratio)
     }
 }
