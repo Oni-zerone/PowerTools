@@ -56,11 +56,11 @@ public extension GridSection {
 
 internal extension GridSection {
     
-    internal func horizontalSpacing(_ direction: ContentDirection) -> CGFloat {
+    func horizontalSpacing(_ direction: ContentDirection) -> CGFloat {
         return direction == .vertical ? self.sectionHorizontalItemSpacing : self.sectionVerticalItemSpacing
     }
     
-    internal func verticalSpacing(_ direction: ContentDirection) -> CGFloat {
+    func verticalSpacing(_ direction: ContentDirection) -> CGFloat {
         return direction == .vertical ? self.sectionVerticalItemSpacing : self.sectionHorizontalItemSpacing
     }
 }
@@ -78,7 +78,7 @@ internal extension UIView {
         return max(calculatedNumberOfItems, 1)
     }
     
-    internal var direction: ContentDirection {
+    var direction: ContentDirection {
         
         guard let container = self as? DirectionableContainer else {
             return .vertical

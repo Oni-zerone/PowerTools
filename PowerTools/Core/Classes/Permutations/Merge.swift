@@ -16,7 +16,7 @@ public struct Merge<Element> {
 
 public extension Merge {
     
-    public static var injectBefore: Merge<Element> {
+    static var injectBefore: Merge<Element> {
         
         return Merge { (first, second) -> [Element] in
             var mutableFirst = first
@@ -25,7 +25,7 @@ public extension Merge {
         }
     }
     
-    public static var injectAfter: Merge<Element> {
+    static var injectAfter: Merge<Element> {
         
         return Merge { (items, contents) -> [Element] in
             var mutableItems = items
@@ -34,7 +34,7 @@ public extension Merge {
         }
     }
     
-    public static func inject(at index: Int = 0) -> Merge<Element> {
+    static func inject(at index: Int = 0) -> Merge<Element> {
         
         return Merge { (first, second) -> [Element] in
             var mutableFirst = first
@@ -44,7 +44,7 @@ public extension Merge {
         }
     }
     
-    public static func inject(offset: Int, frequency: Int) -> Merge<Element> {
+    static func inject(offset: Int, frequency: Int) -> Merge<Element> {
         
         return Merge { (first, second) -> [Element] in
             return first.inserting(second, offset: offset, frequency: frequency)
@@ -54,7 +54,7 @@ public extension Merge {
 
 public extension Array {
     
-    public func merge(contents: [Element], mode: Merge<Element>) -> [Element] {
+    func merge(contents: [Element], mode: Merge<Element>) -> [Element] {
         return mode.action(self, contents)
     }
 }
