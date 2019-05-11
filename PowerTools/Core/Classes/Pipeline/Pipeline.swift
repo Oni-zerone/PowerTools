@@ -11,14 +11,14 @@ public struct Pipeline<Value> {
     
     public var headPipe: Pipe<Value>? {
         didSet {
-            headPipe?.nextPipe = pipes.first
+            self.headPipe?.nextPipe = self.pipes.first ?? self.tailPipe
         }
     }
     var pipes: [Pipe<Value>]
     
     public var tailPipe: Pipe<Value>? {
         didSet {
-            pipes.last?.nextPipe = tailPipe
+            (self.pipes.last ?? self.headPipe)?.nextPipe = tailPipe
         }
     }
     
@@ -50,6 +50,6 @@ public struct Pipeline<Value> {
     }
     
     public func load(_ baseValue: Value) {
-        (self.headPipe ?? self.pipes.first)?.process(.success(baseValue))
+        (self.headPipe ?? self.pipes.first ?? self.tailPipe)?.process(.success(baseValue))
     }
 }
