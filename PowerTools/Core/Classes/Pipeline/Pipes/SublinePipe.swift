@@ -10,68 +10,64 @@ import Foundation
 open class SublinePipe<Element>: Pipe<[Element]> {
     
     public var shouldPassThrought = false
-    
-    var subline = [Pipe<[Element]>]()
+
+    internal var pipeline: Pipeline<[Element]>
     let mergeAction: Merge<Element>.Action
-    let mergePipe = PromisePipe<[Element]>()
+    
+    private var promisePipe: PromisePipe<[Element]>? {
+        return pipeline.tailPipe as? PromisePipe<[Element]>
+    }
     
     public init(merge: Merge<Element>) {
         
+        self.pipeline = Pipeline(tailPipe: PromisePipe<[Element]>())
         self.mergeAction = merge.action
         super.init()
     }
 
     public func attach(_ pipes: Pipe<[Element]>...) {
-        pipes.forEach({ self.attach($0) })
+        self.pipeline.attach(pipes)
     }
     
     public func attach(_ pipe: Pipe<[Element]>) {
-        
-        pipe.nextPipe = self.mergePipe
-        if let lastPipe = self.subline.last {
-            lastPipe.nextPipe = pipe
-        }
-        self.subline.append(pipe)
+        self.pipeline.attach(pipe)
     }
 
-    open override func success(_ content: [Element]) throws {
+    open override func success(_ content: [Element]) {
  
         if self.shouldPassThrought {
-            try super.success(content)
+            self.send(content)
         }
         
         self.setupSuccess(content)
         self.setupFailure(content)
         
-        self.subline.first?.process(.success([]))
+        self.pipeline.load(content)
     }
     
     private func setupSuccess(_ content: [Element]) {
         
-        self.mergePipe.onSuccess { [weak self] (result) -> [Element] in
+        self.promisePipe?.onSuccess { [weak self] (result) -> Pipe<[Element]>.Result? in
             
-            guard let strongSelf = self else {
-                return result
-            }
-            
-            let mergedResult = strongSelf.mergeAction(content, result)
-            strongSelf.send(.success(mergedResult))
-            return result
+            guard let `self` = self else { return nil }
+            let mergedResult = self.mergeAction(content, result)
+            self.send(.success(mergedResult))
+            return .success(result)
         }
     }
     
     private func setupFailure(_ content: [Element]) {
         
-        self.mergePipe.onFailure { [weak self] (error) -> Pipe<[Element]>.Result in
+        self.promisePipe?.onFailure { [weak self] (error) -> Pipe<[Element]>.Result? in
             
             self?.send(.success(content))
-            return .failure(error)
+            return nil
         }
     }
     
     open override func reset() {
         
-        self.subline.first?.reset()
+        self.pipeline.reset()
         super.reset()
     }
 }

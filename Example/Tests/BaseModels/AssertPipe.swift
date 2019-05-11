@@ -28,15 +28,15 @@ class AssertPipe<Value>: PowerTools.Pipe<Value> {
         super.init()
     }
     
-    override func success(_ value: Value) throws {
+    override func success(_ value: Value) {
         
         guard let exp = self.successExpectation else {
             XCTFail("success should not be called.")
-            try super.success(value)
-            return 
+            self.send(value)
+            return
         }
         exp.fulfill()
-        try super.success(value)
+        self.send(value)
     }
     
     override func failure(_ error: Error) {

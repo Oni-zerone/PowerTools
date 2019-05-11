@@ -9,9 +9,18 @@ import Foundation
 
 public struct Pipeline<Value> {
     
-    var headPipe: Pipe<Value>?
+    public var headPipe: Pipe<Value>? {
+        didSet {
+            headPipe?.nextPipe = pipes.first
+        }
+    }
     var pipes: [Pipe<Value>]
-    var tailPipe: Pipe<Value>?
+    
+    public var tailPipe: Pipe<Value>? {
+        didSet {
+            pipes.last?.nextPipe = tailPipe
+        }
+    }
     
     public init(headPipe: Pipe<Value>? = nil, tailPipe: Pipe<Value>? = nil) {
         self.headPipe = headPipe

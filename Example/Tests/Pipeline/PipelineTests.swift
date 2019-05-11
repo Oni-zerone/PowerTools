@@ -45,7 +45,9 @@ class PipelineTests: XCTestCase {
     
     func testPipelineFailure() {
         
-        self.pipeline.attach(PromisePipe(success: { _ in throw PipelineErrors.requiredFailure }))
+        self.pipeline.attach(PromisePipe(success: { _ in
+            return .failure(PipelineErrors.requiredFailure)
+        }))
 
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)

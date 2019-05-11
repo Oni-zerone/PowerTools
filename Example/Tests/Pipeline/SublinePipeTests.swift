@@ -32,14 +32,14 @@ class SublinePipeTests: XCTestCase {
         let thirdString = "sub_second"
         
         self.pipeline.attach(PromisePipe<[String]>(success: { _ in
-            return [firstString]
+            return .success([firstString])
         }))
         
         let subline = SublinePipe<String>(merge: .injectAfter)
         subline.attach(PromisePipe<[String]>(success: { _ in
-            return [secondString]
+            return .success([secondString])
         }), PromisePipe<[String]>(success: { strings in
-            return strings.appending(thirdString)
+            return .success(strings.appending(thirdString))
         }))
         self.pipeline.attach(subline)
         
@@ -48,7 +48,7 @@ class SublinePipeTests: XCTestCase {
             XCTAssert(strings.first == firstString)
             XCTAssert(strings[1] == secondString)
             XCTAssert(strings.last == thirdString)
-            return strings
+            return .success(strings)
         }))
         
         let successExp = expectation(description: "success")
@@ -64,19 +64,19 @@ class SublinePipeTests: XCTestCase {
         let firstString = "string"
         
         self.pipeline.attach(PromisePipe<[String]>(success: { _ in
-            return [firstString]
+            return .success([firstString])
         }))
         
         let subline = SublinePipe<String>(merge: .injectAfter)
         subline.attach(PromisePipe<[String]>(success: { _ in
-            throw PipelineErrors.requiredFailure
+            return .failure(PipelineErrors.requiredFailure)
         }))
         self.pipeline.attach(subline)
         
         self.pipeline.attach(PromisePipe(success: { strings in
             XCTAssert(strings.count == 1)
             XCTAssert(strings.first == firstString)
-            return strings
+            return .success(strings)
         }))
         
         let successExp = expectation(description: "success")
@@ -95,13 +95,13 @@ class SublinePipeTests: XCTestCase {
         var count = 0
         
         self.pipeline.attach(PromisePipe<[String]>(success: { _ in
-            return [firstString]
+            return .success([firstString])
         }))
         
         let subline = SublinePipe<String>(merge: .injectAfter)
         subline.shouldPassThrought = true
         subline.attach(PromisePipe<[String]>(success: { _ in
-            return [secondString]
+            return .success([secondString])
         }))
         self.pipeline.attach(subline)
         
@@ -122,7 +122,7 @@ class SublinePipeTests: XCTestCase {
             }
             
             count += 1
-            return strings
+            return .success(strings)
         }))
         
         let successExp = expectation(description: "success")
@@ -141,7 +141,7 @@ class SublinePipeTests: XCTestCase {
         let thirdString = "sub_second"
         
         self.pipeline.attach(PromisePipe<[String]>(success: { _ in
-            return [firstString]
+            return .success([firstString])
         }))
         
         let sublineResetExp = expectation(description: "sublineReset")
@@ -154,7 +154,7 @@ class SublinePipeTests: XCTestCase {
             XCTAssert(strings.first == firstString)
             XCTAssert(strings[1] == secondString)
             XCTAssert(strings.last == thirdString)
-            return strings
+            return .success(strings)
         }))
         
         let resetExp = expectation(description: "reset")
