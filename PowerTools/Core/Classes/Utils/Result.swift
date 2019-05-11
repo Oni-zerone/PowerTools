@@ -42,3 +42,11 @@ public extension Result {
         }
     }
 }
+
+extension Result.FailedResult where Failure: Error  {
+    
+    public func `throw`() throws {
+        guard let failure = failure else { return }
+        throw failure
+    }
+}
