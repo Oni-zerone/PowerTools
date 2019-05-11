@@ -9,17 +9,22 @@ import Foundation
 
 public struct Pipeline<Value> {
     
+    var headPipe: Pipe<Value>?
     var pipes: [Pipe<Value>]
+    var tailPipe: Pipe<Value>?
     
-    public init() {
+    public init(headPipe: Pipe<Value>? = nil, tailPipe: Pipe<Value>? = nil) {
+        self.headPipe = headPipe
         self.pipes = []
+        self.tailPipe = tailPipe
     }
     
     public mutating func attach(_ pipe: Pipe<Value>) {
         
-        if let lastPipe = self.pipes.last {
+        if let lastPipe = self.pipes.last ?? self.headPipe {
             lastPipe.nextPipe = pipe
         }
+        pipe.nextPipe = tailPipe
         self.pipes.append(pipe)
     }
 
@@ -32,10 +37,10 @@ public struct Pipeline<Value> {
     }
     
     public func reset() {
-        self.pipes.first?.process(.reset)
+        (self.headPipe ?? self.pipes.first)?.process(.reset)
     }
     
     public func load(_ baseValue: Value) {
-        self.pipes.first?.process(.success(baseValue))
+        (self.headPipe ?? self.pipes.first)?.process(.success(baseValue))
     }
 }
