@@ -35,13 +35,13 @@ class SublinePipeTests: XCTestCase {
             return .success([firstString])
         }))
         
-        let subline = SublinePipe<String>(merge: .injectAfter)
+        let subline = self.pipeline.subline(merge: .injectAfter)
         subline.attach(PromisePipe<[String]>(success: { _ in
             return .success([secondString])
-        }), PromisePipe<[String]>(success: { strings in
+        }))
+        subline.attach(PromisePipe<[String]>(success: { strings in
             return .success(strings.appending(thirdString))
         }))
-        self.pipeline.attach(subline)
         
         self.pipeline.attach(PromisePipe(success: { strings in
             XCTAssert(strings.count == 3)

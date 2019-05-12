@@ -7,7 +7,9 @@
 
 import Foundation
 
-public struct Pipeline<Value> {
+public struct Pipeline<Value>: AbstractPipeline {
+    
+    public typealias Content = Value
     
     public var headPipe: Pipe<Value>? {
         didSet {
@@ -35,14 +37,6 @@ public struct Pipeline<Value> {
         }
         pipe.nextPipe = tailPipe
         self.pipes.append(pipe)
-    }
-
-    public mutating func attach(_ pipes: [Pipe<Value>]) {
-        pipes.forEach({ self.attach($0) })
-    }
-
-    public mutating func attach(_ pipes: Pipe<Value>...) {
-        self.attach(pipes)
     }
     
     public func reset() {

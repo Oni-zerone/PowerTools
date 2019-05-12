@@ -55,3 +55,11 @@ public class AsyncPromisePipe<Value>: Pipe<Value> {
     }
 }
 
+public extension AbstractPipeline {
+    
+    mutating func asyncPromise(success successBlock: AsyncPromisePipe<Content>.SuccessBlock? = nil,
+                                     failure failureBlock: AsyncPromisePipe<Content>.FailureBlock? = nil) {
+        
+        self.attach(AsyncPromisePipe<Content>(success: successBlock, failure: failureBlock))
+    }
+}

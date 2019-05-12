@@ -9,10 +9,12 @@ import Foundation
 
 open class SublinePipe<Element>: Pipe<[Element]> {
     
+    public typealias Content = [Element]
+    
     public var shouldPassThrought = false
 
     internal var pipeline: Pipeline<[Element]>
-    let mergeAction: Merge<Element>.Action
+    private let mergeAction: Merge<Element>.Action
     
     private var promisePipe: PromisePipe<[Element]>? {
         return pipeline.tailPipe as? PromisePipe<[Element]>
@@ -23,14 +25,6 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         self.pipeline = Pipeline(tailPipe: PromisePipe<[Element]>())
         self.mergeAction = merge.action
         super.init()
-    }
-
-    public func attach(_ pipes: Pipe<[Element]>...) {
-        self.pipeline.attach(pipes)
-    }
-    
-    public func attach(_ pipe: Pipe<[Element]>) {
-        self.pipeline.attach(pipe)
     }
 
     open override func success(_ content: [Element]) {
@@ -69,5 +63,25 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         
         self.pipeline.reset()
         super.reset()
+    }
+}
+
+extension SublinePipe: AbstractPipeline {
+    
+    public func attach(_ pipe: Pipe<[Element]>) {
+        self.pipeline.attach(pipe)
+    }
+
+    public func load(_ baseValue: [Element]) {
+        self.pipeline.load(baseValue)
+    }
+}
+
+public extension AbstractPipeline {
+    
+    mutating func subline<Element>(merge: Merge<Element>) -> SublinePipe<Element> where Content == [Element] {
+        let subline = SublinePipe(merge: merge)
+        self.attach(subline)
+        return subline
     }
 }

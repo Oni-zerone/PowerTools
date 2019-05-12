@@ -71,7 +71,8 @@ class PromisePipeTests: XCTestCase {
         self.pipeline.attach(PromisePipe(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
             
-        }), PromisePipe(failure: { error in
+        }))
+        self.pipeline.attach(PromisePipe(failure: { error in
             
             XCTAssert((error as? PipelineErrors) == .requiredFailure)
             return .failure(error)
@@ -101,7 +102,8 @@ class PromisePipeTests: XCTestCase {
         
         self.pipeline.attach(PromisePipe(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
-        }), PromisePipe())
+        }))
+        self.pipeline.attach(PromisePipe())
         
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)

@@ -51,3 +51,12 @@ public class PromisePipe<Value>: Pipe<Value> {
         self.failureBlock = failure
     }
 }
+
+public extension AbstractPipeline {
+    
+    mutating func promise(success successBlock: PromisePipe<Content>.SuccessBlock? = nil,
+                                      failure failureBlock: PromisePipe<Content>.FailureBlock? = nil) {
+        
+        self.attach(PromisePipe<Content>(success: successBlock, failure: failureBlock))
+    }
+}

@@ -36,6 +36,7 @@
 		856DEDFB8D967A4A3321266DD82DDCCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		8B680E7F264C300463D4E41256B244DC /* PowerTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C08CA2660A68BFE3E9F25B8799A52F /* PowerTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F6378D228815E1004B4227 /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6378C228815E1004B4227 /* AsyncPromisePipe.swift */; };
+		97F637982288350E004B4227 /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F637972288350E004B4227 /* AbstractPipeline.swift */; };
 		A0E46AC8BCB3EC0E65D0EF78CA9C1470 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		A41D5EA2B139009BEB7C8119EA0F08EC /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85239906ECC63DA2F03546A628EB14B7 /* BinderDataSource.swift */; };
 		A704CEACD4F123B33ABCFCE4F7AF5C0B /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419EFAB0747C25A971F18E655EDFA8B /* Merge.swift */; };
@@ -103,6 +104,7 @@
 		95BFB5316D0B2C63F97D70696CD672CD /* Pipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		9644C3DE12C051E3595118F50E105F6E /* TableBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableBinderDataSource.swift; sourceTree = "<group>"; };
 		97F6378C228815E1004B4227 /* AsyncPromisePipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPromisePipe.swift; sourceTree = "<group>"; };
+		97F637972288350E004B4227 /* AbstractPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractPipeline.swift; sourceTree = "<group>"; };
 		9B3B34DDAD21224E109E9C3337F7D3A9 /* BatchUpdateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BatchUpdateView.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1584D82220F5867D988F8B4EEC7490E /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 		B717B1CCAFB3F90A537DC8A4C010C94B /* Pipeline */ = {
 			isa = PBXGroup;
 			children = (
+				97F637972288350E004B4227 /* AbstractPipeline.swift */,
 				D9428F9EBA86489394B114A17E6A747F /* Pipeline.swift */,
 				9C2F5F6A207EB0DC8BE04A6AFE049731 /* Pipes */,
 			);
@@ -623,6 +626,7 @@
 				6C9E988A2996D229F1831256BC9EE677 /* TableBinderDataSource.swift in Sources */,
 				03A0B85D00DDCD53A97D602F88250F01 /* TableDirectionableContainer.swift in Sources */,
 				1E7E8C3400FA818CE00CDBEDE2C35624 /* UICollectionView+ViewBatchUpdate.swift in Sources */,
+				97F637982288350E004B4227 /* AbstractPipeline.swift in Sources */,
 				3A9824B8B466648A770E635C8C418FC9 /* View.swift in Sources */,
 				E03FDD95848E4DD8BBA015126C907959 /* ViewController.swift in Sources */,
 			);
