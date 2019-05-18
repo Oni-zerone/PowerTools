@@ -7,35 +7,43 @@
 
 import Foundation
 
-public struct Pipeline<Value> {
+public struct Pipeline<Value>: AbstractPipeline {
     
+    public typealias Content = Value
+    
+    public var headPipe: Pipe<Value>? {
+        didSet {
+            self.headPipe?.nextPipe = self.pipes.first ?? self.tailPipe
+        }
+    }
     var pipes: [Pipe<Value>]
     
-    public init() {
+    public var tailPipe: Pipe<Value>? {
+        didSet {
+            (self.pipes.last ?? self.headPipe)?.nextPipe = tailPipe
+        }
+    }
+    
+    public init(headPipe: Pipe<Value>? = nil, tailPipe: Pipe<Value>? = nil) {
+        self.headPipe = headPipe
         self.pipes = []
+        self.tailPipe = tailPipe
     }
     
     public mutating func attach(_ pipe: Pipe<Value>) {
         
-        if let lastPipe = self.pipes.last {
+        if let lastPipe = self.pipes.last ?? self.headPipe {
             lastPipe.nextPipe = pipe
         }
+        pipe.nextPipe = tailPipe
         self.pipes.append(pipe)
-    }
-
-    public mutating func attach(_ pipes: [Pipe<Value>]) {
-        pipes.forEach({ self.attach($0) })
-    }
-
-    public mutating func attach(_ pipes: Pipe<Value>...) {
-        self.attach(pipes)
     }
     
     public func reset() {
-        self.pipes.first?.process(.reset)
+        (self.headPipe ?? self.pipes.first)?.process(.reset)
     }
     
     public func load(_ baseValue: Value) {
-        self.pipes.first?.process(.success(baseValue))
+        (self.headPipe ?? self.pipes.first ?? self.tailPipe)?.process(.success(baseValue))
     }
 }

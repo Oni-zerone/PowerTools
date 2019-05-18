@@ -46,12 +46,88 @@ class PipelineTests: XCTestCase {
     
     func testPipelineFailure() {
         
-        self.pipeline.attach(PromisePipe(success: { _ in throw PipelineErrors.requiredFailure }))
+        self.pipeline.attach(PromisePipe(success: { _ in
+            return .failure(PipelineErrors.requiredFailure)
+        }))
 
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)
         self.pipeline.attach(assertPipe)
         
+        self.pipeline.load("")
+        wait(for: assertPipe.expectations, timeout: 1.0)
+    }
+    
+    func testHeadPipe() {
+        
+        self.pipeline.attach(PromisePipe(success: { value in
+            XCTAssert(value == "HeadPipe")
+            return .success(value)
+        }))
+        self.pipeline.headPipe = PromisePipe(success: { _ in
+            return .success("HeadPipe")
+        })
+        let successExp = expectation(description: "success")
+        let assertPipe = AssertPipe<String>(success: successExp)
+        self.pipeline.attach(assertPipe)
+        self.pipeline.load("")
+        wait(for: assertPipe.expectations, timeout: 1.0)
+    }
+    
+    func testHeadPipeInit() {
+        
+        self.pipeline = Pipeline(headPipe: PromisePipe(success: { value in
+            XCTAssert(value == "HeadPipe")
+            return .success(value)
+        }))
+        self.pipeline.headPipe = PromisePipe(success: { _ in
+            return .success("HeadPipe")
+        })
+        
+        let successExp = expectation(description: "success")
+        let assertPipe = AssertPipe<String>(success: successExp)
+        self.pipeline.attach(assertPipe)
+        self.pipeline.load("")
+        wait(for: assertPipe.expectations, timeout: 1.0)
+    }
+
+    func testTailPipe() {
+        
+        let successExp = expectation(description: "success")
+        self.pipeline.tailPipe = AssertPipe(success: successExp)
+        self.pipeline.load("")
+        wait(for: [successExp], timeout: 1.0)
+    }
+
+    func testTailPipeContent() {
+        
+        let successExp = expectation(description: "success")
+        self.pipeline.tailPipe = PromisePipe(success: { value in
+            XCTAssert(value == "Content")
+            successExp.fulfill()
+            return nil
+        })
+
+        self.pipeline.attach(PromisePipe(success: { _ in
+            return .success("Content")
+        }))
+        self.pipeline.load("")
+        wait(for: [successExp], timeout: 1.0)
+    }
+
+    func testTailPipeInit() {
+
+        self.pipeline = Pipeline(headPipe: PromisePipe(success: { value in
+            XCTAssert(value == "HeadPipe")
+            return .success(value)
+        }))
+        self.pipeline.headPipe = PromisePipe(success: { _ in
+            return .success("HeadPipe")
+        })
+
+        let successExp = expectation(description: "success")
+        let assertPipe = AssertPipe<String>(success: successExp)
+        self.pipeline.attach(assertPipe)
         self.pipeline.load("")
         wait(for: assertPipe.expectations, timeout: 1.0)
     }
