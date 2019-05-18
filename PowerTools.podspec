@@ -33,14 +33,13 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core', 'CollectionVM'
   s.subspec 'Core' do |sp|
       sp.source_files = 'PowerTools/Core/Classes/**/*'
+      sp.framework = 'UIKit'
   end
   
   s.subspec 'CollectionVM' do |sp|
       sp.source_files = 'PowerTools/CollectionVM/Classes/**/*'
+      sp.framework = 'UIKit'
+      
       sp.dependency 'PowerTools/Core'
   end
-  
-  # s.resource_bundles = {
-  #   'PowerTools' => ['PowerTools/Assets/*.png']
-  # }
 end

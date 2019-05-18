@@ -1,7 +1,7 @@
 {
-  "name": "PowerTools",
+  "name": "PowerToolsTester",
   "version": "0.2.0",
-  "summary": "Tools for fast and modular app development.",
+  "summary": "Tools tester for fast and modular app development.",
   "swift_version": "5.0",
   "description": "Fast development tools with a better way to use UICollectionViews",
   "homepage": "https://github.com/Oni-zerone/PowerTools",
@@ -20,20 +20,20 @@
   "platforms": {
     "ios": "9.0"
   },
-  "default_subspecs": [
-    "Core",
-    "CollectionVM"
-  ],
+  "default_subspecs": "CoreTester",
   "subspecs": [
     {
-      "name": "Core",
-      "source_files": "PowerTools/Core/Classes/**/*",
-      "frameworks": "UIKit"
-    },
-    {
-      "name": "CollectionVM",
-      "source_files": "PowerTools/CollectionVM/Classes/**/*",
-      "frameworks": "UIKit",
+      "name": "CoreTester",
+      "source_files": "PowerTools/Tests/Core/Classes/**/*",
+      "frameworks": "XCTest",
+      "user_target_xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+      },
+      "pod_target_xcconfig": {
+        "APPLICATION_EXTENSION_API_ONLY": "YES",
+        "ENABLE_BITCODE": "NO",
+        "OTHER_LDFLAGS": "$(inherited) -Xlinker -no_application_extension"
+      },
       "dependencies": {
         "PowerTools/Core": [
 

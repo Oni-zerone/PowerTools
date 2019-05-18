@@ -20,7 +20,6 @@
 		9717B2CA21BC06F300C66EE0 /* DataSourceUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C921BC06F200C66EE0 /* DataSourceUpdateTests.swift */; };
 		9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2CB21BC083400C66EE0 /* StringCell.swift */; };
 		9717B2E021BD30FE00C66EE0 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2DF21BD30FE00C66EE0 /* PipelineTests.swift */; };
-		9717B2E321BD315C00C66EE0 /* AssertPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2E121BD314900C66EE0 /* AssertPipe.swift */; };
 		9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2E421BD3AEA00C66EE0 /* PromisePipeTests.swift */; };
 		9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2E721BD472500C66EE0 /* AbstractFactoryTests.swift */; };
 		97607D0022099BC20071AB8D /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97607CFF22099BC20071AB8D /* ArrayTests.swift */; };
@@ -64,11 +63,11 @@
 		9717B2C921BC06F200C66EE0 /* DataSourceUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceUpdateTests.swift; sourceTree = "<group>"; };
 		9717B2CB21BC083400C66EE0 /* StringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCell.swift; sourceTree = "<group>"; };
 		9717B2DF21BD30FE00C66EE0 /* PipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineTests.swift; sourceTree = "<group>"; };
-		9717B2E121BD314900C66EE0 /* AssertPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertPipe.swift; sourceTree = "<group>"; };
 		9717B2E421BD3AEA00C66EE0 /* PromisePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromisePipeTests.swift; sourceTree = "<group>"; };
 		9717B2E721BD472500C66EE0 /* AbstractFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryTests.swift; sourceTree = "<group>"; };
 		97607CFF22099BC20071AB8D /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipeTests.swift; sourceTree = "<group>"; };
+		978C651E228FEE7500D95276 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec; path = ../PowerToolsTester.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97A34E502195812700E7F401 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 		97A34E52219582BA00E7F401 /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
 		97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -161,6 +160,7 @@
 				9717B2BD21BB40C700C66EE0 /* BaseModels */,
 				9717B2DE21BD30E600C66EE0 /* Pipeline */,
 				9717B2C221BB480200C66EE0 /* ModelUpdateTests */,
+				97F637A02288D350004B4227 /* BinderDataSource */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -178,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9E55C7BF7C4181D32C08094B /* PowerTools.podspec */,
+				978C651E228FEE7500D95276 /* PowerToolsTester.podspec */,
 				4777F5CFBCAE8635092366A3 /* README.md */,
 				4BCC58175E04CDCC440D064D /* LICENSE */,
 			);
@@ -191,7 +192,6 @@
 				9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */,
 				9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */,
 				9717B2CB21BC083400C66EE0 /* StringCell.swift */,
-				9717B2E121BD314900C66EE0 /* AssertPipe.swift */,
 			);
 			path = BaseModels;
 			sourceTree = "<group>";
@@ -273,6 +273,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		97F637A02288D350004B4227 /* BinderDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				97F637A12288D374004B4227 /* GridModuleTests.swift */,
+			);
+			path = BinderDataSource;
+			sourceTree = "<group>";
+		};
 		FFD21232BE487BE59EFC0D54 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +300,7 @@
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PowerTools_Example" */;
 			buildPhases = (
 				EE364E85F0F553975F2BFCCE /* [CP] Check Pods Manifest.lock */,
+				978C651D228FED1E00D95276 /* Clear Pods */,
 				974E599821A9AE950019DEB7 /* swiftLint */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
@@ -315,6 +324,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				894167B9432DC71DFEC94F02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,6 +445,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		894167B9432DC71DFEC94F02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PowerTools-Core/PowerTools.framework",
+				"${BUILT_PRODUCTS_DIR}/PowerToolsTester/PowerToolsTester.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PowerTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PowerToolsTester.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		974E599821A9AE950019DEB7 /* swiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +486,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"/usr/local/bin:$PATH\"\nexport LANG=en_US.UTF-8\n\nif which swiftlint >/dev/null; then\n\nif [ \"$CI\" == true ]; then\nswiftlint lint --strict\nelse\nswiftlint\nfi\n\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		978C651D228FED1E00D95276 /* Clear Pods */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Clear Pods";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Xcode 10 Fix Developing Pod Libs\n# Run script phase before the \"Embed Pods Frameworks\nfind \"${SRCROOT}/Pods\" -type f -name *frameworks.sh -exec bash -c \"touch \\\"{}\\\"\" \\;\n";
 		};
 		EE364E85F0F553975F2BFCCE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -499,7 +551,7 @@
 				9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */,
 				9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */,
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,
-				9717B2E321BD315C00C66EE0 /* AssertPipe.swift in Sources */,
+				97F637A22288D374004B4227 /* GridModuleTests.swift in Sources */,
 				9717B2BF21BB410500C66EE0 /* StringViewModel.swift in Sources */,
 				977F82AC21D4D91B0044074A /* SublinePipeTests.swift in Sources */,
 				9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */,
