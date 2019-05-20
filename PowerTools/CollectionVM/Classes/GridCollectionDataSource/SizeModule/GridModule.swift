@@ -40,6 +40,9 @@ internal extension GridModule {
     func sizeFromReferenceHeight(for ratio: ViewRatio) -> CGSize {
         
         let height = self.referenceSize
+        guard ratio.multiplier != 0 else {
+            return CGSize(width: ratio.constant, height: height)
+        }
         let width = (height - ratio.constant) / ratio.multiplier
         return CGSize(width: abs(width), height: height)
     }
