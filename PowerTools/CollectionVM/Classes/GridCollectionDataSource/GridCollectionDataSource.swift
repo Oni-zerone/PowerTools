@@ -59,6 +59,24 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         return sizedItem.size(in: collectionView, module: module)
     }
     
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        guard let module = self.module(for: section, in: collectionView),
+            let header = self.model.viewModel(ofKind: UICollectionView.elementKindSectionHeader, section: section) as? GridItem else {
+            return .zero
+        }
+        return header.size(in: collectionView, module: module)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+
+        guard let module = self.module(for: section, in: collectionView),
+            let footer = self.model.viewModel(ofKind: UICollectionView.elementKindSectionFooter, section: section) as? GridItem else {
+            return .zero
+        }
+        return footer.size(in: collectionView, module: module)
+    }
+    
     public func invalidateLayout() {
         
         self.moduleCache = [:]
