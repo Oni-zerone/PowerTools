@@ -15,13 +15,19 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         }
     }
     
+    override public var view: UICollectionView? {
+        didSet {
+            self.view?.delegate = self
+        }
+    }
+    
     weak var interactionDelegate: InteractionDelegate?
     
     weak var scrollViewDelegate: UIScrollViewDelegate?
     
-    public override init(view: UICollectionView, model: [SectionViewModel]) {
+    public override init(view: UICollectionView?, model: [SectionViewModel]) {
         super.init(view: view, model: model)
-        view.delegate = self
+        view?.delegate = self
     }
     
     internal var moduleCache: [Int: GridModule] = [:]

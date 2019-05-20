@@ -9,10 +9,16 @@ import Foundation
 
 open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICollectionViewDataSource {
     
-    override public init(view: UICollectionView, model: [SectionViewModel]) {
+    override public var view: UICollectionView? {
+        didSet {
+            self.view?.dataSource = self
+        }
+    }
+    
+    override public init(view: UICollectionView?, model: [SectionViewModel]) {
         
         super.init(view: view, model: model)
-        view.dataSource = self
+        view?.dataSource = self
     }
     
     override open var model: [SectionViewModel] {

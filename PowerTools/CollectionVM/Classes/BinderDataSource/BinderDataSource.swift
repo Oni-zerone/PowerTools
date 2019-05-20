@@ -27,7 +27,7 @@ open class BinderDataSource<View: UIView>: NSObject {
     
     public weak var view: View?
     
-    public init(view: View, model: [SectionViewModel] = []) {
+    public init(view: View?, model: [SectionViewModel] = []) {
         self.view = view
         self._model = model
     }
