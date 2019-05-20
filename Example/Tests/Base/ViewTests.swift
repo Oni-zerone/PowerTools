@@ -75,7 +75,8 @@ class ViewTests: XCTestCase {
         containerView.attach(view: subView, in: .bottom)
         containerView.layoutIfNeeded()
         
-        XCTAssert(subView.bounds == CGRect(origin: .zero, size: CGSize(width: self.containerView.bounds.width, height: 0)))
+        XCTAssert(subView.bounds == CGRect(origin: .zero,
+                                           size: CGSize(width: self.containerView.bounds.width, height: 0)))
         let verticalConstraints = self.containerView.constraints
         XCTAssert(verticalConstraints.count == 3)
         XCTAssert(verticalConstraints.contains(where: { constraint -> Bool in
