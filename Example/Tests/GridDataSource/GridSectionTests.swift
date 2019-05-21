@@ -9,7 +9,7 @@
 import XCTest
 import PowerTools
 
-fileprivate struct GridSectionMock: GridSection {
+private struct GridSectionMock: GridSection {
     var header: ItemViewModel?
     
     var items: [ItemViewModel]
