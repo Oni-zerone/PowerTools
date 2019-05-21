@@ -21,16 +21,14 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         }
     }
     
+    internal var moduleCache: [Int: GridModule] = [:]
     weak var interactionDelegate: InteractionDelegate?
-    
     weak var scrollViewDelegate: UIScrollViewDelegate?
     
     public override init(view: UICollectionView?, model: [SectionViewModel]) {
         super.init(view: view, model: model)
         view?.delegate = self
     }
-    
-    internal var moduleCache: [Int: GridModule] = [:]
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
@@ -66,21 +64,11 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        
-        guard let module = self.module(for: section, in: collectionView),
-            let header = self.model.viewModel(ofKind: UICollectionView.elementKindSectionHeader, section: section) as? GridItem else {
-            return .zero
-        }
-        return header.size(in: collectionView, module: module)
+        return self.referenceSizeOf(elementOfKind: UICollectionView.elementKindSectionHeader, for: section, in: collectionView)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-
-        guard let module = self.module(for: section, in: collectionView),
-            let footer = self.model.viewModel(ofKind: UICollectionView.elementKindSectionFooter, section: section) as? GridItem else {
-            return .zero
-        }
-        return footer.size(in: collectionView, module: module)
+        return self.referenceSizeOf(elementOfKind: UICollectionView.elementKindSectionFooter, for: section, in: collectionView)
     }
     
     public func invalidateLayout() {
@@ -218,5 +206,14 @@ internal extension GridCollectionDataSource {
         let module = sectionViewModel.module(for: collection)
         self.moduleCache[section] = module
         return module
+    }
+    
+    func referenceSizeOf(elementOfKind kind: String, for section: Int, in collectionView: UICollectionView) -> CGSize {
+        
+        guard let module = self.module(for: section, in: collectionView),
+            let header = self.model.viewModel(ofKind: kind, section: section) as? GridItem else {
+                return .zero
+        }
+        return header.size(in: collectionView, module: module)
     }
 }
