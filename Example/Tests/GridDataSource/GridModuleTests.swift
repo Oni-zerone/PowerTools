@@ -112,4 +112,10 @@ class GridModuleTests: XCTestCase {
         XCTAssert(thirdComplexSize.width == (referenceSize - thirdConstant) / 2.0)
         XCTAssert(thirdComplexSize.height == referenceSize)
     }
+    
+    func testViewRatioStandardSize() {
+        let standardViewRatio = ViewRatio.standard
+        XCTAssert(standardViewRatio.constant == 0.0)
+        XCTAssert(standardViewRatio.multiplier == 1.0)
+    }
 }
