@@ -36,6 +36,7 @@
 		856DEDFB8D967A4A3321266DD82DDCCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		8B680E7F264C300463D4E41256B244DC /* PowerTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C08CA2660A68BFE3E9F25B8799A52F /* PowerTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9750D0AD2294888400E08571 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0AC2294888400E08571 /* Operators.swift */; };
+		9750D0B12294BF6700E08571 /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0B02294BF6700E08571 /* GridCollectionDataSource+Internal.swift */; };
 		A0E46AC8BCB3EC0E65D0EF78CA9C1470 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		A41D5EA2B139009BEB7C8119EA0F08EC /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85239906ECC63DA2F03546A628EB14B7 /* BinderDataSource.swift */; };
 		A704CEACD4F123B33ABCFCE4F7AF5C0B /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419EFAB0747C25A971F18E655EDFA8B /* Merge.swift */; };
@@ -103,6 +104,7 @@
 		95BFB5316D0B2C63F97D70696CD672CD /* Pipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		9644C3DE12C051E3595118F50E105F6E /* TableBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableBinderDataSource.swift; sourceTree = "<group>"; };
 		9750D0AC2294888400E08571 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ../../../../Example/Tests/Base/Operators.swift; sourceTree = "<group>"; };
+		9750D0B02294BF6700E08571 /* GridCollectionDataSource+Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GridCollectionDataSource+Internal.swift"; sourceTree = "<group>"; };
 		9B3B34DDAD21224E109E9C3337F7D3A9 /* BatchUpdateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BatchUpdateView.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1584D82220F5867D988F8B4EEC7490E /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				A642BB193D3C952BFB56F8CD2CD0A251 /* GridCollectionDataSource.swift */,
+				9750D0B02294BF6700E08571 /* GridCollectionDataSource+Internal.swift */,
 				49C539786183E6693404ABED226807F3 /* GridDescriptor.swift */,
 				A1584D82220F5867D988F8B4EEC7490E /* GridItem.swift */,
 				E60BA774EFD0D053398203E2471E6447 /* GridSection.swift */,
@@ -620,6 +623,7 @@
 				A704CEACD4F123B33ABCFCE4F7AF5C0B /* Merge.swift in Sources */,
 				25202B519CE4FBF09A4915D00C64D31B /* ModelUpdate.swift in Sources */,
 				13654CCCF0BA4D089BCF0D7A72721A74 /* Pipe.swift in Sources */,
+				9750D0B12294BF6700E08571 /* GridCollectionDataSource+Internal.swift in Sources */,
 				AA924EF0A0B209A18EF32898026BE130 /* Pipeline.swift in Sources */,
 				4DF28669C029AF0D63463613FE0A70C9 /* PowerTools-dummy.m in Sources */,
 				78136B453AAED4295D2650494AA8F1DC /* PromisePipe.swift in Sources */,
