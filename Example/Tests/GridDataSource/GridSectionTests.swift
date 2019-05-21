@@ -9,7 +9,7 @@
 import XCTest
 import PowerTools
 
-struct GridSectionMock: GridSection {
+fileprivate struct GridSectionMock: GridSection {
     var header: ItemViewModel?
     
     var items: [ItemViewModel]
@@ -25,5 +25,10 @@ class GridSectionTests: XCTestCase {
         XCTAssert(gridSection.sectionInsets == .zero)
         XCTAssert(gridSection.sectionVerticalItemSpacing == 0.0)
         XCTAssert(gridSection.sectionHorizontalItemSpacing == 0.0)
+        XCTAssert(gridSection.referenceItemWidth == .greatestFiniteMagnitude)
+    }
+    
+    func testModulesForGridSection() {
+        
     }
 }

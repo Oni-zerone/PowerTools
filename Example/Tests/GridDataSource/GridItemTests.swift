@@ -9,18 +9,18 @@
 import XCTest
 @testable import PowerTools
 
-struct GridItemDescriptorMock: GridViewDescriptor {
+fileprivate struct GridItemDescriptorMock: GridViewDescriptor {
     
     var reuseIdentifier: String
     
     var ratio: ViewRatio
 }
 
-struct ItemDescriptorMock: ItemViewDescriptor {
+fileprivate struct ItemDescriptorMock: ItemViewDescriptor {
     var reuseIdentifier: String
 }
 
-struct GridItemMock: GridItemViewModel {
+fileprivate struct GridItemMock: GridItemViewModel {
     
     var descriptor: ItemViewDescriptor
     
