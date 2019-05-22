@@ -11,6 +11,7 @@ open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICol
     
     override public var view: UICollectionView? {
         didSet {
+            oldValue?.dataSource = nil
             self.view?.dataSource = self
         }
     }
