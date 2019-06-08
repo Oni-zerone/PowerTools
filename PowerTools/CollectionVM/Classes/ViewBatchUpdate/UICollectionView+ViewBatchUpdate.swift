@@ -7,6 +7,13 @@
 
 import UIKit
 
+extension UICollectionView: UpdatableView {
+
+    public func forceReload() {
+        self.reloadData()
+    }
+}
+
 extension UICollectionView: BatchUpdateView {
     
     func perform(_ update: ModelUpdate, modelUpdates: () -> Void, completion: ((Bool) -> Void)?) {

@@ -21,6 +21,7 @@ class CollectionController: UIViewController {
 
         var count: Int = 1
         if #available(iOS 10.0, *) {
+            guard ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] == nil else { return }
             Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { [weak self] _ in
 
                 self?.loadContent(count % 11 == 0)
@@ -36,6 +37,7 @@ class CollectionController: UIViewController {
         let collectionController = GridCollectionViewController(collectionViewLayout: layout)
         collectionController.attach(to: self)
         collectionController.interactionDelegate = self
+        collectionController.forceReload = true
         self.collectionViewController = collectionController
     }
 
