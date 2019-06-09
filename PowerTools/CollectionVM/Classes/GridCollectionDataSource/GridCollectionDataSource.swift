@@ -15,9 +15,9 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         }
     }
     
-    weak var interactionDelegate: InteractionDelegate?
+   public  weak var interactionDelegate: InteractionDelegate?
     
-    weak var scrollViewDelegate: UIScrollViewDelegate?
+    public weak var scrollViewDelegate: UIScrollViewDelegate?
     
     public override init(view: UICollectionView, model: [SectionViewModel]) {
         super.init(view: view, model: model)
