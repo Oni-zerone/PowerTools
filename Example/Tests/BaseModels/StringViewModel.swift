@@ -20,13 +20,13 @@ struct StringViewModel: ItemViewModel, Hashable {
     
     var string: String
     
-    init(string: String) {
-        self.descriptor = StringDescriptor(reuseIdentifier: "StringCell")
+    init(string: String, identifier: String = "StringCell") {
+        self.descriptor = StringDescriptor(reuseIdentifier: identifier)
         self.string = string
     }
     
     func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath) {
-        
+        (view as? StringCell)?.string = string
     }
     
     static func == (lhs: StringViewModel, rhs: StringViewModel) -> Bool {

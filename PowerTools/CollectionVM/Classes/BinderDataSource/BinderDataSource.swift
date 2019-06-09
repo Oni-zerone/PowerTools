@@ -12,7 +12,7 @@ extension DispatchQueue {
     static let binderUpdate = DispatchQueue(label: "BinderDataSource.queue", qos: DispatchQoS.background)
 }
 
-open class BinderDataSource<View: UIView>: NSObject {
+open class BinderDataSource<View: UpdatableView>: NSObject {
 
     private var _model: [SectionViewModel]
     
@@ -27,15 +27,16 @@ open class BinderDataSource<View: UIView>: NSObject {
     
     public weak var view: View?
     
-    public init(view: View, model: [SectionViewModel] = []) {
+    public init(view: View?, model: [SectionViewModel] = []) {
         self.view = view
         self._model = model
     }
     
     public func update(model newModel: [SectionViewModel], forceReload reloadData: Bool = false) {
         
-        guard let batchUpdateView = self.view as? BatchUpdateView else {
+        guard !reloadData, let batchUpdateView = self.view as? BatchUpdateView else {
             self._model = newModel
+            self.view?.forceReload()
             return
         }
         
