@@ -8,6 +8,7 @@ PODS:
   - PowerToolsTester (0.2.0):
     - PowerToolsTester/CoreTester (= 0.2.0)
   - PowerToolsTester/CoreTester (0.2.0):
+    - PowerTools/CollectionVM
     - PowerTools/Core
 
 DEPENDENCIES:
@@ -22,7 +23,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PowerTools: c03bbc93d65733f6f098aaa2f6fc97d0f6b90d3a
-  PowerToolsTester: 8b6fa861b688dbdf42f8e1f5d81c7a9fb56991fa
+  PowerToolsTester: 70c40ac978fa5012436ef98c0bf25a7c1dc2cb70
 
 PODFILE CHECKSUM: 36cf410f3250f3e49f5ef5b7803236255e75700c
 

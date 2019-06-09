@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
             'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
         }
         sp.dependency 'PowerTools/Core'
+        sp.dependency 'PowerTools/CollectionVM'
     end
 end

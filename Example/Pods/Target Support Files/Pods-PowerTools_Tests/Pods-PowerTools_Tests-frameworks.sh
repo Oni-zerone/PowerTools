@@ -153,11 +153,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/PowerTools-Core/PowerTools.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PowerTools-CollectionVM-Core/PowerTools.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PowerToolsTester/PowerToolsTester.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/PowerTools-Core/PowerTools.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PowerTools-CollectionVM-Core/PowerTools.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PowerToolsTester/PowerToolsTester.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

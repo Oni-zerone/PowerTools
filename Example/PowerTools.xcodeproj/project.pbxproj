@@ -36,8 +36,6 @@
 		978E528522AC2CB8006833C5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528422AC2CB8006833C5 /* Operators.swift */; };
 		978E528722AC45D8006833C5 /* UICollectionViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528622AC45D8006833C5 /* UICollectionViewMock.swift */; };
 		978E52B122AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E52B022AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift */; };
-		978E52B222AC599C006833C5 /* InteractionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975CAB0922AC54D600D1A504 /* InteractionDelegateMock.swift */; };
-		978E52B422AD3BC6006833C5 /* UIScrollViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E52B322AD3BC6006833C5 /* UIScrollViewDelegateMock.swift */; };
 		978E52B622AD3C26006833C5 /* GridCollectionDataSourceScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E52B522AD3C26006833C5 /* GridCollectionDataSourceScrollTests.swift */; };
 		97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E502195812700E7F401 /* ColorViewModel.swift */; };
 		97A34E53219582BA00E7F401 /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* BaseSection.swift */; };
@@ -89,7 +87,6 @@
 		9750D0AE22948A4900E08571 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		9750D0B22294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDataSourceInteractionDelegateTests.swift; sourceTree = "<group>"; };
 		9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelMock.swift; sourceTree = "<group>"; };
-		975CAB0922AC54D600D1A504 /* InteractionDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionDelegateMock.swift; sourceTree = "<group>"; };
 		97607CFF22099BC20071AB8D /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipeTests.swift; sourceTree = "<group>"; };
 		978C651E228FEE7500D95276 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec; path = ../PowerToolsTester.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -97,7 +94,6 @@
 		978E528422AC2CB8006833C5 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		978E528622AC45D8006833C5 /* UICollectionViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewMock.swift; sourceTree = "<group>"; };
 		978E52B022AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionDataSourceInteractionTests.swift; sourceTree = "<group>"; };
-		978E52B322AD3BC6006833C5 /* UIScrollViewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegateMock.swift; sourceTree = "<group>"; };
 		978E52B522AD3C26006833C5 /* GridCollectionDataSourceScrollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionDataSourceScrollTests.swift; sourceTree = "<group>"; };
 		97A34E502195812700E7F401 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 		97A34E52219582BA00E7F401 /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
@@ -226,11 +222,8 @@
 				9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */,
 				9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */,
 				9717B2CB21BC083400C66EE0 /* StringCell.swift */,
-				9717B2E121BD314900C66EE0 /* AssertPipe.swift */,
 				9750D0AA22947ECF00E08571 /* SectionViewModelTests.swift */,
 				978E528622AC45D8006833C5 /* UICollectionViewMock.swift */,
-				975CAB0922AC54D600D1A504 /* InteractionDelegateMock.swift */,
-				978E52B322AD3BC6006833C5 /* UIScrollViewDelegateMock.swift */,
 			);
 			path = BaseModels;
 			sourceTree = "<group>";
@@ -349,7 +342,6 @@
 		97F637A02288D350004B4227 /* BinderDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				97F637A12288D374004B4227 /* GridModuleTests.swift */,
 			);
 			path = BinderDataSource;
 			sourceTree = "<group>";
@@ -527,7 +519,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PowerTools-Core/PowerTools.framework",
+				"${BUILT_PRODUCTS_DIR}/PowerTools-CollectionVM-Core/PowerTools.framework",
 				"${BUILT_PRODUCTS_DIR}/PowerToolsTester/PowerToolsTester.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -621,15 +613,12 @@
 			files = (
 				9717B2C621BBD28C00C66EE0 /* ModelUpdate.swift in Sources */,
 				9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */,
-				978E52B422AD3BC6006833C5 /* UIScrollViewDelegateMock.swift in Sources */,
 				9750D0B92295D5F900E08571 /* ItemViewModelMock.swift in Sources */,
 				9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */,
 				9750D09F2292F7D600E08571 /* GridModuleTests.swift in Sources */,
 				9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */,
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,
-				97F637A22288D374004B4227 /* GridModuleTests.swift in Sources */,
 				9750D0A3229336AF00E08571 /* ViewTests.swift in Sources */,
-				9717B2E321BD315C00C66EE0 /* AssertPipe.swift in Sources */,
 				9750D0AB22947ECF00E08571 /* SectionViewModelTests.swift in Sources */,
 				9717B2BF21BB410500C66EE0 /* StringViewModel.swift in Sources */,
 				977F82AC21D4D91B0044074A /* SublinePipeTests.swift in Sources */,
@@ -642,7 +631,6 @@
 				978E528522AC2CB8006833C5 /* Operators.swift in Sources */,
 				978E52B622AD3C26006833C5 /* GridCollectionDataSourceScrollTests.swift in Sources */,
 				97607D0022099BC20071AB8D /* ArrayTests.swift in Sources */,
-				978E52B222AC599C006833C5 /* InteractionDelegateMock.swift in Sources */,
 				9717B2E021BD30FE00C66EE0 /* PipelineTests.swift in Sources */,
 				978E528322AC28C6006833C5 /* BinderDataSourceTests.swift in Sources */,
 				9717B2CA21BC06F300C66EE0 /* DataSourceUpdateTests.swift in Sources */,

@@ -37,6 +37,9 @@
       "dependencies": {
         "PowerTools/Core": [
 
+        ],
+        "PowerTools/CollectionVM": [
+
         ]
       }
     }
