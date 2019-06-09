@@ -9,5 +9,5 @@
 import UIKit
 
 class StringCell: UICollectionViewCell {
-    
+    var string: String?
 }
