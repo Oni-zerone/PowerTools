@@ -1,14 +1,16 @@
 //
 //  Operators.swift
-//  Pods-PowerTools_Example
+//  PowerTools_Tests
 //
-//  Created by Andrea Altea on 21/05/2019.
+//  Created by Andrea Altea on 08/06/2019.
+//  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
 import Foundation
 
-infix operator ?==
-public func ?==<T: Equatable>(lhs: T?, rhs: T) -> Bool {
+infix operator ?== : ComparisonPrecedence
+
+func ?== <T: Equatable>(lhs: T?, rhs: T) -> Bool {
     guard let lhs = lhs else { return false }
     return lhs == rhs
 }

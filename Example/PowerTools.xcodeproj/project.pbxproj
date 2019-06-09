@@ -30,10 +30,14 @@
 		9750D0AB22947ECF00E08571 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0AA22947ECF00E08571 /* SectionViewModelTests.swift */; };
 		9750D0AF22948A4900E08571 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0AE22948A4900E08571 /* Operators.swift */; };
 		9750D0B32294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0B22294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift */; };
-		9750D0B62295C3A300E08571 /* CollectionBinderDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0B52295C3A300E08571 /* CollectionBinderDataSourceTests.swift */; };
 		9750D0B92295D5F900E08571 /* ItemViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */; };
 		97607D0022099BC20071AB8D /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97607CFF22099BC20071AB8D /* ArrayTests.swift */; };
 		977F82AC21D4D91B0044074A /* SublinePipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */; };
+		978E528322AC28C6006833C5 /* BinderDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528222AC28C6006833C5 /* BinderDataSourceTests.swift */; };
+		978E528522AC2CB8006833C5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528422AC2CB8006833C5 /* Operators.swift */; };
+		978E528722AC45D8006833C5 /* UICollectionViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528622AC45D8006833C5 /* UICollectionViewMock.swift */; };
+		978E52B122AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E52B022AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift */; };
+		978E52B222AC599C006833C5 /* InteractionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975CAB0922AC54D600D1A504 /* InteractionDelegateMock.swift */; };
 		97A34E512195812700E7F401 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E502195812700E7F401 /* ColorViewModel.swift */; };
 		97A34E53219582BA00E7F401 /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* BaseSection.swift */; };
 		97A34E5D219591C500E7F401 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */; };
@@ -83,10 +87,14 @@
 		9750D0AA22947ECF00E08571 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
 		9750D0AE22948A4900E08571 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		9750D0B22294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDataSourceInteractionDelegateTests.swift; sourceTree = "<group>"; };
-		9750D0B52295C3A300E08571 /* CollectionBinderDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSourceTests.swift; sourceTree = "<group>"; };
 		9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelMock.swift; sourceTree = "<group>"; };
+		975CAB0922AC54D600D1A504 /* InteractionDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionDelegateMock.swift; sourceTree = "<group>"; };
 		97607CFF22099BC20071AB8D /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipeTests.swift; sourceTree = "<group>"; };
+		978E528222AC28C6006833C5 /* BinderDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderDataSourceTests.swift; sourceTree = "<group>"; };
+		978E528422AC2CB8006833C5 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		978E528622AC45D8006833C5 /* UICollectionViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewMock.swift; sourceTree = "<group>"; };
+		978E52B022AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionDataSourceInteractionTests.swift; sourceTree = "<group>"; };
 		97A34E502195812700E7F401 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
 		97A34E52219582BA00E7F401 /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
 		97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -180,7 +188,7 @@
 				9717B2BD21BB40C700C66EE0 /* BaseModels */,
 				9717B2DE21BD30E600C66EE0 /* Pipeline */,
 				9717B2C221BB480200C66EE0 /* ModelUpdateTests */,
-				9750D0B42295C37900E08571 /* BinderDataSource */,
+				978E528122AC2880006833C5 /* DataSourceTests */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -213,6 +221,8 @@
 				9717B2CB21BC083400C66EE0 /* StringCell.swift */,
 				9717B2E121BD314900C66EE0 /* AssertPipe.swift */,
 				9750D0AA22947ECF00E08571 /* SectionViewModelTests.swift */,
+				978E528622AC45D8006833C5 /* UICollectionViewMock.swift */,
+				975CAB0922AC54D600D1A504 /* InteractionDelegateMock.swift */,
 			);
 			path = BaseModels;
 			sourceTree = "<group>";
@@ -255,15 +265,6 @@
 			path = GridDataSource;
 			sourceTree = "<group>";
 		};
-		9750D0B42295C37900E08571 /* BinderDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				9750D09D2292F7B300E08571 /* GridDataSource */,
-				9750D0B52295C3A300E08571 /* CollectionBinderDataSourceTests.swift */,
-			);
-			path = BinderDataSource;
-			sourceTree = "<group>";
-		};
 		9750D0B72295D5C300E08571 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,8 +279,19 @@
 				9750D0AE22948A4900E08571 /* Operators.swift */,
 				97607CFF22099BC20071AB8D /* ArrayTests.swift */,
 				9750D0A2229336AF00E08571 /* ViewTests.swift */,
+				978E528422AC2CB8006833C5 /* Operators.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		978E528122AC2880006833C5 /* DataSourceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9750D09D2292F7B300E08571 /* GridDataSource */,
+				978E528222AC28C6006833C5 /* BinderDataSourceTests.swift */,
+				978E52B022AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift */,
+			);
+			path = DataSourceTests;
 			sourceTree = "<group>";
 		};
 		97A34E4D219580CE00E7F401 /* Model */ = {
@@ -554,14 +566,20 @@
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,
 				9750D0A3229336AF00E08571 /* ViewTests.swift in Sources */,
 				9717B2E321BD315C00C66EE0 /* AssertPipe.swift in Sources */,
-				9750D0B62295C3A300E08571 /* CollectionBinderDataSourceTests.swift in Sources */,
 				9750D0AB22947ECF00E08571 /* SectionViewModelTests.swift in Sources */,
 				9717B2BF21BB410500C66EE0 /* StringViewModel.swift in Sources */,
 				977F82AC21D4D91B0044074A /* SublinePipeTests.swift in Sources */,
 				9750D0A522935F4A00E08571 /* GridItemTests.swift in Sources */,
+				978E528722AC45D8006833C5 /* UICollectionViewMock.swift in Sources */,
+				9717B2BF21BB410500C66EE0 /* StringViewModel.swift in Sources */,
+				977F82AC21D4D91B0044074A /* SublinePipeTests.swift in Sources */,
+				978E52B122AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift in Sources */,
 				9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */,
+				978E528522AC2CB8006833C5 /* Operators.swift in Sources */,
 				97607D0022099BC20071AB8D /* ArrayTests.swift in Sources */,
+				978E52B222AC599C006833C5 /* InteractionDelegateMock.swift in Sources */,
 				9717B2E021BD30FE00C66EE0 /* PipelineTests.swift in Sources */,
+				978E528322AC28C6006833C5 /* BinderDataSourceTests.swift in Sources */,
 				9717B2CA21BC06F300C66EE0 /* DataSourceUpdateTests.swift in Sources */,
 				9750D0A92293EAF600E08571 /* GridSectionTests.swift in Sources */,
 				9750D0B32294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift in Sources */,

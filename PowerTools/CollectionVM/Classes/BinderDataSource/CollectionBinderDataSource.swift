@@ -5,7 +5,7 @@
 //  Created by Andrea Altea on 28/10/18.
 //
 
-import Foundation
+import UIKit
 
 open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICollectionViewDataSource {
     
