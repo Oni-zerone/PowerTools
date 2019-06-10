@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/Oni-zerone/PowerTools'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Andrea Altea' => 'oni.zerone@gmail.com' }
-    s.source           = { :git => 'https://github.com/Oni-zerone/PowerTools.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/Oni-zerone/PowerTools.git', :tag => "{s.version}-tester" }
     s.social_media_url = 'https://twitter.com/Oni_zerone'
     
     s.ios.deployment_target = '9.0'
@@ -33,15 +33,15 @@ Pod::Spec.new do |s|
     s.default_subspec = 'CoreTester'
     s.subspec 'CoreTester' do |sp|
         sp.source_files = 'PowerTools/Tests/Core/Classes/**/*'
-        sp.framework = 'XCTest'
-        
+        sp.framework = "XCTest"
+        sp.requires_arc = true
         sp.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
         sp.pod_target_xcconfig = {
             'APPLICATION_EXTENSION_API_ONLY' => 'YES',
             'ENABLE_BITCODE' => 'NO',
             'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
         }
-        sp.dependency 'PowerTools/Core'
-        sp.dependency 'PowerTools/CollectionVM'
+        sp.dependency 'PowerTools/Core', '~> 0.2'
+        sp.dependency 'PowerTools/CollectionVM', '~> 0.2'
     end
 end

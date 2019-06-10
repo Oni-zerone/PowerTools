@@ -2,7 +2,7 @@
   "name": "PowerToolsTester",
   "version": "0.2.0",
   "summary": "Tools tester for fast and modular app development.",
-  "swift_version": "5.0",
+  "swift_versions": "5.0",
   "description": "Fast development tools with a better way to use UICollectionViews",
   "homepage": "https://github.com/Oni-zerone/PowerTools",
   "license": {
@@ -26,6 +26,7 @@
       "name": "CoreTester",
       "source_files": "PowerTools/Tests/Core/Classes/**/*",
       "frameworks": "XCTest",
+      "requires_arc": true,
       "user_target_xcconfig": {
         "FRAMEWORK_SEARCH_PATHS": "$(PLATFORM_DIR)/Developer/Library/Frameworks"
       },
@@ -36,12 +37,13 @@
       },
       "dependencies": {
         "PowerTools/Core": [
-
+          "~> 0.2"
         ],
         "PowerTools/CollectionVM": [
-
+          "~> 0.2"
         ]
       }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

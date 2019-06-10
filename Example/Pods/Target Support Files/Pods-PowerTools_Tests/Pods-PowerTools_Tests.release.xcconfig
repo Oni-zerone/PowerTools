@@ -1,7 +1,7 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools" "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools-CollectionVM-Core" "${PODS_CONFIGURATION_BUILD_DIR}/PowerToolsTester"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks" "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools-CollectionVM-Core" "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools.default-CollectionVM" "${PODS_CONFIGURATION_BUILD_DIR}/PowerToolsTester"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools-CollectionVM-Core/PowerTools.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools/PowerTools.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PowerToolsTester/PowerToolsTester.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools-CollectionVM-Core/PowerTools.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PowerTools.default-CollectionVM/PowerTools.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PowerToolsTester/PowerToolsTester.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "PowerTools" -framework "PowerToolsTester" -framework "UIKit" -framework "XCTest"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
