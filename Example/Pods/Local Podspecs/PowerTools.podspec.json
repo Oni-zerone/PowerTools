@@ -1,8 +1,8 @@
 {
   "name": "PowerTools",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "Tools for fast and modular app development.",
-  "swift_version": "5.0",
+  "swift_versions": "5.0",
   "description": "Fast development tools with a better way to use UICollectionViews",
   "homepage": "https://github.com/Oni-zerone/PowerTools",
   "license": {
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Oni-zerone/PowerTools.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "social_media_url": "https://twitter.com/Oni_zerone",
   "platforms": {
@@ -38,5 +38,6 @@
         ]
       }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

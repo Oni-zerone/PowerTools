@@ -1,10 +1,10 @@
 PODS:
-  - PowerTools (0.2.0):
-    - PowerTools/CollectionVM (= 0.2.0)
-    - PowerTools/Core (= 0.2.0)
-  - PowerTools/CollectionVM (0.2.0):
+  - PowerTools (0.3.0):
+    - PowerTools/CollectionVM (= 0.3.0)
+    - PowerTools/Core (= 0.3.0)
+  - PowerTools/CollectionVM (0.3.0):
     - PowerTools/Core
-  - PowerTools/Core (0.2.0)
+  - PowerTools/Core (0.3.0)
 
 DEPENDENCIES:
   - PowerTools (from `../`)
@@ -14,8 +14,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PowerTools: 899437a942c5c0ac173d8d0df2e202441a8d46b7
+  PowerTools: 5b7461fd5af695070fbdaef22e0f4ebfc4fefef3
 
 PODFILE CHECKSUM: 48c20d66f414453cb32e39dc329adefc74dd552a
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.1

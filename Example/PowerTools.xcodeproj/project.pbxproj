@@ -465,15 +465,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PowerTools/PowerTools.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PowerTools.framework",
 			);
