@@ -20,7 +20,7 @@ public protocol SectionViewModel {
 
 public extension SectionViewModel {
     
-    public func model(for elementOfKind: String) -> ItemViewModel? {
+    func model(for elementOfKind: String) -> ItemViewModel? {
         
         switch elementOfKind {
         case UICollectionView.elementKindSectionHeader:
@@ -37,15 +37,15 @@ public extension SectionViewModel {
 
 public extension Array where Element == SectionViewModel {
     
-    public func viewModel(at indexPath: IndexPath) -> ItemViewModel? {
+    func viewModel(at indexPath: IndexPath) -> ItemViewModel? {
         return self.item(at: indexPath.section)?.items.item(at: indexPath.item)
     }
     
-    public func viewModel(ofKind kind: String, section: Int) -> ItemViewModel? {
+    func viewModel(ofKind kind: String, section: Int) -> ItemViewModel? {
         return self.item(at: section)?.model(for: kind)
     }
     
-    public func forEachItem(action: (_ item: ItemViewModel, _ section: SectionViewModel, _ indexPath: IndexPath) -> Void) {
+    func forEachItem(action: (_ item: ItemViewModel, _ section: SectionViewModel, _ indexPath: IndexPath) -> Void) {
         
         self.enumerated().forEach { (sectionIndex, section) in
             section.items.enumerated().forEach { (itemIndex, item) in

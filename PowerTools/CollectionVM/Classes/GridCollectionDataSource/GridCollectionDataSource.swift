@@ -15,16 +15,20 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
         }
     }
     
-    weak var interactionDelegate: InteractionDelegate?
-    
-    weak var scrollViewDelegate: UIScrollViewDelegate?
-    
-    public override init(view: UICollectionView, model: [SectionViewModel]) {
-        super.init(view: view, model: model)
-        view.delegate = self
+    override public var view: UICollectionView? {
+        didSet {
+            self.view?.delegate = self
+        }
     }
     
     internal var moduleCache: [Int: GridModule] = [:]
+    public  weak var interactionDelegate: InteractionDelegate?
+    public weak var scrollViewDelegate: UIScrollViewDelegate?
+    
+    public override init(view: UICollectionView?, model: [SectionViewModel]) {
+        super.init(view: view, model: model)
+        view?.delegate = self
+    }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
@@ -57,6 +61,14 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
             return .zero
         }
         return sizedItem.size(in: collectionView, module: module)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return self.referenceSizeOf(elementOfKind: UICollectionView.elementKindSectionHeader, for: section, in: collectionView)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return self.referenceSizeOf(elementOfKind: UICollectionView.elementKindSectionFooter, for: section, in: collectionView)
     }
     
     public func invalidateLayout() {
@@ -176,23 +188,5 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.scrollViewDelegate?.viewForZooming?(in: scrollView)
-    }
-}
-
-internal extension GridCollectionDataSource {
-    
-    func module(for section: Int, in collection: UICollectionView) -> GridModule? {
-        
-        if let module = self.moduleCache[section] {
-            return module
-        }
-        
-        guard self.model.indices.contains(section),
-            let sectionViewModel = self.model[section] as? GridSection else {
-            return nil
-        }
-        let module = sectionViewModel.module(for: collection)
-        self.moduleCache[section] = module
-        return module
     }
 }

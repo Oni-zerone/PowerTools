@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIViewController {
     
-    public func attach(to parentVC: UIViewController,
+    func attach(to parentVC: UIViewController,
                        in view: UIView? = nil,
                        position: UIView.AttachPosition = .fill) {
         

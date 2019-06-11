@@ -18,7 +18,7 @@ public extension UIView {
         case bottom
     }
     
-    public func attach(view: UIView,  in position: AttachPosition) {
+    func attach(view: UIView,  in position: AttachPosition) {
         
         self.verticalAttach(view: view, in: position)
         self.horizonalAttach(view: view, in: position)

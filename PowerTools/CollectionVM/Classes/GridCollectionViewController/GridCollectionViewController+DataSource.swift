@@ -9,7 +9,7 @@ import Foundation
 
 public extension GridCollectionViewController {
     
-    public var model: [SectionViewModel] {
+    var model: [SectionViewModel] {
         set {
             self.dataSource?.model = newValue
         }
@@ -18,7 +18,7 @@ public extension GridCollectionViewController {
         }
     }
     
-    public var interactionDelegate: InteractionDelegate? {
+    var interactionDelegate: InteractionDelegate? {
         set {
             self.dataSource?.interactionDelegate = newValue
         }
@@ -27,7 +27,7 @@ public extension GridCollectionViewController {
         }
     }
     
-    public var scrollViewDelegate: UIScrollViewDelegate? {
+    var scrollViewDelegate: UIScrollViewDelegate? {
         set {
             self.dataSource?.scrollViewDelegate = newValue
         }
@@ -36,7 +36,7 @@ public extension GridCollectionViewController {
         }
     }
     
-    public func update(model newModel: [SectionViewModel]) {
+    func update(model newModel: [SectionViewModel]) {
         
         self.dataSource?.update(model: newModel, forceReload: self.forceReload)
     }

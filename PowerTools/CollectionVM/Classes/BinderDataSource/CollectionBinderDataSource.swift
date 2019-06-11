@@ -5,14 +5,21 @@
 //  Created by Andrea Altea on 28/10/18.
 //
 
-import Foundation
+import UIKit
 
 open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICollectionViewDataSource {
     
-    override public init(view: UICollectionView, model: [SectionViewModel]) {
+    override public var view: UICollectionView? {
+        didSet {
+            oldValue?.dataSource = nil
+            self.view?.dataSource = self
+        }
+    }
+    
+    override public init(view: UICollectionView?, model: [SectionViewModel]) {
         
         super.init(view: view, model: model)
-        view.dataSource = self
+        view?.dataSource = self
     }
     
     override open var model: [SectionViewModel] {
