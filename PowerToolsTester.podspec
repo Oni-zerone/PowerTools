@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'PowerToolsTester'
-    s.version          = '0.2.0'
+    s.version          = '0.3.0'
     s.summary          = 'Tools tester for fast and modular app development.'
     s.swift_version    = '5.0'
     
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
             'ENABLE_BITCODE' => 'NO',
             'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
         }
-        sp.dependency 'PowerTools/Core', '~> 0.2'
-        sp.dependency 'PowerTools/CollectionVM', '~> 0.2'
+        sp.dependency 'PowerTools/Core', '~> 0.3'
+        sp.dependency 'PowerTools/CollectionVM', '~> 0.3'
     end
 end

@@ -385,7 +385,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PowerTools_Tests" */;
 			buildPhases = (
-				2A672B963A0EF0CBFF645CA4 /* [CP] Check Pods Manifest.lock */,
+				24C8C3507E61E3B2093B72E7 /* [CP] Check Pods Manifest.lock */,
+				2A672B963A0EF0CBFF645CA4 /* [CP] Embed Pods Frameworks */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -465,7 +466,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A672B963A0EF0CBFF645CA4 /* [CP] Check Pods Manifest.lock */ = {
+		24C8C3507E61E3B2093B72E7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,6 +486,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A672B963A0EF0CBFF645CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PowerTools-CollectionVM-Core/PowerTools.framework",
+				"${BUILT_PRODUCTS_DIR}/PowerToolsTester/PowerToolsTester.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PowerTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PowerToolsTester.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56C85D327DF44D5F2495D226 /* [CP] Embed Pods Frameworks */ = {
