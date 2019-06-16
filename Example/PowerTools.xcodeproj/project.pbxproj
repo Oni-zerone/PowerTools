@@ -89,7 +89,7 @@
 		9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelMock.swift; sourceTree = "<group>"; };
 		97607CFF22099BC20071AB8D /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipeTests.swift; sourceTree = "<group>"; };
-		978C651E228FEE7500D95276 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec; path = ../PowerToolsTester.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		978C651E228FEE7500D95276 /* PowerToolsTester.podspec.stub */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec.stub; path = ../PowerToolsTester.podspec.stub; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		978E528222AC28C6006833C5 /* BinderDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderDataSourceTests.swift; sourceTree = "<group>"; };
 		978E528422AC2CB8006833C5 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		978E528622AC45D8006833C5 /* UICollectionViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewMock.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				9E55C7BF7C4181D32C08094B /* PowerTools.podspec */,
-				978C651E228FEE7500D95276 /* PowerToolsTester.podspec */,
+				978C651E228FEE7500D95276 /* PowerToolsTester.podspec.stub */,
 				4777F5CFBCAE8635092366A3 /* README.md */,
 				4BCC58175E04CDCC440D064D /* LICENSE */,
 			);
