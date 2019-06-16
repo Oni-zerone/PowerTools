@@ -36,7 +36,7 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         self.setupSuccess(content)
         self.setupFailure(content)
         
-        self.pipeline.load(content)
+        self.load(content)
     }
     
     private func setupSuccess(_ content: [Element]) {
