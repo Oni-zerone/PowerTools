@@ -51,7 +51,7 @@ open class Pipe<Value> {
         self.send(.reset)
     }
     
-    func send(_ result: Result) {
+    public func send(_ result: Result) {
         self.nextPipe?.process(result)
     }
 }
