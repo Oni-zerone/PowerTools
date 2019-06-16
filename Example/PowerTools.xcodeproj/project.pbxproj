@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		92996D832F3E34BA04E3E515 /* Pods_PowerTools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC0DF49510CE77B0C060F52 /* Pods_PowerTools_Example.framework */; };
+		9705FDDD22B63AD700F890D7 /* PipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705FDDC22B63AD700F890D7 /* PipeTests.swift */; };
 		9717B2BF21BB410500C66EE0 /* StringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2BE21BB410500C66EE0 /* StringViewModel.swift */; };
 		9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */; };
 		9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C321BB48A200C66EE0 /* ModelUpdateTests.swift */; };
@@ -70,6 +71,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PowerTools_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerTools_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9705FDDC22B63AD700F890D7 /* PipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeTests.swift; sourceTree = "<group>"; };
 		9717B2BE21BB410500C66EE0 /* StringViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewModel.swift; sourceTree = "<group>"; };
 		9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSectionViewModel.swift; sourceTree = "<group>"; };
 		9717B2C321BB48A200C66EE0 /* ModelUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdateTests.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelMock.swift; sourceTree = "<group>"; };
 		97607CFF22099BC20071AB8D /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipeTests.swift; sourceTree = "<group>"; };
-		978C651E228FEE7500D95276 /* PowerToolsTester.podspec.stub */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec.stub; path = ../PowerToolsTester.podspec.stub; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		978C651E228FEE7500D95276 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec; path = ../PowerToolsTester.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		978E528222AC28C6006833C5 /* BinderDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderDataSourceTests.swift; sourceTree = "<group>"; };
 		978E528422AC2CB8006833C5 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		978E528622AC45D8006833C5 /* UICollectionViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewMock.swift; sourceTree = "<group>"; };
@@ -208,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				9E55C7BF7C4181D32C08094B /* PowerTools.podspec */,
-				978C651E228FEE7500D95276 /* PowerToolsTester.podspec.stub */,
+				978C651E228FEE7500D95276 /* PowerToolsTester.podspec */,
 				4777F5CFBCAE8635092366A3 /* README.md */,
 				4BCC58175E04CDCC440D064D /* LICENSE */,
 			);
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				9717B2DF21BD30FE00C66EE0 /* PipelineTests.swift */,
+				9705FDDC22B63AD700F890D7 /* PipeTests.swift */,
 				9717B2E421BD3AEA00C66EE0 /* PromisePipeTests.swift */,
 				977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */,
 				97F6378E228817C6004B4227 /* AsyncPromisePipeTests.swift */,
@@ -627,6 +630,7 @@
 				9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */,
 				9750D0B92295D5F900E08571 /* ItemViewModelMock.swift in Sources */,
 				9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */,
+				9705FDDD22B63AD700F890D7 /* PipeTests.swift in Sources */,
 				9750D09F2292F7D600E08571 /* GridModuleTests.swift in Sources */,
 				9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */,
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,

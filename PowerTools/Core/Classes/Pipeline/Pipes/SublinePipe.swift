@@ -26,17 +26,16 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         self.mergeAction = merge.action
         super.init()
     }
-
+    
     open override func success(_ content: [Element]) {
- 
+        
         if self.shouldPassThrought {
             self.send(content)
         }
         
         self.setupSuccess(content)
         self.setupFailure(content)
-        
-        self.pipeline.load(content)
+        self.load(content)
     }
     
     private func setupSuccess(_ content: [Element]) {
@@ -62,7 +61,6 @@ open class SublinePipe<Element>: Pipe<[Element]> {
     open override func reset() {
         
         self.pipeline.reset()
-        super.reset()
     }
 }
 

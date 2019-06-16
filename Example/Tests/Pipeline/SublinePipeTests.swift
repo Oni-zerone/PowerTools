@@ -61,7 +61,7 @@ class SublinePipeTests: XCTestCase {
     }
     
     func testSublineFailure() {
-    
+        
         let firstString = "string"
         
         self.pipeline.attach(PromisePipe<[String]>(success: { _ in
@@ -86,7 +86,7 @@ class SublinePipeTests: XCTestCase {
         
         self.pipeline.load([])
         wait(for: assertPipe.expectations, timeout: 1.0)
-
+        
     }
     
     func testPassthroughtSublineResult() {

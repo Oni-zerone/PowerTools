@@ -9,18 +9,18 @@
 import XCTest
 import PowerTools
 
-enum PipelineErrors: Error, Equatable {
+public enum PipelineErrors: Error, Equatable {
     
     case requiredFailure
 }
 
-class AssertPipe<Value>: PowerTools.Pipe<Value> {
+public class AssertPipe<Value>: PowerTools.Pipe<Value> {
     
     var successExpectation: XCTestExpectation?
     var failureExpectation: XCTestExpectation?
     var resetExpectation: XCTestExpectation?
     
-    init(success: XCTestExpectation? = nil, failure: XCTestExpectation? = nil, reset: XCTestExpectation? = nil) {
+    public init(success: XCTestExpectation? = nil, failure: XCTestExpectation? = nil, reset: XCTestExpectation? = nil) {
         
         self.successExpectation = success
         self.failureExpectation = failure
@@ -28,7 +28,11 @@ class AssertPipe<Value>: PowerTools.Pipe<Value> {
         super.init()
     }
     
+<<<<<<< HEAD
     override func success(_ value: Value) {
+=======
+    public override func success(_ value: Value) {
+>>>>>>> b9b76e3d1a9dca5edc93569de809998fa8481d08
         
         guard let exp = self.successExpectation else {
             XCTFail("success should not be called.")
@@ -39,17 +43,17 @@ class AssertPipe<Value>: PowerTools.Pipe<Value> {
         self.send(value)
     }
     
-    override func failure(_ error: Error) {
+    public override func failure(_ error: Error) {
         
         defer { super.failure(error) }
         
         guard let exp = self.failureExpectation else {
-           return XCTFail("failure should not be called.")
+            return XCTFail("failure should not be called.")
         }
         exp.fulfill()
     }
     
-    override func reset() {
+    public override func reset() {
         
         defer { super.reset() }
         
@@ -59,7 +63,7 @@ class AssertPipe<Value>: PowerTools.Pipe<Value> {
         exp.fulfill()
     }
     
-    var expectations: [XCTestExpectation] {
+    public var expectations: [XCTestExpectation] {
         
         var xpt: [XCTestExpectation] = []
         if let success = self.successExpectation {

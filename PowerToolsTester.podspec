@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/Oni-zerone/PowerTools'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Andrea Altea' => 'oni.zerone@gmail.com' }
-    s.source           = { :git => 'https://github.com/Oni-zerone/PowerTools.git', :tag => "{s.version}-tester" }
+    s.source           = { :git => 'https://github.com/Oni-zerone/PowerTools.git', :tag => s.version.to_s + '-tester' }
     s.social_media_url = 'https://twitter.com/Oni_zerone'
     
     s.ios.deployment_target = '9.0'
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
             'ENABLE_BITCODE' => 'NO',
             'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
         }
-        sp.dependency 'PowerTools/Core', '~> 0.3'
-        sp.dependency 'PowerTools/CollectionVM', '~> 0.3'
+        sp.dependency 'PowerTools/Core', '~> 0.4'
+        sp.dependency 'PowerTools/CollectionVM', '~> 0.4'
     end
 end

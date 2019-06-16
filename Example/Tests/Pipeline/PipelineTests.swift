@@ -11,19 +11,19 @@ import PowerTools
 import PowerToolsTester
 
 class PipelineTests: XCTestCase {
-
+    
     var pipeline: Pipeline<String>!
     
     override func setUp() {
         super.setUp()
         self.pipeline = Pipeline()
     }
-
+    
     override func tearDown() {
         self.pipeline = nil
         super.tearDown()
     }
-
+    
     func testPipelineLoad() {
         
         let successExp = expectation(description: "success")
@@ -49,7 +49,6 @@ class PipelineTests: XCTestCase {
         self.pipeline.attach(PromisePipe(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
         }))
-
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)
         self.pipeline.attach(assertPipe)
@@ -114,9 +113,9 @@ class PipelineTests: XCTestCase {
         self.pipeline.load("")
         wait(for: [successExp], timeout: 1.0)
     }
-
+    
     func testTailPipeInit() {
-
+        
         self.pipeline = Pipeline(headPipe: PromisePipe(success: { value in
             XCTAssert(value == "HeadPipe")
             return .success(value)
@@ -130,5 +129,17 @@ class PipelineTests: XCTestCase {
         self.pipeline.attach(assertPipe)
         self.pipeline.load("")
         wait(for: assertPipe.expectations, timeout: 1.0)
+    }
+    
+    func testMultipleLinking() {
+
+        let successExp = expectation(description: "success")
+        self.pipeline.attach([
+            PromisePipe(),
+            PromisePipe(),
+            AssertPipe(success: successExp)
+            ])
+        self.pipeline.load("")
+        wait(for: [successExp], timeout: 1.0)
     }
 }

@@ -8,13 +8,13 @@
 import Foundation
 
 public class PromisePipe<Value>: Pipe<Value> {
-
+    
     public typealias SuccessBlock = (Value) -> Result?
     public typealias FailureBlock = (Error) -> Result?
-
+    
     var successBlock: SuccessBlock?
     var failureBlock: FailureBlock?
-
+    
     public init(success: SuccessBlock? = nil, failure: FailureBlock? = nil) {
         
         self.successBlock = success
@@ -26,10 +26,9 @@ public class PromisePipe<Value>: Pipe<Value> {
         
         guard let block = self.successBlock,
             let result = block(content) else {
-            self.send(content)
-            return
+                self.send(content)
+                return
         }
-
         self.send(result)
     }
     
@@ -37,8 +36,8 @@ public class PromisePipe<Value>: Pipe<Value> {
         
         guard let block = self.failureBlock,
             let result = block(error) else {
-            super.failure(error)
-            return
+                super.failure(error)
+                return
         }
         self.send(result)
     }
@@ -55,7 +54,7 @@ public class PromisePipe<Value>: Pipe<Value> {
 public extension AbstractPipeline {
     
     mutating func promise(success successBlock: PromisePipe<Content>.SuccessBlock? = nil,
-                                      failure failureBlock: PromisePipe<Content>.FailureBlock? = nil) {
+                          failure failureBlock: PromisePipe<Content>.FailureBlock? = nil) {
         
         self.attach(PromisePipe<Content>(success: successBlock, failure: failureBlock))
     }

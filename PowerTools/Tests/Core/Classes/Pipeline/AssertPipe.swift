@@ -15,9 +15,9 @@ public enum PipelineErrors: Error, Equatable {
 
 public class AssertPipe<Value>: PowerTools.Pipe<Value> {
     
-    var successExpectation: XCTestExpectation?
-    var failureExpectation: XCTestExpectation?
-    var resetExpectation: XCTestExpectation?
+    public var successExpectation: XCTestExpectation?
+    public var failureExpectation: XCTestExpectation?
+    public var resetExpectation: XCTestExpectation?
     
     public init(success: XCTestExpectation? = nil, failure: XCTestExpectation? = nil, reset: XCTestExpectation? = nil) {
         

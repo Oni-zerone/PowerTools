@@ -29,7 +29,7 @@ open class Pipe<Value> {
             
         case .failure(let error):
             self.failure(error)
-        
+            
         case .reset:
             self.reset()
         }

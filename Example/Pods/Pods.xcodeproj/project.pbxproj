@@ -7,131 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0749A46D9DE32FC7C1129852167E3404 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6EFD2041C1D67A81E073B97122C053 /* GridSection.swift */; };
-		07B0EADBCF42E0B2E6D810EF188B1222 /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF26A724311838838FABC75A1762C6D /* CollectionDirectionableContainer.swift */; };
-		0820DD50ABA9185B412062602A303AF9 /* InteractionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6FD9F066E3C0053B26A0610C22978 /* InteractionDelegateMock.swift */; };
-		093678A535BDA8BF61DDE5CF2CFE1CF6 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8049A20DE7A53D72ECBE9F4BF1C095E /* InteractionDelegate.swift */; };
-		0ACADFD7BDB161490B6506A08DCB4C18 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831E890F70E3CD1DFA2B21800B0E243 /* GridCollectionViewController.swift */; };
-		0CC317CEB69F2AF95E13926B904DAF83 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E115571BB3CCE8391B4D3C860B05 /* Pipeline.swift */; };
-		10827A95E4ED56863D012E3C4666DF86 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831E890F70E3CD1DFA2B21800B0E243 /* GridCollectionViewController.swift */; };
-		10B2AC61E568C5B5202C3394A31D2E80 /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E7B8DA753263C49D4199AE1C18FFB /* AsyncPromisePipe.swift */; };
-		1266C0C92275FF6E603580907A79C65F /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6EFD2041C1D67A81E073B97122C053 /* GridSection.swift */; };
-		14AD3AC92A39749F14069372AA504696 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07878F3CFA1CAE659514F534BC79BE5C /* GridItem.swift */; };
-		16B8652DDDDC22B38546A9B459C0C555 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9518316902547CE6A78929D898EF4C /* Pipe.swift */; };
-		1703577D2C1D5EDF826D81F33CF2DAC3 /* Pods-PowerTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAC425C6B44E2DA3EC8A38A2D2863E7 /* Pods-PowerTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DA9C4560F96642DE48EC8255EAE128C /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AE8BB595033327554DF957B0E4A97 /* ModelUpdate.swift */; };
-		1DAD7F437337F26149E86EC64D046747 /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E901E05F9223CEEB3F112950A3F86 /* SublinePipe.swift */; };
-		2149A56FCEF153EC906FE6E83DB55D63 /* PowerTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */; };
-		22FEDC70146869A5915CFE350B69E677 /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF26A724311838838FABC75A1762C6D /* CollectionDirectionableContainer.swift */; };
-		26FF46F142630950691FEE19B6AE1D67 /* PowerTools.default-CollectionVM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE2FD80F46F7F4E266FD69EED1D8F22 /* PowerTools.default-CollectionVM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E018773ADBA0680BF4F1AA744A7E63E /* Pods-PowerTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF2C469BFEC8FF883E01F91751F077C /* Pods-PowerTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FF24A13E962D290772C144483D66A01 /* AssertPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19707E7439968C4070C8821D60DA0B /* AssertPipe.swift */; };
-		30F81ABC1F511D098640A15A1F1BFE97 /* PowerToolsTester-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A8AF2B51A05210D8516B4980F894C9 /* PowerToolsTester-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32CF311F4986C6A20926C89726DADB36 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245E115571BB3CCE8391B4D3C860B05 /* Pipeline.swift */; };
-		32F3CA4B36BAAE22655ED19A34C5DAD7 /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */; };
-		3384E1FB35EF32CFB3250AE8B2ED20BA /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A21B9E86238A8593CA90A6037609C /* DirectionableContainer.swift */; };
-		35A95DEA119693028BA0FE5318097DAC /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07878F3CFA1CAE659514F534BC79BE5C /* GridItem.swift */; };
-		368809D882D9D07884FAFE4B4A5A27B6 /* UIScrollViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F97DD7177AC8CD713254F2A1C80A82 /* UIScrollViewDelegateMock.swift */; };
-		38F6E62C5657F23C7CE314D2E2525568 /* PowerToolsTester-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB538EBB648B62B156ECCBABA7C1E10 /* PowerToolsTester-dummy.m */; };
-		38FC6B300805F8FE140975815BB50BEB /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92097939D767781EC11D39B46710EA /* UICollectionView+ViewBatchUpdate.swift */; };
-		397F438F0C325C67CE9F5C44C7557EC0 /* ThrottlePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38901A1FEA75C6C0A84EF4160169CD30 /* ThrottlePipe.swift */; };
-		3B2BF2F44D0EEB7F16AE8C757433FCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */; };
-		3D14100BF50F16532569B4374EA00113 /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */; };
-		407DE1DFB5A45A1677B0E503745561D4 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0951F0F55C1FB01921EC9F78350382 /* SectionViewModel.swift */; };
-		472F79111E87B078946AF7B8E27E1B6B /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D023F7F575A1EE0A47D7C7D78A26 /* AbstractFactory.swift */; };
-		4BDC58DB4871721246D779AC1411314C /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757576155FCC69E0E201D63F32E64C7 /* BuilderContainer.swift */; };
-		50FED58FA44CD063DB613EE90259A6C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5E5FCC237782DFAF398CB15F198FB4 /* XCTest.framework */; };
-		51594DAF40E20A52C005A7131BEC608D /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB3A6C8FE716D9D139EA440BEE48D8 /* GridCollectionDataSource+Internal.swift */; };
-		519C62EDA343DA548D89579271E3F11A /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E7B8DA753263C49D4199AE1C18FFB /* AsyncPromisePipe.swift */; };
-		544C031D6D5BAEB993DE678757206369 /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C77B3132D283202C57090B02F76AA1 /* AbstractPipeline.swift */; };
-		55A16F0CE037FCDE75A9CDF6E0DABCB9 /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66263D8A8A1BF6F78832371AA5C4150F /* PromisePipe.swift */; };
-		5D21F263B4FA2D8097C717F4BB75E497 /* Pods-PowerTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1650F800E2BB5FD0A3B25B4A55758 /* Pods-PowerTools_Example-dummy.m */; };
-		5D82DBE4F8C9C0A642CC1DF3D0DA28E8 /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92097939D767781EC11D39B46710EA /* UICollectionView+ViewBatchUpdate.swift */; };
-		5E5F21236EF65C63C68FD3E5E313B4B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */; };
-		5E855148181341155C1EA4CDA8CE9660 /* DispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE94F1917EC07E54D03EDF7C358F7BA /* DispatchTime.swift */; };
-		61614C3574F58DA0F3642CD4EC441296 /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5745975575C43A488712AD55A7892 /* BatchUpdateView.swift */; };
-		69F826ED1CF76C10B2F200B95A2178AD /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC67AC6B851CA044E61EFA1108A854 /* ItemViewModel.swift */; };
-		6BE9566BB51E95046C38E0DB2A9025A4 /* ThrottlePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38901A1FEA75C6C0A84EF4160169CD30 /* ThrottlePipe.swift */; };
-		6C3E5346BC8447BADC3BFA4D177553FA /* PowerTools-CollectionVM-Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9FDB0BB583F73CC3336B4DA14FB09 /* PowerTools-CollectionVM-Core-dummy.m */; };
-		6C77D183ADF3E38BCAFC13AEE1F12CF6 /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A21B9E86238A8593CA90A6037609C /* DirectionableContainer.swift */; };
-		71C6C88D3A3FBB7E3D5467F240485FB8 /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */; };
-		71CB763F1672DC7C2CD097592E714114 /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5745975575C43A488712AD55A7892 /* BatchUpdateView.swift */; };
-		74D0632DAAAAEB2204599A2B8E588B0A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBD9FC6B11D7BF9AA910E01F448D68 /* Array.swift */; };
-		757C87BAD36F10E828B3DD5BA4A9F830 /* DispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE94F1917EC07E54D03EDF7C358F7BA /* DispatchTime.swift */; };
-		79A4D75C0F1C9A6378913383A644F47F /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE74862954B64873CC6B3959FE0CDC6 /* GridCollectionDataSource.swift */; };
-		7E470C30B3B1994B6B91A520ECC458C4 /* GridCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350F66374083D7E408820C1F4F003223 /* GridCollectionViewController+CellRegistration.swift */; };
-		7ED00C577A5A441373A659DB6DE50188 /* UICollectionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2097DF0FBC1BB2E610E1C655282F770 /* UICollectionDelegateMock.swift */; };
-		83219B6294FA46574177B23AE89CFBA9 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8049A20DE7A53D72ECBE9F4BF1C095E /* InteractionDelegate.swift */; };
-		89612B8328D9D423C4B0495324ADA80D /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757576155FCC69E0E201D63F32E64C7 /* BuilderContainer.swift */; };
-		8DC688A5F063F362D46E1F7A8D3936D1 /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973F604BCD63320945CB47ACFF9D627E /* CollectionBinderDataSource.swift */; };
-		8F562F1826B96712593AB6B5D8CEF430 /* AbstractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91058E037598A38C7FCBC2E0EBE5BA5 /* AbstractBuilder.swift */; };
-		9200CD00FFB1603711C34562F8D4E059 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9752DEA9FA7191313B102CDEF69A4C0D /* UIKit.framework */; };
-		93CB9C241E08DCEA5EB5C13F9A735E68 /* PowerTools-CollectionVM-Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A39B31F85A36E4E7CDB95176102CDAA /* PowerTools-CollectionVM-Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9467989C41979C3DF2CEEFC07917A259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598870390E662B2AF2D4060F377CFAF5 /* ViewController.swift */; };
-		992C500CE755EEB46748B89D9021C71B /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0951F0F55C1FB01921EC9F78350382 /* SectionViewModel.swift */; };
-		9A11E75AA80EA0C13792BF11A7949A1C /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66263D8A8A1BF6F78832371AA5C4150F /* PromisePipe.swift */; };
-		9AA116A758F4F1394E9B3D4698D9A23F /* AbstractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91058E037598A38C7FCBC2E0EBE5BA5 /* AbstractBuilder.swift */; };
-		9C6DB5DBC9C00491FD221AC3E6B88941 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D023F7F575A1EE0A47D7C7D78A26 /* AbstractFactory.swift */; };
-		9E2047D437E00913423D60B17A281865 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA119590390A2D8715FBD254A9F8B01 /* View.swift */; };
-		A148F269AC271C962AEC8E7653FB6EED /* GridDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E57D16CAC2ADF22EF7C0056225585 /* GridDescriptor.swift */; };
-		A3DEC7D643D1AD4E71DBE3674F6F85B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */; };
-		A7C479D5D4C09AF0567FBE3A1FC63197 /* GridDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E57D16CAC2ADF22EF7C0056225585 /* GridDescriptor.swift */; };
-		AA19148D691F53754DC0DC4F24668EAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */; };
-		AAF9B1A8210B5BB0751730F131E39485 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AE8BB595033327554DF957B0E4A97 /* ModelUpdate.swift */; };
-		AAFB718F2F9DE128D88E212B48B4DE48 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412B865027EB8F4A240F1FED89C46FC /* Merge.swift */; };
-		ABE1897A05D9F8E60532F2DA35780E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */; };
-		AE174E89CD3C0A124E70FA48B58E070D /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBD9FC6B11D7BF9AA910E01F448D68 /* Array.swift */; };
-		AEBFAE2638B21F9E4D900560F2C34485 /* InteractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2AAF80D9BD8AF652F0DDC4047F8A01 /* InteractionFactory.swift */; };
-		B53046AAE04B7B3C10ECFEFEFBFF0E7F /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB3A6C8FE716D9D139EA440BEE48D8 /* GridCollectionDataSource+Internal.swift */; };
-		C3A0301406690CB1F466AF6FDE6CAE81 /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973F604BCD63320945CB47ACFF9D627E /* CollectionBinderDataSource.swift */; };
-		C4279A9B0F689ADBBE7009BC73356857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598870390E662B2AF2D4060F377CFAF5 /* ViewController.swift */; };
-		C5C8567374FA0E850522AB1D8FF942B3 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9518316902547CE6A78929D898EF4C /* Pipe.swift */; };
-		C8113662B758CB8A1B96914B2ADA2F4A /* InteractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2AAF80D9BD8AF652F0DDC4047F8A01 /* InteractionFactory.swift */; };
-		C85CCD895511E994E5D7C7F4B41E671D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA119590390A2D8715FBD254A9F8B01 /* View.swift */; };
-		CF790278A607C9CF751273D00EDA4897 /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C77B3132D283202C57090B02F76AA1 /* AbstractPipeline.swift */; };
-		D03463BF8EC9A24872FF281A9760BA76 /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE74862954B64873CC6B3959FE0CDC6 /* GridCollectionDataSource.swift */; };
-		D284A4F3D04FA4D1718F486EBBFF9B3C /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609842B3A54DA060FCC8203C48F2D01 /* GridModule.swift */; };
-		D2CC946838EA12AC4FA10C59BF18A26D /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC67AC6B851CA044E61EFA1108A854 /* ItemViewModel.swift */; };
-		D4384797817BCA366569CECC16CD6F65 /* GridCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350F66374083D7E408820C1F4F003223 /* GridCollectionViewController+CellRegistration.swift */; };
-		E30BC97E71B2140FE50829F948881DA4 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412B865027EB8F4A240F1FED89C46FC /* Merge.swift */; };
-		E7DD918E99AD985871E719DFA5E298C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9752DEA9FA7191313B102CDEF69A4C0D /* UIKit.framework */; };
-		EC99B604B9515FFAFD09B585D37425EA /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E901E05F9223CEEB3F112950A3F86 /* SublinePipe.swift */; };
-		F002BD6C8B1DA5D223967B2A68A34C0F /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4425D9BC73DDB364B2C793B8BAC211 /* BinderDataSource.swift */; };
-		F20D8FB49CE78439D9B4B7088D313ADB /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4425D9BC73DDB364B2C793B8BAC211 /* BinderDataSource.swift */; };
-		FA28350C2688B7614CCFDCA1C1621EE3 /* PowerTools.default-CollectionVM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C2C48D5A7F778356654AAAA9FC3C7 /* PowerTools.default-CollectionVM-dummy.m */; };
-		FF9824B2CF63F74C49A234B07644BFF1 /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609842B3A54DA060FCC8203C48F2D01 /* GridModule.swift */; };
+		009266C00F6996BB68F8F1327D7B6F26 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6EFD2041C1D67A81E073B97122C053 /* GridSection.swift */; };
+		00CBDCEA8D9E8F9FA8909EE6AC8F68CA /* PowerTools.default-CollectionVM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE2FD80F46F7F4E266FD69EED1D8F22 /* PowerTools.default-CollectionVM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0373BC9C4CD7430B34872B8BFA430C41 /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973F604BCD63320945CB47ACFF9D627E /* CollectionBinderDataSource.swift */; };
+		0440A426F8F299DCF098585718BE6136 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412B865027EB8F4A240F1FED89C46FC /* Merge.swift */; };
+		0566B6F86283A0B43971D0274E0A390D /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8049A20DE7A53D72ECBE9F4BF1C095E /* InteractionDelegate.swift */; };
+		06BF70337F8F0F42D9C64340C8D6C18B /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831E890F70E3CD1DFA2B21800B0E243 /* GridCollectionViewController.swift */; };
+		09589FAC0FD6753095105DF2E6048BBC /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4CB25BA874935C82A08CF12B0A0F49 /* Pipeline.swift */; };
+		0CF8B1C2EAC50D9CB7959AB345987A4F /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0951F0F55C1FB01921EC9F78350382 /* SectionViewModel.swift */; };
+		11BDA41F8FA92C78DFC5D5368DE1F0F7 /* PowerTools.default-CollectionVM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 824C2C48D5A7F778356654AAAA9FC3C7 /* PowerTools.default-CollectionVM-dummy.m */; };
+		13664271B317CBDBB7FAF967DB4426C6 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AE8BB595033327554DF957B0E4A97 /* ModelUpdate.swift */; };
+		1672FB67A51CF849FF1C9F889EA19007 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6EFD2041C1D67A81E073B97122C053 /* GridSection.swift */; };
+		1684493BC00EC8BB7975C032C4B1E181 /* Pods-PowerTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1650F800E2BB5FD0A3B25B4A55758 /* Pods-PowerTools_Example-dummy.m */; };
+		185C5F811F6B084BA4E704646D6BDC83 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4CB25BA874935C82A08CF12B0A0F49 /* Pipeline.swift */; };
+		191E5D16403BDFC73764E30C31E6F6DF /* UIScrollViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F97DD7177AC8CD713254F2A1C80A82 /* UIScrollViewDelegateMock.swift */; };
+		1F7B99C844D4C3A83BB96C3E6CCBFB0E /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB3A6C8FE716D9D139EA440BEE48D8 /* GridCollectionDataSource+Internal.swift */; };
+		2837A9FF5C1D421A6E52BD0EC961D340 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
+		2A45697B20BE0ACA590A66C0A3A0520A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598870390E662B2AF2D4060F377CFAF5 /* ViewController.swift */; };
+		2BF5A67C40DA0B0DA47A8E7B2BB9BAF4 /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A21B9E86238A8593CA90A6037609C /* DirectionableContainer.swift */; };
+		2E0BFB8E16153B22FFE9647F954F6A6A /* GridCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350F66374083D7E408820C1F4F003223 /* GridCollectionViewController+CellRegistration.swift */; };
+		3647DDFC0B0F689424413BA3CC1C6799 /* GridDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E57D16CAC2ADF22EF7C0056225585 /* GridDescriptor.swift */; };
+		364C3F63312003480603EB658CD31C1A /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0951F0F55C1FB01921EC9F78350382 /* SectionViewModel.swift */; };
+		38ECB25362E275C6BFDD9B29E23BFE6A /* AssertPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19707E7439968C4070C8821D60DA0B /* AssertPipe.swift */; };
+		3E62DD7A99EC83E8D635BDC06D62FF66 /* AbstractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91058E037598A38C7FCBC2E0EBE5BA5 /* AbstractBuilder.swift */; };
+		3F0011C0C00ED4F4483C7CFD917FFF21 /* GridCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350F66374083D7E408820C1F4F003223 /* GridCollectionViewController+CellRegistration.swift */; };
+		40C2C73A7B24FBB3509EDC60238606EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598870390E662B2AF2D4060F377CFAF5 /* ViewController.swift */; };
+		46E26644F00D3BAC595877088927C44B /* GridDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E57D16CAC2ADF22EF7C0056225585 /* GridDescriptor.swift */; };
+		484C4DEE0F745EB5744B356498890986 /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE74862954B64873CC6B3959FE0CDC6 /* GridCollectionDataSource.swift */; };
+		49ACD26ABE04EBD202E3C0A15AB22921 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D023F7F575A1EE0A47D7C7D78A26 /* AbstractFactory.swift */; };
+		4B9A03B306587EC9A55EEF67877FDE47 /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F93ACA3B48588B49C867B4984EADA4 /* AbstractPipeline.swift */; };
+		4D6494C87E11A5E07C7AA2623CC04BC6 /* DispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE94F1917EC07E54D03EDF7C358F7BA /* DispatchTime.swift */; };
+		54F8990C932A26B1A908D9C07BAF9D5C /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55DCABFF8D3D89A417CDC3AFDB78A0 /* AsyncPromisePipe.swift */; };
+		5903D45FAB87D79BE57A7F7BDFF37504 /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD067DD80E0D64B4E3963C61DC34DE78 /* SublinePipe.swift */; };
+		5CAE38A100C45990F0C4FAC9F0CC55FB /* InteractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2AAF80D9BD8AF652F0DDC4047F8A01 /* InteractionFactory.swift */; };
+		5D15716DCB6BABD15141EA2086BB342F /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD067DD80E0D64B4E3963C61DC34DE78 /* SublinePipe.swift */; };
+		5DD939B03DF0A5F6BB55B1DD46930A39 /* PowerTools-CollectionVM-Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9FDB0BB583F73CC3336B4DA14FB09 /* PowerTools-CollectionVM-Core-dummy.m */; };
+		602354928CE06A55AA0A56366B857C5A /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9831E890F70E3CD1DFA2B21800B0E243 /* GridCollectionViewController.swift */; };
+		61868ACE588F378368D710492D9BD0C0 /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674FF8942C462D95650E48BBC5DFCA3 /* PromisePipe.swift */; };
+		6B48A6F02AB1A2B2D014522D613BB517 /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF26A724311838838FABC75A1762C6D /* CollectionDirectionableContainer.swift */; };
+		6CF59FBB0F86674DC471179BCFD00DAC /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757576155FCC69E0E201D63F32E64C7 /* BuilderContainer.swift */; };
+		7487B5FFE16E78AB2479EE281E494B2E /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55DCABFF8D3D89A417CDC3AFDB78A0 /* AsyncPromisePipe.swift */; };
+		77063F540213432DDC3AF1A3D07BCCD5 /* AbstractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91058E037598A38C7FCBC2E0EBE5BA5 /* AbstractBuilder.swift */; };
+		7AB5D2B99F4D2D02EA27C93352DBDCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */; };
+		7AD6DC0BE64387246B2A9A79C83F3EE1 /* PowerTools-CollectionVM-Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A39B31F85A36E4E7CDB95176102CDAA /* PowerTools-CollectionVM-Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B0A40296E561D10ECE73BBA84A9F095 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9543B8B49276C69BF824197E6C2377B /* Pipe.swift */; };
+		7C1507071D78A83EFA3ED50755E76D40 /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609842B3A54DA060FCC8203C48F2D01 /* GridModule.swift */; };
+		7CD9D89D534B2C279A372839E0028A8A /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC67AC6B851CA044E61EFA1108A854 /* ItemViewModel.swift */; };
+		7E7CCB3AD30B0F94DE4D1AFA26EAB81F /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5745975575C43A488712AD55A7892 /* BatchUpdateView.swift */; };
+		80C5C17D619DB2E2FD9871C7D2115C6E /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674FF8942C462D95650E48BBC5DFCA3 /* PromisePipe.swift */; };
+		84BBB58526B5C58FF91D9123EF43E966 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412B865027EB8F4A240F1FED89C46FC /* Merge.swift */; };
+		84D773A41DED3AAA7C8B319D462CE905 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBD9FC6B11D7BF9AA910E01F448D68 /* Array.swift */; };
+		8C49E90A01F010C6AD6336FD43B19668 /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92097939D767781EC11D39B46710EA /* UICollectionView+ViewBatchUpdate.swift */; };
+		8D66726B922BE55B8E09C87EAE922838 /* InteractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2AAF80D9BD8AF652F0DDC4047F8A01 /* InteractionFactory.swift */; };
+		8F043793B0031CE2E3829F068FF1B17B /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */; };
+		91216C7C8FB2B880F3CAFA1904DB2B1A /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE74862954B64873CC6B3959FE0CDC6 /* GridCollectionDataSource.swift */; };
+		966A5047381E07EFAABD60D1B5CE335A /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4425D9BC73DDB364B2C793B8BAC211 /* BinderDataSource.swift */; };
+		998239224A148B19407F703A78599B30 /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */; };
+		9A44765103890E74C7C4503217CC3CD9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBD9FC6B11D7BF9AA910E01F448D68 /* Array.swift */; };
+		9F82A353BD55229A53D67C054D693C88 /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */; };
+		A4A70B168CB8B887CF3823C94F3A636C /* InteractionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6FD9F066E3C0053B26A0610C22978 /* InteractionDelegateMock.swift */; };
+		A5BF8898CC52380BC394DC9FC4E63055 /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF26A724311838838FABC75A1762C6D /* CollectionDirectionableContainer.swift */; };
+		A68D8B870300CFBA44503228F971C8F8 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AE8BB595033327554DF957B0E4A97 /* ModelUpdate.swift */; };
+		A8A67C5081BE7D4123E866F4FC79A903 /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609842B3A54DA060FCC8203C48F2D01 /* GridModule.swift */; };
+		A918F5C298771B077E4891D2E86FBD10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */; };
+		A9B92F4F9E84A91E85DA7B5697220C9C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA119590390A2D8715FBD254A9F8B01 /* View.swift */; };
+		B433AB9FB7E38B6F7B33AEC064958CAC /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9543B8B49276C69BF824197E6C2377B /* Pipe.swift */; };
+		B893840807EDF910E89EBBB42575B1F4 /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5745975575C43A488712AD55A7892 /* BatchUpdateView.swift */; };
+		B946907BEEEDBE4DA9BA6863FA12DF25 /* PowerToolsTester-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A8AF2B51A05210D8516B4980F894C9 /* PowerToolsTester-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9DCB873F68E944A620BA9A7532CEC2C /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07878F3CFA1CAE659514F534BC79BE5C /* GridItem.swift */; };
+		C0C7C81C43BAC7D8A0E5FB1DD01D0C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
+		C1F4EC025B35E6D2D76935FE084D86AC /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA119590390A2D8715FBD254A9F8B01 /* View.swift */; };
+		C2D9F9BEC4600B916CD0EB4220219B50 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8049A20DE7A53D72ECBE9F4BF1C095E /* InteractionDelegate.swift */; };
+		C3B10E8133B45C562DB2B960F5B23849 /* DispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE94F1917EC07E54D03EDF7C358F7BA /* DispatchTime.swift */; };
+		C3BD5E95A2368999655662CD0CA3FFB7 /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757576155FCC69E0E201D63F32E64C7 /* BuilderContainer.swift */; };
+		C5FB79DE1D7FCAD9BF104F5CFBBB6975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
+		CC2917DE28A676C7B4E17146DF0EC6CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
+		CF3D2CF189AB2F88E99971244821DDC2 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D023F7F575A1EE0A47D7C7D78A26 /* AbstractFactory.swift */; };
+		CF47599BBC4818054889882C40E2B082 /* UICollectionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2097DF0FBC1BB2E610E1C655282F770 /* UICollectionDelegateMock.swift */; };
+		CFCFB29AE84E55620745E11551755EC6 /* Pods-PowerTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF2C469BFEC8FF883E01F91751F077C /* Pods-PowerTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D40E4AD8A1B17990D8EE157D258A5564 /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4425D9BC73DDB364B2C793B8BAC211 /* BinderDataSource.swift */; };
+		D84CA60012CDD01C401F9A9082B8D5C0 /* PowerToolsTester-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB538EBB648B62B156ECCBABA7C1E10 /* PowerToolsTester-dummy.m */; };
+		D8A1A4719DF12DBB7F8E04A2A34124E6 /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92097939D767781EC11D39B46710EA /* UICollectionView+ViewBatchUpdate.swift */; };
+		DA9AF47E34F71F339E5A3A1690E230B7 /* Pods-PowerTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAC425C6B44E2DA3EC8A38A2D2863E7 /* Pods-PowerTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB30F7B9A330E2706496E12C2A59673D /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F93ACA3B48588B49C867B4984EADA4 /* AbstractPipeline.swift */; };
+		E07BB1B48B676ED1993FADB81C5ACEEA /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973F604BCD63320945CB47ACFF9D627E /* CollectionBinderDataSource.swift */; };
+		E0B901E70E4589A6048E468070988859 /* PowerTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */; };
+		E9A481E60ED3A2595D8BEB93F3F5E2BD /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1A21B9E86238A8593CA90A6037609C /* DirectionableContainer.swift */; };
+		EA265FBDA45CE5C904C4430091709BDC /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC67AC6B851CA044E61EFA1108A854 /* ItemViewModel.swift */; };
+		EB6D879EA801BD9C2A58817C3403F524 /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB3A6C8FE716D9D139EA440BEE48D8 /* GridCollectionDataSource+Internal.swift */; };
+		F006C6DE605BFFF22B76E1682CC6C444 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07878F3CFA1CAE659514F534BC79BE5C /* GridItem.swift */; };
+		F49108561EEAA10E362FFD21CC984C2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */; };
+		F75B80E1021534B42316CA6FAF31F4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		748C74236C0F563617EF7E0B2815A543 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 713D1E633774DC6855D35C2234DE51DA;
-			remoteInfo = "PowerTools.default-CollectionVM";
-		};
-		850D78C1BC909DABD0A320A6D0263D11 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9AFEE670292326F765F4D3255030BCD;
-			remoteInfo = "PowerTools-CollectionVM-Core";
-		};
-		A6B059660BC27D20A60662A36ABCB6DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8EEFF38415F542D0272D7DA58EF8018;
-			remoteInfo = "Pods-PowerTools_Example";
-		};
-		BA46C523F55DCA93A80838056D4117FD /* PBXContainerItemProxy */ = {
+		19C114CBE88C31422352139856148CF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5059516E440CD33B09C7802D158CC607;
 			remoteInfo = PowerToolsTester;
 		};
-		F234E83643FE56E8391D0202F3AF43A8 /* PBXContainerItemProxy */ = {
+		2823F5DE628988C4FE6D252293677BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EEFF38415F542D0272D7DA58EF8018;
+			remoteInfo = "Pods-PowerTools_Example";
+		};
+		4EA1141388F08B5DDB05E335314A3F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 713D1E633774DC6855D35C2234DE51DA;
+			remoteInfo = "PowerTools.default-CollectionVM";
+		};
+		575641792EA00C0F7CA77A1782BCF101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9AFEE670292326F765F4D3255030BCD;
+			remoteInfo = "PowerTools-CollectionVM-Core";
+		};
+		63A6FF9F97CF973B5228345DA633E5D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -144,9 +142,8 @@
 		00B7A130A7E99FE300E3C2A4B2D42915 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerTools.framework; path = "PowerTools.default-CollectionVM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E0069932E415537B66FADC3C20ACF0 /* Pods-PowerTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		07878F3CFA1CAE659514F534BC79BE5C /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
+		0982C05456B2F1797DD38CF85453490D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0B6EFD2041C1D67A81E073B97122C053 /* GridSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
-		0C5E5FCC237782DFAF398CB15F198FB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0C9E901E05F9223CEEB3F112950A3F86 /* SublinePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SublinePipe.swift; sourceTree = "<group>"; };
 		0EE2FD80F46F7F4E266FD69EED1D8F22 /* PowerTools.default-CollectionVM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PowerTools.default-CollectionVM-umbrella.h"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-umbrella.h"; sourceTree = "<group>"; };
 		114FB3D694DAD777A935930C3FDE1015 /* Pods-PowerTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		14F97DD7177AC8CD713254F2A1C80A82 /* UIScrollViewDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegateMock.swift; sourceTree = "<group>"; };
@@ -158,44 +155,43 @@
 		1D959010E656169D831BB0D6A29A44B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		1E71FCA0858FFFBD2489B512C3BC64EA /* PowerToolsTester.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PowerToolsTester.modulemap; sourceTree = "<group>"; };
 		27CD50446F699E2965358B26E1EAA3BF /* Pods-PowerTools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-Info.plist"; sourceTree = "<group>"; };
+		27F93ACA3B48588B49C867B4984EADA4 /* AbstractPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractPipeline.swift; sourceTree = "<group>"; };
 		2D3AE8BB595033327554DF957B0E4A97 /* ModelUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModelUpdate.swift; sourceTree = "<group>"; };
 		31F1650F800E2BB5FD0A3B25B4A55758 /* Pods-PowerTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Example-dummy.m"; sourceTree = "<group>"; };
 		350F66374083D7E408820C1F4F003223 /* GridCollectionViewController+CellRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridCollectionViewController+CellRegistration.swift"; sourceTree = "<group>"; };
 		356882AD89374BA7FD3E2260F4915B6D /* Pods-PowerTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		38901A1FEA75C6C0A84EF4160169CD30 /* ThrottlePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThrottlePipe.swift; sourceTree = "<group>"; };
-		3A9E7B8DA753263C49D4199AE1C18FFB /* AsyncPromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncPromisePipe.swift; sourceTree = "<group>"; };
 		3CE855517B3478C70F01410802E9A459 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Example.framework; path = "Pods-PowerTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0951F0F55C1FB01921EC9F78350382 /* SectionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		3F6B6DC2641746DC121E149AB62F5F53 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerToolsTester.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		445E57D16CAC2ADF22EF7C0056225585 /* GridDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridDescriptor.swift; sourceTree = "<group>"; };
+		4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		51A8AF2B51A05210D8516B4980F894C9 /* PowerToolsTester-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-umbrella.h"; sourceTree = "<group>"; };
 		55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PowerTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5852D023F7F575A1EE0A47D7C7D78A26 /* AbstractFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		598870390E662B2AF2D4060F377CFAF5 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PowerToolsTester.xcconfig; sourceTree = "<group>"; };
 		5E1A21B9E86238A8593CA90A6037609C /* DirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DirectionableContainer.swift; sourceTree = "<group>"; };
-		66263D8A8A1BF6F78832371AA5C4150F /* PromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromisePipe.swift; sourceTree = "<group>"; };
 		6A4425D9BC73DDB364B2C793B8BAC211 /* BinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BinderDataSource.swift; sourceTree = "<group>"; };
 		6BE94F1917EC07E54D03EDF7C358F7BA /* DispatchTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchTime.swift; sourceTree = "<group>"; };
 		6C0866ED9314AB58CAE23DA572AECF09 /* PowerTools-CollectionVM-Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PowerTools-CollectionVM-Core-Info.plist"; sourceTree = "<group>"; };
 		6FF26A724311838838FABC75A1762C6D /* CollectionDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionDirectionableContainer.swift; sourceTree = "<group>"; };
 		750ACACC53DF1926986C2795D49A5469 /* PowerTools.default-CollectionVM-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PowerTools.default-CollectionVM-prefix.pch"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch"; sourceTree = "<group>"; };
-		786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		788A9688123C448940D059D00FDA5A30 /* PowerTools-CollectionVM-Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PowerTools-CollectionVM-Core.modulemap"; sourceTree = "<group>"; };
+		78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7A39B31F85A36E4E7CDB95176102CDAA /* PowerTools-CollectionVM-Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerTools-CollectionVM-Core-umbrella.h"; sourceTree = "<group>"; };
+		7C4CB25BA874935C82A08CF12B0A0F49 /* Pipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		8192AF8B505CBD8D02DCAE5C5327C0A6 /* Pods-PowerTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PowerTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		824C2C48D5A7F778356654AAAA9FC3C7 /* PowerTools.default-CollectionVM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PowerTools.default-CollectionVM-dummy.m"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-dummy.m"; sourceTree = "<group>"; };
+		8D55DCABFF8D3D89A417CDC3AFDB78A0 /* AsyncPromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncPromisePipe.swift; sourceTree = "<group>"; };
 		8EB4C2B606B52C30D45277C80835FDE5 /* PowerTools.default-CollectionVM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PowerTools.default-CollectionVM.modulemap"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap"; sourceTree = "<group>"; };
 		8FFC67AC6B851CA044E61EFA1108A854 /* ItemViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		93D37D16E79A8DD889B60DF8D521372E /* PowerTools.default-CollectionVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PowerTools.default-CollectionVM.xcconfig"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.xcconfig"; sourceTree = "<group>"; };
 		9609842B3A54DA060FCC8203C48F2D01 /* GridModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridModule.swift; sourceTree = "<group>"; };
 		973F604BCD63320945CB47ACFF9D627E /* CollectionBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSource.swift; sourceTree = "<group>"; };
-		9752DEA9FA7191313B102CDEF69A4C0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9831E890F70E3CD1DFA2B21800B0E243 /* GridCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
 		9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DF5F276D0E595BF9A78DDF187589004 /* Pods_PowerTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Tests.framework; path = "Pods-PowerTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F9518316902547CE6A78929D898EF4C /* Pipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		A1FBD9FC6B11D7BF9AA910E01F448D68 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		A2097DF0FBC1BB2E610E1C655282F770 /* UICollectionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionDelegateMock.swift; sourceTree = "<group>"; };
 		A412B865027EB8F4A240F1FED89C46FC /* Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
@@ -203,11 +199,12 @@
 		A864099A5FF08D70505F0B5E0B1EC580 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerTools.framework; path = "PowerTools-CollectionVM-Core.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA35BB58234990039D7612BE7A277D48 /* Pods-PowerTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AB2AAF80D9BD8AF652F0DDC4047F8A01 /* InteractionFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionFactory.swift; sourceTree = "<group>"; };
-		B245E115571BB3CCE8391B4D3C860B05 /* Pipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		B5A5745975575C43A488712AD55A7892 /* BatchUpdateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BatchUpdateView.swift; sourceTree = "<group>"; };
 		B8049A20DE7A53D72ECBE9F4BF1C095E /* InteractionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegate.swift; sourceTree = "<group>"; };
+		B9543B8B49276C69BF824197E6C2377B /* Pipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		BAAC425C6B44E2DA3EC8A38A2D2863E7 /* Pods-PowerTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PowerTools_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BAF2C469BFEC8FF883E01F91751F077C /* Pods-PowerTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PowerTools_Example-umbrella.h"; sourceTree = "<group>"; };
+		BD067DD80E0D64B4E3963C61DC34DE78 /* SublinePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SublinePipe.swift; sourceTree = "<group>"; };
 		BF9C0632570F14625B36CA5B5887B745 /* Pods-PowerTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C1686D2574D11265663089F15F9BC3CE /* Pods-PowerTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Tests.modulemap"; sourceTree = "<group>"; };
 		C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridCollectionViewController+DataSource.swift"; sourceTree = "<group>"; };
@@ -225,54 +222,54 @@
 		F0068AAA5BC0D4174B0FA0BBADEE8681 /* Pods-PowerTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F0A89B888E8472701E9DF1748F86BD7C /* Pods-PowerTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F2F14EA6AA613A5E22B7995D780A0970 /* PowerTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F5C77B3132D283202C57090B02F76AA1 /* AbstractPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractPipeline.swift; sourceTree = "<group>"; };
+		F674FF8942C462D95650E48BBC5DFCA3 /* PromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromisePipe.swift; sourceTree = "<group>"; };
 		FA683D0478490AD85FD8E30589ABBB8E /* Pods-PowerTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Example.modulemap"; sourceTree = "<group>"; };
 		FE7177E67F3CE20413235855803D8937 /* PowerToolsTester-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-prefix.pch"; sourceTree = "<group>"; };
 		FEA119590390A2D8715FBD254A9F8B01 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BD1F60999D5DFE604828AAFFC1964B2 /* Frameworks */ = {
+		152508BA5A945BA7B8A87042219DC2C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE1897A05D9F8E60532F2DA35780E27 /* Foundation.framework in Frameworks */,
-				2149A56FCEF153EC906FE6E83DB55D63 /* PowerTools.framework in Frameworks */,
-				50FED58FA44CD063DB613EE90259A6C4 /* XCTest.framework in Frameworks */,
+				F75B80E1021534B42316CA6FAF31F4BE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23DF9B43CD44A2DBD6C700118ED5B3F9 /* Frameworks */ = {
+		30EDD732A41F615BAED59F3210188291 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2BF2F44D0EEB7F16AE8C757433FCC1 /* Foundation.framework in Frameworks */,
+				C0C7C81C43BAC7D8A0E5FB1DD01D0C6C /* Foundation.framework in Frameworks */,
+				E0B901E70E4589A6048E468070988859 /* PowerTools.framework in Frameworks */,
+				A918F5C298771B077E4891D2E86FBD10 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EA9B2652FFFC00AA1A3581EADBFB665 /* Frameworks */ = {
+		60027B0FDBD3214339CC4C7E1E473D31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA19148D691F53754DC0DC4F24668EAC /* Foundation.framework in Frameworks */,
-				E7DD918E99AD985871E719DFA5E298C2 /* UIKit.framework in Frameworks */,
+				CC2917DE28A676C7B4E17146DF0EC6CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		515BA19927AD1D74B0BF9C99DFE1B724 /* Frameworks */ = {
+		7BCD5A45C33765AE1B2D90986B7B832C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DEC7D643D1AD4E71DBE3674F6F85B5 /* Foundation.framework in Frameworks */,
+				2837A9FF5C1D421A6E52BD0EC961D340 /* Foundation.framework in Frameworks */,
+				7AB5D2B99F4D2D02EA27C93352DBDCEB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D355F6658582A0EC6C79798D389CC031 /* Frameworks */ = {
+		966EE4A19A26E30E2922BCFE5A2BACAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5F21236EF65C63C68FD3E5E313B4B4 /* Foundation.framework in Frameworks */,
-				9200CD00FFB1603711C34562F8D4E059 /* UIKit.framework in Frameworks */,
+				C5FB79DE1D7FCAD9BF104F5CFBBB6975 /* Foundation.framework in Frameworks */,
+				F49108561EEAA10E362FFD21CC984C2E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +287,17 @@
 				3730E686B43C0FCAD32F7999ADAE3B68 /* ViewBatchUpdate */,
 			);
 			name = CollectionVM;
+			sourceTree = "<group>";
+		};
+		198399C280342734C39C480319C6A123 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				27F93ACA3B48588B49C867B4984EADA4 /* AbstractPipeline.swift */,
+				7C4CB25BA874935C82A08CF12B0A0F49 /* Pipeline.swift */,
+				7C735EA0EBF50CF187EFBBA99061F0D9 /* Pipes */,
+			);
+			name = Pipeline;
+			path = PowerTools/Core/Classes/Pipeline;
 			sourceTree = "<group>";
 		};
 		1D56C15128EC7DDD80D223AE7BC72B07 /* Permutations */ = {
@@ -315,7 +323,7 @@
 			children = (
 				4291DCCBCADFAE88F6B867A9EB94B742 /* AbstractFactory */,
 				1D56C15128EC7DDD80D223AE7BC72B07 /* Permutations */,
-				9924472DAA7084F0C33C19BF5602A203 /* Pipeline */,
+				198399C280342734C39C480319C6A123 /* Pipeline */,
 				2F3D3BC82B1ACC3D1A2E03BD041D3803 /* Utils */,
 			);
 			name = Core;
@@ -431,16 +439,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56067DFE0FEB05F235E48EB6B078854A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				786D08EEE965B1AA8BD08590CA8D3376 /* Foundation.framework */,
-				9752DEA9FA7191313B102CDEF69A4C0D /* UIKit.framework */,
-				0C5E5FCC237782DFAF398CB15F198FB4 /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		5EB104D9C5F5656D13FCD8963616D69C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,12 +460,34 @@
 			path = PowerTools/CollectionVM/Classes/Delegates;
 			sourceTree = "<group>";
 		};
+		7C735EA0EBF50CF187EFBBA99061F0D9 /* Pipes */ = {
+			isa = PBXGroup;
+			children = (
+				8D55DCABFF8D3D89A417CDC3AFDB78A0 /* AsyncPromisePipe.swift */,
+				B9543B8B49276C69BF824197E6C2377B /* Pipe.swift */,
+				F674FF8942C462D95650E48BBC5DFCA3 /* PromisePipe.swift */,
+				BD067DD80E0D64B4E3963C61DC34DE78 /* SublinePipe.swift */,
+			);
+			name = Pipes;
+			path = Pipes;
+			sourceTree = "<group>";
+		};
 		8174895CF191A93FE6F1A0835B2FFAED /* Pod */ = {
 			isa = PBXGroup;
 			children = (
 				3F6B6DC2641746DC121E149AB62F5F53 /* PowerToolsTester.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		87C3E8398A65282EC400F6F0F2BA2BA0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0982C05456B2F1797DD38CF85453490D /* Foundation.framework */,
+				4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */,
+				78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		8E5B01408E0A15D49518B7F12B370F3E /* GridCollectionViewController */ = {
@@ -491,17 +511,6 @@
 			path = PowerTools/CollectionVM/Classes/BinderDataSource;
 			sourceTree = "<group>";
 		};
-		9924472DAA7084F0C33C19BF5602A203 /* Pipeline */ = {
-			isa = PBXGroup;
-			children = (
-				F5C77B3132D283202C57090B02F76AA1 /* AbstractPipeline.swift */,
-				B245E115571BB3CCE8391B4D3C860B05 /* Pipeline.swift */,
-				AD988111F91B62EF86FE664964F9987F /* Pipes */,
-			);
-			name = Pipeline;
-			path = PowerTools/Core/Classes/Pipeline;
-			sourceTree = "<group>";
-		};
 		9F3C7E2C761184321A70F41A07C43202 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,19 +532,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PowerToolsTester";
-			sourceTree = "<group>";
-		};
-		AD988111F91B62EF86FE664964F9987F /* Pipes */ = {
-			isa = PBXGroup;
-			children = (
-				3A9E7B8DA753263C49D4199AE1C18FFB /* AsyncPromisePipe.swift */,
-				9F9518316902547CE6A78929D898EF4C /* Pipe.swift */,
-				66263D8A8A1BF6F78832371AA5C4150F /* PromisePipe.swift */,
-				0C9E901E05F9223CEEB3F112950A3F86 /* SublinePipe.swift */,
-				38901A1FEA75C6C0A84EF4160169CD30 /* ThrottlePipe.swift */,
-			);
-			name = Pipes;
-			path = Pipes;
 			sourceTree = "<group>";
 		};
 		B2E1CB3FB530186E5EE9B36F62C449D1 /* Pod */ = {
@@ -594,7 +590,7 @@
 			isa = PBXGroup;
 			children = (
 				55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */,
-				56067DFE0FEB05F235E48EB6B078854A /* iOS */,
+				87C3E8398A65282EC400F6F0F2BA2BA0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -636,43 +632,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4395B7FC9C69EB630F9FD2BBC328693E /* Headers */ = {
+		729B2F1188FBBA9D46B47CA6C0F24678 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E018773ADBA0680BF4F1AA744A7E63E /* Pods-PowerTools_Example-umbrella.h in Headers */,
+				00CBDCEA8D9E8F9FA8909EE6AC8F68CA /* PowerTools.default-CollectionVM-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4406D56AEDC9C397F3032FFF9033E559 /* Headers */ = {
+		833D2FA01072FD3A0C854AE1675FA2C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1703577D2C1D5EDF826D81F33CF2DAC3 /* Pods-PowerTools_Tests-umbrella.h in Headers */,
+				B946907BEEEDBE4DA9BA6863FA12DF25 /* PowerToolsTester-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63FAFDF427BC9A702BACCD458A94190F /* Headers */ = {
+		A01FA71B683106644E53B1D5AF4103F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26FF46F142630950691FEE19B6AE1D67 /* PowerTools.default-CollectionVM-umbrella.h in Headers */,
+				DA9AF47E34F71F339E5A3A1690E230B7 /* Pods-PowerTools_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66F309F428EC2D8C440A4A05A69F50E9 /* Headers */ = {
+		D4C14463F74389B9B32C5FEAA636A34D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F81ABC1F511D098640A15A1F1BFE97 /* PowerToolsTester-umbrella.h in Headers */,
+				7AD6DC0BE64387246B2A9A79C83F3EE1 /* PowerTools-CollectionVM-Core-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AA024BE5D07A0D81D7FCD26095071E7 /* Headers */ = {
+		FA377BD6D8BB26D33244DA6144EA06EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CB9C241E08DCEA5EB5C13F9A735E68 /* PowerTools-CollectionVM-Core-umbrella.h in Headers */,
+				CFCFB29AE84E55620745E11551755EC6 /* Pods-PowerTools_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,17 +677,17 @@
 /* Begin PBXNativeTarget section */
 		5059516E440CD33B09C7802D158CC607 /* PowerToolsTester */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F73FC5A2742F0702B9BC70E9E4591B2 /* Build configuration list for PBXNativeTarget "PowerToolsTester" */;
+			buildConfigurationList = 583AD1EACEC0E6266F0B274237F8E51B /* Build configuration list for PBXNativeTarget "PowerToolsTester" */;
 			buildPhases = (
-				66F309F428EC2D8C440A4A05A69F50E9 /* Headers */,
-				A007741EA52CFD46A66A46898DFA625D /* Sources */,
-				0BD1F60999D5DFE604828AAFFC1964B2 /* Frameworks */,
-				039ACE9558EBCBD5571E2611A8723084 /* Resources */,
+				833D2FA01072FD3A0C854AE1675FA2C6 /* Headers */,
+				C93EA7B47DDD6F8E409D16F4B81CBBE8 /* Sources */,
+				30EDD732A41F615BAED59F3210188291 /* Frameworks */,
+				9868260EB1C456047A529358EF3A22FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8E41853F0AC4A0EF22BF84612791B907 /* PBXTargetDependency */,
+				733B105746F960F0015103890FCD058E /* PBXTargetDependency */,
 			);
 			name = PowerToolsTester;
 			productName = PowerToolsTester;
@@ -700,12 +696,12 @@
 		};
 		713D1E633774DC6855D35C2234DE51DA /* PowerTools.default-CollectionVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84AF61124BC0353E286E19371A116AE2 /* Build configuration list for PBXNativeTarget "PowerTools.default-CollectionVM" */;
+			buildConfigurationList = 4CDFB34B9D0591ED88F08C2AC1493326 /* Build configuration list for PBXNativeTarget "PowerTools.default-CollectionVM" */;
 			buildPhases = (
-				63FAFDF427BC9A702BACCD458A94190F /* Headers */,
-				5674233BEFE92213AF44C9D03755DFC2 /* Sources */,
-				3EA9B2652FFFC00AA1A3581EADBFB665 /* Frameworks */,
-				9020D8E8BAB6982CB31D447139771809 /* Resources */,
+				729B2F1188FBBA9D46B47CA6C0F24678 /* Headers */,
+				E10A937385E4203B3632A3450E8E9679 /* Sources */,
+				966EE4A19A26E30E2922BCFE5A2BACAE /* Frameworks */,
+				798CAC23347DA73DF524DB17F675885A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -718,12 +714,12 @@
 		};
 		C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B39B42235C59705AC868B0C8DDA4840 /* Build configuration list for PBXNativeTarget "PowerTools-CollectionVM-Core" */;
+			buildConfigurationList = F65442CA9DFEC3E875A2FCA77EE72FA5 /* Build configuration list for PBXNativeTarget "PowerTools-CollectionVM-Core" */;
 			buildPhases = (
-				9AA024BE5D07A0D81D7FCD26095071E7 /* Headers */,
-				AF8D27E63B96DD225D80DA691A8DB87F /* Sources */,
-				D355F6658582A0EC6C79798D389CC031 /* Frameworks */,
-				94B8EE047624C88E007C0FA375AB25CA /* Resources */,
+				D4C14463F74389B9B32C5FEAA636A34D /* Headers */,
+				4C84CEB1EE6EC337333F75A9B066B756 /* Sources */,
+				7BCD5A45C33765AE1B2D90986B7B832C /* Frameworks */,
+				9EDB79EC295EE9A7D9416F77BEF0F9E8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -736,17 +732,17 @@
 		};
 		D8EEFF38415F542D0272D7DA58EF8018 /* Pods-PowerTools_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 438C5D9C9616ACD319BA519C5F756003 /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Example" */;
+			buildConfigurationList = EB27981F274D22641E42B8E5083104D8 /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Example" */;
 			buildPhases = (
-				4395B7FC9C69EB630F9FD2BBC328693E /* Headers */,
-				976BEE351141C15E63F6B9FA76F44425 /* Sources */,
-				515BA19927AD1D74B0BF9C99DFE1B724 /* Frameworks */,
-				516B73FCC84D600B61389DBCD57005B3 /* Resources */,
+				FA377BD6D8BB26D33244DA6144EA06EB /* Headers */,
+				41561BB8DD3DE091A3ACA2046D0B87D0 /* Sources */,
+				60027B0FDBD3214339CC4C7E1E473D31 /* Frameworks */,
+				59BEDD50705F7AECEAD283F26878CAB0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D52226131FF12699BC65BD6E366863B3 /* PBXTargetDependency */,
+				1D60DBA254093942AEFFB85259B10119 /* PBXTargetDependency */,
 			);
 			name = "Pods-PowerTools_Example";
 			productName = "Pods-PowerTools_Example";
@@ -755,19 +751,19 @@
 		};
 		E2A4DFF1F392B9C128A0474215335A64 /* Pods-PowerTools_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2107AC05BE13728C89916B126AD7FCEA /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Tests" */;
+			buildConfigurationList = E8F2D29222022573170402263E150ABE /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Tests" */;
 			buildPhases = (
-				4406D56AEDC9C397F3032FFF9033E559 /* Headers */,
-				ED270EB220DBCCCB3060DDFDF79DC4F0 /* Sources */,
-				23DF9B43CD44A2DBD6C700118ED5B3F9 /* Frameworks */,
-				3E6A674CD01112F5C4D3331E736F2436 /* Resources */,
+				A01FA71B683106644E53B1D5AF4103F0 /* Headers */,
+				9D4FE1A4E7836592E3686D2C2D72FD80 /* Sources */,
+				152508BA5A945BA7B8A87042219DC2C1 /* Frameworks */,
+				B09D0CDE0DF5097B4EDB0D92D2A7808F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61BEA8FA4ACE10446D2C6C12A4C83A8D /* PBXTargetDependency */,
-				A6A554CFAB8F92CF12D56658B32E96B7 /* PBXTargetDependency */,
-				6C54A494246C6417AD0AF274CEC921CA /* PBXTargetDependency */,
+				D602CD263CCCE3BA868EFA64FD2A5B8A /* PBXTargetDependency */,
+				98C1D39C1B6452856DFCA941B572D974 /* PBXTargetDependency */,
+				04D469D847FAE8C61FF244B36B6E9CB4 /* PBXTargetDependency */,
 			);
 			name = "Pods-PowerTools_Tests";
 			productName = "Pods-PowerTools_Tests";
@@ -780,12 +776,12 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -805,35 +801,35 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		039ACE9558EBCBD5571E2611A8723084 /* Resources */ = {
+		59BEDD50705F7AECEAD283F26878CAB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E6A674CD01112F5C4D3331E736F2436 /* Resources */ = {
+		798CAC23347DA73DF524DB17F675885A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		516B73FCC84D600B61389DBCD57005B3 /* Resources */ = {
+		9868260EB1C456047A529358EF3A22FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9020D8E8BAB6982CB31D447139771809 /* Resources */ = {
+		9EDB79EC295EE9A7D9416F77BEF0F9E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94B8EE047624C88E007C0FA375AB25CA /* Resources */ = {
+		B09D0CDE0DF5097B4EDB0D92D2A7808F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -843,157 +839,373 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5674233BEFE92213AF44C9D03755DFC2 /* Sources */ = {
+		41561BB8DD3DE091A3ACA2046D0B87D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F562F1826B96712593AB6B5D8CEF430 /* AbstractBuilder.swift in Sources */,
-				9C6DB5DBC9C00491FD221AC3E6B88941 /* AbstractFactory.swift in Sources */,
-				CF790278A607C9CF751273D00EDA4897 /* AbstractPipeline.swift in Sources */,
-				74D0632DAAAAEB2204599A2B8E588B0A /* Array.swift in Sources */,
-				519C62EDA343DA548D89579271E3F11A /* AsyncPromisePipe.swift in Sources */,
-				71CB763F1672DC7C2CD097592E714114 /* BatchUpdateView.swift in Sources */,
-				F20D8FB49CE78439D9B4B7088D313ADB /* BinderDataSource.swift in Sources */,
-				89612B8328D9D423C4B0495324ADA80D /* BuilderContainer.swift in Sources */,
-				8DC688A5F063F362D46E1F7A8D3936D1 /* CollectionBinderDataSource.swift in Sources */,
-				22FEDC70146869A5915CFE350B69E677 /* CollectionDirectionableContainer.swift in Sources */,
-				6C77D183ADF3E38BCAFC13AEE1F12CF6 /* DirectionableContainer.swift in Sources */,
-				5E855148181341155C1EA4CDA8CE9660 /* DispatchTime.swift in Sources */,
-				B53046AAE04B7B3C10ECFEFEFBFF0E7F /* GridCollectionDataSource+Internal.swift in Sources */,
-				D03463BF8EC9A24872FF281A9760BA76 /* GridCollectionDataSource.swift in Sources */,
-				7E470C30B3B1994B6B91A520ECC458C4 /* GridCollectionViewController+CellRegistration.swift in Sources */,
-				71C6C88D3A3FBB7E3D5467F240485FB8 /* GridCollectionViewController+DataSource.swift in Sources */,
-				10827A95E4ED56863D012E3C4666DF86 /* GridCollectionViewController.swift in Sources */,
-				A7C479D5D4C09AF0567FBE3A1FC63197 /* GridDescriptor.swift in Sources */,
-				35A95DEA119693028BA0FE5318097DAC /* GridItem.swift in Sources */,
-				D284A4F3D04FA4D1718F486EBBFF9B3C /* GridModule.swift in Sources */,
-				1266C0C92275FF6E603580907A79C65F /* GridSection.swift in Sources */,
-				83219B6294FA46574177B23AE89CFBA9 /* InteractionDelegate.swift in Sources */,
-				AEBFAE2638B21F9E4D900560F2C34485 /* InteractionFactory.swift in Sources */,
-				69F826ED1CF76C10B2F200B95A2178AD /* ItemViewModel.swift in Sources */,
-				AAFB718F2F9DE128D88E212B48B4DE48 /* Merge.swift in Sources */,
-				1DA9C4560F96642DE48EC8255EAE128C /* ModelUpdate.swift in Sources */,
-				16B8652DDDDC22B38546A9B459C0C555 /* Pipe.swift in Sources */,
-				32CF311F4986C6A20926C89726DADB36 /* Pipeline.swift in Sources */,
-				FA28350C2688B7614CCFDCA1C1621EE3 /* PowerTools.default-CollectionVM-dummy.m in Sources */,
-				9A11E75AA80EA0C13792BF11A7949A1C /* PromisePipe.swift in Sources */,
-				407DE1DFB5A45A1677B0E503745561D4 /* SectionViewModel.swift in Sources */,
-				EC99B604B9515FFAFD09B585D37425EA /* SublinePipe.swift in Sources */,
-				6BE9566BB51E95046C38E0DB2A9025A4 /* ThrottlePipe.swift in Sources */,
-				38FC6B300805F8FE140975815BB50BEB /* UICollectionView+ViewBatchUpdate.swift in Sources */,
-				C85CCD895511E994E5D7C7F4B41E671D /* View.swift in Sources */,
-				9467989C41979C3DF2CEEFC07917A259 /* ViewController.swift in Sources */,
+				1684493BC00EC8BB7975C032C4B1E181 /* Pods-PowerTools_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		976BEE351141C15E63F6B9FA76F44425 /* Sources */ = {
+		4C84CEB1EE6EC337333F75A9B066B756 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D21F263B4FA2D8097C717F4BB75E497 /* Pods-PowerTools_Example-dummy.m in Sources */,
+				77063F540213432DDC3AF1A3D07BCCD5 /* AbstractBuilder.swift in Sources */,
+				49ACD26ABE04EBD202E3C0A15AB22921 /* AbstractFactory.swift in Sources */,
+				DB30F7B9A330E2706496E12C2A59673D /* AbstractPipeline.swift in Sources */,
+				84D773A41DED3AAA7C8B319D462CE905 /* Array.swift in Sources */,
+				7487B5FFE16E78AB2479EE281E494B2E /* AsyncPromisePipe.swift in Sources */,
+				B893840807EDF910E89EBBB42575B1F4 /* BatchUpdateView.swift in Sources */,
+				966A5047381E07EFAABD60D1B5CE335A /* BinderDataSource.swift in Sources */,
+				6CF59FBB0F86674DC471179BCFD00DAC /* BuilderContainer.swift in Sources */,
+				0373BC9C4CD7430B34872B8BFA430C41 /* CollectionBinderDataSource.swift in Sources */,
+				6B48A6F02AB1A2B2D014522D613BB517 /* CollectionDirectionableContainer.swift in Sources */,
+				2BF5A67C40DA0B0DA47A8E7B2BB9BAF4 /* DirectionableContainer.swift in Sources */,
+				C3B10E8133B45C562DB2B960F5B23849 /* DispatchTime.swift in Sources */,
+				EB6D879EA801BD9C2A58817C3403F524 /* GridCollectionDataSource+Internal.swift in Sources */,
+				484C4DEE0F745EB5744B356498890986 /* GridCollectionDataSource.swift in Sources */,
+				2E0BFB8E16153B22FFE9647F954F6A6A /* GridCollectionViewController+CellRegistration.swift in Sources */,
+				9F82A353BD55229A53D67C054D693C88 /* GridCollectionViewController+DataSource.swift in Sources */,
+				602354928CE06A55AA0A56366B857C5A /* GridCollectionViewController.swift in Sources */,
+				3647DDFC0B0F689424413BA3CC1C6799 /* GridDescriptor.swift in Sources */,
+				B9DCB873F68E944A620BA9A7532CEC2C /* GridItem.swift in Sources */,
+				7C1507071D78A83EFA3ED50755E76D40 /* GridModule.swift in Sources */,
+				1672FB67A51CF849FF1C9F889EA19007 /* GridSection.swift in Sources */,
+				C2D9F9BEC4600B916CD0EB4220219B50 /* InteractionDelegate.swift in Sources */,
+				5CAE38A100C45990F0C4FAC9F0CC55FB /* InteractionFactory.swift in Sources */,
+				7CD9D89D534B2C279A372839E0028A8A /* ItemViewModel.swift in Sources */,
+				0440A426F8F299DCF098585718BE6136 /* Merge.swift in Sources */,
+				A68D8B870300CFBA44503228F971C8F8 /* ModelUpdate.swift in Sources */,
+				B433AB9FB7E38B6F7B33AEC064958CAC /* Pipe.swift in Sources */,
+				185C5F811F6B084BA4E704646D6BDC83 /* Pipeline.swift in Sources */,
+				5DD939B03DF0A5F6BB55B1DD46930A39 /* PowerTools-CollectionVM-Core-dummy.m in Sources */,
+				80C5C17D619DB2E2FD9871C7D2115C6E /* PromisePipe.swift in Sources */,
+				0CF8B1C2EAC50D9CB7959AB345987A4F /* SectionViewModel.swift in Sources */,
+				5D15716DCB6BABD15141EA2086BB342F /* SublinePipe.swift in Sources */,
+				D8A1A4719DF12DBB7F8E04A2A34124E6 /* UICollectionView+ViewBatchUpdate.swift in Sources */,
+				C1F4EC025B35E6D2D76935FE084D86AC /* View.swift in Sources */,
+				2A45697B20BE0ACA590A66C0A3A0520A /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A007741EA52CFD46A66A46898DFA625D /* Sources */ = {
+		9D4FE1A4E7836592E3686D2C2D72FD80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF24A13E962D290772C144483D66A01 /* AssertPipe.swift in Sources */,
-				0820DD50ABA9185B412062602A303AF9 /* InteractionDelegateMock.swift in Sources */,
-				38F6E62C5657F23C7CE314D2E2525568 /* PowerToolsTester-dummy.m in Sources */,
-				7ED00C577A5A441373A659DB6DE50188 /* UICollectionDelegateMock.swift in Sources */,
-				368809D882D9D07884FAFE4B4A5A27B6 /* UIScrollViewDelegateMock.swift in Sources */,
+				998239224A148B19407F703A78599B30 /* Pods-PowerTools_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF8D27E63B96DD225D80DA691A8DB87F /* Sources */ = {
+		C93EA7B47DDD6F8E409D16F4B81CBBE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA116A758F4F1394E9B3D4698D9A23F /* AbstractBuilder.swift in Sources */,
-				472F79111E87B078946AF7B8E27E1B6B /* AbstractFactory.swift in Sources */,
-				544C031D6D5BAEB993DE678757206369 /* AbstractPipeline.swift in Sources */,
-				AE174E89CD3C0A124E70FA48B58E070D /* Array.swift in Sources */,
-				10B2AC61E568C5B5202C3394A31D2E80 /* AsyncPromisePipe.swift in Sources */,
-				61614C3574F58DA0F3642CD4EC441296 /* BatchUpdateView.swift in Sources */,
-				F002BD6C8B1DA5D223967B2A68A34C0F /* BinderDataSource.swift in Sources */,
-				4BDC58DB4871721246D779AC1411314C /* BuilderContainer.swift in Sources */,
-				C3A0301406690CB1F466AF6FDE6CAE81 /* CollectionBinderDataSource.swift in Sources */,
-				07B0EADBCF42E0B2E6D810EF188B1222 /* CollectionDirectionableContainer.swift in Sources */,
-				3384E1FB35EF32CFB3250AE8B2ED20BA /* DirectionableContainer.swift in Sources */,
-				757C87BAD36F10E828B3DD5BA4A9F830 /* DispatchTime.swift in Sources */,
-				51594DAF40E20A52C005A7131BEC608D /* GridCollectionDataSource+Internal.swift in Sources */,
-				79A4D75C0F1C9A6378913383A644F47F /* GridCollectionDataSource.swift in Sources */,
-				D4384797817BCA366569CECC16CD6F65 /* GridCollectionViewController+CellRegistration.swift in Sources */,
-				3D14100BF50F16532569B4374EA00113 /* GridCollectionViewController+DataSource.swift in Sources */,
-				0ACADFD7BDB161490B6506A08DCB4C18 /* GridCollectionViewController.swift in Sources */,
-				A148F269AC271C962AEC8E7653FB6EED /* GridDescriptor.swift in Sources */,
-				14AD3AC92A39749F14069372AA504696 /* GridItem.swift in Sources */,
-				FF9824B2CF63F74C49A234B07644BFF1 /* GridModule.swift in Sources */,
-				0749A46D9DE32FC7C1129852167E3404 /* GridSection.swift in Sources */,
-				093678A535BDA8BF61DDE5CF2CFE1CF6 /* InteractionDelegate.swift in Sources */,
-				C8113662B758CB8A1B96914B2ADA2F4A /* InteractionFactory.swift in Sources */,
-				D2CC946838EA12AC4FA10C59BF18A26D /* ItemViewModel.swift in Sources */,
-				E30BC97E71B2140FE50829F948881DA4 /* Merge.swift in Sources */,
-				AAF9B1A8210B5BB0751730F131E39485 /* ModelUpdate.swift in Sources */,
-				C5C8567374FA0E850522AB1D8FF942B3 /* Pipe.swift in Sources */,
-				0CC317CEB69F2AF95E13926B904DAF83 /* Pipeline.swift in Sources */,
-				6C3E5346BC8447BADC3BFA4D177553FA /* PowerTools-CollectionVM-Core-dummy.m in Sources */,
-				55A16F0CE037FCDE75A9CDF6E0DABCB9 /* PromisePipe.swift in Sources */,
-				992C500CE755EEB46748B89D9021C71B /* SectionViewModel.swift in Sources */,
-				1DAD7F437337F26149E86EC64D046747 /* SublinePipe.swift in Sources */,
-				397F438F0C325C67CE9F5C44C7557EC0 /* ThrottlePipe.swift in Sources */,
-				5D82DBE4F8C9C0A642CC1DF3D0DA28E8 /* UICollectionView+ViewBatchUpdate.swift in Sources */,
-				9E2047D437E00913423D60B17A281865 /* View.swift in Sources */,
-				C4279A9B0F689ADBBE7009BC73356857 /* ViewController.swift in Sources */,
+				38ECB25362E275C6BFDD9B29E23BFE6A /* AssertPipe.swift in Sources */,
+				A4A70B168CB8B887CF3823C94F3A636C /* InteractionDelegateMock.swift in Sources */,
+				D84CA60012CDD01C401F9A9082B8D5C0 /* PowerToolsTester-dummy.m in Sources */,
+				CF47599BBC4818054889882C40E2B082 /* UICollectionDelegateMock.swift in Sources */,
+				191E5D16403BDFC73764E30C31E6F6DF /* UIScrollViewDelegateMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED270EB220DBCCCB3060DDFDF79DC4F0 /* Sources */ = {
+		E10A937385E4203B3632A3450E8E9679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F3CA4B36BAAE22655ED19A34C5DAD7 /* Pods-PowerTools_Tests-dummy.m in Sources */,
+				3E62DD7A99EC83E8D635BDC06D62FF66 /* AbstractBuilder.swift in Sources */,
+				CF3D2CF189AB2F88E99971244821DDC2 /* AbstractFactory.swift in Sources */,
+				4B9A03B306587EC9A55EEF67877FDE47 /* AbstractPipeline.swift in Sources */,
+				9A44765103890E74C7C4503217CC3CD9 /* Array.swift in Sources */,
+				54F8990C932A26B1A908D9C07BAF9D5C /* AsyncPromisePipe.swift in Sources */,
+				7E7CCB3AD30B0F94DE4D1AFA26EAB81F /* BatchUpdateView.swift in Sources */,
+				D40E4AD8A1B17990D8EE157D258A5564 /* BinderDataSource.swift in Sources */,
+				C3BD5E95A2368999655662CD0CA3FFB7 /* BuilderContainer.swift in Sources */,
+				E07BB1B48B676ED1993FADB81C5ACEEA /* CollectionBinderDataSource.swift in Sources */,
+				A5BF8898CC52380BC394DC9FC4E63055 /* CollectionDirectionableContainer.swift in Sources */,
+				E9A481E60ED3A2595D8BEB93F3F5E2BD /* DirectionableContainer.swift in Sources */,
+				4D6494C87E11A5E07C7AA2623CC04BC6 /* DispatchTime.swift in Sources */,
+				1F7B99C844D4C3A83BB96C3E6CCBFB0E /* GridCollectionDataSource+Internal.swift in Sources */,
+				91216C7C8FB2B880F3CAFA1904DB2B1A /* GridCollectionDataSource.swift in Sources */,
+				3F0011C0C00ED4F4483C7CFD917FFF21 /* GridCollectionViewController+CellRegistration.swift in Sources */,
+				8F043793B0031CE2E3829F068FF1B17B /* GridCollectionViewController+DataSource.swift in Sources */,
+				06BF70337F8F0F42D9C64340C8D6C18B /* GridCollectionViewController.swift in Sources */,
+				46E26644F00D3BAC595877088927C44B /* GridDescriptor.swift in Sources */,
+				F006C6DE605BFFF22B76E1682CC6C444 /* GridItem.swift in Sources */,
+				A8A67C5081BE7D4123E866F4FC79A903 /* GridModule.swift in Sources */,
+				009266C00F6996BB68F8F1327D7B6F26 /* GridSection.swift in Sources */,
+				0566B6F86283A0B43971D0274E0A390D /* InteractionDelegate.swift in Sources */,
+				8D66726B922BE55B8E09C87EAE922838 /* InteractionFactory.swift in Sources */,
+				EA265FBDA45CE5C904C4430091709BDC /* ItemViewModel.swift in Sources */,
+				84BBB58526B5C58FF91D9123EF43E966 /* Merge.swift in Sources */,
+				13664271B317CBDBB7FAF967DB4426C6 /* ModelUpdate.swift in Sources */,
+				7B0A40296E561D10ECE73BBA84A9F095 /* Pipe.swift in Sources */,
+				09589FAC0FD6753095105DF2E6048BBC /* Pipeline.swift in Sources */,
+				11BDA41F8FA92C78DFC5D5368DE1F0F7 /* PowerTools.default-CollectionVM-dummy.m in Sources */,
+				61868ACE588F378368D710492D9BD0C0 /* PromisePipe.swift in Sources */,
+				364C3F63312003480603EB658CD31C1A /* SectionViewModel.swift in Sources */,
+				5903D45FAB87D79BE57A7F7BDFF37504 /* SublinePipe.swift in Sources */,
+				8C49E90A01F010C6AD6336FD43B19668 /* UICollectionView+ViewBatchUpdate.swift in Sources */,
+				A9B92F4F9E84A91E85DA7B5697220C9C /* View.swift in Sources */,
+				40C2C73A7B24FBB3509EDC60238606EE /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		61BEA8FA4ACE10446D2C6C12A4C83A8D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-PowerTools_Example";
-			target = D8EEFF38415F542D0272D7DA58EF8018 /* Pods-PowerTools_Example */;
-			targetProxy = A6B059660BC27D20A60662A36ABCB6DA /* PBXContainerItemProxy */;
-		};
-		6C54A494246C6417AD0AF274CEC921CA /* PBXTargetDependency */ = {
+		04D469D847FAE8C61FF244B36B6E9CB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PowerToolsTester;
 			target = 5059516E440CD33B09C7802D158CC607 /* PowerToolsTester */;
-			targetProxy = BA46C523F55DCA93A80838056D4117FD /* PBXContainerItemProxy */;
+			targetProxy = 19C114CBE88C31422352139856148CF5 /* PBXContainerItemProxy */;
 		};
-		8E41853F0AC4A0EF22BF84612791B907 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PowerTools-CollectionVM-Core";
-			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
-			targetProxy = 850D78C1BC909DABD0A320A6D0263D11 /* PBXContainerItemProxy */;
-		};
-		A6A554CFAB8F92CF12D56658B32E96B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PowerTools-CollectionVM-Core";
-			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
-			targetProxy = F234E83643FE56E8391D0202F3AF43A8 /* PBXContainerItemProxy */;
-		};
-		D52226131FF12699BC65BD6E366863B3 /* PBXTargetDependency */ = {
+		1D60DBA254093942AEFFB85259B10119 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PowerTools.default-CollectionVM";
 			target = 713D1E633774DC6855D35C2234DE51DA /* PowerTools.default-CollectionVM */;
-			targetProxy = 748C74236C0F563617EF7E0B2815A543 /* PBXContainerItemProxy */;
+			targetProxy = 4EA1141388F08B5DDB05E335314A3F90 /* PBXContainerItemProxy */;
+		};
+		733B105746F960F0015103890FCD058E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PowerTools-CollectionVM-Core";
+			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
+			targetProxy = 575641792EA00C0F7CA77A1782BCF101 /* PBXContainerItemProxy */;
+		};
+		98C1D39C1B6452856DFCA941B572D974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PowerTools-CollectionVM-Core";
+			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
+			targetProxy = 63A6FF9F97CF973B5228345DA633E5D0 /* PBXContainerItemProxy */;
+		};
+		D602CD263CCCE3BA868EFA64FD2A5B8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PowerTools_Example";
+			target = D8EEFF38415F542D0272D7DA58EF8018 /* Pods-PowerTools_Example */;
+			targetProxy = 2823F5DE628988C4FE6D252293677BED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+		14981698D1671D465FD3621880EBD728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114FB3D694DAD777A935930C3FDE1015 /* Pods-PowerTools_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D5F480225F0E9EDC03392C4A087598C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D37D16E79A8DD889B60DF8D521372E /* PowerTools.default-CollectionVM.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5746D625E42D66F89AB6C86DF01301F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D37D16E79A8DD889B60DF8D521372E /* PowerTools.default-CollectionVM.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A7F4BD54A2D7E0837F5BB0068106495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99A4661AB811E8D45B2C8835434A54E /* PowerTools-CollectionVM-Core.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B66EC8225C0349B20BD5D1E03E00A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerToolsTester/PowerToolsTester-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester.modulemap";
+				PRODUCT_MODULE_NAME = PowerToolsTester;
+				PRODUCT_NAME = PowerToolsTester;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1052,265 +1264,12 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		180A5278F6E509913A550138A288CAD5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D37D16E79A8DD889B60DF8D521372E /* PowerTools.default-CollectionVM.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		488A7F79FC0EE4CF5134815EE6961B75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0068AAA5BC0D4174B0FA0BBADEE8681 /* Pods-PowerTools_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7013CC9DAFAEDA7CEA156B920BF8C0CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D37D16E79A8DD889B60DF8D521372E /* PowerTools.default-CollectionVM.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A81304768CD07913C96910E021C668B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99A4661AB811E8D45B2C8835434A54E /* PowerTools-CollectionVM-Core.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AEF9B4D0A8740FCE6B8D2A67359DA19E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C99A4661AB811E8D45B2C8835434A54E /* PowerTools-CollectionVM-Core.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B8A8122EC10945343CA82D25340C09E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF9C0632570F14625B36CA5B5887B745 /* Pods-PowerTools_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BF83BF5EE292B20FB18C8EFC0F268237 /* Release */ = {
+		A82CDA1571E10E7D0335269BAED706D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA35BB58234990039D7612BE7A277D48 /* Pods-PowerTools_Example.release.xcconfig */;
 			buildSettings = {
@@ -1344,7 +1303,72 @@
 			};
 			name = Release;
 		};
-		C6579E4FCBF46ECF38BDD0D63CE4B211 /* Release */ = {
+		B6196EE5AB5808AEA71AC624D323C5C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0068AAA5BC0D4174B0FA0BBADEE8681 /* Pods-PowerTools_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PowerTools_Example/Pods-PowerTools_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBBC04310A5899CD809C2CF64B5FC901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99A4661AB811E8D45B2C8835434A54E /* PowerTools-CollectionVM-Core.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2A156DD47867E35675C7779A9EBB605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */;
 			buildSettings = {
@@ -1376,40 +1400,9 @@
 			};
 			name = Release;
 		};
-		DEC8E1CDBED4553D31762232A0914884 /* Debug */ = {
+		ED3C3D512D42CBA83F2E2F1EDB7DAC13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerToolsTester/PowerToolsTester-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester.modulemap";
-				PRODUCT_MODULE_NAME = PowerToolsTester;
-				PRODUCT_NAME = PowerToolsTester;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F91A0E85C0A57DA6D50450417A83E62C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114FB3D694DAD777A935930C3FDE1015 /* Pods-PowerTools_Tests.debug.xcconfig */;
+			baseConfigurationReference = BF9C0632570F14625B36CA5B5887B745 /* Pods-PowerTools_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1435,64 +1428,65 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2107AC05BE13728C89916B126AD7FCEA /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F91A0E85C0A57DA6D50450417A83E62C /* Debug */,
-				B8A8122EC10945343CA82D25340C09E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		438C5D9C9616ACD319BA519C5F756003 /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				488A7F79FC0EE4CF5134815EE6961B75 /* Debug */,
-				BF83BF5EE292B20FB18C8EFC0F268237 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07488D4657FB0A78086563621D425F8A /* Debug */,
-				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B39B42235C59705AC868B0C8DDA4840 /* Build configuration list for PBXNativeTarget "PowerTools-CollectionVM-Core" */ = {
+		4CDFB34B9D0591ED88F08C2AC1493326 /* Build configuration list for PBXNativeTarget "PowerTools.default-CollectionVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEF9B4D0A8740FCE6B8D2A67359DA19E /* Debug */,
-				A81304768CD07913C96910E021C668B4 /* Release */,
+				5746D625E42D66F89AB6C86DF01301F8 /* Debug */,
+				1D5F480225F0E9EDC03392C4A087598C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F73FC5A2742F0702B9BC70E9E4591B2 /* Build configuration list for PBXNativeTarget "PowerToolsTester" */ = {
+		583AD1EACEC0E6266F0B274237F8E51B /* Build configuration list for PBXNativeTarget "PowerToolsTester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEC8E1CDBED4553D31762232A0914884 /* Debug */,
-				C6579E4FCBF46ECF38BDD0D63CE4B211 /* Release */,
+				8B66EC8225C0349B20BD5D1E03E00A08 /* Debug */,
+				E2A156DD47867E35675C7779A9EBB605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84AF61124BC0353E286E19371A116AE2 /* Build configuration list for PBXNativeTarget "PowerTools.default-CollectionVM" */ = {
+		E8F2D29222022573170402263E150ABE /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				180A5278F6E509913A550138A288CAD5 /* Debug */,
-				7013CC9DAFAEDA7CEA156B920BF8C0CF /* Release */,
+				14981698D1671D465FD3621880EBD728 /* Debug */,
+				ED3C3D512D42CBA83F2E2F1EDB7DAC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB27981F274D22641E42B8E5083104D8 /* Build configuration list for PBXNativeTarget "Pods-PowerTools_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6196EE5AB5808AEA71AC624D323C5C4 /* Debug */,
+				A82CDA1571E10E7D0335269BAED706D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65442CA9DFEC3E875A2FCA77EE72FA5 /* Build configuration list for PBXNativeTarget "PowerTools-CollectionVM-Core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7F4BD54A2D7E0837F5BB0068106495 /* Debug */,
+				CBBC04310A5899CD809C2CF64B5FC901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

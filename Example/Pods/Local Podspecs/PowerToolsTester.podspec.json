@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Oni-zerone/PowerTools.git",
-    "tag": "{s.version}-tester"
+    "tag": "0.3.0-tester"
   },
   "social_media_url": "https://twitter.com/Oni_zerone",
   "platforms": {
@@ -37,10 +37,10 @@
       },
       "dependencies": {
         "PowerTools/Core": [
-          "~> 0.3"
+          "~> 0.4"
         ],
         "PowerTools/CollectionVM": [
-          "~> 0.3"
+          "~> 0.4"
         ]
       }
     }
