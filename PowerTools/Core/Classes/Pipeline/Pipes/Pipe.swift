@@ -25,26 +25,22 @@ open class Pipe<Value> {
         switch result {
             
         case .success(let value):
-            do {
-                try self.success(value)
-            } catch let error {
-                self.send(.failure(error))
-            }
-        
+            self.success(value)
+            
         case .failure(let error):
             self.failure(error)
-        
+            
         case .reset:
             self.reset()
         }
     }
     
-    open func success(_ content: Value) throws {
-        self.send(.success(content))
+    open func success(_ content: Value) {
+        self.send(content)
     }
     
     open func failure(_ error: Error) {
-        self.send(.failure(error))
+        self.send(error)
     }
     
     open func reset() {
@@ -53,5 +49,13 @@ open class Pipe<Value> {
     
     public func send(_ result: Result) {
         self.nextPipe?.process(result)
+    }
+    
+    public func send(_ content: Value) {
+        self.send(.success(content))
+    }
+    
+    public func send(_ error: Error) {
+        self.send(.failure(error))
     }
 }
