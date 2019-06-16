@@ -27,15 +27,15 @@ class PromisePipeTests: XCTestCase {
         let originalString = "string"
         let mutatedString = "mutated"
         
-        self.pipeline.attach(PromisePipe(success: { string in
+        self.pipeline.promise(success: { string in
             XCTAssert(string == originalString )
             return .success(mutatedString)
-        }))
+        })
         
-        self.pipeline.attach(PromisePipe(success: { string in
+        self.pipeline.promise(success: { string in
             XCTAssert(string == mutatedString)
             return .success("")
-        }))
+        })
         
         let successExp = expectation(description: "success")
         let assertPipe = AssertPipe<String>(success: successExp)
@@ -47,15 +47,15 @@ class PromisePipeTests: XCTestCase {
     
     func testPipelineFailure() {
         
-        self.pipeline.attach(PromisePipe(success: { _ in
+        self.pipeline.promise(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
-        }))
+        })
         
-        self.pipeline.attach(PromisePipe(failure: { error in
+        self.pipeline.promise(failure: { error in
             
             XCTAssert((error as? PipelineErrors) == .requiredFailure)
             return .failure(error)
-        }))
+        })
         
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)
@@ -67,15 +67,15 @@ class PromisePipeTests: XCTestCase {
     
     func testMultipleAttacchedPipelines() {
         
-        self.pipeline.attach(PromisePipe(success: { _ in
+        self.pipeline.promise(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
+        })
             
-        }))
-        self.pipeline.attach(PromisePipe(failure: { error in
+        self.pipeline.promise(failure: { error in
             
             XCTAssert((error as? PipelineErrors) == .requiredFailure)
             return .failure(error)
-        }))
+        })
         
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)
@@ -99,9 +99,9 @@ class PromisePipeTests: XCTestCase {
     
     func testEmptyPromisePipeFailure() {
         
-        self.pipeline.attach(PromisePipe(success: { _ in
+        self.pipeline.promise(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
-        }))
+        })
         self.pipeline.attach(PromisePipe())
         
         let failureExp = expectation(description: "failure")
@@ -133,9 +133,9 @@ class PromisePipeTests: XCTestCase {
     
     func testLazyOnFailureAttach() {
         
-        self.pipeline.attach(PromisePipe(success: { _ in
+        self.pipeline.promise(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
-        }))
+        })
         
         let promisePipe = PromisePipe<String>(failure: { error in
             XCTFail("should not be called")
@@ -153,5 +153,4 @@ class PromisePipeTests: XCTestCase {
         wait(for: [failureExp], timeout: 1.0)
         
     }
-    
 }
