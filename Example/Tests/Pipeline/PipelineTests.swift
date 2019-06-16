@@ -130,4 +130,16 @@ class PipelineTests: XCTestCase {
         self.pipeline.load("")
         wait(for: assertPipe.expectations, timeout: 1.0)
     }
+    
+    func testMultipleLinking() {
+
+        let successExp = expectation(description: "success")
+        self.pipeline.attach([
+            PromisePipe(),
+            PromisePipe(),
+            AssertPipe(success: successExp)
+            ])
+        self.pipeline.load("")
+        wait(for: [successExp], timeout: 1.0)
+    }
 }
