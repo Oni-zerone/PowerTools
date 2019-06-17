@@ -11,14 +11,17 @@ public class PromisePipe<Value>: Pipe<Value> {
     
     public typealias SuccessBlock = (Value) -> Result?
     public typealias FailureBlock = (Error) -> Result?
+    public typealias ResetBlock = () -> Result?
     
     var successBlock: SuccessBlock?
     var failureBlock: FailureBlock?
+    var resetBlock: ResetBlock?
     
-    public init(success: SuccessBlock? = nil, failure: FailureBlock? = nil) {
+    public init(success: SuccessBlock? = nil, failure: FailureBlock? = nil, reset: ResetBlock? = nil) {
         
         self.successBlock = success
         self.failureBlock = failure
+        self.resetBlock = reset
         super.init()
     }
     

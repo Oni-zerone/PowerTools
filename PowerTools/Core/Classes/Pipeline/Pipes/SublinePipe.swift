@@ -42,7 +42,7 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         
         self.promisePipe?.onSuccess { [weak self] (result) -> Pipe<[Element]>.Result? in
             
-            guard let `self` = self else { return nil }
+            guard let self = self else { return nil }
             let mergedResult = self.mergeAction(content, result)
             self.send(.success(mergedResult))
             return .success(result)
@@ -59,8 +59,8 @@ open class SublinePipe<Element>: Pipe<[Element]> {
     }
     
     open override func reset() {
-        
         self.pipeline.reset()
+        self.send(.reset)
     }
 }
 
