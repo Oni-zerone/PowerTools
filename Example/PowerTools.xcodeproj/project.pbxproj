@@ -39,6 +39,7 @@
 		97A34E53219582BA00E7F401 /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E52219582BA00E7F401 /* BaseSection.swift */; };
 		97A34E5D219591C500E7F401 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A34E5B219591C500E7F401 /* ColorCollectionViewCell.swift */; };
 		97A34E5E219591C500E7F401 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */; };
+		97EA77D722BE772500BBCF18 /* SublinePipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */; };
 		97F6378F228817C6004B4227 /* AsyncPromisePipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F6378E228817C6004B4227 /* AsyncPromisePipeTests.swift */; };
 		D6E4D0340BEA9084C8B11D9E /* Pods_PowerTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC56720B574C7A303CD6CC59 /* Pods_PowerTools_Tests.framework */; };
 		E4BAF07C6378070BD6284618 /* Pods_PowerTools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EF5D14AD9C6A712236FDF1 /* Pods_PowerTools_Example.framework */; };
@@ -134,7 +135,6 @@
 				12F0E0F77BF60082C057B218 /* Pods-PowerTools_Tests.debug.xcconfig */,
 				74E7CE25711B98E8F51B6DE0 /* Pods-PowerTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -616,6 +616,7 @@
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,
 				9750D0A3229336AF00E08571 /* ViewTests.swift in Sources */,
 				9750D0AB22947ECF00E08571 /* SectionViewModelTests.swift in Sources */,
+				97EA77D722BE772500BBCF18 /* SublinePipeTests.swift in Sources */,
 				9750D0A522935F4A00E08571 /* GridItemTests.swift in Sources */,
 				978E528722AC45D8006833C5 /* UICollectionViewMock.swift in Sources */,
 				978E52B122AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift in Sources */,
