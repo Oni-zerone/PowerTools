@@ -20,18 +20,17 @@
   "platforms": {
     "ios": "9.0"
   },
-  "default_subspecs": [
-    "Core",
-    "CollectionVM"
-  ],
+  "default_subspecs": "Core",
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "PowerTools/Core/Classes/**/*"
+      "source_files": "PowerTools/Core/Classes/**/*",
+      "frameworks": "UIKit"
     },
     {
       "name": "CollectionVM",
       "source_files": "PowerTools/CollectionVM/Classes/**/*",
+      "frameworks": "UIKit",
       "dependencies": {
         "PowerTools/Core": [
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct GridModule {
     
@@ -34,7 +35,7 @@ internal extension GridModule {
         
         let width = self.referenceSize
         let height = (width * ratio.multiplier) + ratio.constant
-        return CGSize(width: width, height: abs(height))
+        return CGSize(width: width, height: min(abs(height), self.maxSize))
     }
     
     func sizeFromReferenceHeight(for ratio: ViewRatio) -> CGSize {
@@ -44,6 +45,6 @@ internal extension GridModule {
             return CGSize(width: abs(ratio.constant), height: height)
         }
         let width = (height - ratio.constant) / ratio.multiplier
-        return CGSize(width: abs(width), height: height)
+        return CGSize(width: min(abs(width), self.maxSize), height: height)
     }
 }

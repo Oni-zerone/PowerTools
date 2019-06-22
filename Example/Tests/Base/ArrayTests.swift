@@ -66,4 +66,16 @@ class ArrayTests: XCTestCase {
         XCTAssert(result == expectedResult)
         XCTAssert(base == expectedResult)
     }
+    
+    func testAppending() {
+        
+        let base = ["A", "B"]
+        let item = "C"
+        let result = base.appending(item)
+        
+        XCTAssert(result.count == base.count + 1)
+        XCTAssert(result[0] == base[0])
+        XCTAssert(result[1] == base[1])
+        XCTAssert(result.last == item)
+    }
 }

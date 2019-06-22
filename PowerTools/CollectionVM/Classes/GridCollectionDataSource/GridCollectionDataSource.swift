@@ -22,7 +22,7 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     }
     
     internal var moduleCache: [Int: GridModule] = [:]
-    public  weak var interactionDelegate: InteractionDelegate?
+    public weak var interactionDelegate: InteractionDelegate?
     public weak var scrollViewDelegate: UIScrollViewDelegate?
     
     public override init(view: UICollectionView?, model: [SectionViewModel]) {

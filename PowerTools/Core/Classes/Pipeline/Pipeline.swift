@@ -24,6 +24,10 @@ public struct Pipeline<Value>: AbstractPipeline {
         }
     }
     
+    private var lastPipe: Pipe<Value>? {
+        return self.headPipe ?? self.pipes.first  ?? self.tailPipe
+    }
+
     public init(headPipe: Pipe<Value>? = nil, tailPipe: Pipe<Value>? = nil) {
         self.headPipe = headPipe
         self.pipes = []
@@ -40,10 +44,10 @@ public struct Pipeline<Value>: AbstractPipeline {
     }
     
     public func reset() {
-        (self.headPipe ?? self.pipes.first)?.process(.reset)
+        self.lastPipe?.process(.reset)
     }
     
     public func load(_ baseValue: Value) {
-        (self.headPipe ?? self.pipes.first ?? self.tailPipe)?.process(.success(baseValue))
+        self.lastPipe?.process(.success(baseValue))
     }
 }

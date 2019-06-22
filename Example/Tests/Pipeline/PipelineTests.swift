@@ -8,6 +8,7 @@
 
 import XCTest
 import PowerTools
+import PowerToolsTester
 
 class PipelineTests: XCTestCase {
     
@@ -48,7 +49,6 @@ class PipelineTests: XCTestCase {
         self.pipeline.attach(PromisePipe(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
         }))
-        
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)
         self.pipeline.attach(assertPipe)
@@ -89,7 +89,7 @@ class PipelineTests: XCTestCase {
         self.pipeline.load("")
         wait(for: assertPipe.expectations, timeout: 1.0)
     }
-    
+
     func testTailPipe() {
         
         let successExp = expectation(description: "success")
@@ -97,7 +97,7 @@ class PipelineTests: XCTestCase {
         self.pipeline.load("")
         wait(for: [successExp], timeout: 1.0)
     }
-    
+
     func testTailPipeContent() {
         
         let successExp = expectation(description: "success")
@@ -106,7 +106,7 @@ class PipelineTests: XCTestCase {
             successExp.fulfill()
             return nil
         })
-        
+
         self.pipeline.attach(PromisePipe(success: { _ in
             return .success("Content")
         }))
@@ -123,7 +123,7 @@ class PipelineTests: XCTestCase {
         self.pipeline.headPipe = PromisePipe(success: { _ in
             return .success("HeadPipe")
         })
-        
+
         let successExp = expectation(description: "success")
         let assertPipe = AssertPipe<String>(success: successExp)
         self.pipeline.attach(assertPipe)

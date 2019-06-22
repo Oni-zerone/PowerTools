@@ -8,6 +8,7 @@
 
 import XCTest
 import PowerTools
+import PowerToolsTester
 
 class GridCollectionDataSourceScrollTests: XCTestCase {
 

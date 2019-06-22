@@ -1,9 +1,8 @@
 //
 //  AssertPipe.swift
-//  PowerTools_Example
+//  Pods-PowerTools_Example
 //
-//  Created by Andrea Altea on 09/12/2018.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Andrea Altea on 17/05/2019.
 //
 
 import XCTest
@@ -16,9 +15,9 @@ public enum PipelineErrors: Error, Equatable {
 
 public class AssertPipe<Value>: PowerTools.Pipe<Value> {
     
-    var successExpectation: XCTestExpectation?
-    var failureExpectation: XCTestExpectation?
-    var resetExpectation: XCTestExpectation?
+    public var successExpectation: XCTestExpectation?
+    public var failureExpectation: XCTestExpectation?
+    public var resetExpectation: XCTestExpectation?
     
     public init(success: XCTestExpectation? = nil, failure: XCTestExpectation? = nil, reset: XCTestExpectation? = nil) {
         

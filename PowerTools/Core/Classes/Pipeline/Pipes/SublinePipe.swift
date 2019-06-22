@@ -12,7 +12,7 @@ open class SublinePipe<Element>: Pipe<[Element]> {
     public typealias Content = [Element]
     
     public var shouldPassThrought = false
-    
+
     internal var pipeline: Pipeline<[Element]>
     private let mergeAction: Merge<Element>.Action
     
@@ -35,7 +35,6 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         
         self.setupSuccess(content)
         self.setupFailure(content)
-        
         self.load(content)
     }
     
@@ -43,7 +42,7 @@ open class SublinePipe<Element>: Pipe<[Element]> {
         
         self.promisePipe?.onSuccess { [weak self] (result) -> Pipe<[Element]>.Result? in
             
-            guard let `self` = self else { return nil }
+            guard let self = self else { return nil }
             let mergedResult = self.mergeAction(content, result)
             self.send(.success(mergedResult))
             return .success(result)
@@ -60,9 +59,8 @@ open class SublinePipe<Element>: Pipe<[Element]> {
     }
     
     open override func reset() {
-        
         self.pipeline.reset()
-        super.reset()
+        self.send(.reset)
     }
 }
 
@@ -71,7 +69,7 @@ extension SublinePipe: AbstractPipeline {
     public func attach(_ pipe: Pipe<[Element]>) {
         self.pipeline.attach(pipe)
     }
-    
+
     public func load(_ baseValue: [Element]) {
         self.pipeline.load(baseValue)
     }
