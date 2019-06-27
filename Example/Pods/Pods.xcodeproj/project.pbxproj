@@ -15,19 +15,19 @@
 		101A2C7BC85C1CB195B07685D53A7935 /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BC48BAFA1734403B1E62442633DDE /* GridCollectionViewController+DataSource.swift */; };
 		11FCE13565088C6C88A594CEF76CDD9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
 		13EFDEF2B51B1100DCBA86977E510B04 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7120ABA985CB5E92F0124F9754A4932 /* SectionViewModel.swift */; };
+		15D3B422AA365E5FCDF017B9D7DE49FF /* InteractionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D8E956D1FD2AE275CBF126A23CABE /* InteractionDelegateMock.swift */; };
 		164E044A065595D24FBB11112E1B4C4E /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3BBD369929866F03C44BA9F04D69E /* GridCollectionViewController.swift */; };
 		1684493BC00EC8BB7975C032C4B1E181 /* Pods-PowerTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1650F800E2BB5FD0A3B25B4A55758 /* Pods-PowerTools_Example-dummy.m */; };
 		1703030ABEC62ED6C021CEE40239630B /* AbstractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C950468578B06044E942807D7C755 /* AbstractBuilder.swift */; };
 		17A4267B465555C582EABDAE065074B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */; };
-		191E5D16403BDFC73764E30C31E6F6DF /* UIScrollViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F97DD7177AC8CD713254F2A1C80A82 /* UIScrollViewDelegateMock.swift */; };
 		1C0587EA64A0C11313C86AE2A7232B94 /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8055F4B0988F48C379F1FBD4D537D /* GridModule.swift */; };
 		1FA816D50F3EE019DD95616AC8D5A65A /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B38E3F295BA079EEF5DE04B0B5C10F /* Merge.swift */; };
 		261E58D46F5A83FD8CD687A7E316760F /* InteractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36E803AE723DD9BF38D21F69BC52A3 /* InteractionFactory.swift */; };
+		285982898D1EE7D4C2C5A1C1FE2B8F7B /* PowerToolsTester-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A7E9C072C1C2E48A64A4858481076 /* PowerToolsTester-dummy.m */; };
 		28EA12BB11FC31D9BF7738AC4AF763C1 /* PowerTools.default-CollectionVM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6E638B5AFAFD1DFB7F6DADC03A33F6 /* PowerTools.default-CollectionVM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D4908D1BEDB871AEF9CC0A53DECDF27 /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE21B0801F45AE83A0366E97AC4F751 /* SublinePipe.swift */; };
 		314DE6CBEDA1363A4823D2395016445F /* GridDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE08A17F4A1DA4E3531556A991D23A4 /* GridDescriptor.swift */; };
 		354B95B773BC6DAF2616C19B8C51C460 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE7B9790AB89863F540E1B31853BEB /* GridSection.swift */; };
-		38ECB25362E275C6BFDD9B29E23BFE6A /* AssertPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB19707E7439968C4070C8821D60DA0B /* AssertPipe.swift */; };
 		3938FCF8DC4B00BF9787BF409BAB6A27 /* CollectionDirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57537E574EF7185A15825D97421A41F /* CollectionDirectionableContainer.swift */; };
 		3B8298F166055311636FFB9EE8E9CAD6 /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C748BDF7F7D3C820CA0CE0DEB5D880F /* PromisePipe.swift */; };
 		3C9D6A024785DD4D543E428B3CC9D83B /* AbstractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C950468578B06044E942807D7C755 /* AbstractBuilder.swift */; };
@@ -38,15 +38,18 @@
 		41F4E6A2EAAE860372A3C1D9C1B7A7F7 /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BB598DE08FE829344E117EA989A5 /* BatchUpdateView.swift */; };
 		467F04DD54D2F70213D0F41D8FFF84EC /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C00270754ABC87528757121C6560 /* Pipe.swift */; };
 		487D94FFC519B66FFF8B133046682862 /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBF031EFAE65B238572E3187A17128 /* AbstractPipeline.swift */; };
+		4C314BAD029D39ADAD8754AF5156D4BC /* AssertPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B6F87186129AB69D8F8D527670CEC /* AssertPipe.swift */; };
 		4EAEEE49D29F30D5FBE2C1126276A267 /* PowerTools.default-CollectionVM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C87C1773B35F81C9B31E67221C7EC6C5 /* PowerTools.default-CollectionVM-dummy.m */; };
 		5447E4FCC35242B598492D1E3E27425B /* GridModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F8055F4B0988F48C379F1FBD4D537D /* GridModule.swift */; };
 		56E980EC4A4AAEB76B7A4F2E8F20270B /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFE7B9790AB89863F540E1B31853BEB /* GridSection.swift */; };
 		585C56EC8F70D9A692D9B352F1422AFA /* DispatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBFF67300C4F64B7CF1E45B2886482 /* DispatchTime.swift */; };
+		597D4881571D1558CEDE15AB5B2696A0 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44239CFCA20B77A4D16D253E841FFE2 /* Await.swift */; };
 		5DB5FC616E854107742685D3466EAD21 /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A14482E7D52AC518D24E8D07BA1C1D /* AsyncPromisePipe.swift */; };
 		5F9134112EB1BE18BF65AF268500A3AE /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2024085651EC8BDB7FA14EDECA2157F /* Pipeline.swift */; };
 		6184E37A4292A0CCB15DAC6520E7F2A1 /* AbstractPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CBF031EFAE65B238572E3187A17128 /* AbstractPipeline.swift */; };
 		630AE92B5DCFA82FC08FD5DCEA19EF77 /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBA8F65912D6787E70EFB4D40A3F9E /* InteractionDelegate.swift */; };
 		6E0CDD7F5BE96773A097CA4FA7E540E7 /* BinderPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491A05C23EC0A8AC4824CB9B1F6A36F /* BinderPipe.swift */; };
+		6E4037873C0E3B2EA9ED6299340D7E66 /* PowerToolsTester-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FFC69E9E63BB2E7BFDE51C3DC50826 /* PowerToolsTester-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E5940C20DEEB734A9659203BFF6C5C0 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA3E87FBAA773429853CE3F9CC1731 /* ModelUpdate.swift */; };
 		73514CFF554593511164D6BA07FACFFA /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C00270754ABC87528757121C6560 /* Pipe.swift */; };
 		75F507A38E1C9D08BA7C18607B029547 /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBA2C0FB0FE6DD977711C11C8B50E2 /* GridCollectionDataSource+Internal.swift */; };
@@ -56,40 +59,38 @@
 		84588605272A335E6FAE38F32FAF20D1 /* GridCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C44600795922E5CD7A2F54E602CD0E /* GridCollectionViewController+CellRegistration.swift */; };
 		853F3F4C419EBDEEB147BC2141B7859B /* BatchUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BB598DE08FE829344E117EA989A5 /* BatchUpdateView.swift */; };
 		88C03BF3CA3DAFC3C7E1B5C87657954C /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBF98A31ED3FE317865B844CBE031A /* CollectionBinderDataSource.swift */; };
+		9170E69871C3D757AA406CA012D13D28 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */; };
 		92BFC09D959C6E3991485C9A83AA6F95 /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDBDADBAE72172BC5445FF513F09EE /* BuilderContainer.swift */; };
 		93879009BFC40A7552D196BF2ADFEF19 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3BBD369929866F03C44BA9F04D69E /* GridCollectionViewController.swift */; };
+		98360BD6A40128397ADE362967C2A9CD /* UICollectionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA79DE07AE657D325DDDE1E3E4C8D265 /* UICollectionDelegateMock.swift */; };
 		998239224A148B19407F703A78599B30 /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */; };
 		9A24338EAA66D74F1E11F42B35BB3BA7 /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AE84A2FD8074060E52BB4F1831C46 /* DirectionableContainer.swift */; };
 		A0D2E1442794D0F11E693C3F399CCD86 /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BC48BAFA1734403B1E62442633DDE /* GridCollectionViewController+DataSource.swift */; };
 		A1F4220FCC466E56F11741C928F66E09 /* AsyncPromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A14482E7D52AC518D24E8D07BA1C1D /* AsyncPromisePipe.swift */; };
-		A4A70B168CB8B887CF3823C94F3A636C /* InteractionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6FD9F066E3C0053B26A0610C22978 /* InteractionDelegateMock.swift */; };
 		A8B3E8739FE8D59D98BF8077F385E9D7 /* PromisePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C748BDF7F7D3C820CA0CE0DEB5D880F /* PromisePipe.swift */; };
-		A918F5C298771B077E4891D2E86FBD10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */; };
 		A995CBBB661C0BCBBB28236833A73AF9 /* InteractionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36E803AE723DD9BF38D21F69BC52A3 /* InteractionFactory.swift */; };
 		AAC075DC3555654B2E8CAC9D65E9D9E6 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDABB69826988C5BC4FBC2849398D47 /* ItemViewModel.swift */; };
+		ABE1A491364A5748C28D0BA66309AE31 /* UIScrollViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B46ADC52635645932A56890E21F317 /* UIScrollViewDelegateMock.swift */; };
 		B3CC5E6550552C9AAD6DA4C0E621EC40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
 		B407CBF6BE69DD2E488E2EAB958D4440 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59BEF7B16E41621077C9EE09364730 /* View.swift */; };
 		B471FBABF3D323A4A52ECF1CBA6E6AFB /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B2D6FAC884B59A45BD0A07DB07A627 /* GridItem.swift */; };
 		B6DDD2C96A762B0634193ABE394E63DD /* UICollectionView+ViewBatchUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8539A519A0CF83140261FB70FF2306 /* UICollectionView+ViewBatchUpdate.swift */; };
 		B8749D58181C309A9FB9395A99E085E5 /* CollectionBinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBF98A31ED3FE317865B844CBE031A /* CollectionBinderDataSource.swift */; };
-		B946907BEEEDBE4DA9BA6863FA12DF25 /* PowerToolsTester-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A8AF2B51A05210D8516B4980F894C9 /* PowerToolsTester-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA2CA466D45B602C9C08D15E39761862 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDABB69826988C5BC4FBC2849398D47 /* ItemViewModel.swift */; };
 		BDDF702799D2E14AFE4996A9EFDE1F10 /* GridDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE08A17F4A1DA4E3531556A991D23A4 /* GridDescriptor.swift */; };
+		BF7F5C9EE6ECB751217304557B00A7BE /* PowerTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */; };
 		BFC04B9715B7D70282F01A69CC40AD47 /* SublinePipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE21B0801F45AE83A0366E97AC4F751 /* SublinePipe.swift */; };
-		C0C7C81C43BAC7D8A0E5FB1DD01D0C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
 		C2C66BD6F6694924B7C5F9FAE2927585 /* PowerTools-CollectionVM-Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9B6B9D250836065FC1048637CF2DB4 /* PowerTools-CollectionVM-Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C52724D61D75B7626213F60AACECFB3B /* InteractionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBA8F65912D6787E70EFB4D40A3F9E /* InteractionDelegate.swift */; };
 		C55569A64BB8DE97C60C9EABF7A7DFD8 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA3E87FBAA773429853CE3F9CC1731 /* ModelUpdate.swift */; };
+		C6102106FE8E0AE73A40341257629629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
 		C7021B37808225C443B325BF6B4CAD6C /* GridCollectionDataSource+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BBA2C0FB0FE6DD977711C11C8B50E2 /* GridCollectionDataSource+Internal.swift */; };
 		C7590080D7AA39379C43080F37A8AAF4 /* GridCollectionViewController+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C44600795922E5CD7A2F54E602CD0E /* GridCollectionViewController+CellRegistration.swift */; };
 		CA73620D3C0A05B3233A0D4482DB61B1 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B38E3F295BA079EEF5DE04B0B5C10F /* Merge.swift */; };
 		CC2917DE28A676C7B4E17146DF0EC6CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0982C05456B2F1797DD38CF85453490D /* Foundation.framework */; };
-		CF47599BBC4818054889882C40E2B082 /* UICollectionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2097DF0FBC1BB2E610E1C655282F770 /* UICollectionDelegateMock.swift */; };
 		CFCFB29AE84E55620745E11551755EC6 /* Pods-PowerTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF2C469BFEC8FF883E01F91751F077C /* Pods-PowerTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D84CA60012CDD01C401F9A9082B8D5C0 /* PowerToolsTester-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB538EBB648B62B156ECCBABA7C1E10 /* PowerToolsTester-dummy.m */; };
 		DA9AF47E34F71F339E5A3A1690E230B7 /* Pods-PowerTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAC425C6B44E2DA3EC8A38A2D2863E7 /* Pods-PowerTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAE7D8C25C838712890B7A3E8E5AC834 /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AE84A2FD8074060E52BB4F1831C46 /* DirectionableContainer.swift */; };
-		E0B901E70E4589A6048E468070988859 /* PowerTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */; };
 		E5024F00E7C1F7238FB350B60E4A6E4E /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2024085651EC8BDB7FA14EDECA2157F /* Pipeline.swift */; };
 		E5ECFE5DC4468B70DDCC38503D3BDD18 /* PowerTools-CollectionVM-Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6049893F4BD019BF42107FF5DCAE3121 /* PowerTools-CollectionVM-Core-dummy.m */; };
 		E6C37A26B38FEC18A6E0845E6AA6E444 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B0EBD470B905CFCCF20682E97FBBD /* Array.swift */; };
@@ -117,19 +118,19 @@
 			remoteGlobalIDString = D8EEFF38415F542D0272D7DA58EF8018;
 			remoteInfo = "Pods-PowerTools_Example";
 		};
+		3634772C016123273E40E7C5E22BC7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9AFEE670292326F765F4D3255030BCD;
+			remoteInfo = "PowerTools-CollectionVM-Core";
+		};
 		4EA1141388F08B5DDB05E335314A3F90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 713D1E633774DC6855D35C2234DE51DA;
 			remoteInfo = "PowerTools.default-CollectionVM";
-		};
-		575641792EA00C0F7CA77A1782BCF101 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9AFEE670292326F765F4D3255030BCD;
-			remoteInfo = "PowerTools-CollectionVM-Core";
 		};
 		63A6FF9F97CF973B5228345DA633E5D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -142,18 +143,18 @@
 
 /* Begin PBXFileReference section */
 		00B7A130A7E99FE300E3C2A4B2D42915 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerTools.framework; path = "PowerTools.default-CollectionVM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B46ADC52635645932A56890E21F317 /* UIScrollViewDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegateMock.swift; sourceTree = "<group>"; };
 		04E0069932E415537B66FADC3C20ACF0 /* Pods-PowerTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		0982C05456B2F1797DD38CF85453490D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0DDDBDADBAE72172BC5445FF513F09EE /* BuilderContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BuilderContainer.swift; sourceTree = "<group>"; };
 		0DFE7B9790AB89863F540E1B31853BEB /* GridSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
+		0E3F3AFF82A22DA4D439D43A615D9185 /* PowerToolsTester.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PowerToolsTester.xcconfig; sourceTree = "<group>"; };
 		0FE08A17F4A1DA4E3531556A991D23A4 /* GridDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridDescriptor.swift; sourceTree = "<group>"; };
 		114FB3D694DAD777A935930C3FDE1015 /* Pods-PowerTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		14F97DD7177AC8CD713254F2A1C80A82 /* UIScrollViewDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegateMock.swift; sourceTree = "<group>"; };
 		15FD5C3DC7A2B19DE5956886F797EDBD /* Pods-PowerTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PowerTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		18A7B96CC119D60559CA5A5CF210DB15 /* PowerTools-CollectionVM-Core.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PowerTools-CollectionVM-Core.xcconfig"; sourceTree = "<group>"; };
 		1970422B6DC721EDCDE39C5B10A03559 /* PowerTools-CollectionVM-Core-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerTools-CollectionVM-Core-prefix.pch"; sourceTree = "<group>"; };
 		1B42332C0374A250DF8748C83E89F696 /* Pods-PowerTools_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Tests-Info.plist"; sourceTree = "<group>"; };
-		1E71FCA0858FFFBD2489B512C3BC64EA /* PowerToolsTester.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PowerToolsTester.modulemap; sourceTree = "<group>"; };
 		1EDABB69826988C5BC4FBC2849398D47 /* ItemViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		27CD50446F699E2965358B26E1EAA3BF /* Pods-PowerTools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-Info.plist"; sourceTree = "<group>"; };
 		27FA3E87FBAA773429853CE3F9CC1731 /* ModelUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModelUpdate.swift; sourceTree = "<group>"; };
@@ -165,30 +166,29 @@
 		3491A05C23EC0A8AC4824CB9B1F6A36F /* BinderPipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BinderPipe.swift; sourceTree = "<group>"; };
 		356882AD89374BA7FD3E2260F4915B6D /* Pods-PowerTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3CE855517B3478C70F01410802E9A459 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Example.framework; path = "Pods-PowerTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F6B6DC2641746DC121E149AB62F5F53 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerToolsTester.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4A9B6B9D250836065FC1048637CF2DB4 /* PowerTools-CollectionVM-Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerTools-CollectionVM-Core-umbrella.h"; sourceTree = "<group>"; };
 		4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		50F8055F4B0988F48C379F1FBD4D537D /* GridModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridModule.swift; sourceTree = "<group>"; };
-		51A8AF2B51A05210D8516B4980F894C9 /* PowerToolsTester-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-umbrella.h"; sourceTree = "<group>"; };
 		544EC20E67B8D1CEC40F3809A73567B3 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54CBF031EFAE65B238572E3187A17128 /* AbstractPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractPipeline.swift; sourceTree = "<group>"; };
 		5590C2849E3A959BA945CFB99CCD3F09 /* BinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BinderDataSource.swift; sourceTree = "<group>"; };
 		55AE8835E1FD1D6E7B40A93B2A2C64E1 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PowerTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PowerToolsTester.xcconfig; sourceTree = "<group>"; };
 		5E6E638B5AFAFD1DFB7F6DADC03A33F6 /* PowerTools.default-CollectionVM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PowerTools.default-CollectionVM-umbrella.h"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-umbrella.h"; sourceTree = "<group>"; };
 		6049893F4BD019BF42107FF5DCAE3121 /* PowerTools-CollectionVM-Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PowerTools-CollectionVM-Core-dummy.m"; sourceTree = "<group>"; };
+		6345B7B79BDEAA123151758D4C7ACD0A /* PowerToolsTester.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PowerToolsTester.modulemap; sourceTree = "<group>"; };
 		69A14482E7D52AC518D24E8D07BA1C1D /* AsyncPromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncPromisePipe.swift; sourceTree = "<group>"; };
 		74B38E3F295BA079EEF5DE04B0B5C10F /* Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7EFBA8F65912D6787E70EFB4D40A3F9E /* InteractionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegate.swift; sourceTree = "<group>"; };
 		8192AF8B505CBD8D02DCAE5C5327C0A6 /* Pods-PowerTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PowerTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A0E96967964375512BA64D5B57B2D92 /* PowerToolsTester-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-prefix.pch"; sourceTree = "<group>"; };
 		8C748BDF7F7D3C820CA0CE0DEB5D880F /* PromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromisePipe.swift; sourceTree = "<group>"; };
+		8D5A7E9C072C1C2E48A64A4858481076 /* PowerToolsTester-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PowerToolsTester-dummy.m"; sourceTree = "<group>"; };
 		97B2D6FAC884B59A45BD0A07DB07A627 /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		9CD3BBD369929866F03C44BA9F04D69E /* GridCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DF5F276D0E595BF9A78DDF187589004 /* Pods_PowerTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Tests.framework; path = "Pods-PowerTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2097DF0FBC1BB2E610E1C655282F770 /* UICollectionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionDelegateMock.swift; sourceTree = "<group>"; };
 		A4A0062446F1D88C72155ACE520401EB /* PowerToolsTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerToolsTester.framework; path = PowerToolsTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57537E574EF7185A15825D97421A41F /* CollectionDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionDirectionableContainer.swift; sourceTree = "<group>"; };
 		A7550C9ACF651319D3B6F7E85EF6BAD2 /* PowerTools-CollectionVM-Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PowerTools-CollectionVM-Core-Info.plist"; sourceTree = "<group>"; };
@@ -203,50 +203,52 @@
 		BD64932CE86D9CB4A4413BDC12466F7E /* PowerTools.default-CollectionVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PowerTools.default-CollectionVM.xcconfig"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.xcconfig"; sourceTree = "<group>"; };
 		BF9C0632570F14625B36CA5B5887B745 /* Pods-PowerTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C1686D2574D11265663089F15F9BC3CE /* Pods-PowerTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Tests.modulemap"; sourceTree = "<group>"; };
-		C3BAC2FA5B111CED07F244532EF40B0E /* PowerToolsTester-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PowerToolsTester-Info.plist"; sourceTree = "<group>"; };
 		C5E548D721C9DD3E399F31C5D81B3C3D /* Pods-PowerTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C7120ABA985CB5E92F0124F9754A4932 /* SectionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		C87C1773B35F81C9B31E67221C7EC6C5 /* PowerTools.default-CollectionVM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PowerTools.default-CollectionVM-dummy.m"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-dummy.m"; sourceTree = "<group>"; };
+		C9FFC69E9E63BB2E7BFDE51C3DC50826 /* PowerToolsTester-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-umbrella.h"; sourceTree = "<group>"; };
 		CA0C950468578B06044E942807D7C755 /* AbstractBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractBuilder.swift; sourceTree = "<group>"; };
-		CEB538EBB648B62B156ECCBABA7C1E10 /* PowerToolsTester-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PowerToolsTester-dummy.m"; sourceTree = "<group>"; };
+		CA79DE07AE657D325DDDE1E3E4C8D265 /* UICollectionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionDelegateMock.swift; sourceTree = "<group>"; };
 		D1820A6F54778D08CA06E8CCD2847E23 /* PowerTools.default-CollectionVM-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "PowerTools.default-CollectionVM-Info.plist"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist"; sourceTree = "<group>"; };
+		D2813D1B42E872BC14309DD046673A61 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerToolsTester.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D57BC48BAFA1734403B1E62442633DDE /* GridCollectionViewController+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridCollectionViewController+DataSource.swift"; sourceTree = "<group>"; };
-		D7C6FD9F066E3C0053B26A0610C22978 /* InteractionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegateMock.swift; sourceTree = "<group>"; };
+		D79B6F87186129AB69D8F8D527670CEC /* AssertPipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssertPipe.swift; sourceTree = "<group>"; };
 		DDE21B0801F45AE83A0366E97AC4F751 /* SublinePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SublinePipe.swift; sourceTree = "<group>"; };
 		E04AE84A2FD8074060E52BB4F1831C46 /* DirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DirectionableContainer.swift; sourceTree = "<group>"; };
 		E2024085651EC8BDB7FA14EDECA2157F /* Pipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
 		E2BBA2C0FB0FE6DD977711C11C8B50E2 /* GridCollectionDataSource+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridCollectionDataSource+Internal.swift"; sourceTree = "<group>"; };
 		E3C44600795922E5CD7A2F54E602CD0E /* GridCollectionViewController+CellRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridCollectionViewController+CellRegistration.swift"; sourceTree = "<group>"; };
+		E44239CFCA20B77A4D16D253E841FFE2 /* Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Await.swift; sourceTree = "<group>"; };
 		E8BBF98A31ED3FE317865B844CBE031A /* CollectionBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSource.swift; sourceTree = "<group>"; };
 		E9509FB4649341D7863C0999ED5B55E2 /* PowerTools-CollectionVM-Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PowerTools-CollectionVM-Core.modulemap"; sourceTree = "<group>"; };
 		EA9F5A887AEE2F42D3561AC2CEE500AB /* AbstractFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
-		EB19707E7439968C4070C8821D60DA0B /* AssertPipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssertPipe.swift; sourceTree = "<group>"; };
 		F0068AAA5BC0D4174B0FA0BBADEE8681 /* Pods-PowerTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F0A89B888E8472701E9DF1748F86BD7C /* Pods-PowerTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F17D384C9A8CE4A95B87F0B6306E4B62 /* PowerToolsTester-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PowerToolsTester-Info.plist"; sourceTree = "<group>"; };
 		F1CBFF67300C4F64B7CF1E45B2886482 /* DispatchTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchTime.swift; sourceTree = "<group>"; };
+		F91D8E956D1FD2AE275CBF126A23CABE /* InteractionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegateMock.swift; sourceTree = "<group>"; };
 		F9FD177694B6C5A62279F5A870434F50 /* PowerTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA683D0478490AD85FD8E30589ABBB8E /* Pods-PowerTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Example.modulemap"; sourceTree = "<group>"; };
 		FB36E803AE723DD9BF38D21F69BC52A3 /* InteractionFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionFactory.swift; sourceTree = "<group>"; };
 		FE525D7BA54591B2F38CE60D0CFC53BF /* PowerTools.default-CollectionVM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PowerTools.default-CollectionVM.modulemap"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap"; sourceTree = "<group>"; };
-		FE7177E67F3CE20413235855803D8937 /* PowerToolsTester-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06579B6C2C08E6965D78A2E414459511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6102106FE8E0AE73A40341257629629 /* Foundation.framework in Frameworks */,
+				BF7F5C9EE6ECB751217304557B00A7BE /* PowerTools.framework in Frameworks */,
+				9170E69871C3D757AA406CA012D13D28 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		152508BA5A945BA7B8A87042219DC2C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F75B80E1021534B42316CA6FAF31F4BE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30EDD732A41F615BAED59F3210188291 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0C7C81C43BAC7D8A0E5FB1DD01D0C6C /* Foundation.framework in Frameworks */,
-				E0B901E70E4589A6048E468070988859 /* PowerTools.framework in Frameworks */,
-				A918F5C298771B077E4891D2E86FBD10 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,15 +305,6 @@
 			path = PowerTools/CollectionVM/Classes/BinderDataSource;
 			sourceTree = "<group>";
 		};
-		1F3FC3CCAB90CFC8EE650016581B52D3 /* Pipeline */ = {
-			isa = PBXGroup;
-			children = (
-				EB19707E7439968C4070C8821D60DA0B /* AssertPipe.swift */,
-			);
-			name = Pipeline;
-			path = PowerTools/Tests/Core/Classes/Pipeline;
-			sourceTree = "<group>";
-		};
 		2EBF03DFDA84151EA7808DA97E27460D /* PowerTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,17 +349,6 @@
 			);
 			name = "Pods-PowerTools_Tests";
 			path = "Target Support Files/Pods-PowerTools_Tests";
-			sourceTree = "<group>";
-		};
-		437E9B2A171563E1F54FD2CAB48F45B1 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				D7C6FD9F066E3C0053B26A0610C22978 /* InteractionDelegateMock.swift */,
-				A2097DF0FBC1BB2E610E1C655282F770 /* UICollectionDelegateMock.swift */,
-				14F97DD7177AC8CD713254F2A1C80A82 /* UIScrollViewDelegateMock.swift */,
-			);
-			name = Mocks;
-			path = PowerTools/Tests/Core/Classes/Mocks;
 			sourceTree = "<group>";
 		};
 		464F6BE7D39412BC96A396C27D4E72B0 /* DataStructure */ = {
@@ -435,14 +417,6 @@
 			path = "Example/Pods/Target Support Files/PowerTools-CollectionVM-Core";
 			sourceTree = "<group>";
 		};
-		8174895CF191A93FE6F1A0835B2FFAED /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3F6B6DC2641746DC121E149AB62F5F53 /* PowerToolsTester.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		87C3E8398A65282EC400F6F0F2BA2BA0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +425,16 @@
 				78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		92E013BC1613944BAD466F7FDD043745 /* CoreTester */ = {
+			isa = PBXGroup;
+			children = (
+				CF0B44DF2D417F7645A1760954A9D6B6 /* Mocks */,
+				E56BCBAE6A7FECE9B61BD6F8299B6565 /* Pipeline */,
+				B30949D116C056975C2D36354BC3B906 /* Utils */,
+			);
+			name = CoreTester;
 			sourceTree = "<group>";
 		};
 		9558230C23E1C1830D9E81471CB628AD /* AbstractFactory */ = {
@@ -479,23 +463,9 @@
 			isa = PBXGroup;
 			children = (
 				2EBF03DFDA84151EA7808DA97E27460D /* PowerTools */,
-				B7DCD8CC36F0ACB73E56E08C2ED4B3E2 /* PowerToolsTester */,
+				BD871CB52BEF54A6E948278BBAB7BED8 /* PowerToolsTester */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		A44DF3E46642A52547A8E85CC5B4AB25 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1E71FCA0858FFFBD2489B512C3BC64EA /* PowerToolsTester.modulemap */,
-				5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */,
-				CEB538EBB648B62B156ECCBABA7C1E10 /* PowerToolsTester-dummy.m */,
-				C3BAC2FA5B111CED07F244532EF40B0E /* PowerToolsTester-Info.plist */,
-				FE7177E67F3CE20413235855803D8937 /* PowerToolsTester-prefix.pch */,
-				51A8AF2B51A05210D8516B4980F894C9 /* PowerToolsTester-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PowerToolsTester";
 			sourceTree = "<group>";
 		};
 		B2116FB7B39D67DD7417E7DDF6A67ED1 /* SizeModule */ = {
@@ -520,6 +490,15 @@
 			path = PowerTools/Core/Classes/Pipeline;
 			sourceTree = "<group>";
 		};
+		B30949D116C056975C2D36354BC3B906 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E44239CFCA20B77A4D16D253E841FFE2 /* Await.swift */,
+			);
+			name = Utils;
+			path = PowerTools/Tests/Core/Classes/Utils;
+			sourceTree = "<group>";
+		};
 		B435C8EC557E19B29D6E9C21F14EDB7B /* Pipeline */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,24 +508,23 @@
 			path = PowerTools/CollectionVM/Classes/Pipeline;
 			sourceTree = "<group>";
 		};
-		B6F349D386963719244E2385C6CFC40D /* CoreTester */ = {
+		BD871CB52BEF54A6E948278BBAB7BED8 /* PowerToolsTester */ = {
 			isa = PBXGroup;
 			children = (
-				437E9B2A171563E1F54FD2CAB48F45B1 /* Mocks */,
-				1F3FC3CCAB90CFC8EE650016581B52D3 /* Pipeline */,
-			);
-			name = CoreTester;
-			sourceTree = "<group>";
-		};
-		B7DCD8CC36F0ACB73E56E08C2ED4B3E2 /* PowerToolsTester */ = {
-			isa = PBXGroup;
-			children = (
-				B6F349D386963719244E2385C6CFC40D /* CoreTester */,
-				8174895CF191A93FE6F1A0835B2FFAED /* Pod */,
-				A44DF3E46642A52547A8E85CC5B4AB25 /* Support Files */,
+				92E013BC1613944BAD466F7FDD043745 /* CoreTester */,
+				C086B5D01B46353866D714F3E47D1D2C /* Pod */,
+				CAA003C2FBAC07467F0A8F592EBBAF6B /* Support Files */,
 			);
 			name = PowerToolsTester;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		C086B5D01B46353866D714F3E47D1D2C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D2813D1B42E872BC14309DD046673A61 /* PowerToolsTester.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C341AB4FC01D5AFD3E318E3C642E74B6 /* Pod */ = {
@@ -593,6 +571,20 @@
 			path = PowerTools/Core/Classes/Utils;
 			sourceTree = "<group>";
 		};
+		CAA003C2FBAC07467F0A8F592EBBAF6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6345B7B79BDEAA123151758D4C7ACD0A /* PowerToolsTester.modulemap */,
+				0E3F3AFF82A22DA4D439D43A615D9185 /* PowerToolsTester.xcconfig */,
+				8D5A7E9C072C1C2E48A64A4858481076 /* PowerToolsTester-dummy.m */,
+				F17D384C9A8CE4A95B87F0B6306E4B62 /* PowerToolsTester-Info.plist */,
+				8A0E96967964375512BA64D5B57B2D92 /* PowerToolsTester-prefix.pch */,
+				C9FFC69E9E63BB2E7BFDE51C3DC50826 /* PowerToolsTester-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PowerToolsTester";
+			sourceTree = "<group>";
+		};
 		CE59054B3CEBF4ECACE9DE29C7CD9DA4 /* ViewBatchUpdate */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +593,17 @@
 			);
 			name = ViewBatchUpdate;
 			path = PowerTools/CollectionVM/Classes/ViewBatchUpdate;
+			sourceTree = "<group>";
+		};
+		CF0B44DF2D417F7645A1760954A9D6B6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F91D8E956D1FD2AE275CBF126A23CABE /* InteractionDelegateMock.swift */,
+				CA79DE07AE657D325DDDE1E3E4C8D265 /* UICollectionDelegateMock.swift */,
+				04B46ADC52635645932A56890E21F317 /* UIScrollViewDelegateMock.swift */,
+			);
+			name = Mocks;
+			path = PowerTools/Tests/Core/Classes/Mocks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -621,6 +624,15 @@
 				87C3E8398A65282EC400F6F0F2BA2BA0 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E56BCBAE6A7FECE9B61BD6F8299B6565 /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				D79B6F87186129AB69D8F8D527670CEC /* AssertPipe.swift */,
+			);
+			name = Pipeline;
+			path = PowerTools/Tests/Core/Classes/Pipeline;
 			sourceTree = "<group>";
 		};
 		E71C8C494BBE7997B75A11B8735C6549 /* Targets Support Files */ = {
@@ -645,14 +657,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		833D2FA01072FD3A0C854AE1675FA2C6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B946907BEEEDBE4DA9BA6863FA12DF25 /* PowerToolsTester-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A01FA71B683106644E53B1D5AF4103F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -666,6 +670,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2C66BD6F6694924B7C5F9FAE2927585 /* PowerTools-CollectionVM-Core-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA614926ED69EBA6738921242316AA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4037873C0E3B2EA9ED6299340D7E66 /* PowerToolsTester-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,17 +702,17 @@
 /* Begin PBXNativeTarget section */
 		5059516E440CD33B09C7802D158CC607 /* PowerToolsTester */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 583AD1EACEC0E6266F0B274237F8E51B /* Build configuration list for PBXNativeTarget "PowerToolsTester" */;
+			buildConfigurationList = E9CA3F4FAE59D66AF689D462BD489E2D /* Build configuration list for PBXNativeTarget "PowerToolsTester" */;
 			buildPhases = (
-				833D2FA01072FD3A0C854AE1675FA2C6 /* Headers */,
-				C93EA7B47DDD6F8E409D16F4B81CBBE8 /* Sources */,
-				30EDD732A41F615BAED59F3210188291 /* Frameworks */,
-				9868260EB1C456047A529358EF3A22FC /* Resources */,
+				BDA614926ED69EBA6738921242316AA2 /* Headers */,
+				25145DF7C085EA9A661B054CA7356362 /* Sources */,
+				06579B6C2C08E6965D78A2E414459511 /* Frameworks */,
+				A797F79D443FE1CAE73C92DA85053555 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				733B105746F960F0015103890FCD058E /* PBXTargetDependency */,
+				A471941391A18A4E833996CADEF25A17 /* PBXTargetDependency */,
 			);
 			name = PowerToolsTester;
 			productName = PowerToolsTester;
@@ -828,7 +840,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9868260EB1C456047A529358EF3A22FC /* Resources */ = {
+		A797F79D443FE1CAE73C92DA85053555 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -852,6 +864,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		25145DF7C085EA9A661B054CA7356362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C314BAD029D39ADAD8754AF5156D4BC /* AssertPipe.swift in Sources */,
+				597D4881571D1558CEDE15AB5B2696A0 /* Await.swift in Sources */,
+				15D3B422AA365E5FCDF017B9D7DE49FF /* InteractionDelegateMock.swift in Sources */,
+				285982898D1EE7D4C2C5A1C1FE2B8F7B /* PowerToolsTester-dummy.m in Sources */,
+				98360BD6A40128397ADE362967C2A9CD /* UICollectionDelegateMock.swift in Sources */,
+				ABE1A491364A5748C28D0BA66309AE31 /* UIScrollViewDelegateMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41561BB8DD3DE091A3ACA2046D0B87D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -954,18 +979,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C93EA7B47DDD6F8E409D16F4B81CBBE8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38ECB25362E275C6BFDD9B29E23BFE6A /* AssertPipe.swift in Sources */,
-				A4A70B168CB8B887CF3823C94F3A636C /* InteractionDelegateMock.swift in Sources */,
-				D84CA60012CDD01C401F9A9082B8D5C0 /* PowerToolsTester-dummy.m in Sources */,
-				CF47599BBC4818054889882C40E2B082 /* UICollectionDelegateMock.swift in Sources */,
-				191E5D16403BDFC73764E30C31E6F6DF /* UIScrollViewDelegateMock.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -981,17 +994,17 @@
 			target = 713D1E633774DC6855D35C2234DE51DA /* PowerTools.default-CollectionVM */;
 			targetProxy = 4EA1141388F08B5DDB05E335314A3F90 /* PBXContainerItemProxy */;
 		};
-		733B105746F960F0015103890FCD058E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PowerTools-CollectionVM-Core";
-			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
-			targetProxy = 575641792EA00C0F7CA77A1782BCF101 /* PBXContainerItemProxy */;
-		};
 		98C1D39C1B6452856DFCA941B572D974 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PowerTools-CollectionVM-Core";
 			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
 			targetProxy = 63A6FF9F97CF973B5228345DA633E5D0 /* PBXContainerItemProxy */;
+		};
+		A471941391A18A4E833996CADEF25A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PowerTools-CollectionVM-Core";
+			target = C9AFEE670292326F765F4D3255030BCD /* PowerTools-CollectionVM-Core */;
+			targetProxy = 3634772C016123273E40E7C5E22BC7C5 /* PBXContainerItemProxy */;
 		};
 		D602CD263CCCE3BA868EFA64FD2A5B8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1067,6 +1080,37 @@
 			};
 			name = Debug;
 		};
+		3A0E15512B2D7DE62D44668702879B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3F3AFF82A22DA4D439D43A615D9185 /* PowerToolsTester.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerToolsTester/PowerToolsTester-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester.modulemap";
+				PRODUCT_MODULE_NAME = PowerToolsTester;
+				PRODUCT_NAME = PowerToolsTester;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5EA1C96EC4E293E67E75E90087F089F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD64932CE86D9CB4A4413BDC12466F7E /* PowerTools.default-CollectionVM.xcconfig */;
@@ -1098,9 +1142,9 @@
 			};
 			name = Debug;
 		};
-		8B66EC8225C0349B20BD5D1E03E00A08 /* Debug */ = {
+		7E7D6325EAE9E2D415829CC3403C2F5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */;
+			baseConfigurationReference = 0E3F3AFF82A22DA4D439D43A615D9185 /* PowerToolsTester.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1124,10 +1168,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1320,38 +1365,6 @@
 			};
 			name = Debug;
 		};
-		E2A156DD47867E35675C7779A9EBB605 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CFC7EB28ABCFAB95BF56E6374FACA5C /* PowerToolsTester.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerToolsTester/PowerToolsTester-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerToolsTester/PowerToolsTester.modulemap";
-				PRODUCT_MODULE_NAME = PowerToolsTester;
-				PRODUCT_NAME = PowerToolsTester;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		ED3C3D512D42CBA83F2E2F1EDB7DAC13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF9C0632570F14625B36CA5B5887B745 /* Pods-PowerTools_Tests.release.xcconfig */;
@@ -1470,15 +1483,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		583AD1EACEC0E6266F0B274237F8E51B /* Build configuration list for PBXNativeTarget "PowerToolsTester" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B66EC8225C0349B20BD5D1E03E00A08 /* Debug */,
-				E2A156DD47867E35675C7779A9EBB605 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8E474412737A16B44D8A48C5A3F45724 /* Build configuration list for PBXNativeTarget "PowerTools.default-CollectionVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1493,6 +1497,15 @@
 			buildConfigurations = (
 				14981698D1671D465FD3621880EBD728 /* Debug */,
 				ED3C3D512D42CBA83F2E2F1EDB7DAC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9CA3F4FAE59D66AF689D462BD489E2D /* Build configuration list for PBXNativeTarget "PowerToolsTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A0E15512B2D7DE62D44668702879B6F /* Debug */,
+				7E7D6325EAE9E2D415829CC3403C2F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -46,7 +46,7 @@ class BinderDataSourcePipeTests: XCTestCase {
         self.pipeline.dataSource(self.dataSource)
         let newModel = [UniqueSection()]
         self.pipeline.load(newModel)
-        await(0.5) {
+        tester.wait(0.5) {
             XCTAssert(self.dataSource.model as? [UniqueSection] ?== newModel)
         }
     }
@@ -57,7 +57,7 @@ class BinderDataSourcePipeTests: XCTestCase {
         let newModel = [UniqueSection()]
         let binderPipe = BinderPipe(dataSource: self.dataSource)
         binderPipe.success(newModel)
-        await(0.5) {
+        tester.wait(0.5) {
             XCTAssert(self.dataSource.model as? [UniqueSection] ?== newModel)
         }
     }
@@ -70,7 +70,7 @@ class BinderDataSourcePipeTests: XCTestCase {
         let error = NSError(domain: "model.test", code: 0, userInfo: nil)
         let binderPipe = BinderPipe(dataSource: self.dataSource)
         binderPipe.failure(error)
-        await(0.5) {
+        tester.wait(0.5) {
             XCTAssert(self.dataSource.model.count == 0)
         }
     }
@@ -82,7 +82,7 @@ class BinderDataSourcePipeTests: XCTestCase {
         XCTAssert(self.dataSource.model as? [UniqueSection] ?== newModel)
         let binderPipe = BinderPipe(dataSource: self.dataSource)
         binderPipe.reset()
-        await(0.5) {
+        tester.wait(0.5) {
             XCTAssert(self.dataSource.model.count == 0)
         }
     }
