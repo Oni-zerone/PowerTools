@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9705FDDD22B63AD700F890D7 /* PipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705FDDC22B63AD700F890D7 /* PipeTests.swift */; };
+		9707CF2122C4D93200D80F32 /* MergeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707CF2022C4D93200D80F32 /* MergeTests.swift */; };
 		9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */; };
 		9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C321BB48A200C66EE0 /* ModelUpdateTests.swift */; };
 		9717B2C621BBD28C00C66EE0 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */; };
@@ -73,6 +74,7 @@
 		74E7CE25711B98E8F51B6DE0 /* Pods-PowerTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PowerTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-PowerTools_Tests/Pods-PowerTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		86EF5D14AD9C6A712236FDF1 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9705FDDC22B63AD700F890D7 /* PipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeTests.swift; sourceTree = "<group>"; };
+		9707CF2022C4D93200D80F32 /* MergeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTests.swift; sourceTree = "<group>"; };
 		9717B2BE21BB410500C66EE0 /* StringViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewModel.swift; sourceTree = "<group>"; };
 		9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSectionViewModel.swift; sourceTree = "<group>"; };
 		9717B2C321BB48A200C66EE0 /* ModelUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdateTests.swift; sourceTree = "<group>"; };
@@ -229,6 +231,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		9707CF1F22C4D91C00D80F32 /* Permutations */ = {
+			isa = PBXGroup;
+			children = (
+				9707CF2022C4D93200D80F32 /* MergeTests.swift */,
+			);
+			path = Permutations;
+			sourceTree = "<group>";
+		};
 		9717B2BD21BB40C700C66EE0 /* BaseModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +304,7 @@
 		97607CFE22099B950071AB8D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9707CF1F22C4D91C00D80F32 /* Permutations */,
 				9750D0AE22948A4900E08571 /* Operators.swift */,
 				97607CFF22099BC20071AB8D /* ArrayTests.swift */,
 				9750D0A2229336AF00E08571 /* ViewTests.swift */,
@@ -614,6 +625,7 @@
 				9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */,
 				9750D0B92295D5F900E08571 /* ItemViewModelMock.swift in Sources */,
 				9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */,
+				9707CF2122C4D93200D80F32 /* MergeTests.swift in Sources */,
 				9705FDDD22B63AD700F890D7 /* PipeTests.swift in Sources */,
 				9750D09F2292F7D600E08571 /* GridModuleTests.swift in Sources */,
 				9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */,
