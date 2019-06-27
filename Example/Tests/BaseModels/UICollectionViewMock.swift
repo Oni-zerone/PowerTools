@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// swiftlint:disable identifier_name
 class UICollectionViewMock: UICollectionView {
     
     var supplementaryViews: [String: UICollectionReusableView] = [:]
@@ -39,3 +39,4 @@ class UICollectionViewMock: UICollectionView {
         registerNibForCellWithReuseIdentifierClosure?(nib, identifier)
     }
 }
+// swiftlint:enable identifier_name
