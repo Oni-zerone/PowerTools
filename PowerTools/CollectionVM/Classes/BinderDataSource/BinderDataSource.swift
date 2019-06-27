@@ -12,7 +12,16 @@ extension DispatchQueue {
     static let binderUpdate = DispatchQueue(label: "BinderDataSource.queue", qos: DispatchQoS.background)
 }
 
-open class BinderDataSource<View: UpdatableView>: NSObject {
+public protocol AbstractBinderDataSource: class {
+    
+    associatedtype View: UpdatableView
+    
+    var model: [SectionViewModel] { get set }
+    
+    var view: View? { get set }
+}
+
+open class BinderDataSource<View: UpdatableView>: NSObject, AbstractBinderDataSource {
 
     private var _model: [SectionViewModel]
     
