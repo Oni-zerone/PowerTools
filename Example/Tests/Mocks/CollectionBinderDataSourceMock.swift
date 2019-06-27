@@ -7,6 +7,8 @@
 
 @testable import PowerTools
 
+// swiftlint:disable all
+
 public class GridCollectionDataSourceMock: GridCollectionDataSource {
     
     //MARK: - init
@@ -472,3 +474,5 @@ public class GridCollectionDataSourceMock: GridCollectionDataSource {
         return collectionViewViewForSupplementaryElementOfKindAtClosure.map({ $0(collectionView, kind, indexPath) }) ?? collectionViewViewForSupplementaryElementOfKindAtReturnValue
     }
 }
+
+// swiftlint:enable all
