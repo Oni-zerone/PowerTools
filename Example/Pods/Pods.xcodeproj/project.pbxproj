@@ -62,8 +62,9 @@
 		8F043793B0031CE2E3829F068FF1B17B /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */; };
 		91216C7C8FB2B880F3CAFA1904DB2B1A /* GridCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE74862954B64873CC6B3959FE0CDC6 /* GridCollectionDataSource.swift */; };
 		966A5047381E07EFAABD60D1B5CE335A /* BinderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4425D9BC73DDB364B2C793B8BAC211 /* BinderDataSource.swift */; };
-		97EA77E422C494A600BBCF18 /* BinderDataSource+Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA77E322C494A600BBCF18 /* BinderDataSource+Pipe.swift */; };
-		97EA77E522C494A600BBCF18 /* BinderDataSource+Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA77E322C494A600BBCF18 /* BinderDataSource+Pipe.swift */; };
+		97EA77E422C494A600BBCF18 /* BinderPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA77E322C494A600BBCF18 /* BinderPipe.swift */; };
+		97EA77E522C494A600BBCF18 /* BinderPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA77E322C494A600BBCF18 /* BinderPipe.swift */; };
+		97EA77EA22C4AFC100BBCF18 /* Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA77E922C4AFC100BBCF18 /* Await.swift */; };
 		998239224A148B19407F703A78599B30 /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */; };
 		9A44765103890E74C7C4503217CC3CD9 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FBD9FC6B11D7BF9AA910E01F448D68 /* Array.swift */; };
 		9F82A353BD55229A53D67C054D693C88 /* GridCollectionViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D894DFBD74FB782C7553FC3F68850 /* GridCollectionViewController+DataSource.swift */; };
@@ -190,7 +191,8 @@
 		93D37D16E79A8DD889B60DF8D521372E /* PowerTools.default-CollectionVM.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PowerTools.default-CollectionVM.xcconfig"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.xcconfig"; sourceTree = "<group>"; };
 		9609842B3A54DA060FCC8203C48F2D01 /* GridModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridModule.swift; sourceTree = "<group>"; };
 		973F604BCD63320945CB47ACFF9D627E /* CollectionBinderDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSource.swift; sourceTree = "<group>"; };
-		97EA77E322C494A600BBCF18 /* BinderDataSource+Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinderDataSource+Pipe.swift"; sourceTree = "<group>"; };
+		97EA77E322C494A600BBCF18 /* BinderPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderPipe.swift; sourceTree = "<group>"; };
+		97EA77E922C4AFC100BBCF18 /* Await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Await.swift; sourceTree = "<group>"; };
 		9831E890F70E3CD1DFA2B21800B0E243 /* GridCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
 		9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -517,9 +519,17 @@
 		97EA77E222C4948900BBCF18 /* Pipeline */ = {
 			isa = PBXGroup;
 			children = (
-				97EA77E322C494A600BBCF18 /* BinderDataSource+Pipe.swift */,
+				97EA77E322C494A600BBCF18 /* BinderPipe.swift */,
 			);
 			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		97EA77E822C4AFAB00BBCF18 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				97EA77E922C4AFC100BBCF18 /* Await.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9F3C7E2C761184321A70F41A07C43202 /* Development Pods */ = {
@@ -557,6 +567,7 @@
 		B6F349D386963719244E2385C6CFC40D /* CoreTester */ = {
 			isa = PBXGroup;
 			children = (
+				97EA77E822C4AFAB00BBCF18 /* Utils */,
 				437E9B2A171563E1F54FD2CAB48F45B1 /* Mocks */,
 				1F3FC3CCAB90CFC8EE650016581B52D3 /* Pipeline */,
 			);
@@ -867,7 +878,7 @@
 				84D773A41DED3AAA7C8B319D462CE905 /* Array.swift in Sources */,
 				7487B5FFE16E78AB2479EE281E494B2E /* AsyncPromisePipe.swift in Sources */,
 				B893840807EDF910E89EBBB42575B1F4 /* BatchUpdateView.swift in Sources */,
-				97EA77E422C494A600BBCF18 /* BinderDataSource+Pipe.swift in Sources */,
+				97EA77E422C494A600BBCF18 /* BinderPipe.swift in Sources */,
 				966A5047381E07EFAABD60D1B5CE335A /* BinderDataSource.swift in Sources */,
 				6CF59FBB0F86674DC471179BCFD00DAC /* BuilderContainer.swift in Sources */,
 				0373BC9C4CD7430B34872B8BFA430C41 /* CollectionBinderDataSource.swift in Sources */,
@@ -914,6 +925,7 @@
 			files = (
 				38ECB25362E275C6BFDD9B29E23BFE6A /* AssertPipe.swift in Sources */,
 				A4A70B168CB8B887CF3823C94F3A636C /* InteractionDelegateMock.swift in Sources */,
+				97EA77EA22C4AFC100BBCF18 /* Await.swift in Sources */,
 				D84CA60012CDD01C401F9A9082B8D5C0 /* PowerToolsTester-dummy.m in Sources */,
 				CF47599BBC4818054889882C40E2B082 /* UICollectionDelegateMock.swift in Sources */,
 				191E5D16403BDFC73764E30C31E6F6DF /* UIScrollViewDelegateMock.swift in Sources */,
@@ -930,7 +942,7 @@
 				9A44765103890E74C7C4503217CC3CD9 /* Array.swift in Sources */,
 				54F8990C932A26B1A908D9C07BAF9D5C /* AsyncPromisePipe.swift in Sources */,
 				7E7CCB3AD30B0F94DE4D1AFA26EAB81F /* BatchUpdateView.swift in Sources */,
-				97EA77E522C494A600BBCF18 /* BinderDataSource+Pipe.swift in Sources */,
+				97EA77E522C494A600BBCF18 /* BinderPipe.swift in Sources */,
 				D40E4AD8A1B17990D8EE157D258A5564 /* BinderDataSource.swift in Sources */,
 				C3BD5E95A2368999655662CD0CA3FFB7 /* BuilderContainer.swift in Sources */,
 				E07BB1B48B676ED1993FADB81C5ACEEA /* CollectionBinderDataSource.swift in Sources */,

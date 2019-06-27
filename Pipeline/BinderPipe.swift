@@ -1,5 +1,5 @@
 //
-//  BinderDataSource+Pipe.swift
+//  BinderPipe.swift
 //  Pods
 //
 //  Created by Andrea Altea on 27/06/2019.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BinderDataSourcePipe<DataSource: AbstractBinderDataSource>: Pipe<[SectionViewModel]> {
+public class BinderPipe<DataSource: AbstractBinderDataSource>: Pipe<[SectionViewModel]> {
     
     var queue: DispatchQueue = .main
     weak var dataSource: DataSource?
@@ -40,8 +40,8 @@ public class BinderDataSourcePipe<DataSource: AbstractBinderDataSource>: Pipe<[S
 
 public extension Pipeline {
     
-    mutating func attachDataSource<DataSource: AbstractBinderDataSource>(_ binderDataSource: DataSource) where Value == [SectionViewModel] {
-        let binderPipe = BinderDataSourcePipe(dataSource: binderDataSource)
+    mutating func dataSource<DataSource: AbstractBinderDataSource>(_ binderDataSource: DataSource) where Value == [SectionViewModel] {
+        let binderPipe = BinderPipe(dataSource: binderDataSource)
         self.attach(binderPipe)
     }
 }
