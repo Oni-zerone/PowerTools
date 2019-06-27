@@ -13,7 +13,7 @@ public class GridCollectionViewController: UICollectionViewController {
     
     public var forceReload: Bool = false
     
-    open var dataSource: GridCollectionDataSource?
+    open var dataSource: GridCollectionDataSource? = GridCollectionDataSource(view: nil, model: [])
         
     override open func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +35,6 @@ public class GridCollectionViewController: UICollectionViewController {
     }
     
     internal func setupDataSource() {
-        
-        if let collectionView = collectionView {
-            self.dataSource = GridCollectionDataSource(view: collectionView, model: [])
-        }
+        self.dataSource?.view = self.collectionView
     }
 }
