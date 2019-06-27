@@ -46,22 +46,6 @@ internal struct ModelUpdate {
     }
 }
 
-extension ModelUpdate.Change {
-    
-    var description: String {
-        switch self {
-        case .insert(let newPosition):
-            return "nil -> \(newPosition.description)"
-            
-        case .move(let oldPosition, let newPosition):
-            return "\(oldPosition) -> \(newPosition)"
-            
-        case .delete(let oldPosition):
-            return "\(oldPosition) -> nil"
-        }
-    }
-}
-
 internal extension Array where Element == SectionViewModel {
     
     var lookupTable: [Int : [IndexPath]] {

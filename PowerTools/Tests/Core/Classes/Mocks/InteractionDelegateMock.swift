@@ -11,9 +11,9 @@
 
 import PowerTools
 
-public class InteractionDelegateMock: InteractionDelegate {
+public class InteractionDelegateMock: NSObject, InteractionDelegate {
     
-    public init() { }
+    public override init() { }
     
     public var containerViewShouldSelectCallsCount = 0
     public var containerViewShouldSelectCalled: Bool {

@@ -62,6 +62,7 @@
 		9170E69871C3D757AA406CA012D13D28 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F2C64325C6A3E578C1E3BD9B7EED12 /* XCTest.framework */; };
 		92BFC09D959C6E3991485C9A83AA6F95 /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDBDADBAE72172BC5445FF513F09EE /* BuilderContainer.swift */; };
 		93879009BFC40A7552D196BF2ADFEF19 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3BBD369929866F03C44BA9F04D69E /* GridCollectionViewController.swift */; };
+		9707CF2522C513E800D80F32 /* CollectionBinderDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707CF2422C513E800D80F32 /* CollectionBinderDataSourceMock.swift */; };
 		98360BD6A40128397ADE362967C2A9CD /* UICollectionDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA79DE07AE657D325DDDE1E3E4C8D265 /* UICollectionDelegateMock.swift */; };
 		998239224A148B19407F703A78599B30 /* Pods-PowerTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */; };
 		9A24338EAA66D74F1E11F42B35BB3BA7 /* DirectionableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04AE84A2FD8074060E52BB4F1831C46 /* DirectionableContainer.swift */; };
@@ -142,7 +143,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B7A130A7E99FE300E3C2A4B2D42915 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerTools.framework; path = "PowerTools.default-CollectionVM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B7A130A7E99FE300E3C2A4B2D42915 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PowerTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B46ADC52635645932A56890E21F317 /* UIScrollViewDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegateMock.swift; sourceTree = "<group>"; };
 		04E0069932E415537B66FADC3C20ACF0 /* Pods-PowerTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PowerTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		0982C05456B2F1797DD38CF85453490D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -158,14 +159,14 @@
 		1EDABB69826988C5BC4FBC2849398D47 /* ItemViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		27CD50446F699E2965358B26E1EAA3BF /* Pods-PowerTools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-Info.plist"; sourceTree = "<group>"; };
 		27FA3E87FBAA773429853CE3F9CC1731 /* ModelUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModelUpdate.swift; sourceTree = "<group>"; };
-		297B3D3312D446EA76DDFD968E6DAF6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		297B3D3312D446EA76DDFD968E6DAF6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2C94BB598DE08FE829344E117EA989A5 /* BatchUpdateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BatchUpdateView.swift; sourceTree = "<group>"; };
 		2D59BEF7B16E41621077C9EE09364730 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2F8539A519A0CF83140261FB70FF2306 /* UICollectionView+ViewBatchUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ViewBatchUpdate.swift"; sourceTree = "<group>"; };
 		31F1650F800E2BB5FD0A3B25B4A55758 /* Pods-PowerTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Example-dummy.m"; sourceTree = "<group>"; };
 		3491A05C23EC0A8AC4824CB9B1F6A36F /* BinderPipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BinderPipe.swift; sourceTree = "<group>"; };
 		356882AD89374BA7FD3E2260F4915B6D /* Pods-PowerTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PowerTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3CE855517B3478C70F01410802E9A459 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Example.framework; path = "Pods-PowerTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE855517B3478C70F01410802E9A459 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9B6B9D250836065FC1048637CF2DB4 /* PowerTools-CollectionVM-Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerTools-CollectionVM-Core-umbrella.h"; sourceTree = "<group>"; };
 		4EBC58A57A0F7376721914143829BC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		50F8055F4B0988F48C379F1FBD4D537D /* GridModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridModule.swift; sourceTree = "<group>"; };
@@ -184,15 +185,16 @@
 		8A0E96967964375512BA64D5B57B2D92 /* PowerToolsTester-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PowerToolsTester-prefix.pch"; sourceTree = "<group>"; };
 		8C748BDF7F7D3C820CA0CE0DEB5D880F /* PromisePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromisePipe.swift; sourceTree = "<group>"; };
 		8D5A7E9C072C1C2E48A64A4858481076 /* PowerToolsTester-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PowerToolsTester-dummy.m"; sourceTree = "<group>"; };
+		9707CF2422C513E800D80F32 /* CollectionBinderDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSourceMock.swift; sourceTree = "<group>"; };
 		97B2D6FAC884B59A45BD0A07DB07A627 /* GridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		9A31B23AD9E0F792E75F3896F64047BD /* Pods-PowerTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PowerTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		9CD3BBD369929866F03C44BA9F04D69E /* GridCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DF5F276D0E595BF9A78DDF187589004 /* Pods_PowerTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PowerTools_Tests.framework; path = "Pods-PowerTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4A0062446F1D88C72155ACE520401EB /* PowerToolsTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerToolsTester.framework; path = PowerToolsTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF5F276D0E595BF9A78DDF187589004 /* Pods_PowerTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0062446F1D88C72155ACE520401EB /* PowerToolsTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PowerToolsTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57537E574EF7185A15825D97421A41F /* CollectionDirectionableContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionDirectionableContainer.swift; sourceTree = "<group>"; };
 		A7550C9ACF651319D3B6F7E85EF6BAD2 /* PowerTools-CollectionVM-Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PowerTools-CollectionVM-Core-Info.plist"; sourceTree = "<group>"; };
-		A864099A5FF08D70505F0B5E0B1EC580 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PowerTools.framework; path = "PowerTools-CollectionVM-Core.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A864099A5FF08D70505F0B5E0B1EC580 /* PowerTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PowerTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA35BB58234990039D7612BE7A277D48 /* Pods-PowerTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PowerTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ACAA4DF3F49596CDE43ACE3AAB619690 /* PowerTools.default-CollectionVM-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PowerTools.default-CollectionVM-prefix.pch"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch"; sourceTree = "<group>"; };
 		B109C00270754ABC87528757121C6560 /* Pipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
@@ -210,7 +212,7 @@
 		CA0C950468578B06044E942807D7C755 /* AbstractBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractBuilder.swift; sourceTree = "<group>"; };
 		CA79DE07AE657D325DDDE1E3E4C8D265 /* UICollectionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionDelegateMock.swift; sourceTree = "<group>"; };
 		D1820A6F54778D08CA06E8CCD2847E23 /* PowerTools.default-CollectionVM-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "PowerTools.default-CollectionVM-Info.plist"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist"; sourceTree = "<group>"; };
-		D2813D1B42E872BC14309DD046673A61 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerToolsTester.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D2813D1B42E872BC14309DD046673A61 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PowerToolsTester.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D57BC48BAFA1734403B1E62442633DDE /* GridCollectionViewController+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GridCollectionViewController+DataSource.swift"; sourceTree = "<group>"; };
 		D79B6F87186129AB69D8F8D527670CEC /* AssertPipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssertPipe.swift; sourceTree = "<group>"; };
 		DDE21B0801F45AE83A0366E97AC4F751 /* SublinePipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SublinePipe.swift; sourceTree = "<group>"; };
@@ -227,7 +229,7 @@
 		F17D384C9A8CE4A95B87F0B6306E4B62 /* PowerToolsTester-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PowerToolsTester-Info.plist"; sourceTree = "<group>"; };
 		F1CBFF67300C4F64B7CF1E45B2886482 /* DispatchTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchTime.swift; sourceTree = "<group>"; };
 		F91D8E956D1FD2AE275CBF126A23CABE /* InteractionDelegateMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionDelegateMock.swift; sourceTree = "<group>"; };
-		F9FD177694B6C5A62279F5A870434F50 /* PowerTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PowerTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F9FD177694B6C5A62279F5A870434F50 /* PowerTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PowerTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA683D0478490AD85FD8E30589ABBB8E /* Pods-PowerTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PowerTools_Example.modulemap"; sourceTree = "<group>"; };
 		FB36E803AE723DD9BF38D21F69BC52A3 /* InteractionFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractionFactory.swift; sourceTree = "<group>"; };
 		FE525D7BA54591B2F38CE60D0CFC53BF /* PowerTools.default-CollectionVM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PowerTools.default-CollectionVM.modulemap"; path = "../PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap"; sourceTree = "<group>"; };
@@ -475,7 +477,6 @@
 				E04AE84A2FD8074060E52BB4F1831C46 /* DirectionableContainer.swift */,
 				50F8055F4B0988F48C379F1FBD4D537D /* GridModule.swift */,
 			);
-			name = SizeModule;
 			path = SizeModule;
 			sourceTree = "<group>";
 		};
@@ -555,7 +556,6 @@
 				8C748BDF7F7D3C820CA0CE0DEB5D880F /* PromisePipe.swift */,
 				DDE21B0801F45AE83A0366E97AC4F751 /* SublinePipe.swift */,
 			);
-			name = Pipes;
 			path = Pipes;
 			sourceTree = "<group>";
 		};
@@ -601,6 +601,7 @@
 				F91D8E956D1FD2AE275CBF126A23CABE /* InteractionDelegateMock.swift */,
 				CA79DE07AE657D325DDDE1E3E4C8D265 /* UICollectionDelegateMock.swift */,
 				04B46ADC52635645932A56890E21F317 /* UIScrollViewDelegateMock.swift */,
+				9707CF2422C513E800D80F32 /* CollectionBinderDataSourceMock.swift */,
 			);
 			name = Mocks;
 			path = PowerTools/Tests/Core/Classes/Mocks;
@@ -871,6 +872,7 @@
 				4C314BAD029D39ADAD8754AF5156D4BC /* AssertPipe.swift in Sources */,
 				597D4881571D1558CEDE15AB5B2696A0 /* Await.swift in Sources */,
 				15D3B422AA365E5FCDF017B9D7DE49FF /* InteractionDelegateMock.swift in Sources */,
+				9707CF2522C513E800D80F32 /* CollectionBinderDataSourceMock.swift in Sources */,
 				285982898D1EE7D4C2C5A1C1FE2B8F7B /* PowerToolsTester-dummy.m in Sources */,
 				98360BD6A40128397ADE362967C2A9CD /* UICollectionDelegateMock.swift in Sources */,
 				ABE1A491364A5748C28D0BA66309AE31 /* UIScrollViewDelegateMock.swift in Sources */,
@@ -1227,8 +1229,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
