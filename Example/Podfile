@@ -3,10 +3,11 @@ use_frameworks!
 
 target 'PowerTools_Example' do
   pod 'PowerTools', :path => '../'
+  pod 'PowerTools/CollectionVM', :path => '../'
   
   target 'PowerTools_Tests' do
     inherit! :search_paths
-
+    pod 'PowerToolsTester', :path => '../'
     
   end
 end

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// swiftlint:disable identifier_name
 class UICollectionViewMock: UICollectionView {
     
     var supplementaryViews: [String: UICollectionReusableView] = [:]
@@ -23,4 +23,20 @@ class UICollectionViewMock: UICollectionView {
                                                    for indexPath: IndexPath) -> UICollectionReusableView {
         return supplementaryViews[elementKind]!
     }
+    
+    public var registerNibForCellWithReuseIdentifierCallsCount = 0
+    public var registerNibForCellWithReuseIdentifierCalled: Bool {
+        return registerNibForCellWithReuseIdentifierCallsCount > 0
+    }
+    public var registerNibForCellWithReuseIdentifierReceivedArguments: (nib: UINib?, identifier: String)?
+    public var registerNibForCellWithReuseIdentifierReceivedInvocations: [(nib: UINib?, identifier: String)] = []
+    public var registerNibForCellWithReuseIdentifierClosure: ((UINib?, String) -> Void)?
+    
+    override func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String) {
+        registerNibForCellWithReuseIdentifierCallsCount += 1
+        registerNibForCellWithReuseIdentifierReceivedArguments = (nib: nib, identifier: identifier)
+        registerNibForCellWithReuseIdentifierReceivedInvocations.append((nib: nib, identifier: identifier))
+        registerNibForCellWithReuseIdentifierClosure?(nib, identifier)
+    }
 }
+// swiftlint:enable identifier_name

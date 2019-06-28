@@ -8,6 +8,7 @@
 
 import XCTest
 import PowerTools
+import PowerToolsTester
 
 class SublinePipeTests: XCTestCase {
     
@@ -136,26 +137,10 @@ class SublinePipeTests: XCTestCase {
     
     func testSublineReset() {
         
-        let firstString = "string"
-        let secondString = "sub_first"
-        let thirdString = "sub_second"
-        
-        self.pipeline.attach(PromisePipe<[String]>(success: { _ in
-            return .success([firstString])
-        }))
-        
         let sublineResetExp = expectation(description: "sublineReset")
         let subline = SublinePipe<String>(merge: .injectAfter)
         subline.attach(AssertPipe<[String]>(reset: sublineResetExp))
         self.pipeline.attach(subline)
-        
-        self.pipeline.attach(PromisePipe(success: { strings in
-            XCTAssert(strings.count == 3)
-            XCTAssert(strings.first == firstString)
-            XCTAssert(strings[1] == secondString)
-            XCTAssert(strings.last == thirdString)
-            return .success(strings)
-        }))
         
         let resetExp = expectation(description: "reset")
         let resetPipe = AssertPipe<[String]>(reset: resetExp)

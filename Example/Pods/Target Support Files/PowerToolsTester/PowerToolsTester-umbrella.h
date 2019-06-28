@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PowerToolsVersionNumber;
-FOUNDATION_EXPORT const unsigned char PowerToolsVersionString[];
+FOUNDATION_EXPORT double PowerToolsTesterVersionNumber;
+FOUNDATION_EXPORT const unsigned char PowerToolsTesterVersionString[];
 

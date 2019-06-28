@@ -1,16 +1,16 @@
 //
-//  PromisePipeTests.swift
+//  AsyncPromisePipeTests.swift
 //  PowerTools_Tests
 //
-//  Created by Andrea Altea on 09/12/2018.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Created by Andrea Altea on 12/05/2019.
+//  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
 import XCTest
 import PowerTools
 import PowerToolsTester
 
-class PromisePipeTests: XCTestCase {
+class AsyncPromisePipeTests: XCTestCase {
     
     var pipeline: Pipeline<String>!
     
@@ -29,9 +29,11 @@ class PromisePipeTests: XCTestCase {
         let originalString = "string"
         let mutatedString = "mutated"
         
-        self.pipeline.promise(success: { string in
-            XCTAssert(string == originalString )
-            return .success(mutatedString)
+        self.pipeline.asyncPromise(success: { (string, future) in
+            XCTAssert(string == originalString)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                future(.success(mutatedString))
+            }
         })
         
         self.pipeline.promise(success: { string in
@@ -49,31 +51,14 @@ class PromisePipeTests: XCTestCase {
     
     func testPipelineFailure() {
         
-        self.pipeline.promise(success: { _ in
-            return .failure(PipelineErrors.requiredFailure)
+        self.pipeline.asyncPromise(success: { _, future in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                future(.failure(PipelineErrors.requiredFailure))
+            }
         })
         
         self.pipeline.promise(failure: { error in
             
-            XCTAssert((error as? PipelineErrors) == .requiredFailure)
-            return .failure(error)
-        })
-        
-        let failureExp = expectation(description: "failure")
-        let assertPipe = AssertPipe<String>(failure: failureExp)
-        self.pipeline.attach(assertPipe)
-        
-        self.pipeline.load("")
-        wait(for: assertPipe.expectations, timeout: 1.0)
-    }
-    
-    func testMultipleAttacchedPipelines() {
-        
-        self.pipeline.promise(success: { _ in
-            return .failure(PipelineErrors.requiredFailure)
-        })
-            
-        self.pipeline.promise(failure: { error in
             XCTAssert((error as? PipelineErrors) == .requiredFailure)
             return .failure(error)
         })
@@ -88,7 +73,7 @@ class PromisePipeTests: XCTestCase {
     
     func testEmptyPromisePipeSuccess() {
         
-        self.pipeline.attach(PromisePipe())
+        self.pipeline.attach(AsyncPromisePipe())
         
         let successExp = expectation(description: "success")
         let assertPipe = AssertPipe<String>(success: successExp)
@@ -103,7 +88,7 @@ class PromisePipeTests: XCTestCase {
         self.pipeline.promise(success: { _ in
             return .failure(PipelineErrors.requiredFailure)
         })
-        self.pipeline.attach(PromisePipe())
+        self.pipeline.attach(AsyncPromisePipe())
         
         let failureExp = expectation(description: "failure")
         let assertPipe = AssertPipe<String>(failure: failureExp)
@@ -115,15 +100,15 @@ class PromisePipeTests: XCTestCase {
     
     func testLazyOnSuccessAttach() {
         
-        let promisePipe = PromisePipe<String>(success: { string in
+        let promisePipe = AsyncPromisePipe<String>(success: { string, future in
             XCTFail("should not be called")
-            return .success(string)
+            future(.success(string))
         })
         
         let successExp = expectation(description: "success")
-        promisePipe.onSuccess { string in
+        promisePipe.onSuccess { string, future in
             successExp.fulfill()
-            return .success(string)
+            future(.success(string))
         }
         self.pipeline.attach(promisePipe)
         
@@ -134,19 +119,19 @@ class PromisePipeTests: XCTestCase {
     
     func testLazyOnFailureAttach() {
         
-        self.pipeline.promise(success: { _ in
-            return .failure(PipelineErrors.requiredFailure)
+        self.pipeline.asyncPromise(success: { _, future in
+            future(.failure(PipelineErrors.requiredFailure))
         })
         
-        let promisePipe = PromisePipe<String>(failure: { error in
+        let promisePipe = AsyncPromisePipe<String>(failure: { error, future in
             XCTFail("should not be called")
-            return .failure(error)
+            future(.failure(error))
         })
         
         let failureExp = expectation(description: "failure")
-        promisePipe.onFailure { error in
+        promisePipe.onFailure { error, future in
             failureExp.fulfill()
-            return .failure(error)
+            future(.failure(error))
         }
         
         self.pipeline.attach(promisePipe)

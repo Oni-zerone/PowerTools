@@ -1,0 +1,6 @@
+framework module PowerToolsTester {
+  umbrella header "PowerToolsTester-umbrella.h"
+
+  export *
+  module * { export * }
+}

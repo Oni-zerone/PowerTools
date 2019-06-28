@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PowerTools'
-  s.version          = '0.4.0'
+  s.version          = '0.4.1'
   s.summary          = 'Tools for fast and modular app development.'
   s.swift_version    = '5.0'
   
@@ -30,17 +30,16 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   
-  s.default_subspec = 'Core', 'CollectionVM'
+  s.default_subspec = 'Core'
   s.subspec 'Core' do |sp|
       sp.source_files = 'PowerTools/Core/Classes/**/*'
+      sp.framework = 'UIKit'
   end
   
   s.subspec 'CollectionVM' do |sp|
       sp.source_files = 'PowerTools/CollectionVM/Classes/**/*'
+      sp.framework = 'UIKit'
+      
       sp.dependency 'PowerTools/Core'
   end
-  
-  # s.resource_bundles = {
-  #   'PowerTools' => ['PowerTools/Assets/*.png']
-  # }
 end
