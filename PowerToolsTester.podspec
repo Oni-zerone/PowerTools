@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'PowerToolsTester'
-    s.version          = '0.4.0'
+    s.version          = '0.4.1'
     s.summary          = 'Tools tester for fast and modular app development.'
     s.swift_version    = '5.0'
     
@@ -27,7 +27,20 @@ Pod::Spec.new do |s|
     s.author           = { 'Andrea Altea' => 'oni.zerone@gmail.com' }
     s.source           = { :git => 'https://github.com/Oni-zerone/PowerTools.git', :tag => s.version.to_s + '-tester' }
     s.social_media_url = 'https://twitter.com/Oni_zerone'
-    
+    #    s.user_target_xcconfig = { 'ENABLED_TESTABILITY' => 'YES' }
+    #    s.pod_target_xcconfig = { 'ENABLED_TESTABILITY' => 'YES' }
+
+    s.user_target_xcconfig = {
+        'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks',
+        'ENABLED_TESTABILITY' => 'YES',
+    }
+    s.pod_target_xcconfig = {
+        'APPLICATION_EXTENSION_API_ONLY' => 'YES',
+        'ENABLE_BITCODE' => 'NO',
+        'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
+        'ENABLED_TESTABILITY' => 'YES',
+    }
+
     s.ios.deployment_target = '9.0'
     
     s.default_subspec = 'CoreTester'
@@ -35,13 +48,17 @@ Pod::Spec.new do |s|
         sp.source_files = 'PowerTools/Tests/Core/Classes/**/*'
         sp.framework = "XCTest"
         sp.requires_arc = true
-        sp.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
-        sp.pod_target_xcconfig = {
-            'APPLICATION_EXTENSION_API_ONLY' => 'YES',
-            'ENABLE_BITCODE' => 'NO',
-            'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
-        }
-        sp.dependency 'PowerTools/Core', '~> 0.4'
-        sp.dependency 'PowerTools/CollectionVM', '~> 0.4'
+        #sp.user_target_xcconfig = {
+        #    'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks',
+        #    'ENABLED_TESTABILITY' => 'YES',
+        #}
+        #sp.pod_target_xcconfig = {
+        #    'APPLICATION_EXTENSION_API_ONLY' => 'YES',
+        #    'ENABLE_BITCODE' => 'NO',
+        #    'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
+        #    'ENABLED_TESTABILITY' => 'YES',
+        #}
+        sp.dependency 'PowerTools/Core', '~> 0.4.1'
+        sp.dependency 'PowerTools/CollectionVM', '~> 0.4.1'
     end
 end

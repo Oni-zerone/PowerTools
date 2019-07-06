@@ -14,10 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9705FDDD22B63AD700F890D7 /* PipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705FDDC22B63AD700F890D7 /* PipeTests.swift */; };
 		9707CF2122C4D93200D80F32 /* MergeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707CF2022C4D93200D80F32 /* MergeTests.swift */; };
-		9707CF2322C5088800D80F32 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707CF2222C5088800D80F32 /* File.swift */; };
 		9707CF2822C519AE00D80F32 /* CollectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707CF2722C519AE00D80F32 /* CollectionViewControllerTests.swift */; };
 		9707CF2922C5409500D80F32 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A34E5C219591C500E7F401 /* ColorCollectionViewCell.xib */; };
-		9707CF2B22C5687400D80F32 /* CollectionBinderDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707CF2A22C5687400D80F32 /* CollectionBinderDataSourceMock.swift */; };
 		9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */; };
 		9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C321BB48A200C66EE0 /* ModelUpdateTests.swift */; };
 		9717B2C621BBD28C00C66EE0 /* ModelUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9717B2C521BBD28C00C66EE0 /* ModelUpdate.swift */; };
@@ -34,7 +32,6 @@
 		9750D0AB22947ECF00E08571 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0AA22947ECF00E08571 /* SectionViewModelTests.swift */; };
 		9750D0AF22948A4900E08571 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0AE22948A4900E08571 /* Operators.swift */; };
 		9750D0B32294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0B22294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift */; };
-		9750D0B92295D5F900E08571 /* ItemViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */; };
 		97607D0022099BC20071AB8D /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97607CFF22099BC20071AB8D /* ArrayTests.swift */; };
 		978E528322AC28C6006833C5 /* BinderDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528222AC28C6006833C5 /* BinderDataSourceTests.swift */; };
 		978E528722AC45D8006833C5 /* UICollectionViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978E528622AC45D8006833C5 /* UICollectionViewMock.swift */; };
@@ -79,9 +76,7 @@
 		86EF5D14AD9C6A712236FDF1 /* Pods_PowerTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PowerTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9705FDDC22B63AD700F890D7 /* PipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeTests.swift; sourceTree = "<group>"; };
 		9707CF2022C4D93200D80F32 /* MergeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTests.swift; sourceTree = "<group>"; };
-		9707CF2222C5088800D80F32 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9707CF2722C519AE00D80F32 /* CollectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerTests.swift; sourceTree = "<group>"; };
-		9707CF2A22C5687400D80F32 /* CollectionBinderDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBinderDataSourceMock.swift; sourceTree = "<group>"; };
 		9717B2BE21BB410500C66EE0 /* StringViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewModel.swift; sourceTree = "<group>"; };
 		9717B2C021BB430800C66EE0 /* StringSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSectionViewModel.swift; sourceTree = "<group>"; };
 		9717B2C321BB48A200C66EE0 /* ModelUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdateTests.swift; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 		9750D0AA22947ECF00E08571 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
 		9750D0AE22948A4900E08571 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		9750D0B22294C09600E08571 /* GridDataSourceInteractionDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDataSourceInteractionDelegateTests.swift; sourceTree = "<group>"; };
-		9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelMock.swift; sourceTree = "<group>"; };
 		97607CFF22099BC20071AB8D /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		977F82AA21D4D8BC0044074A /* SublinePipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublinePipeTests.swift; sourceTree = "<group>"; };
 		978C651E228FEE7500D95276 /* PowerToolsTester.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = PowerToolsTester.podspec; path = ../PowerToolsTester.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -312,9 +306,6 @@
 		9750D0B72295D5C300E08571 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				9707CF2A22C5687400D80F32 /* CollectionBinderDataSourceMock.swift */,
-				9750D0B82295D5F900E08571 /* ItemViewModelMock.swift */,
-				9707CF2222C5088800D80F32 /* File.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -642,19 +633,16 @@
 				9717B2C621BBD28C00C66EE0 /* ModelUpdate.swift in Sources */,
 				97EA77E722C4AECF00BBCF18 /* BinderDataSourcePipeTests.swift in Sources */,
 				9717B2C121BB430800C66EE0 /* StringSectionViewModel.swift in Sources */,
-				9750D0B92295D5F900E08571 /* ItemViewModelMock.swift in Sources */,
 				9717B2E521BD3AEA00C66EE0 /* PromisePipeTests.swift in Sources */,
 				9707CF2122C4D93200D80F32 /* MergeTests.swift in Sources */,
 				9705FDDD22B63AD700F890D7 /* PipeTests.swift in Sources */,
 				9750D09F2292F7D600E08571 /* GridModuleTests.swift in Sources */,
-				9707CF2322C5088800D80F32 /* File.swift in Sources */,
 				9717B2E821BD472500C66EE0 /* AbstractFactoryTests.swift in Sources */,
 				9717B2CD21BC08CE00C66EE0 /* StringCell.swift in Sources */,
 				9750D0A3229336AF00E08571 /* ViewTests.swift in Sources */,
 				9750D0AB22947ECF00E08571 /* SectionViewModelTests.swift in Sources */,
 				97EA77D722BE772500BBCF18 /* SublinePipeTests.swift in Sources */,
 				9750D0A522935F4A00E08571 /* GridItemTests.swift in Sources */,
-				9707CF2B22C5687400D80F32 /* CollectionBinderDataSourceMock.swift in Sources */,
 				978E528722AC45D8006833C5 /* UICollectionViewMock.swift in Sources */,
 				978E52B122AC5542006833C5 /* GridCollectionDataSourceInteractionTests.swift in Sources */,
 				9717B2C421BB48A200C66EE0 /* ModelUpdateTests.swift in Sources */,

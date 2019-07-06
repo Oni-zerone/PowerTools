@@ -1,6 +1,6 @@
 {
   "name": "PowerToolsTester",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "summary": "Tools tester for fast and modular app development.",
   "swift_versions": "5.0",
   "description": "Fast development tools with a better way to use UICollectionViews",
@@ -14,9 +14,12 @@
   },
   "source": {
     "git": "https://github.com/Oni-zerone/PowerTools.git",
-    "tag": "0.4.0-tester"
+    "tag": "0.4.1-tester"
   },
   "social_media_url": "https://twitter.com/Oni_zerone",
+  "pod_target_xcconfig": {
+    "ENABLED_TESTABILITY": "YES"
+  },
   "platforms": {
     "ios": "9.0"
   },
@@ -37,10 +40,10 @@
       },
       "dependencies": {
         "PowerTools/Core": [
-          "~> 0.4"
+          "~> 0.4.1"
         ],
         "PowerTools/CollectionVM": [
-          "~> 0.4"
+          "~> 0.4.1"
         ]
       }
     }
