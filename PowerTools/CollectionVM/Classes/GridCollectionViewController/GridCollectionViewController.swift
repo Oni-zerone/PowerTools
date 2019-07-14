@@ -9,11 +9,11 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-public class GridCollectionViewController: UICollectionViewController {
+public class GridCollectionViewController<ASectionViewModel: GridSection>: UICollectionViewController {
     
     public var forceReload: Bool = false
     
-    open var dataSource: GridCollectionDataSource? = GridCollectionDataSource(view: nil, model: [])
+    open var dataSource: GridCollectionDataSource? = GridCollectionDataSource<ASectionViewModel>(view: nil, model: [])
         
     override open func viewDidLoad() {
         super.viewDidLoad()

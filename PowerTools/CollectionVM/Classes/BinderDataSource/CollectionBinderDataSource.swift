@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICollectionViewDataSource {
+open class CollectionBinderDataSource<ASectionViewModel: SectionViewModel>: BinderDataSource<UICollectionView, ASectionViewModel>, UICollectionViewDataSource {
     
     override public var view: UICollectionView? {
         didSet {
@@ -16,13 +16,13 @@ open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICol
         }
     }
     
-    override public init(view: UICollectionView?, model: [SectionViewModel]) {
+    override public init(view: UICollectionView?, model: [ASectionViewModel]) {
         
         super.init(view: view, model: model)
         view?.dataSource = self
     }
     
-    override open var model: [SectionViewModel] {
+    override open var model: [ASectionViewModel] {
         didSet {
             self.view?.reloadData()
         }

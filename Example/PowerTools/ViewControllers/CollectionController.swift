@@ -12,10 +12,12 @@ import PowerTools
 class CollectionController: UIViewController {
 
     weak var collectionViewController: GridCollectionViewController!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let anyItem: AnyItemViewModel<ItemViewModel> = AnyItemViewModel()
+        
         self.setupCollection()
         self.registerCell()
 
@@ -34,7 +36,7 @@ class CollectionController: UIViewController {
 
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        let collectionController = GridCollectionViewController(collectionViewLayout: layout)
+        let collectionController = GridCollectionViewController<ASectionViewModel>(collectionViewLayout: layout)
         collectionController.attach(to: self)
         collectionController.interactionDelegate = self
         collectionController.forceReload = true

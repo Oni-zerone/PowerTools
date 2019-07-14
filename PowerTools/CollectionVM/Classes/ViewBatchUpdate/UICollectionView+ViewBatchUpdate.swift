@@ -16,7 +16,7 @@ extension UICollectionView: UpdatableView {
 
 extension UICollectionView: BatchUpdateView {
     
-    func perform(_ update: ModelUpdate, modelUpdates: () -> Void, completion: ((Bool) -> Void)?) {
+    func perform<ASectionViewModel: SectionViewModel>(_ update: ModelUpdate<ASectionViewModel>, modelUpdates: () -> Void, completion: ((Bool) -> Void)?) {
         
         guard let changes = update.change else {
             modelUpdates()
@@ -33,7 +33,7 @@ extension UICollectionView: BatchUpdateView {
         }, completion: completion)
     }
     
-    internal func perform(_ change: ModelUpdate.Change) {
+    internal func perform<ASectionViewModel: SectionViewModel>(_ change: ModelUpdate<ASectionViewModel>.Change) {
         
         switch change {
             

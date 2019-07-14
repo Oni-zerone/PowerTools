@@ -14,5 +14,5 @@ public protocol UpdatableView: UIView {
 
 protocol BatchUpdateView: UpdatableView {
     
-    func perform(_ update: ModelUpdate, modelUpdates: () -> Void, completion: ((Bool) -> Void)?)
+    func perform<ASectionViewModel: SectionViewModel>(_ update: ModelUpdate<ASectionViewModel>, modelUpdates: () -> Void, completion: ((Bool) -> Void)?)
 }

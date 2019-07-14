@@ -9,15 +9,15 @@
 import Foundation
 import PowerTools
 
-struct BaseSection: SectionViewModel {
+struct BaseSection<AItemViewModel: ItemViewModel>: SectionViewModel {
 
-    var header: ItemViewModel?
+    var header: AItemViewModel?
 
-    var items: [ItemViewModel]
+    var items: [AItemViewModel]
 
-    var footer: ItemViewModel?
+    var footer: AItemViewModel?
 
-    init(header: ItemViewModel? = nil, items: [ItemViewModel] = [], footer: ItemViewModel? = nil) {
+    init(header: AItemViewModel? = nil, items: [AItemViewModel] = [], footer: AItemViewModel? = nil) {
         self.header = header
         self.items = items
         self.footer = footer

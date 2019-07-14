@@ -7,9 +7,9 @@
 
 import UIKit
 
-public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionViewDelegateFlowLayout {
+public class GridCollectionDataSource<ASectionViewModel: GridSection>: CollectionBinderDataSource<ASectionViewModel>, UICollectionViewDelegateFlowLayout {
     
-    override public var model: [SectionViewModel] {
+    override public var model: [ASectionViewModel] {
         willSet {
             self.moduleCache = [:]
         }
@@ -25,14 +25,14 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     public weak var interactionDelegate: InteractionDelegate?
     public weak var scrollViewDelegate: UIScrollViewDelegate?
     
-    public override init(view: UICollectionView?, model: [SectionViewModel]) {
+    public override init(view: UICollectionView?, model: [ASectionViewModel]) {
         super.init(view: view, model: model)
         view?.delegate = self
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        guard let section = self.model.item(at: section) as? GridSection else {
+        guard let section = self.model.item(at: section) else {
             return .zero
         }
         return section.sectionInsets
@@ -40,7 +40,7 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
-        guard let section = self.model.item(at: section) as? GridSection else {
+        guard let section = self.model.item(at: section) else {
             return 0
         }
         return section.horizontalSpacing(collectionView.contentDirection)
@@ -48,7 +48,7 @@ public class GridCollectionDataSource: CollectionBinderDataSource, UICollectionV
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 
-        guard let section = self.model.item(at: section) as? GridSection else {
+        guard let section = self.model.item(at: section) else {
             return 0
         }
         return section.verticalSpacing(collectionView.contentDirection)

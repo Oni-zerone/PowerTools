@@ -15,11 +15,10 @@ internal extension GridCollectionDataSource {
             return module
         }
         
-        guard self.model.indices.contains(section),
-            let sectionViewModel = self.model[section] as? GridSection else {
+        guard self.model.indices.contains(section) else {
                 return nil
         }
-        let module = sectionViewModel.module(for: collection)
+        let module = self.model[section].module(for: collection)
         self.moduleCache[section] = module
         return module
     }

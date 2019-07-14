@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct ModelUpdate {
+internal struct ModelUpdate<ASectionViewModel: SectionViewModel> {
 
     internal enum Change {
         
@@ -16,10 +16,10 @@ internal struct ModelUpdate {
         case delete(oldPosition: IndexPath)
     }
 
-    let model: [SectionViewModel]
+    let model: [ASectionViewModel]
     let change: [Change]?
     
-    init(from oldModel: [SectionViewModel], to newModel: [SectionViewModel], forceReload: Bool = false) {
+    init(from oldModel: [ASectionViewModel], to newModel: [ASectionViewModel], forceReload: Bool = false) {
         
         self.model = newModel
         
@@ -36,17 +36,17 @@ internal struct ModelUpdate {
             let occurrence = countTable[item.hashValue] ?? 0
             countTable[item.hashValue] = occurrence + 1
             
-            let change = oldLookupTable.calculateChange(of: item, occurrence: occurrence, indexPath: indexPath)
+            let change: ModelUpdate<ASectionViewModel>.Change? = oldLookupTable.calculateChange(of: item, occurrence: occurrence, indexPath: indexPath)
             changes.append(change)
         }
         
-        let deletions = oldLookupTable.calculateDeletions(countTable: countTable)
+        let deletions: [ModelUpdate<ASectionViewModel>.Change] = oldLookupTable.calculateDeletions(countTable: countTable)
         changes.append(contentsOf: deletions)
         self.change = changes
     }
 }
 
-internal extension Array where Element == SectionViewModel {
+internal extension Array where Element: SectionViewModel {
     
     var lookupTable: [Int : [IndexPath]] {
      
@@ -62,7 +62,7 @@ internal extension Array where Element == SectionViewModel {
         return table
     }
     
-    func shouldReload(from oldModel: [SectionViewModel]) -> Bool {
+    func shouldReload<ASectionViewModel: SectionViewModel>(from oldModel: [ASectionViewModel]) -> Bool {
         
         guard oldModel.count == self.count else {
             return true
@@ -79,7 +79,7 @@ internal extension Array where Element == SectionViewModel {
 
 fileprivate extension Dictionary where Key == Int, Value == [IndexPath] {
     
-    func calculateChange(of item: ItemViewModel, occurrence: Int, indexPath: IndexPath) -> ModelUpdate.Change? {
+    func calculateChange<ASectionViewModel: SectionViewModel>(of item: ASectionViewModel.AItemViewModel, occurrence: Int, indexPath: IndexPath) -> ModelUpdate<ASectionViewModel>.Change? {
         
         guard let oldPositions = self[item.hashValue],
             oldPositions.indices.contains(occurrence) else {
@@ -94,9 +94,9 @@ fileprivate extension Dictionary where Key == Int, Value == [IndexPath] {
         return nil
     }
     
-    func calculateDeletions(countTable: [Int : Int]) -> [ModelUpdate.Change] {
+    func calculateDeletions<ASectionViewModel: SectionViewModel>(countTable: [Int : Int]) -> [ModelUpdate<ASectionViewModel>.Change] {
         
-        var changes: [ModelUpdate.Change] = []
+        var changes: [ModelUpdate<ASectionViewModel>.Change] = []
         self.forEach { (itemReference, positions) in
             
             var itemCount = countTable[itemReference] ?? 0

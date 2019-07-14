@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol GridSection: SectionViewModel {
+public protocol GridSection: SectionViewModel where AItemViewModel: GridItem {
     
     var lineItems: Int? { get }
     

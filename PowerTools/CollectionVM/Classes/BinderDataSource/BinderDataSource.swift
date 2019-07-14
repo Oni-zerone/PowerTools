@@ -15,17 +15,18 @@ extension DispatchQueue {
 public protocol AbstractBinderDataSource: class {
     
     associatedtype View: UpdatableView
+    associatedtype ASectionViewModel: SectionViewModel
     
-    var model: [SectionViewModel] { get set }
+    var model: [ASectionViewModel] { get set }
     
     var view: View? { get set }
 }
 
-open class BinderDataSource<View: UpdatableView>: NSObject, AbstractBinderDataSource {
-
-    private var _model: [SectionViewModel]
+open class BinderDataSource<View: UpdatableView, ASectionViewModel: SectionViewModel>: NSObject, AbstractBinderDataSource {
     
-    open var model: [SectionViewModel] {
+    private var _model: [ASectionViewModel]
+    
+    open var model: [ASectionViewModel] {
         set {
             self.update(model: newValue, forceReload: true)
         }
@@ -36,12 +37,12 @@ open class BinderDataSource<View: UpdatableView>: NSObject, AbstractBinderDataSo
     
     public weak var view: View?
     
-    public init(view: View?, model: [SectionViewModel] = []) {
+    public init(view: View?, model: [ASectionViewModel] = []) {
         self.view = view
         self._model = model
     }
     
-    public func update(model newModel: [SectionViewModel], forceReload reloadData: Bool = false) {
+    public func update(model newModel: [ASectionViewModel], forceReload reloadData: Bool = false) {
         
         guard !reloadData, let batchUpdateView = self.view as? BatchUpdateView else {
             self._model = newModel
@@ -57,7 +58,7 @@ open class BinderDataSource<View: UpdatableView>: NSObject, AbstractBinderDataSo
         }
     }
     
-    private func performSyncUpdate(_ updates: ModelUpdate, in view: BatchUpdateView) {
+    private func performSyncUpdate(_ updates: ModelUpdate<ASectionViewModel>, in view: BatchUpdateView) {
         
         DispatchQueue.main.sync {
             view.perform(updates, modelUpdates: {

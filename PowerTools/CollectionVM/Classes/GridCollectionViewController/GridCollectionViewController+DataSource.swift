@@ -9,7 +9,7 @@ import Foundation
 
 public extension GridCollectionViewController {
     
-    var model: [SectionViewModel] {
+    var model: [ASectionViewModel] {
         set {
             self.dataSource?.model = newValue
         }
@@ -36,7 +36,7 @@ public extension GridCollectionViewController {
         }
     }
     
-    func update(model newModel: [SectionViewModel]) {
+    func update(model newModel: [ASectionViewModel]) {
         
         self.dataSource?.update(model: newModel, forceReload: self.forceReload)
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BinderPipe<DataSource: AbstractBinderDataSource>: Pipe<[SectionViewModel]> {
+public class BinderPipe<DataSource: AbstractBinderDataSource, Result>: Pipe<[Result]> where Result == DataSource.ASectionViewModel {
     
     var queue: DispatchQueue = .main
     weak var dataSource: DataSource?
@@ -16,7 +16,7 @@ public class BinderPipe<DataSource: AbstractBinderDataSource>: Pipe<[SectionView
         self.dataSource = dataSource
     }
     
-    override public func success(_ content: [SectionViewModel]) {
+    override public func success(_ content: [Result]) {
         self.queue.async {
             self.dataSource?.model = content
         }
@@ -40,7 +40,7 @@ public class BinderPipe<DataSource: AbstractBinderDataSource>: Pipe<[SectionView
 
 public extension Pipeline {
     
-    mutating func dataSource<DataSource: AbstractBinderDataSource>(_ binderDataSource: DataSource) where Value == [SectionViewModel] {
+    mutating func dataSource<DataSource: AbstractBinderDataSource>(_ binderDataSource: DataSource) where Value == [DataSource.ASectionViewModel] {
         let binderPipe = BinderPipe(dataSource: binderDataSource)
         self.attach(binderPipe)
     }
