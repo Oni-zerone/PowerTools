@@ -9,24 +9,15 @@
 import Foundation
 @testable import PowerTools
 
-struct StringDescriptor: ItemViewDescriptor {
-
-    var reuseIdentifier: String
-}
-
 struct StringViewModel: ItemViewModel, Hashable {
     
     var descriptor: ItemViewDescriptor
     
     var string: String
     
-    init(string: String, identifier: String = "StringCell") {
-        self.descriptor = StringDescriptor(reuseIdentifier: identifier)
+    init(string: String, descriptor: ItemViewDescriptor = StringCell.descriptor) {
+        self.descriptor = descriptor
         self.string = string
-    }
-    
-    func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath) {
-        (view as? StringCell)?.string = string
     }
     
     static func == (lhs: StringViewModel, rhs: StringViewModel) -> Bool {
