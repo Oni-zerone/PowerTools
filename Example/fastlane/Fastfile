@@ -35,7 +35,7 @@ platform :ios do
   desc "Pod lib lint"
   lane :pod_lint do
     Dir.chdir("../..") do
-      sh("pod lib lint")
+      sh("pod lib lint --verbose")
     end
   end
 
