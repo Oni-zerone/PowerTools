@@ -1038,37 +1038,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09590F0A149F90C43185225C7C3629AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09A941B9D3ADCC017A59F6EA5EF90BAE /* PowerTools.default-CollectionVM.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		14981698D1671D465FD3621880EBD728 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 114FB3D694DAD777A935930C3FDE1015 /* Pods-PowerTools_Tests.debug.xcconfig */;
@@ -1102,9 +1071,9 @@
 			};
 			name = Debug;
 		};
-		357117AE83D14333A0129D815BA88925 /* Release */ = {
+		2C4DFEEC42CF6819F259A64D4E0EE3E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB216E9E7D1EFBABA1FC7F0EC035F5E6 /* PowerTools-CollectionVM-Core.release.xcconfig */;
+			baseConfigurationReference = 1FC775ADF37217F4655F99108E93C6AF /* PowerTools-CollectionVM-Core.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1126,13 +1095,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		50CF10DB50A2CA33812ECEB886DD0905 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1196,6 +1164,70 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		6E8F10C1895B4267426F31A664AE1127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB216E9E7D1EFBABA1FC7F0EC035F5E6 /* PowerTools-CollectionVM-Core.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8ED05F32AECA1D058A4767CABD68CD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD35A9D3A393560DACA78F5B0D2D134 /* PowerTools.default-CollectionVM.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1321,6 +1353,37 @@
 			};
 			name = Debug;
 		};
+		9ECAF857E4BACFAC594C7BE19F307C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A941B9D3ADCC017A59F6EA5EF90BAE /* PowerTools.default-CollectionVM.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
+				PRODUCT_MODULE_NAME = PowerTools;
+				PRODUCT_NAME = PowerTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A82CDA1571E10E7D0335269BAED706D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA35BB58234990039D7612BE7A277D48 /* Pods-PowerTools_Example.release.xcconfig */;
@@ -1388,37 +1451,6 @@
 			};
 			name = Debug;
 		};
-		E369A29C756F8C41AEB39A5C74EBA126 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FC775ADF37217F4655F99108E93C6AF /* PowerTools-CollectionVM-Core.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools-CollectionVM-Core/PowerTools-CollectionVM-Core.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		ED3C3D512D42CBA83F2E2F1EDB7DAC13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF9C0632570F14625B36CA5B5887B745 /* Pods-PowerTools_Tests.release.xcconfig */;
@@ -1453,38 +1485,6 @@
 			};
 			name = Release;
 		};
-		FFE050C198AC8ED9EFCC9D712CDCEA00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BD35A9D3A393560DACA78F5B0D2D134 /* PowerTools.default-CollectionVM.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PowerTools.default-CollectionVM/PowerTools.default-CollectionVM.modulemap";
-				PRODUCT_MODULE_NAME = PowerTools;
-				PRODUCT_NAME = PowerTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1500,8 +1500,8 @@
 		89F714F6BEB9C45B65A674FDBD0AEEB6 /* Build configuration list for PBXNativeTarget "PowerTools.default-CollectionVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09590F0A149F90C43185225C7C3629AA /* Debug */,
-				FFE050C198AC8ED9EFCC9D712CDCEA00 /* Release */,
+				9ECAF857E4BACFAC594C7BE19F307C66 /* Debug */,
+				8ED05F32AECA1D058A4767CABD68CD16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1509,8 +1509,8 @@
 		B47915DC82D0B88DBE44D3F116CA6971 /* Build configuration list for PBXNativeTarget "PowerTools-CollectionVM-Core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E369A29C756F8C41AEB39A5C74EBA126 /* Debug */,
-				357117AE83D14333A0129D815BA88925 /* Release */,
+				2C4DFEEC42CF6819F259A64D4E0EE3E3 /* Debug */,
+				6E8F10C1895B4267426F31A664AE1127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

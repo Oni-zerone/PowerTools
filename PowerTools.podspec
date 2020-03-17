@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PowerTools'
-  s.version          = '0.4.1'
+  s.version          = '0.5.0'
   s.summary          = 'Tools for fast and modular app development.'
-  s.swift_version    = '5.0'
+  s.swift_version    = '5.1'
   
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
