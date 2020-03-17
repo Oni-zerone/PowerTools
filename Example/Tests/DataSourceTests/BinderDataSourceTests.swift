@@ -47,11 +47,13 @@ class CollectionBinderDataSourceTests: XCTestCase {
         
         var sections = ["first", "second", "foo"].model
         var firstSection = sections[0]
-        firstSection.header = StringViewModel(string: "Header", identifier: header)
+        firstSection.header = StringViewModel(string: "Header",
+                                              descriptor: GenericItemViewDescriptor(reuseIdentifier: header))
         sections[0] = firstSection
         
         var lastSection = sections[2]
-        lastSection.footer = StringViewModel(string: "Footer", identifier: header)
+        lastSection.footer = StringViewModel(string: "Footer",
+                                             descriptor: GenericItemViewDescriptor(reuseIdentifier: header))
         sections[2] = lastSection
         dataSource.update(model: sections, forceReload: true)
         

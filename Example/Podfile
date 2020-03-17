@@ -7,7 +7,7 @@ target 'PowerTools_Example' do
   
   target 'PowerTools_Tests' do
     inherit! :search_paths
-    pod 'PowerToolsTester', :path => '../'
+    pod 'PowerToolsTester', :path => '../Tester/'
     
   end
 end

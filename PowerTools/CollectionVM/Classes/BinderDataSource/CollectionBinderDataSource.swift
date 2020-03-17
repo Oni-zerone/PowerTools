@@ -7,6 +7,9 @@
 
 import UIKit
 
+private typealias ItemCell = ItemView & UICollectionViewCell
+private typealias ItemReusableView = ItemView & UICollectionReusableView
+
 open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICollectionViewDataSource {
     
     override public var view: UICollectionView? {
@@ -49,7 +52,10 @@ open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICol
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: model.reuseIdentifier, for: indexPath)
-        model.setup(cell, in: collectionView, at: indexPath)
+        if  let cell = cell as? ItemCell {
+            cell.setup(model, in: collectionView, at: indexPath)
+        }
+        
         return cell
     }
     
@@ -60,7 +66,9 @@ open class CollectionBinderDataSource: BinderDataSource<UICollectionView>, UICol
         }
         
         let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: model.reuseIdentifier, for: indexPath)
-        model.setup(reusableView, in: collectionView, at: indexPath)
+        if  let reusableView = reusableView as? ItemReusableView {
+            reusableView.setup(model, in: collectionView, at: indexPath)
+        }
         return reusableView
     }
 }
