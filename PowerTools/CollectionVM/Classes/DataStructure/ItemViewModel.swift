@@ -7,11 +7,6 @@
 
 import Foundation
 
-public protocol ItemViewDescriptor {
-    
-    var reuseIdentifier: String { get }
-}
-
 public protocol ItemViewModel {
     
     var descriptor: ItemViewDescriptor { get set }
@@ -19,8 +14,6 @@ public protocol ItemViewModel {
     var hashValue: Int { get }
     
     var reuseIdentifier: String { get }
-    
-    func setup(_ view: UIView, in containerView: UIView, at indexPath: IndexPath)
 }
 
 public extension ItemViewModel {
