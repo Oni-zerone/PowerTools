@@ -21,10 +21,9 @@ internal struct ModelUpdate {
     
     init(from oldModel: [SectionViewModel], to newModel: [SectionViewModel], forceReload: Bool = false) {
         
-        self.model = newModel
-        
         if forceReload || newModel.shouldReload(from: oldModel) {
             self.change = nil
+            self.model = newModel
             return
         }
         
@@ -43,6 +42,7 @@ internal struct ModelUpdate {
         let deletions = oldLookupTable.calculateDeletions(countTable: countTable)
         changes.append(contentsOf: deletions)
         self.change = changes
+        self.model = newModel.merge(oldModel)
     }
 }
 
@@ -74,6 +74,22 @@ internal extension Array where Element == SectionViewModel {
             return section.header?.hashValue != newSection.header?.hashValue || section.footer?.hashValue != newSection.footer?.hashValue
         }
         return firstChange != nil
+    }
+    
+    func merge(_ oldModel: [SectionViewModel]) -> [SectionViewModel] {
+
+        let lookupTable = oldModel.lookupTable
+
+        return map { section in
+            var section = section
+            section.items = section.items.map { item in
+                guard let oldIndexPath = lookupTable[item.hashValue]?.first else {
+                    return item
+                }
+                return oldModel[oldIndexPath.section].items[oldIndexPath.item]
+            }
+            return section
+        }
     }
 }
 
