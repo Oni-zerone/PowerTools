@@ -21,10 +21,9 @@ internal struct ModelUpdate {
     
     init(from oldModel: [SectionViewModel], to newModel: [SectionViewModel], forceReload: Bool = false) {
         
-        self.model = newModel
-        
         if forceReload || newModel.shouldReload(from: oldModel) {
             self.change = nil
+            self.model = newModel
             return
         }
         
@@ -43,6 +42,17 @@ internal struct ModelUpdate {
         let deletions = oldLookupTable.calculateDeletions(countTable: countTable)
         changes.append(contentsOf: deletions)
         self.change = changes
+        self.model = newModel.map { section in
+            
+            var section = section
+            section.items = section.items.map { item in
+                guard let oldIndexPath = oldLookupTable[item.hashValue]?.first else {
+                    return item
+                }
+                return oldModel[oldIndexPath.section].items[oldIndexPath.item]
+            }
+            return section
+        }
     }
 }
 
