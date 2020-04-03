@@ -1,9 +1,9 @@
 PODS:
-  - PowerTools (0.5.0):
-    - PowerTools/Core (= 0.5.0)
-  - PowerTools/CollectionVM (0.5.0):
+  - PowerTools (0.5.1):
+    - PowerTools/Core (= 0.5.1)
+  - PowerTools/CollectionVM (0.5.1):
     - PowerTools/Core
-  - PowerTools/Core (0.5.0)
+  - PowerTools/Core (0.5.1)
   - PowerToolsTester (0.4.0):
     - PowerToolsTester/CoreTester (= 0.4.0)
   - PowerToolsTester/CoreTester (0.4.0):
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: "../Tester/"
 
 SPEC CHECKSUMS:
-  PowerTools: 0d036e95e3bc1c3867be324e5023b107239df112
+  PowerTools: af8488b1f6dba2da567ab19bc37ad6f97bf83410
   PowerToolsTester: cce5270b189036bc1b7dda0b30773374be745165
 
 PODFILE CHECKSUM: e0af4d9ba0fe81ef397e2dd16c5f12eb9e08c1c6

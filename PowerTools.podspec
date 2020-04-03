@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PowerTools'
-  s.version          = '0.5.0'
+  s.version          = '0.5.1'
   s.summary          = 'Tools for fast and modular app development.'
   s.swift_version    = '5.1'
   
