@@ -57,12 +57,30 @@ open class BinderDataSource<View: UpdatableView>: NSObject, AbstractBinderDataSo
         }
     }
     
+    public func syncUpdate(model newModel: [SectionViewModel], forceReload reloadData: Bool = false) {
+        
+        guard !reloadData, let batchUpdateView = self.view as? BatchUpdateView else {
+            self._model = newModel
+            self.view?.forceReload()
+            return
+        }
+
+        let oldModel = self._model
+        let updates = ModelUpdate(from: oldModel, to: newModel, forceReload: reloadData)
+        self.performUpdate(updates, in: batchUpdateView)
+    }
+    
     private func performSyncUpdate(_ updates: ModelUpdate, in view: BatchUpdateView) {
         
         DispatchQueue.main.sync {
-            view.perform(updates, modelUpdates: {
-                self._model = updates.model
-            }, completion: nil)
+            self.performUpdate(updates, in: view)
         }
+    }
+    
+    private func performUpdate(_ updates: ModelUpdate, in view: BatchUpdateView) {
+
+        view.perform(updates, modelUpdates: {
+            self._model = updates.model
+        }, completion: nil)
     }
 }
