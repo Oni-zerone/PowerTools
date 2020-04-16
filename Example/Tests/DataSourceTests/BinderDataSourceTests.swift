@@ -86,6 +86,52 @@ class CollectionBinderDataSourceTests: XCTestCase {
         checkCell(for: IndexPath(item: 2, section: 2))
         checkFooter(section: 2)
     }
+
+    func testSyncReload() {
+        XCTAssert(collection.dataSource?.numberOfSections?(in: collection) ?== 0)
+        XCTAssert(collection.dataSource?.collectionView(collection, numberOfItemsInSection: 0) ?== 0)
+        
+        var sections = ["first", "second", "foo"].model
+        var firstSection = sections[0]
+        firstSection.header = StringViewModel(string: "Header",
+                                              descriptor: GenericItemViewDescriptor(reuseIdentifier: header))
+        sections[0] = firstSection
+        
+        var lastSection = sections[2]
+        lastSection.footer = StringViewModel(string: "Footer",
+                                             descriptor: GenericItemViewDescriptor(reuseIdentifier: header))
+        sections[2] = lastSection
+        dataSource.syncUpdate(model: sections, forceReload: true)
+        
+        XCTAssert(collection.dataSource?.numberOfSections?(in: collection) ?== 3)
+        XCTAssert(collection.dataSource?.collectionView(collection, numberOfItemsInSection: 0) ?== 5)
+        XCTAssert(collection.dataSource?.collectionView(collection, numberOfItemsInSection: 1) ?== 6)
+        XCTAssert(collection.dataSource?.collectionView(collection, numberOfItemsInSection: 2) ?== 3)
+        XCTAssert(collection.dataSource?.collectionView(collection, numberOfItemsInSection: 3) ?== 0)
+        
+        checkHeader(section: 0)
+        checkCell(for: IndexPath(item: 0, section: 0))
+        checkCell(for: IndexPath(item: 1, section: 0))
+        checkCell(for: IndexPath(item: 2, section: 0))
+        checkCell(for: IndexPath(item: 3, section: 0))
+        checkCell(for: IndexPath(item: 4, section: 0))
+        checkEmptyFooter(section: 0)
+        
+        checkEmptyHeader(section: 1)
+        checkCell(for: IndexPath(item: 0, section: 1))
+        checkCell(for: IndexPath(item: 1, section: 1))
+        checkCell(for: IndexPath(item: 2, section: 1))
+        checkCell(for: IndexPath(item: 3, section: 1))
+        checkCell(for: IndexPath(item: 4, section: 1))
+        checkCell(for: IndexPath(item: 5, section: 1))
+        checkEmptyFooter(section: 1)
+        
+        checkEmptyHeader(section: 2)
+        checkCell(for: IndexPath(item: 0, section: 2))
+        checkCell(for: IndexPath(item: 1, section: 2))
+        checkCell(for: IndexPath(item: 2, section: 2))
+        checkFooter(section: 2)
+    }
     
     func checkHeader(section: Int) {
         let indexPath = IndexPath(item: 0, section: section)

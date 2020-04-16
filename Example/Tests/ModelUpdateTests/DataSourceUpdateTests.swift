@@ -34,6 +34,13 @@ class DataSourceUpdateTests: XCTestCase {
         mutatedModel[0].items.insert("l".model, at: 3)
         self.dataSource.update(model: mutatedModel)
     }
+
+    func testSyncSectionItemInsertionUpdate() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].items.insert("l".model, at: 3)
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
     
     func testMultipleSectionItemInsertionUpdate() {
         
@@ -44,11 +51,27 @@ class DataSourceUpdateTests: XCTestCase {
         self.dataSource.update(model: mutatedModel)
     }
 
+    func testSyncMultipleSectionItemInsertionUpdate() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].items.insert("l".model, at: 3)
+        mutatedModel[1].items.insert("l".model, at: 1)
+        mutatedModel[2].items.append("l".model)
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
+
     func testSectionItemDeletionUpdate() {
         
         var mutatedModel = self.dataSource.model
         mutatedModel[0].items.remove(at: 3)
         self.dataSource.update(model: mutatedModel)
+    }
+
+    func testSyncSectionItemDeletionUpdate() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].items.remove(at: 3)
+        self.dataSource.syncUpdate(model: mutatedModel)
     }
 
     func testMultipleSectionItemDeletionUpdate() {
@@ -60,12 +83,29 @@ class DataSourceUpdateTests: XCTestCase {
         self.dataSource.update(model: mutatedModel)
     }
 
+    func testSyncMultipleSectionItemDeletionUpdate() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].items.remove(at: 3)
+        mutatedModel[1].items.remove(at: 0)
+        mutatedModel[2].items.remove(at: 4)
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
+
     func testManipulationsUpdate() {
 
         var mutatedModel = self.dataSource.model
         mutatedModel[0].items.remove(at: 0)
         mutatedModel[1].items.insert("f".model, at: 3)
         self.dataSource.update(model: mutatedModel)
+    }
+
+    func testSyncManipulationsUpdate() {
+
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].items.remove(at: 0)
+        mutatedModel[1].items.insert("f".model, at: 3)
+        self.dataSource.syncUpdate(model: mutatedModel)
     }
     
     func testSectionInsertion() {
@@ -75,25 +115,53 @@ class DataSourceUpdateTests: XCTestCase {
         self.dataSource.update(model: mutatedModel)
     }
 
+    func testSyncSectionInsertion() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel.append("fourth".section)
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
+
     func testSectionDeletion() {
         
         var mutatedModel = self.dataSource.model
         mutatedModel.remove(at: 1)
         self.dataSource.update(model: mutatedModel)
     }
-    
+
+    func testSyncSectionDeletion() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel.remove(at: 1)
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
+
     func testHeaderInsertion() {
 
         var mutatedModel = self.dataSource.model
         mutatedModel[0].header = "h".model
         self.dataSource.update(model: mutatedModel)
     }
-    
+
+    func testSyncHeaderInsertion() {
+
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].header = "h".model
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
+
     func testFooterInsertion() {
         
         var mutatedModel = self.dataSource.model
         mutatedModel[0].footer = "h".model
         self.dataSource.update(model: mutatedModel)
+    }
+
+    func testSyncFooterInsertion() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].footer = "h".model
+        self.dataSource.syncUpdate(model: mutatedModel)
     }
 
     func testMultipleUpdates() {
@@ -107,13 +175,24 @@ class DataSourceUpdateTests: XCTestCase {
         self.dataSource.update(model: mutatedModel)
     }
 
+    func testSyncMultipleUpdates() {
+        
+        var mutatedModel = self.dataSource.model
+        mutatedModel[0].items.append("h".model)
+        self.dataSource.syncUpdate(model: mutatedModel)
+        sleep(2)
+        
+        mutatedModel[1].items.remove(at: 2)
+        self.dataSource.syncUpdate(model: mutatedModel)
+    }
+
     func testForceInsertion() {
         
         var mutatedModel = self.dataSource.model
         mutatedModel[0].items.append("h".model)
         self.dataSource.model = mutatedModel
     }
-    
+
     func testForceDeletion() {
         
         var mutatedModel = self.dataSource.model
